@@ -240,7 +240,7 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T12:03:13Z"
+    time: "2023-03-08T12:04:17Z"
   name: console-79f47cd8f5
   namespace: openshift-console
   ownerReferences:
@@ -250,7 +250,7 @@ metadata:
     kind: Deployment
     name: console
     uid: 8f84f431-418b-4093-8b7b-7db6c01ba2b1
-  resourceVersion: "29340"
+  resourceVersion: "29983"
   uid: 129ab4bf-ed23-4027-8dea-ee362ffc29b8
 spec:
   replicas: 2
@@ -411,8 +411,8 @@ spec:
           name: trusted-ca-bundle
         name: trusted-ca-bundle
 status:
-  availableReplicas: 1
+  availableReplicas: 2
   fullyLabeledReplicas: 2
   observedGeneration: 1
-  readyReplicas: 1
+  readyReplicas: 2
   replicas: 2
