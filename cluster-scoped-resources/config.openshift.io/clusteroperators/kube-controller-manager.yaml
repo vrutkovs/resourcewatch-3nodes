@@ -44,14 +44,14 @@ metadata:
     manager: cluster-kube-controller-manager-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:50:18Z"
+    time: "2023-03-08T11:51:38Z"
   name: kube-controller-manager
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "16497"
+  resourceVersion: "17467"
   uid: b847a3b2-5e9a-4598-8142-d35d20a8b280
 spec: {}
 status:
@@ -60,7 +60,8 @@ status:
     message: |-
       GarbageCollectorDegraded: error fetching rules: Get "https://thanos-querier.openshift-monitoring.svc:9091/api/v1/rules": dial tcp: lookup thanos-querier.openshift-monitoring.svc on 172.30.0.10:53: no such host
       GuardControllerDegraded: Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
-    reason: GarbageCollector_Error::GuardController_SyncError
+      NodeControllerDegraded: The master nodes not ready: node "vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal" not ready since 2023-03-08 11:51:16 +0000 UTC because NodeStatusUnknown (Kubelet stopped posting node status.)
+    reason: GarbageCollector_Error::GuardController_SyncError::NodeController_MasterNodesReady
     status: "True"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:45:25Z"
