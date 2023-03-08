@@ -163,10 +163,8 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -181,7 +179,7 @@ metadata:
     kind: Deployment
     name: kube-apiserver-operator
     uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
-  resourceVersion: "8599"
+  resourceVersion: "21492"
   uid: 4e1c666a-4f1a-413f-8b0f-f57967a047dc
 spec:
   replicas: 1
@@ -301,8 +299,6 @@ spec:
                   fieldPath: metadata.namespace
                 path: namespace
 status:
-  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
