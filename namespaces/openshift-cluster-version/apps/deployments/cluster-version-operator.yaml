@@ -192,7 +192,6 @@ metadata:
             f:type: {}
         f:observedGeneration: {}
         f:replicas: {}
-        f:unavailableReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -204,7 +203,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "2249"
+  resourceVersion: "2254"
   uid: f93bd4d8-8dbd-44e0-875b-dfdf1fbd2d2c
 spec:
   progressDeadlineSeconds: 600
@@ -349,4 +348,3 @@ status:
     type: Progressing
   observedGeneration: 2
   replicas: 1
-  unavailableReplicas: 1
