@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:15Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:15Z"
+deprecatedSource:
+  component: static-pod-installer
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:15Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-controller-manager-operator
+    operation: Update
+    time: "2023-03-08T11:59:15Z"
+  name: installer-7-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal.174a6fd144a2d166
+  namespace: openshift-kube-controller-manager
+  resourceVersion: "26513"
+  uid: bc12cf20-e546-4b1e-ad0b-cbecb7a9bf0a
+note: Successfully installed revision 7
+reason: StaticPodInstallerCompleted
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: installer-7-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+  namespace: openshift-kube-controller-manager
+  uid: e854b06b-e86c-4d85-b2d6-dc1c8fb0913e
+type: Normal
