@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:51:45Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:45Z"
+deprecatedSource:
+  component: openshift-apiserver-operator-config-observer-configobserver
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:45Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-openshift-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:51:45Z"
+  name: openshift-apiserver-operator.174a6f68611e34b3
+  namespace: openshift-apiserver-operator
+  resourceVersion: "18285"
+  uid: 838d3a6f-8d3a-4077-8944-ad320100c629
+note: "Writing updated observed config:   map[string]interface{}{\n+ \t\"imagePolicyConfig\":
+  map[string]interface{}{\n+ \t\t\"internalRegistryHostname\": string(\"image-registry.openshift-image-registry.svc:5000\"),\n+
+  \t},\n  \t\"projectConfig\": map[string]interface{}{\"projectRequestMessage\": string(\"\")},\n
+  \ \t\"routingConfig\": map[string]interface{}{\"subdomain\": string(\"apps.vrutkovs.origin-gce.dev.openshift.com\")},\n
+  \ \t... // 2 identical entries\n  }\n"
+reason: ObservedConfigChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-apiserver-operator
+  namespace: openshift-apiserver-operator
+  uid: a090ef40-3910-461a-9091-b7c2d013133c
+type: Normal
