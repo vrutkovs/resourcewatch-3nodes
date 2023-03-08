@@ -1,0 +1,22 @@
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource:
+  component: apiserver
+  host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:55:58Z"
+  name: kube-apiserver-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6fa33c6cf0e4
+  namespace: openshift-kube-apiserver
+  resourceVersion: "23240"
+  uid: 1797e68c-26cc-451a-bf20-d5be9a121ba3
+note: readyz=true
+reason: KubeAPIReadyz
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: kube-apiserver-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+  namespace: openshift-kube-apiserver
+type: Warning
