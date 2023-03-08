@@ -28,8 +28,6 @@ metadata:
     openshift.io/scc: restricted-v2
     seccomp.security.alpha.kubernetes.io/pod: runtime/default
   creationTimestamp: "2023-03-08T12:00:00Z"
-  finalizers:
-  - batch.kubernetes.io/job-tracking
   generateName: collect-profiles-27971280-
   labels:
     controller-uid: 916759ff-6cde-4ca0-a40c-331425372fb9
@@ -39,9 +37,6 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:metadata:
-        f:finalizers:
-          .: {}
-          v:"batch.kubernetes.io/job-tracking": {}
         f:generateName: {}
         f:labels:
           .: {}
@@ -185,7 +180,7 @@ metadata:
     kind: Job
     name: collect-profiles-27971280
     uid: 916759ff-6cde-4ca0-a40c-331425372fb9
-  resourceVersion: "27385"
+  resourceVersion: "27448"
   uid: b403027d-9bc7-4529-84a8-d37b7ccdd519
 spec:
   containers:
