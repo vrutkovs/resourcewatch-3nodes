@@ -133,7 +133,9 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -147,7 +149,7 @@ metadata:
     kind: Deployment
     name: prometheus-operator-admission-webhook
     uid: e0a5e824-eec2-49c5-a8e6-15b021dd9add
-  resourceVersion: "8370"
+  resourceVersion: "8374"
   uid: b756bd42-ba35-4333-bd4a-e1bcc5e65050
 spec:
   replicas: 2
@@ -242,5 +244,6 @@ spec:
             path: tls.key
           secretName: prometheus-operator-admission-webhook-tls
 status:
+  fullyLabeledReplicas: 2
   observedGeneration: 1
-  replicas: 0
+  replicas: 2
