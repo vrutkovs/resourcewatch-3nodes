@@ -179,6 +179,26 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:46:04Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:46:05Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           k:{"type":"ContainersReady"}:
@@ -205,31 +225,18 @@ metadata:
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.130.0.38"}:
+            .: {}
+            f:ip: {}
         f:startTime: {}
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:04Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.ovn.org/pod-networks: {}
-    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
-    operation: Update
-    time: "2023-03-08T11:46:04Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.v1.cni.cncf.io/network-status: {}
-          f:k8s.v1.cni.cncf.io/networks-status: {}
-    manager: multus
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:46:05Z"
+    time: "2023-03-08T11:46:19Z"
   name: packageserver-675d8dbdf7-nn4kq
   namespace: openshift-operator-lifecycle-manager
   ownerReferences:
@@ -239,7 +246,7 @@ metadata:
     kind: ReplicaSet
     name: packageserver-675d8dbdf7
     uid: a9a7b6a0-2460-4c98-aa41-0ee4464a6a72
-  resourceVersion: "7981"
+  resourceVersion: "8287"
   uid: 50f7834d-df7a-4750-94f1-79f72ddef34b
 spec:
   affinity:
@@ -409,17 +416,21 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:aa84bb1f53223ad293c33c89edef6d20764cfbd2338351bc4a92a773ec2e864b
-    imageID: ""
+  - containerID: cri-o://56208424987d42711388db9419830b55a7a2e5bf306a963e20bb17460f572626
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:aa84bb1f53223ad293c33c89edef6d20764cfbd2338351bc4a92a773ec2e864b
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:aa84bb1f53223ad293c33c89edef6d20764cfbd2338351bc4a92a773ec2e864b
     lastState: {}
     name: packageserver
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
+      running:
+        startedAt: "2023-03-08T11:46:18Z"
   hostIP: 10.0.0.3
-  phase: Pending
+  phase: Running
+  podIP: 10.130.0.38
+  podIPs:
+  - ip: 10.130.0.38
   qosClass: Burstable
   startTime: "2023-03-08T11:46:04Z"
