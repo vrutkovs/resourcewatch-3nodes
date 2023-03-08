@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:49:31Z"
-deprecatedLastTimestamp: "2023-03-08T11:49:31Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:47Z"
 deprecatedSource:
   component: oauth-apiserver-oauthapiservercontrollerworkloadcontroller
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: authentication-operator
     operation: Update
-    time: "2023-03-08T11:49:31Z"
+    time: "2023-03-08T11:51:47Z"
   name: authentication-operator.174a6f491f880d5e
   namespace: openshift-authentication-operator
-  resourceVersion: "13296"
+  resourceVersion: "18408"
   uid: f307e6a9-83b3-4acc-a5bf-fb64283f1c8e
 note: Updated Deployment.apps/apiserver -n openshift-oauth-apiserver because it changed
 reason: DeploymentUpdated
