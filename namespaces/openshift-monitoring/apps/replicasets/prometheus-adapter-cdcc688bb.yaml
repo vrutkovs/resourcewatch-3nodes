@@ -223,7 +223,7 @@ metadata:
     kind: Deployment
     name: prometheus-adapter
     uid: 0b950bf1-fee9-49bb-acfa-24b26c8f7005
-  resourceVersion: "28526"
+  resourceVersion: "28528"
   uid: 52da58d6-d10a-4b86-8d89-1fd9d375228d
 spec:
   replicas: 2
@@ -376,8 +376,8 @@ spec:
           name: adapter-config
         name: config
 status:
-  availableReplicas: 1
+  availableReplicas: 2
   fullyLabeledReplicas: 2
   observedGeneration: 1
-  readyReplicas: 1
+  readyReplicas: 2
   replicas: 2
