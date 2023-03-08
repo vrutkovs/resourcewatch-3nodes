@@ -140,7 +140,7 @@ metadata:
     kind: Deployment
     name: downloads
     uid: a02fb524-5938-4dee-92ad-ab4efade6175
-  resourceVersion: "25209"
+  resourceVersion: "25214"
   uid: 4696ba9b-c3bd-4250-8561-bf9aba8c375a
 spec:
   replicas: 2
@@ -284,8 +284,8 @@ spec:
         operator: Exists
         tolerationSeconds: 120
 status:
-  availableReplicas: 1
+  availableReplicas: 2
   fullyLabeledReplicas: 2
   observedGeneration: 1
-  readyReplicas: 1
+  readyReplicas: 2
   replicas: 2
