@@ -1,0 +1,47 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:23Z"
+deprecatedSource:
+  component: cluster-authentication-operator-config-observer-configobserver
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: authentication-operator
+    operation: Update
+    time: "2023-03-08T11:45:23Z"
+  name: authentication-operator.174a6f0f7460f679
+  namespace: openshift-authentication-operator
+  resourceVersion: "5188"
+  uid: 730bd775-51af-446c-9ab0-9d83e93cf80e
+note: 'Writing updated section ("oauthServer") of observed config: "\u00a0\u00a0map[string]interface{}(\n-\u00a0\tnil,\n+\u00a0\t{\n+\u00a0\t\t\"corsAllowedOrigins\":
+  []interface{}{string(`//127\\.0\\.0\\.1(:|$)`), string(\"//localhost(:|$)\")},\n+\u00a0\t\t\"oauthConfig\":
+  map[string]interface{}{\n+\u00a0\t\t\t\"assetPublicURL\": string(\"\"),\n+\u00a0\t\t\t\"loginURL\":       string(\"https://api.vrutkovs.origin-gce.dev.openshift.com:6443\"),\n+\u00a0\t\t\t\"tokenConfig\":
+  map[string]interface{}{\n+\u00a0\t\t\t\t\"accessTokenMaxAgeSeconds\":    float64(86400),\n+\u00a0\t\t\t\t\"authorizeTokenMaxAgeSeconds\":
+  float64(300),\n+\u00a0\t\t\t},\n+\u00a0\t\t},\n+\u00a0\t\t\"serverArguments\": map[string]interface{}{\n+\u00a0\t\t\t\"audit-log-format\":    []interface{}{string(\"json\")},\n+\u00a0\t\t\t\"audit-log-maxbackup\":
+  []interface{}{string(\"10\")},\n+\u00a0\t\t\t\"audit-log-maxsize\":   []interface{}{string(\"100\")},\n+\u00a0\t\t\t\"audit-log-path\":      []interface{}{string(\"/var/log/oauth-server/audit.log\")},\n+\u00a0\t\t\t\"audit-policy-file\":   []interface{}{string(\"/var/run/configmaps/audit/audit.\"...)},\n+\u00a0\t\t},\n+\u00a0\t\t\"servingInfo\":
+  map[string]interface{}{\n+\u00a0\t\t\t\"cipherSuites\": []interface{}{\n+\u00a0\t\t\t\tstring(\"TLS_ECDHE_ECDSA_WITH_AES_128_GCM\"...),\n+\u00a0\t\t\t\tstring(\"TLS_ECDHE_RSA_WITH_AES_128_GCM_S\"...),\n+\u00a0\t\t\t\tstring(\"TLS_ECDHE_ECDSA_WITH_AES_256_GCM\"...),\n+\u00a0\t\t\t\tstring(\"TLS_ECDHE_RSA_WITH_AES_256_GCM_S\"...),
+  ...,\n+\u00a0\t\t\t},\n+\u00a0\t\t\t\"minTLSVersion\": string(\"VersionTLS12\"),\n+\u00a0\t\t},\n+\u00a0\t\t\"volumesToMount\":
+  map[string]interface{}{\"identityProviders\": string(\"{}\")},\n+\u00a0\t},\n\u00a0\u00a0)\n"'
+reason: ObservedConfigChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: authentication-operator
+  namespace: openshift-authentication-operator
+  uid: 0efac7b0-177c-4814-9d2b-04ba66ce84f1
+type: Normal
