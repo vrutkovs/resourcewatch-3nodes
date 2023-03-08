@@ -46,22 +46,20 @@ metadata:
     manager: cluster-storage-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:23Z"
+    time: "2023-03-08T11:45:24Z"
   name: storage
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "5291"
+  resourceVersion: "5346"
   uid: b0a3f029-1b40-4919-9a2a-f2c3558d8152
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:45:19Z"
-    message: 'DefaultStorageClassControllerDegraded: Operation cannot be fulfilled
-      on storages.operator.openshift.io "cluster": the object has been modified; please
-      apply your changes to the latest version and try again'
+    message: All is well
     reason: AsExpected
     status: "False"
     type: Degraded
