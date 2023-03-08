@@ -276,6 +276,17 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:59Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           k:{"type":"ContainersReady"}:
@@ -303,6 +314,7 @@ metadata:
         f:containerStatuses: {}
         f:hostIP: {}
         f:initContainerStatuses: {}
+        f:phase: {}
         f:podIP: {}
         f:podIPs:
           .: {}
@@ -313,18 +325,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:59Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.v1.cni.cncf.io/network-status: {}
-          f:k8s.v1.cni.cncf.io/networks-status: {}
-    manager: multus
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:51:59Z"
+    time: "2023-03-08T11:52:00Z"
   name: apiserver-86c9ff68c6-tr29v
   namespace: openshift-oauth-apiserver
   ownerReferences:
@@ -334,7 +335,7 @@ metadata:
     kind: ReplicaSet
     name: apiserver-86c9ff68c6
     uid: 80dbd918-5c00-4f43-af31-c20519489df0
-  resourceVersion: "18799"
+  resourceVersion: "18810"
   uid: 273a6baf-a5bc-49a0-9647-d5b57fb91df8
 spec:
   affinity:
@@ -578,16 +579,17 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:de9ca248d0dd0f10cd95b0ac2d6a671bb517950dfba3f74e67e5e6421f9aa788
-    imageID: ""
+  - containerID: cri-o://4aaebd274f9567f640986a7758436b511a5c19b74f57532231d0ca3b7ff1c0c0
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:de9ca248d0dd0f10cd95b0ac2d6a671bb517950dfba3f74e67e5e6421f9aa788
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:de9ca248d0dd0f10cd95b0ac2d6a671bb517950dfba3f74e67e5e6421f9aa788
     lastState: {}
     name: oauth-apiserver
     ready: false
     restartCount: 0
     started: false
     state:
-      waiting:
-        reason: PodInitializing
+      running:
+        startedAt: "2023-03-08T11:51:59Z"
   hostIP: 10.0.0.5
   initContainerStatuses:
   - containerID: cri-o://cc1a9fbf88885f232d045c8a3ccb8c78ba34ef956080a24ae3a3a2deaa664a95
@@ -604,7 +606,7 @@ status:
         finishedAt: "2023-03-08T11:51:59Z"
         reason: Completed
         startedAt: "2023-03-08T11:51:59Z"
-  phase: Pending
+  phase: Running
   podIP: 10.129.0.16
   podIPs:
   - ip: 10.129.0.16
