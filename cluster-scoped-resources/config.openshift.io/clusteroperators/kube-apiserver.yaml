@@ -44,21 +44,21 @@ metadata:
     manager: cluster-kube-apiserver-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:49:02Z"
+    time: "2023-03-08T11:49:06Z"
   name: kube-apiserver
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "12773"
+  resourceVersion: "12800"
   uid: ef706269-fd7e-4416-af64-7cfc9719f1d3
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:47:22Z"
-    message: 'GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal,
-      Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal]'
+    message: 'GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal,
+      Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal]'
     reason: GuardController_SyncError
     status: "True"
     type: Degraded
