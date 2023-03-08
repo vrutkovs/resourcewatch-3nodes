@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:58Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:58Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:58Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:52:58Z"
+  name: image-registry-7dc9976b6f-fnszp.174a6f796d969570
+  namespace: openshift-image-registry
+  resourceVersion: "20671"
+  uid: bf77a5ef-4b80-4837-93e6-29e80566f073
+note: Created container registry
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{registry}
+  kind: Pod
+  name: image-registry-7dc9976b6f-fnszp
+  namespace: openshift-image-registry
+  resourceVersion: "20616"
+  uid: 7793bf3c-c12d-4a02-a71c-5ba95d87e2de
+type: Normal
