@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:09Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:09Z"
+deprecatedSource:
+  component: controllermanager
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:09Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:58:09Z"
+  name: downloads.174a6fc1bd6dcfcd
+  namespace: openshift-console
+  resourceVersion: "24699"
+  uid: 42ce94a4-bd87-443f-9364-b8f26b3fe08b
+note: No matching pods found
+reason: NoPods
+regarding:
+  apiVersion: policy/v1
+  kind: PodDisruptionBudget
+  name: downloads
+  namespace: openshift-console
+  resourceVersion: "24692"
+  uid: c3c8409c-7ccc-4710-8bfa-438cfb6e5837
+type: Normal
