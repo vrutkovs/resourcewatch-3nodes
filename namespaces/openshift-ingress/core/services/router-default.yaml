@@ -57,10 +57,13 @@ metadata:
         f:finalizers:
           .: {}
           v:"service.kubernetes.io/load-balancer-cleanup": {}
+      f:status:
+        f:loadBalancer:
+          f:ingress: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:50:01Z"
+    time: "2023-03-08T11:50:40Z"
   name: router-default
   namespace: openshift-ingress
   ownerReferences:
@@ -69,7 +72,7 @@ metadata:
     kind: Deployment
     name: router-default
     uid: af68616a-a6b5-4a2b-b8e1-6b2e06b46aa8
-  resourceVersion: "15142"
+  resourceVersion: "16792"
   uid: c5a8ca61-9e2b-4fe6-801d-4565fad2a0ba
 spec:
   allocateLoadBalancerNodePorts: true
@@ -98,4 +101,6 @@ spec:
   sessionAffinity: None
   type: LoadBalancer
 status:
-  loadBalancer: {}
+  loadBalancer:
+    ingress:
+    - ip: 34.89.117.14
