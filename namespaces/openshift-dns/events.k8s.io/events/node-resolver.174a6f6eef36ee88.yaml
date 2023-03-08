@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:13Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:13Z"
+deprecatedSource:
+  component: daemonset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:13Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:52:13Z"
+  name: node-resolver.174a6f6eef36ee88
+  namespace: openshift-dns
+  resourceVersion: "19392"
+  uid: ecc04328-6d2a-4fa7-91db-c7d215f59b28
+note: 'Created pod: node-resolver-6qk6f'
+reason: SuccessfulCreate
+regarding:
+  apiVersion: apps/v1
+  kind: DaemonSet
+  name: node-resolver
+  namespace: openshift-dns
+  resourceVersion: "18976"
+  uid: 42dd5f3a-19af-47b7-9872-7577d1acf346
+type: Normal
