@@ -44,14 +44,14 @@ metadata:
     manager: authentication-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:48:53Z"
+    time: "2023-03-08T11:49:01Z"
   name: authentication
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "12610"
+  resourceVersion: "12746"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
@@ -71,7 +71,6 @@ status:
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:45:21Z"
     message: |-
-      APIServicesAvailable: apiservices.apiregistration.k8s.io/v1.oauth.openshift.io: not available: failing or missing response from https://10.128.0.18:8443/apis/oauth.openshift.io/v1: Get "https://10.128.0.18:8443/apis/oauth.openshift.io/v1": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
       APIServicesAvailable: apiservices.apiregistration.k8s.io/v1.user.openshift.io: not available: failing or missing response from https://10.130.0.40:8443/apis/user.openshift.io/v1: Get "https://10.130.0.40:8443/apis/user.openshift.io/v1": dial tcp 10.130.0.40:8443: i/o timeout
       OAuthServerServiceEndpointAccessibleControllerAvailable: Get "https://172.30.73.115:443/healthz": dial tcp 172.30.73.115:443: connect: connection refused
       OAuthServerServiceEndpointsEndpointAccessibleControllerAvailable: endpoints "oauth-openshift" not found
