@@ -254,7 +254,6 @@ metadata:
         f:observedGeneration: {}
         f:readyReplicas: {}
         f:replicas: {}
-        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -262,7 +261,7 @@ metadata:
     time: "2023-03-08T12:03:13Z"
   name: console
   namespace: openshift-console
-  resourceVersion: "29344"
+  resourceVersion: "29350"
   uid: 8f84f431-418b-4093-8b7b-7db6c01ba2b1
 spec:
   progressDeadlineSeconds: 600
@@ -445,5 +444,4 @@ status:
   observedGeneration: 3
   readyReplicas: 2
   replicas: 3
-  unavailableReplicas: 1
   updatedReplicas: 2
