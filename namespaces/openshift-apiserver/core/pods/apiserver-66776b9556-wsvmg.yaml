@@ -419,7 +419,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:50:18Z"
+    time: "2023-03-08T11:50:21Z"
   name: apiserver-66776b9556-wsvmg
   namespace: openshift-apiserver
   ownerReferences:
@@ -429,7 +429,7 @@ metadata:
     kind: ReplicaSet
     name: apiserver-66776b9556
     uid: 686ff86f-4538-4b72-8509-1883a769e1e5
-  resourceVersion: "16493"
+  resourceVersion: "16533"
   uid: 9654a085-e1d4-462f-8813-3257c42edbdc
 spec:
   affinity:
@@ -722,7 +722,7 @@ status:
     name: openshift-apiserver
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
       running:
         startedAt: "2023-03-08T11:50:17Z"
