@@ -44,14 +44,14 @@ metadata:
     manager: cluster-node-tuning-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:13Z"
+    time: "2023-03-08T11:52:52Z"
   name: node-tuning
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "19354"
+  resourceVersion: "20482"
   uid: ca4030ad-a022-44d9-9a4d-490d03398918
 spec: {}
 status:
@@ -61,8 +61,8 @@ status:
     reason: AsExpected
     status: "True"
     type: Available
-  - lastTransitionTime: "2023-03-08T11:52:13Z"
-    message: Waiting for 3/6 Profiles to be applied
+  - lastTransitionTime: "2023-03-08T11:52:52Z"
+    message: Waiting for 2/6 Profiles to be applied
     reason: ProfileProgressing
     status: "True"
     type: Progressing
