@@ -433,7 +433,7 @@ metadata:
     time: "2023-03-08T11:45:32Z"
   name: gcp-pd-csi-driver-controller
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "6193"
+  resourceVersion: "6196"
   uid: c7179cc3-3b74-4f83-b872-a437a7b51e6e
 spec:
   progressDeadlineSeconds: 600
@@ -776,4 +776,4 @@ status:
     type: Progressing
   observedGeneration: 2
   replicas: 2
-  unavailableReplicas: 1
+  unavailableReplicas: 2
