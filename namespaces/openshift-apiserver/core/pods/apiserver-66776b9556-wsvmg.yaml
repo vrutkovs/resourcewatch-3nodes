@@ -398,8 +398,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -416,6 +414,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:50:22Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:54:19Z"
   name: apiserver-66776b9556-wsvmg
   namespace: openshift-apiserver
   ownerReferences:
@@ -425,7 +435,7 @@ metadata:
     kind: ReplicaSet
     name: apiserver-66776b9556
     uid: 686ff86f-4538-4b72-8509-1883a769e1e5
-  resourceVersion: "16550"
+  resourceVersion: "21339"
   uid: 9654a085-e1d4-462f-8813-3257c42edbdc
 spec:
   affinity:
@@ -695,8 +705,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:50:22Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:54:19Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:50:22Z"
