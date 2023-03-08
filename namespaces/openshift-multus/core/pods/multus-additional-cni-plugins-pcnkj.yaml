@@ -385,29 +385,24 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
         f:initContainerStatuses: {}
+        f:phase: {}
         f:podIP: {}
         f:podIPs:
           .: {}
@@ -418,7 +413,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:53:05Z"
+    time: "2023-03-08T11:55:12Z"
   name: multus-additional-cni-plugins-pcnkj
   namespace: openshift-multus
   ownerReferences:
@@ -428,7 +423,7 @@ metadata:
     kind: DaemonSet
     name: multus-additional-cni-plugins
     uid: 54f8703d-bc01-42c1-bb67-b29ebf0051fe
-  resourceVersion: "20871"
+  resourceVersion: "22345"
   uid: 684e71c4-ac90-42a3-8c65-b32caa8a3063
 spec:
   affinity:
@@ -804,38 +799,33 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:52:13Z"
-    message: 'containers with incomplete status: [whereabouts-cni-bincopy whereabouts-cni]'
-    reason: ContainersNotInitialized
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:53:13Z"
+    status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:52:13Z"
-    message: 'containers with unready status: [kube-multus-additional-cni-plugins]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:53:14Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:52:13Z"
-    message: 'containers with unready status: [kube-multus-additional-cni-plugins]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:53:14Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:52:13Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:cc6f52aff25ba6cad2df5f4dc4ca65abcb0e46880438397646d194b9e595001f
-    imageID: ""
+  - containerID: cri-o://43f8e4195864da5e02f2b67db26f90105b4ce95ff741bbe4b0d136ca41fbc41b
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:cc6f52aff25ba6cad2df5f4dc4ca65abcb0e46880438397646d194b9e595001f
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:cc6f52aff25ba6cad2df5f4dc4ca65abcb0e46880438397646d194b9e595001f
     lastState: {}
     name: kube-multus-additional-cni-plugins
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
+      running:
+        startedAt: "2023-03-08T11:53:13Z"
   hostIP: 10.0.128.2
   initContainerStatuses:
   - containerID: cri-o://23a146262ac1f5abb869f7009522ed9354387bed41be35bf39b90b18cb5f5b9a
@@ -894,25 +884,35 @@ status:
         finishedAt: "2023-03-08T11:53:04Z"
         reason: Completed
         startedAt: "2023-03-08T11:53:04Z"
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
-    imageID: ""
+  - containerID: cri-o://2d64454bc8dab69281af0e65c8024ffcdccdbb833bb02bbb9156f3aa436fccbc
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
     lastState: {}
     name: whereabouts-cni-bincopy
-    ready: false
+    ready: true
     restartCount: 0
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
-    imageID: ""
+      terminated:
+        containerID: cri-o://2d64454bc8dab69281af0e65c8024ffcdccdbb833bb02bbb9156f3aa436fccbc
+        exitCode: 0
+        finishedAt: "2023-03-08T11:53:11Z"
+        reason: Completed
+        startedAt: "2023-03-08T11:53:11Z"
+  - containerID: cri-o://159ebe57184d87c1ae3b6c02027f0b87e9274bd48d6abeff55cde0fa7862978f
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
     lastState: {}
     name: whereabouts-cni
-    ready: false
+    ready: true
     restartCount: 0
     state:
-      waiting:
-        reason: PodInitializing
-  phase: Pending
+      terminated:
+        containerID: cri-o://159ebe57184d87c1ae3b6c02027f0b87e9274bd48d6abeff55cde0fa7862978f
+        exitCode: 0
+        finishedAt: "2023-03-08T11:53:12Z"
+        reason: Completed
+        startedAt: "2023-03-08T11:53:12Z"
+  phase: Running
   podIP: 10.0.128.2
   podIPs:
   - ip: 10.0.128.2
