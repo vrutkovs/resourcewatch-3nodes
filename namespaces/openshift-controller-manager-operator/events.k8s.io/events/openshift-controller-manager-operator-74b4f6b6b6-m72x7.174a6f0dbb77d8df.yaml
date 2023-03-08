@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:15Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:15Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:47Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:28Z"
+    time: "2023-03-08T11:46:47Z"
   name: openshift-controller-manager-operator-74b4f6b6b6-m72x7.174a6f0dbb77d8df
   namespace: openshift-controller-manager-operator
-  resourceVersion: "5664"
+  resourceVersion: "9833"
   uid: faaec798-7a6a-4daf-adef-61d9e6a3946b
 note: Created container openshift-controller-manager-operator
 reason: Created
