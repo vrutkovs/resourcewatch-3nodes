@@ -576,8 +576,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -593,6 +591,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:45:49Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:54:20Z"
   name: ovnkube-master-5gskw
   namespace: openshift-ovn-kubernetes
   ownerReferences:
@@ -602,7 +612,7 @@ metadata:
     kind: DaemonSet
     name: ovnkube-master
     uid: 338793fb-01a5-482d-ba71-a400c8ada556
-  resourceVersion: "7173"
+  resourceVersion: "21718"
   uid: adb6806f-8efc-41a2-aad1-652ed326b47b
 spec:
   affinity:
@@ -1476,8 +1486,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:49Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:54:20Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:49Z"
