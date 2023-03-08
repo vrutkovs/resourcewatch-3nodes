@@ -3,6 +3,28 @@ kind: Pod
 metadata:
   annotations:
     k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.130.0.26/23"],"mac_address":"0a:58:0a:82:00:1a","gateway_ips":["10.130.0.1"],"ip_address":"10.130.0.26/23","gateway_ip":"10.130.0.1"}}'
+    k8s.v1.cni.cncf.io/network-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.130.0.26"
+          ],
+          "mac": "0a:58:0a:82:00:1a",
+          "default": true,
+          "dns": {}
+      }]
+    k8s.v1.cni.cncf.io/networks-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.130.0.26"
+          ],
+          "mac": "0a:58:0a:82:00:1a",
+          "default": true,
+          "dns": {}
+      }]
     openshift.io/scc: nonroot-v2
     seccomp.security.alpha.kubernetes.io/pod: runtime/default
   creationTimestamp: "2023-03-08T11:41:15Z"
@@ -156,6 +178,17 @@ metadata:
     manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     operation: Update
     time: "2023-03-08T11:44:54Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:44:55Z"
   name: openshift-config-operator-6cd8ffb884-2ck28
   namespace: openshift-config-operator
   ownerReferences:
@@ -165,7 +198,7 @@ metadata:
     kind: ReplicaSet
     name: openshift-config-operator-6cd8ffb884
     uid: a4c6143c-a5de-4c6a-ac60-b22d7eef5b31
-  resourceVersion: "3857"
+  resourceVersion: "3915"
   uid: 09ee5400-bdd3-4460-be99-859f41444c9c
 spec:
   containers:
