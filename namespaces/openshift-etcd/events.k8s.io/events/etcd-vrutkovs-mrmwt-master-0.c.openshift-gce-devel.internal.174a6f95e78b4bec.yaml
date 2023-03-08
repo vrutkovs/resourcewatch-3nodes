@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:55:00Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:00Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:55:12Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:55:12Z"
+  name: etcd-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6f95e78b4bec
+  namespace: openshift-etcd
+  resourceVersion: "22369"
+  uid: 48b84783-3e1f-46c8-846f-5fe333a83e88
+note: Started container etcd-readyz
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{etcd-readyz}
+  kind: Pod
+  name: etcd-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+  namespace: openshift-etcd
+  uid: 5481400bdace34108e9444255991407e
+type: Normal
