@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:57:42Z"
+deprecatedLastTimestamp: "2023-03-08T11:57:42Z"
+deprecatedSource:
+  component: machine-api-controllers-67b4c49c5-snjk7_2f7b0981-8c60-4357-9e3d-d6ea9ee2ee05
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:57:42Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: machineset-controller
+    operation: Update
+    time: "2023-03-08T11:57:42Z"
+  name: cluster-api-provider-machineset-leader.174a6fbb86d99011
+  namespace: openshift-machine-api
+  resourceVersion: "24321"
+  uid: 84704194-812a-42fa-bac8-b56c0f018724
+note: machine-api-controllers-67b4c49c5-snjk7_2f7b0981-8c60-4357-9e3d-d6ea9ee2ee05
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: cluster-api-provider-machineset-leader
+  namespace: openshift-machine-api
+  resourceVersion: "24320"
+  uid: 70537882-55ba-49cf-a291-739574fcfd21
+type: Normal
