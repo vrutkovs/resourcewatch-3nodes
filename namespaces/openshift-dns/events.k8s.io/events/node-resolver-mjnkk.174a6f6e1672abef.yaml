@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:09Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:09Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:09Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:52:09Z"
+  name: node-resolver-mjnkk.174a6f6e1672abef
+  namespace: openshift-dns
+  resourceVersion: "19205"
+  uid: 4624e590-8c85-4ad9-9ee0-f0f50ee477c6
+note: Pulling image "registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c79d8916f1a532feecbc3a3939744802bed07adc181564fbc842812e10a930eb"
+reason: Pulling
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{dns-node-resolver}
+  kind: Pod
+  name: node-resolver-mjnkk
+  namespace: openshift-dns
+  resourceVersion: "18977"
+  uid: f3ca3bdf-c795-4fa2-bcd1-ce46fc28c2a0
+type: Normal
