@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:44Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:44Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:45Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:44Z"
+    time: "2023-03-08T11:45:45Z"
   name: gcp-pd-csi-driver-node-fnmh8.174a6f146d899853
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "6837"
+  resourceVersion: "6937"
   uid: 150ff22e-785e-4808-913d-e51ccd1dd8a2
 note: Stopping container csi-node-driver-registrar
 reason: Killing
