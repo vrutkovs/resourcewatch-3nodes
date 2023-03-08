@@ -113,13 +113,15 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:17Z"
+    time: "2023-03-08T11:55:19Z"
   name: csi-snapshot-controller-operator-f965f4fbc
   namespace: openshift-cluster-storage-operator
   ownerReferences:
@@ -129,7 +131,7 @@ metadata:
     kind: Deployment
     name: csi-snapshot-controller-operator
     uid: 7ecf14bc-365f-4dfd-93bf-56fe36844200
-  resourceVersion: "21661"
+  resourceVersion: "22517"
   uid: 33464f00-90d0-4e17-a68f-94c26995e6f1
 spec:
   replicas: 1
@@ -204,6 +206,8 @@ spec:
         key: node-role.kubernetes.io/master
         operator: Exists
 status:
+  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
+  readyReplicas: 1
   replicas: 1
