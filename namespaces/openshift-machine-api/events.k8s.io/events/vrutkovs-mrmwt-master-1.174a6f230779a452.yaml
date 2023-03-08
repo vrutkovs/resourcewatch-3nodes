@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:47Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:47Z"
+deprecatedSource:
+  component: gcpcontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:47Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: machine-controller-manager
+    operation: Update
+    time: "2023-03-08T11:46:47Z"
+  name: vrutkovs-mrmwt-master-1.174a6f230779a452
+  namespace: openshift-machine-api
+  resourceVersion: "9805"
+  uid: 93d50177-f689-45b4-a3b0-941fcdd0fde9
+note: Updated Machine vrutkovs-mrmwt-master-1
+reason: Update
+regarding:
+  apiVersion: machine.openshift.io/v1beta1
+  kind: Machine
+  name: vrutkovs-mrmwt-master-1
+  namespace: openshift-machine-api
+  resourceVersion: "9683"
+  uid: 23dd51e4-f9a5-4252-b51c-f8192bf8aafa
+type: Normal
