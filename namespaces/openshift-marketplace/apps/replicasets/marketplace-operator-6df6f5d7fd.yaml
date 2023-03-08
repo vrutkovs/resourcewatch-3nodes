@@ -176,13 +176,15 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:29Z"
+    time: "2023-03-08T11:55:19Z"
   name: marketplace-operator-6df6f5d7fd
   namespace: openshift-marketplace
   ownerReferences:
@@ -192,7 +194,7 @@ metadata:
     kind: Deployment
     name: marketplace-operator
     uid: 37ce1e25-91a3-48d2-8ac4-d128e869226f
-  resourceVersion: "21739"
+  resourceVersion: "22522"
   uid: 1ccdb06c-a218-47c9-b1c1-4aa4e3a6ac93
 spec:
   replicas: 1
@@ -317,6 +319,8 @@ spec:
           defaultMode: 420
           secretName: marketplace-operator-metrics
 status:
+  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
+  readyReplicas: 1
   replicas: 1
