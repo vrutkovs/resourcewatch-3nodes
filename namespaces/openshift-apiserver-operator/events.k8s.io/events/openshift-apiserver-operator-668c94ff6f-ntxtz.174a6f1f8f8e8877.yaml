@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:32Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:32Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:22Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:46:32Z"
+    time: "2023-03-08T11:55:22Z"
   name: openshift-apiserver-operator-668c94ff6f-ntxtz.174a6f1f8f8e8877
   namespace: openshift-apiserver-operator
-  resourceVersion: "9052"
+  resourceVersion: "22607"
   uid: f6906aa9-acf1-4269-b85d-77c7ccc6a9d8
 note: Container image "registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:f5fa38fa75625429b3b900be9125e29d1bf8df17bff5690be960b42235e5822e"
   already present on machine
