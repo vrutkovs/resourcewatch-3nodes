@@ -1,0 +1,41 @@
+action: Scheduling
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:48:27.861783Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:48:27Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:48:27Z"
+  name: network-check-source-7d8cf97c5c-5vvvq.174a6f3a6c207ad3
+  namespace: openshift-network-diagnostics
+  resourceVersion: "12331"
+  uid: e1b31abe-5fb0-481d-b9f3-26bf98b6f514
+note: '0/3 nodes are available: 3 node(s) had untolerated taint {node-role.kubernetes.io/master:
+  }. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.'
+reason: FailedScheduling
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: network-check-source-7d8cf97c5c-5vvvq
+  namespace: openshift-network-diagnostics
+  resourceVersion: "3018"
+  uid: ba02ad93-2413-4416-adbc-71c0d93146ac
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Warning
