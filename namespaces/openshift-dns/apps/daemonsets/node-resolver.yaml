@@ -103,7 +103,6 @@ metadata:
         f:desiredNumberScheduled: {}
         f:numberAvailable: {}
         f:numberReady: {}
-        f:numberUnavailable: {}
         f:observedGeneration: {}
         f:updatedNumberScheduled: {}
     manager: kube-controller-manager
@@ -118,7 +117,7 @@ metadata:
     kind: DNS
     name: default
     uid: 96ec4305-1ac6-482c-8f61-7437461d76be
-  resourceVersion: "20358"
+  resourceVersion: "20372"
   uid: 42dd5f3a-19af-47b7-9872-7577d1acf346
 spec:
   revisionHistoryLimit: 10
@@ -242,9 +241,8 @@ spec:
 status:
   currentNumberScheduled: 6
   desiredNumberScheduled: 6
-  numberAvailable: 5
+  numberAvailable: 6
   numberMisscheduled: 0
-  numberReady: 5
-  numberUnavailable: 1
+  numberReady: 6
   observedGeneration: 1
   updatedNumberScheduled: 6
