@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:50:04Z"
+deprecatedLastTimestamp: "2023-03-08T11:50:04Z"
+deprecatedSource:
+  component: kube-controller-manager-operator-satokensignercontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:50:04Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-controller-manager-operator
+    operation: Update
+    time: "2023-03-08T11:50:04Z"
+  name: kube-controller-manager-operator.174a6f50fb28d49b
+  namespace: openshift-kube-controller-manager-operator
+  resourceVersion: "16047"
+  uid: e48b7df9-2ef2-40e3-903f-fe569af1968e
+note: found expected kube-apiserver endpoints
+reason: SATokenSignerControllerOK
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-controller-manager-operator
+  namespace: openshift-kube-controller-manager-operator
+  uid: 71b7e195-265a-4ece-8449-dc704acd0130
+type: Normal
