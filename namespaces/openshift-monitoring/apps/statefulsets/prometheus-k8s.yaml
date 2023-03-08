@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   annotations:
-    prometheus-operator-input-hash: "6320306655143189411"
+    prometheus-operator-input-hash: "14170098342767399914"
   creationTimestamp: "2023-03-08T11:59:08Z"
   generation: 1
   labels:
@@ -14,6 +14,21 @@ metadata:
     operator.prometheus.io/name: k8s
     operator.prometheus.io/shard: "0"
   managedFields:
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:collisionCount: {}
+        f:currentReplicas: {}
+        f:currentRevision: {}
+        f:observedGeneration: {}
+        f:replicas: {}
+        f:updateRevision: {}
+        f:updatedReplicas: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:59:08Z"
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -600,22 +615,7 @@ metadata:
           f:type: {}
     manager: PrometheusOperator
     operation: Update
-    time: "2023-03-08T11:59:08Z"
-  - apiVersion: apps/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:status:
-        f:collisionCount: {}
-        f:currentReplicas: {}
-        f:currentRevision: {}
-        f:observedGeneration: {}
-        f:replicas: {}
-        f:updateRevision: {}
-        f:updatedReplicas: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:59:08Z"
+    time: "2023-03-08T11:59:09Z"
   name: prometheus-k8s
   namespace: openshift-monitoring
   ownerReferences:
@@ -625,7 +625,7 @@ metadata:
     kind: Prometheus
     name: k8s
     uid: 6b21d3da-cfd2-48a5-a2dd-ff3d32563453
-  resourceVersion: "26344"
+  resourceVersion: "26350"
   uid: 64bf94c0-7125-4d69-824b-802c773560a3
 spec:
   podManagementPolicy: Parallel
