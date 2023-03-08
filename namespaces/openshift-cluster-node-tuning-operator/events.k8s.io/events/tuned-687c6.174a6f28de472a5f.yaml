@@ -1,0 +1,44 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:47:12Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:12Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:47:12Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:47:12Z"
+  name: tuned-687c6.174a6f28de472a5f
+  namespace: openshift-cluster-node-tuning-operator
+  resourceVersion: "10573"
+  uid: cd737c8f-ff08-4151-984d-16d550737cc5
+note: Container image "registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:4ad29b1b7065799a38a31e70c5343f9d73ac2310c8ee91b62a7aa11f5886e621"
+  already present on machine
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{tuned}
+  kind: Pod
+  name: tuned-687c6
+  namespace: openshift-cluster-node-tuning-operator
+  resourceVersion: "10525"
+  uid: 862a1ac4-9137-4914-8e70-0163803a1aab
+type: Normal
