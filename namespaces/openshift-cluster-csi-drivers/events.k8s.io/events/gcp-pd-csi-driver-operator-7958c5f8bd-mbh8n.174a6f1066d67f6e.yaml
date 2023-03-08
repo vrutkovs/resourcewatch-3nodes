@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:27Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:27Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:11Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:27Z"
+    time: "2023-03-08T11:55:14Z"
   name: gcp-pd-csi-driver-operator-7958c5f8bd-mbh8n.174a6f1066d67f6e
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "5569"
+  resourceVersion: "22437"
   uid: 0d746e36-ce19-4847-b690-d0a4c943ee8e
 note: Started container gcp-pd-csi-driver-operator
 reason: Started
