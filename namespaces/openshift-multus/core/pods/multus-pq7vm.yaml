@@ -187,7 +187,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:46Z"
+    time: "2023-03-08T11:55:53Z"
   name: multus-pq7vm
   namespace: openshift-multus
   ownerReferences:
@@ -197,7 +197,7 @@ metadata:
     kind: DaemonSet
     name: multus
     uid: e45c8b1f-32f4-4ba0-87c5-7b1e0564bf30
-  resourceVersion: "20374"
+  resourceVersion: "22949"
   uid: be18467d-2998-41fb-9259-b20cc91177e1
 spec:
   affinity:
