@@ -309,7 +309,7 @@ metadata:
     time: "2023-03-08T11:58:06Z"
   name: oauth-openshift
   namespace: openshift-authentication
-  resourceVersion: "24599"
+  resourceVersion: "24603"
   uid: 797a38d4-d6e9-4804-87be-ecc7f64e6aec
 spec:
   progressDeadlineSeconds: 600
@@ -515,13 +515,13 @@ spec:
           optional: true
         name: v4-0-config-system-trusted-ca-bundle
 status:
-  availableReplicas: 1
+  availableReplicas: 2
   conditions:
-  - lastTransitionTime: "2023-03-08T11:57:57Z"
-    lastUpdateTime: "2023-03-08T11:57:57Z"
-    message: Deployment does not have minimum availability.
-    reason: MinimumReplicasUnavailable
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:58:06Z"
+    lastUpdateTime: "2023-03-08T11:58:06Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
     type: Available
   - lastTransitionTime: "2023-03-08T11:57:57Z"
     lastUpdateTime: "2023-03-08T11:58:06Z"
@@ -530,7 +530,7 @@ status:
     status: "True"
     type: Progressing
   observedGeneration: 1
-  readyReplicas: 1
+  readyReplicas: 2
   replicas: 3
-  unavailableReplicas: 2
+  unavailableReplicas: 1
   updatedReplicas: 3
