@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:54:58Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:58Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:55:06Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:55:06Z"
+  name: authentication-operator-695c7bc445-btjmj.174a6f9555f3cee0
+  namespace: openshift-authentication-operator
+  resourceVersion: "22100"
+  uid: ff0def6d-e698-40c0-b6d0-566c002c8c26
+note: Back-off restarting failed container
+reason: BackOff
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{authentication-operator}
+  kind: Pod
+  name: authentication-operator-695c7bc445-btjmj
+  namespace: openshift-authentication-operator
+  resourceVersion: "3813"
+  uid: a234d5e3-0c84-4154-b846-0884462f94cb
+type: Warning
