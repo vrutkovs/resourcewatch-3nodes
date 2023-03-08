@@ -28,6 +28,8 @@ metadata:
     kubectl.kubernetes.io/default-container: prometheus
     openshift.io/scc: nonroot
   creationTimestamp: "2023-03-08T11:59:08Z"
+  deletionGracePeriodSeconds: 600
+  deletionTimestamp: "2023-03-08T12:10:21Z"
   generateName: prometheus-k8s-
   labels:
     app.kubernetes.io/component: prometheus
@@ -680,7 +682,7 @@ metadata:
     kind: StatefulSet
     name: prometheus-k8s
     uid: 64bf94c0-7125-4d69-824b-802c773560a3
-  resourceVersion: "26677"
+  resourceVersion: "27705"
   uid: 94754bec-b69a-4c34-9593-539c810bea91
 spec:
   affinity:
