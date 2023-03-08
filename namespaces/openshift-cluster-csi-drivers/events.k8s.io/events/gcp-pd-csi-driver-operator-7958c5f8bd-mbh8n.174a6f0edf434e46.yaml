@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:20Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:45:20Z"
+  name: gcp-pd-csi-driver-operator-7958c5f8bd-mbh8n.174a6f0edf434e46
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "4762"
+  uid: 9dfbeefe-1b64-43e1-a872-9cccae847a47
+note: Successfully assigned openshift-cluster-csi-drivers/gcp-pd-csi-driver-operator-7958c5f8bd-mbh8n
+  to vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: gcp-pd-csi-driver-operator-7958c5f8bd-mbh8n
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "4738"
+  uid: 7c672722-8a21-42ce-85f1-fe5ca30c2b10
+type: Normal
