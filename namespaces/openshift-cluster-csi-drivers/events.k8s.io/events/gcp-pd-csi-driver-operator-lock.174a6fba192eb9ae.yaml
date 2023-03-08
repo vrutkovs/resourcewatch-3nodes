@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:57:36Z"
+deprecatedLastTimestamp: "2023-03-08T11:57:36Z"
+deprecatedSource:
+  component: gcp-pd-csi-driver-operator
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:57:36Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: gcp-pd-csi-driver-operator
+    operation: Update
+    time: "2023-03-08T11:57:36Z"
+  name: gcp-pd-csi-driver-operator-lock.174a6fba192eb9ae
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "24275"
+  uid: 0c81648e-c813-483f-ac87-00f91abddc12
+note: gcp-pd-csi-driver-operator-7958c5f8bd-mbh8n_f9a96128-476e-43cc-b574-eededef1b80c
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: v1
+  kind: ConfigMap
+  name: gcp-pd-csi-driver-operator-lock
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "24273"
+  uid: 06d96924-4259-4786-bba3-a11178e1223e
+type: Normal
