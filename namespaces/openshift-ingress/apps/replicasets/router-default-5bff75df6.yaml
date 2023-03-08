@@ -292,7 +292,9 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -306,7 +308,7 @@ metadata:
     kind: Deployment
     name: router-default
     uid: af68616a-a6b5-4a2b-b8e1-6b2e06b46aa8
-  resourceVersion: "9527"
+  resourceVersion: "9534"
   uid: ddc22581-33e1-42c9-bc1b-10a46e27cad5
 spec:
   minReadySeconds: 30
@@ -507,5 +509,6 @@ spec:
           defaultMode: 420
           secretName: router-metrics-certs-default
 status:
+  fullyLabeledReplicas: 2
   observedGeneration: 1
-  replicas: 0
+  replicas: 2
