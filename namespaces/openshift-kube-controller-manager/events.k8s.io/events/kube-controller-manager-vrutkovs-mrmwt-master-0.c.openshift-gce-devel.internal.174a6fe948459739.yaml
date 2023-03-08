@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T12:00:58Z"
-deprecatedLastTimestamp: "2023-03-08T12:00:58Z"
+deprecatedLastTimestamp: "2023-03-08T12:01:08Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T12:00:58Z"
+    time: "2023-03-08T12:01:08Z"
   name: kube-controller-manager-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6fe948459739
   namespace: openshift-kube-controller-manager
-  resourceVersion: "28086"
+  resourceVersion: "28160"
   uid: d8b6d0ce-ca55-4389-b600-2a4ea610fb15
 note: 'Startup probe failed: Get "https://10.0.0.5:10357/healthz": net/http: request
   canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)'
