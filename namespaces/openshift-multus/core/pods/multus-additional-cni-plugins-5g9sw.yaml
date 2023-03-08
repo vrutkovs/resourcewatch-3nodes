@@ -393,8 +393,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Ready"}:
@@ -418,7 +416,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:53:02Z"
+    time: "2023-03-08T11:53:04Z"
   name: multus-additional-cni-plugins-5g9sw
   namespace: openshift-multus
   ownerReferences:
@@ -428,7 +426,7 @@ metadata:
     kind: DaemonSet
     name: multus-additional-cni-plugins
     uid: 54f8703d-bc01-42c1-bb67-b29ebf0051fe
-  resourceVersion: "20749"
+  resourceVersion: "20811"
   uid: 4e9e49cc-5625-442a-ac2e-cb130b0c9424
 spec:
   affinity:
@@ -804,10 +802,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:52:07Z"
-    message: 'containers with incomplete status: [whereabouts-cni]'
-    reason: ContainersNotInitialized
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:53:04Z"
+    status: "True"
     type: Initialized
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:52:07Z"
@@ -908,15 +904,20 @@ status:
         finishedAt: "2023-03-08T11:53:01Z"
         reason: Completed
         startedAt: "2023-03-08T11:53:00Z"
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
-    imageID: ""
+  - containerID: cri-o://fe8102bb8a9a826ed1989dca8181bdc26889bfd8df991f55b5b6d4f0c33828a8
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
     lastState: {}
     name: whereabouts-cni
-    ready: false
+    ready: true
     restartCount: 0
     state:
-      waiting:
-        reason: PodInitializing
+      terminated:
+        containerID: cri-o://fe8102bb8a9a826ed1989dca8181bdc26889bfd8df991f55b5b6d4f0c33828a8
+        exitCode: 0
+        finishedAt: "2023-03-08T11:53:03Z"
+        reason: Completed
+        startedAt: "2023-03-08T11:53:03Z"
   phase: Pending
   podIP: 10.0.128.4
   podIPs:
