@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:56:48Z"
-deprecatedLastTimestamp: "2023-03-08T11:57:03Z"
+deprecatedLastTimestamp: "2023-03-08T11:57:19Z"
 deprecatedSource:
   component: openshift-cluster-etcd-operator-etcd-client
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-etcd-operator
     operation: Update
-    time: "2023-03-08T11:57:03Z"
+    time: "2023-03-08T11:57:19Z"
   name: etcd-operator.174a6faf150476e3
   namespace: openshift-etcd-operator
-  resourceVersion: "24022"
+  resourceVersion: "24118"
   uid: 640139ee-b533-4c16-a3a1-758c0ae4a358
 note: 'unhealthy members: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal'
 reason: UnhealthyEtcdMember
