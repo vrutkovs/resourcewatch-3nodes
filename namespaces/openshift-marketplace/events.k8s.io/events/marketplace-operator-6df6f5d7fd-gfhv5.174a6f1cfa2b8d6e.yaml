@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 3
+deprecatedCount: 4
 deprecatedFirstTimestamp: "2023-03-08T11:46:21Z"
-deprecatedLastTimestamp: "2023-03-08T11:54:32Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:33Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -28,7 +28,7 @@ metadata:
     time: "2023-03-08T11:55:06Z"
   name: marketplace-operator-6df6f5d7fd-gfhv5.174a6f1cfa2b8d6e
   namespace: openshift-marketplace
-  resourceVersion: "22096"
+  resourceVersion: "22098"
   uid: ff0be54a-de86-4bc1-8ac1-fa8f3b19c656
 note: "Readiness probe error: Get \"http://10.130.0.24:8080/healthz\": dial tcp 10.130.0.24:8080:
   connect: connection refused\nbody: \n"
