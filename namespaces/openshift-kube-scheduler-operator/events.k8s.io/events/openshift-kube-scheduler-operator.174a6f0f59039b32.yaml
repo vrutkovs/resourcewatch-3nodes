@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:22Z"
+deprecatedSource:
+  component: openshift-cluster-kube-scheduler-operator-revisioncontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-scheduler-operator
+    operation: Update
+    time: "2023-03-08T11:45:23Z"
+  name: openshift-kube-scheduler-operator.174a6f0f59039b32
+  namespace: openshift-kube-scheduler-operator
+  resourceVersion: "5281"
+  uid: 41ee23c6-9f75-49c9-8b0f-de6d265fe636
+note: new revision 2 triggered by "configmap \"kube-scheduler-pod\" not found"
+reason: RevisionTriggered
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-kube-scheduler-operator
+  namespace: openshift-kube-scheduler-operator
+  uid: 23c26502-e53e-4a94-b472-aac9af284787
+type: Normal
