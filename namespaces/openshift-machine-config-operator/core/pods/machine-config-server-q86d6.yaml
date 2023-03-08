@@ -109,8 +109,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -126,6 +124,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:46:09Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:16Z"
   name: machine-config-server-q86d6
   namespace: openshift-machine-config-operator
   ownerReferences:
@@ -135,7 +145,7 @@ metadata:
     kind: DaemonSet
     name: machine-config-server
     uid: c51e2f82-34b2-4b67-aa75-f6bc0e63aad7
-  resourceVersion: "8103"
+  resourceVersion: "17011"
   uid: de5725e4-6518-4d9f-9237-09aff5c7d381
 spec:
   affinity:
@@ -266,8 +276,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:09Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:51:16Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:09Z"
