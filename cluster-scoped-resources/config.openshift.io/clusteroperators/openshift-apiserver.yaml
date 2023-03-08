@@ -44,20 +44,21 @@ metadata:
     manager: cluster-openshift-apiserver-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:21Z"
+    time: "2023-03-08T11:45:29Z"
   name: openshift-apiserver
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "4985"
+  resourceVersion: "5776"
   uid: 017094da-4624-48c3-a0e8-1ce824dc2841
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:45:21Z"
-    message: All is well
+    message: 'ConfigObservationDegraded: configmaps openshift-etcd/etcd-endpoints:
+      no etcd endpoint addresses found'
     reason: AsExpected
     status: "False"
     type: Degraded
