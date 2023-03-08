@@ -44,40 +44,40 @@ metadata:
     manager: authentication-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:47:46Z"
+    time: "2023-03-08T11:47:47Z"
   name: authentication
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "11190"
+  resourceVersion: "11214"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:47:24Z"
-    message: "APIServerDeploymentDegraded: waiting for observed configuration to have
-      mandatory apiServerArguments.etcd-servers\nAPIServerDeploymentDegraded: \nIngressStateEndpointsDegraded:
-      No subsets found for the endpoints of oauth-server\nOAuthServerServiceEndpointAccessibleControllerDegraded:
-      Get \"https://172.30.73.115:443/healthz\": dial tcp 172.30.73.115:443: connect:
-      connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerDegraded:
-      oauth service endpoints are not ready"
-    reason: APIServerDeployment_PreconditionNotFulfilled::IngressStateEndpoints_MissingSubsets::OAuthServerServiceEndpointAccessibleController_SyncError::OAuthServerServiceEndpointsEndpointAccessibleController_SyncError
+    message: |-
+      IngressStateEndpointsDegraded: No subsets found for the endpoints of oauth-server
+      OAuthServerServiceEndpointAccessibleControllerDegraded: Get "https://172.30.73.115:443/healthz": dial tcp 172.30.73.115:443: connect: connection refused
+      OAuthServerServiceEndpointsEndpointAccessibleControllerDegraded: oauth service endpoints are not ready
+    reason: IngressStateEndpoints_MissingSubsets::OAuthServerServiceEndpointAccessibleController_SyncError::OAuthServerServiceEndpointsEndpointAccessibleController_SyncError
     status: "True"
     type: Degraded
-  - lastTransitionTime: "2023-03-08T11:45:33Z"
-    message: 'AuthenticatorCertKeyProgressing: All is well'
-    reason: AsExpected
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:47:47Z"
+    message: 'APIServerDeploymentProgressing: deployment/apiserver.openshift-oauth-apiserver:
+      observed generation is 0, desired generation is 1.'
+    reason: APIServerDeployment_NewGeneration
+    status: "True"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:45:21Z"
     message: |-
+      APIServerDeploymentAvailable: no apiserver.openshift-oauth-apiserver pods available on any node.
       APIServicesAvailable: PreconditionNotReady
       OAuthServerServiceEndpointAccessibleControllerAvailable: Get "https://172.30.73.115:443/healthz": dial tcp 172.30.73.115:443: connect: connection refused
       OAuthServerServiceEndpointsEndpointAccessibleControllerAvailable: endpoints "oauth-openshift" not found
       ReadyIngressNodesAvailable: Authentication requires functional ingress which requires at least one schedulable and ready node. Got 0 worker nodes, 3 master nodes, 0 custom target nodes (none are schedulable or ready for ingress pods).
-    reason: APIServerDeployment_PreconditionNotFulfilled::APIServices_PreconditionNotReady::OAuthServerServiceEndpointAccessibleController_EndpointUnavailable::OAuthServerServiceEndpointsEndpointAccessibleController_ResourceNotFound::ReadyIngressNodes_NoReadyIngressNodes
+    reason: APIServerDeployment_NoPod::APIServices_PreconditionNotReady::OAuthServerServiceEndpointAccessibleController_EndpointUnavailable::OAuthServerServiceEndpointsEndpointAccessibleController_ResourceNotFound::ReadyIngressNodes_NoReadyIngressNodes
     status: "False"
     type: Available
   - lastTransitionTime: "2023-03-08T11:45:21Z"
