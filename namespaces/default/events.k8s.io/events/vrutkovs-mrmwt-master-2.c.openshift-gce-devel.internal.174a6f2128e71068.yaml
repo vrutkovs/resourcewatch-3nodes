@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:39Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:39Z"
+deprecatedSource:
+  component: machineconfigdaemon
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: machine-config-daemon
+    operation: Update
+    time: "2023-03-08T11:46:39Z"
+  name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal.174a6f2128e71068
+  namespace: default
+  resourceVersion: "9350"
+  uid: a9ed3dff-2dd5-4753-bccb-24ccffd08582
+note: Setting node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, currentConfig
+  rendered-master-71fec459b968d060c60cad7d0f3a5602 to Done
+reason: NodeDone
+regarding:
+  kind: Node
+  name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+  uid: 68230a61-3998-42ae-824b-1cc75bc72bd7
+type: Normal
