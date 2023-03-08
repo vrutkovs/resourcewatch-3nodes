@@ -1,0 +1,82 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2023-03-08T11:59:05Z"
+  labels:
+    operated-alertmanager: "true"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:operated-alertmanager: {}
+        f:ownerReferences:
+          .: {}
+          k:{"uid":"87525969-0340-4b5e-b367-029ae5850d32"}: {}
+      f:spec:
+        f:clusterIP: {}
+        f:internalTrafficPolicy: {}
+        f:ports:
+          .: {}
+          k:{"port":9093,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":9094,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":9094,"protocol":"UDP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: PrometheusOperator
+    operation: Update
+    time: "2023-03-08T11:59:05Z"
+  name: alertmanager-operated
+  namespace: openshift-monitoring
+  ownerReferences:
+  - apiVersion: monitoring.coreos.com/v1
+    kind: Alertmanager
+    name: main
+    uid: 87525969-0340-4b5e-b367-029ae5850d32
+  resourceVersion: "26145"
+  uid: 97caeed0-d425-4922-bbb0-3b7b3042fb15
+spec:
+  clusterIP: None
+  clusterIPs:
+  - None
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: web
+    port: 9093
+    protocol: TCP
+    targetPort: web
+  - name: tcp-mesh
+    port: 9094
+    protocol: TCP
+    targetPort: 9094
+  - name: udp-mesh
+    port: 9094
+    protocol: UDP
+    targetPort: 9094
+  selector:
+    app.kubernetes.io/name: alertmanager
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
