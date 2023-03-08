@@ -459,10 +459,11 @@ metadata:
         f:readyReplicas: {}
         f:replicas: {}
         f:updateRevision: {}
+        f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T12:00:00Z"
+    time: "2023-03-08T12:00:01Z"
   name: alertmanager-main
   namespace: openshift-monitoring
   ownerReferences:
@@ -472,7 +473,7 @@ metadata:
     kind: Alertmanager
     name: main
     uid: 87525969-0340-4b5e-b367-029ae5850d32
-  resourceVersion: "27308"
+  resourceVersion: "27315"
   uid: 3d2e73f5-0ea8-41ff-b2d2-5c651c8a2d8d
 spec:
   podManagementPolicy: Parallel
@@ -836,3 +837,4 @@ status:
   readyReplicas: 1
   replicas: 2
   updateRevision: alertmanager-main-7bf945f4fd
+  updatedReplicas: 1
