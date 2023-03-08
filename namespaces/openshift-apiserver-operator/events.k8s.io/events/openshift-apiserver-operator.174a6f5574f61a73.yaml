@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:50:23Z"
-deprecatedLastTimestamp: "2023-03-08T11:50:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:17Z"
 deprecatedSource:
   component: openshift-apiserver-operator-status-controller-statussyncer_openshift-apiserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-openshift-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:50:23Z"
+    time: "2023-03-08T11:52:17Z"
   name: openshift-apiserver-operator.174a6f5574f61a73
   namespace: openshift-apiserver-operator
-  resourceVersion: "16599"
+  resourceVersion: "19755"
   uid: 4d1a1cde-4c78-4a9b-a87d-11b565c185fa
 note: 'Status for clusteroperator/openshift-apiserver changed: Progressing message
   changed from "APIServerDeploymentProgressing: deployment/apiserver.openshift-apiserver:
