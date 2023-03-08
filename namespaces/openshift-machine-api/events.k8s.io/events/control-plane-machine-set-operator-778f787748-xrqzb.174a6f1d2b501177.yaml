@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:22Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:11Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:46:26Z"
+    time: "2023-03-08T11:55:13Z"
   name: control-plane-machine-set-operator-778f787748-xrqzb.174a6f1d2b501177
   namespace: openshift-machine-api
-  resourceVersion: "8753"
+  resourceVersion: "22419"
   uid: ccd1b43d-3ec6-4491-b434-12e84304218e
 note: Created container control-plane-machine-set-operator
 reason: Created
