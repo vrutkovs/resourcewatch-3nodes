@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:44:42Z"
 deprecatedLastTimestamp: "2023-03-08T11:44:42Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:44:42Z"
   name: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6f05ecb9d3fc
   namespace: default
-  resourceVersion: "3706"
+  resourceVersion: "3711"
   uid: 514bad04-4f5d-4ec5-bdd2-3263ed6a6d7d
 note: '[k8s.ovn.org/node-chassis-id annotation not found for node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal,
   macAddress annotation not found for node "vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal"
