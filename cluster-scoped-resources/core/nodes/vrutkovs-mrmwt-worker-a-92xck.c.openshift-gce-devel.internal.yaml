@@ -1,0 +1,132 @@
+apiVersion: v1
+kind: Node
+metadata:
+  annotations:
+    volumes.kubernetes.io/controller-managed-attach-detach: "true"
+  creationTimestamp: "2023-03-08T11:52:13Z"
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/instance-type: n2-standard-4
+    beta.kubernetes.io/os: linux
+    failure-domain.beta.kubernetes.io/region: europe-west2
+    failure-domain.beta.kubernetes.io/zone: europe-west2-a
+    kubernetes.io/arch: amd64
+    kubernetes.io/hostname: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+    kubernetes.io/os: linux
+    node-role.kubernetes.io/worker: ""
+    node.kubernetes.io/instance-type: n2-standard-4
+    node.openshift.io/os_id: fedora
+    topology.kubernetes.io/region: europe-west2
+    topology.kubernetes.io/zone: europe-west2-a
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:volumes.kubernetes.io/controller-managed-attach-detach: {}
+        f:labels:
+          .: {}
+          f:beta.kubernetes.io/arch: {}
+          f:beta.kubernetes.io/instance-type: {}
+          f:beta.kubernetes.io/os: {}
+          f:failure-domain.beta.kubernetes.io/region: {}
+          f:failure-domain.beta.kubernetes.io/zone: {}
+          f:kubernetes.io/arch: {}
+          f:kubernetes.io/hostname: {}
+          f:kubernetes.io/os: {}
+          f:node-role.kubernetes.io/worker: {}
+          f:node.kubernetes.io/instance-type: {}
+          f:node.openshift.io/os_id: {}
+          f:topology.kubernetes.io/region: {}
+          f:topology.kubernetes.io/zone: {}
+      f:spec:
+        f:providerID: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:52:13Z"
+  name: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+  resourceVersion: "19306"
+  uid: 1a8cd3af-23ff-49d3-90d8-1bacf0fe2106
+spec:
+  providerID: gce://openshift-gce-devel/europe-west2-a/vrutkovs-mrmwt-worker-a-92xck
+  taints:
+  - effect: NoSchedule
+    key: node.kubernetes.io/not-ready
+status:
+  addresses:
+  - address: 10.0.128.2
+    type: InternalIP
+  - address: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+    type: InternalDNS
+  - address: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+    type: Hostname
+  allocatable:
+    attachable-volumes-gce-pd: "127"
+    cpu: 3500m
+    ephemeral-storage: "122076772149"
+    hugepages-1Gi: "0"
+    hugepages-2Mi: "0"
+    memory: 15225364Ki
+    pods: "250"
+  capacity:
+    attachable-volumes-gce-pd: "127"
+    cpu: "4"
+    ephemeral-storage: 133626860Ki
+    hugepages-1Gi: "0"
+    hugepages-2Mi: "0"
+    memory: 16376340Ki
+    pods: "250"
+  conditions:
+  - lastHeartbeatTime: null
+    lastTransitionTime: "2023-03-08T11:52:13Z"
+    message: Node created without a route
+    reason: NoRouteCreated
+    status: "True"
+    type: NetworkUnavailable
+  - lastHeartbeatTime: "2023-03-08T11:52:13Z"
+    lastTransitionTime: "2023-03-08T11:52:13Z"
+    message: kubelet has sufficient memory available
+    reason: KubeletHasSufficientMemory
+    status: "False"
+    type: MemoryPressure
+  - lastHeartbeatTime: "2023-03-08T11:52:13Z"
+    lastTransitionTime: "2023-03-08T11:52:13Z"
+    message: kubelet has no disk pressure
+    reason: KubeletHasNoDiskPressure
+    status: "False"
+    type: DiskPressure
+  - lastHeartbeatTime: "2023-03-08T11:52:13Z"
+    lastTransitionTime: "2023-03-08T11:52:13Z"
+    message: kubelet has sufficient PID available
+    reason: KubeletHasSufficientPID
+    status: "False"
+    type: PIDPressure
+  - lastHeartbeatTime: "2023-03-08T11:52:13Z"
+    lastTransitionTime: "2023-03-08T11:52:13Z"
+    message: '[PLEG is not healthy: pleg has yet to be successful, container runtime
+      network not ready: NetworkReady=false reason:NetworkPluginNotReady message:Network
+      plugin returns error: No CNI configuration file in /etc/kubernetes/cni/net.d/.
+      Has your network provider started?, CSINode is not yet initialized]'
+    reason: KubeletNotReady
+    status: "False"
+    type: Ready
+  daemonEndpoints:
+    kubeletEndpoint:
+      Port: 10250
+  images:
+  - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a7cea4a88ef47288a649346deaa52a62f9d38c3df8a2c6e4e177b2fc039fef61
+    sizeBytes: 537132876
+  nodeInfo:
+    architecture: amd64
+    bootID: b5d2fb59-1033-41f0-83fa-ef3b010e9014
+    containerRuntimeVersion: cri-o://1.25.1
+    kernelVersion: 6.1.9-200.fc37.x86_64
+    kubeProxyVersion: v1.25.4+18eadca
+    kubeletVersion: v1.25.4+18eadca
+    machineID: 10313a5d318cfa409428029624f5dfb3
+    operatingSystem: linux
+    osImage: Fedora CoreOS 37.20230205.3.0
+    systemUUID: 10313a5d-318c-fa40-9428-029624f5dfb3
