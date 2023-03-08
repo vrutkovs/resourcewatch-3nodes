@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "6176"
+  resourceVersion: "6209"
   uid: 017094da-4624-48c3-a0e8-1ce824dc2841
 spec: {}
 status:
@@ -69,7 +69,8 @@ status:
     status: "False"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:45:32Z"
-    reason: APIServerDeployment_PreconditionNotFulfilled
+    message: 'APIServicesAvailable: PreconditionNotReady'
+    reason: APIServerDeployment_PreconditionNotFulfilled::APIServices_PreconditionNotReady
     status: "False"
     type: Available
   - lastTransitionTime: "2023-03-08T11:45:19Z"
