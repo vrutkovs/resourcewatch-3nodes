@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:58:29Z"
-deprecatedLastTimestamp: "2023-03-08T11:58:29Z"
+deprecatedLastTimestamp: "2023-03-08T12:03:10Z"
 deprecatedSource:
   component: console-operator-console-operator-consoleoperator
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: console
     operation: Update
-    time: "2023-03-08T11:58:29Z"
+    time: "2023-03-08T12:03:10Z"
   name: console-operator.174a6fc69b9117ae
   namespace: openshift-console-operator
-  resourceVersion: "25223"
+  resourceVersion: "29262"
   uid: 0189c064-af63-4f4b-b61e-3c5c8518b1b0
 note: Updated Deployment.apps/console -n openshift-console because it changed
 reason: DeploymentUpdated
