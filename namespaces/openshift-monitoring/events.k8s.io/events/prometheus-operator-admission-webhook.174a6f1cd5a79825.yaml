@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:20Z"
 deprecatedLastTimestamp: "2023-03-08T11:46:20Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:46:20Z"
   name: prometheus-operator-admission-webhook.174a6f1cd5a79825
   namespace: openshift-monitoring
-  resourceVersion: "8353"
+  resourceVersion: "8356"
   uid: 94ef825e-fd2a-4ff7-a7d4-6fdc780b5884
 note: No matching pods found
 reason: NoPods
