@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 10
+deprecatedCount: 11
 deprecatedFirstTimestamp: "2023-03-08T11:58:40Z"
 deprecatedLastTimestamp: "2023-03-08T12:00:00Z"
 deprecatedSource:
@@ -28,7 +28,7 @@ metadata:
     time: "2023-03-08T12:00:00Z"
   name: console-fd4986f5b-md24x.174a6fc906eaf800
   namespace: openshift-console
-  resourceVersion: "27288"
+  resourceVersion: "27290"
   uid: 4bdcb4d8-9fe8-4816-b2fc-57b151f33699
 note: "Readiness probe error: Get \"https://10.130.0.44:8443/health\": dial tcp 10.130.0.44:8443:
   connect: connection refused\nbody: \n"
