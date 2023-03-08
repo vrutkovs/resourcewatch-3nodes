@@ -18,17 +18,6 @@ metadata:
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:status:
-        f:fullyLabeledReplicas: {}
-        f:observedGeneration: {}
-        f:replicas: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:45:59Z"
-  - apiVersion: apps/v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:metadata:
         f:annotations:
           .: {}
@@ -176,6 +165,17 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:49:09Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:fullyLabeledReplicas: {}
+        f:observedGeneration: {}
+        f:replicas: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:49:09Z"
   name: route-controller-manager-6d54876759
   namespace: openshift-route-controller-manager
   ownerReferences:
@@ -185,7 +185,7 @@ metadata:
     kind: Deployment
     name: route-controller-manager
     uid: c15bf2b6-9bc1-4767-b6fa-09e49be47380
-  resourceVersion: "12841"
+  resourceVersion: "12852"
   uid: a738a791-fc28-4ff4-aee1-2b220973dbfc
 spec:
   replicas: 1
@@ -308,5 +308,5 @@ spec:
           secretName: serving-cert
 status:
   fullyLabeledReplicas: 2
-  observedGeneration: 2
+  observedGeneration: 3
   replicas: 2
