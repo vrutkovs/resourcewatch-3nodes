@@ -134,8 +134,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -151,6 +149,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:45:27Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:17Z"
   name: csi-snapshot-controller-85d9957747-txnqx
   namespace: openshift-cluster-storage-operator
   ownerReferences:
@@ -160,7 +170,7 @@ metadata:
     kind: ReplicaSet
     name: csi-snapshot-controller-85d9957747
     uid: 62b7bce1-4b04-4797-8d10-7a3412341425
-  resourceVersion: "5595"
+  resourceVersion: "17046"
   uid: e90400b3-697b-43b2-a832-0d4fbfc68bad
 spec:
   affinity:
@@ -265,8 +275,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:27Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:51:16Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:27Z"
