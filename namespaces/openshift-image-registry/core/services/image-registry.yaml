@@ -4,6 +4,8 @@ metadata:
   annotations:
     imageregistry.operator.openshift.io/checksum: sha256:1c19715a76014ae1d56140d6390a08f14f453c1a59dc36c15718f40c638ef63d
     service.alpha.openshift.io/serving-cert-secret-name: image-registry-tls
+    service.alpha.openshift.io/serving-cert-signed-by: openshift-service-serving-signer@1678275922
+    service.beta.openshift.io/serving-cert-signed-by: openshift-service-serving-signer@1678275922
   creationTimestamp: "2023-03-08T11:51:43Z"
   labels:
     docker-registry: default
@@ -35,9 +37,19 @@ metadata:
     manager: cluster-image-registry-operator
     operation: Update
     time: "2023-03-08T11:51:43Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:service.alpha.openshift.io/serving-cert-signed-by: {}
+          f:service.beta.openshift.io/serving-cert-signed-by: {}
+    manager: service-ca-operator
+    operation: Update
+    time: "2023-03-08T11:51:43Z"
   name: image-registry
   namespace: openshift-image-registry
-  resourceVersion: "17765"
+  resourceVersion: "17882"
   uid: 4dc5d3c9-b68c-4072-8267-e0f723791a9f
 spec:
   clusterIP: 172.30.93.37
