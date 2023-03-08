@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:43:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:43:23Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:43:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:43:23Z"
+  name: network-check-target-x8lqg.174a6ef3864a989e
+  namespace: openshift-network-diagnostics
+  resourceVersion: "3049"
+  uid: 57b7a652-45ec-4119-b456-48bc7e83a3fb
+note: Successfully assigned openshift-network-diagnostics/network-check-target-x8lqg
+  to vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: network-check-target-x8lqg
+  namespace: openshift-network-diagnostics
+  resourceVersion: "3039"
+  uid: d9a295ee-b2a0-4a84-a8ba-2c7a39c3aa91
+type: Normal
