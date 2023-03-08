@@ -144,7 +144,7 @@ metadata:
         f:taints: {}
     manager: kube-controller-manager
     operation: Update
-    time: "2023-03-08T11:54:20Z"
+    time: "2023-03-08T11:55:03Z"
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -185,16 +185,13 @@ metadata:
     subresource: status
     time: "2023-03-08T11:55:03Z"
   name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
-  resourceVersion: "22005"
+  resourceVersion: "22006"
   uid: 68230a61-3998-42ae-824b-1cc75bc72bd7
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-c/vrutkovs-mrmwt-master-2
   taints:
   - effect: NoSchedule
     key: node-role.kubernetes.io/master
-  - effect: NoSchedule
-    key: node.kubernetes.io/unreachable
-    timeAdded: "2023-03-08T11:54:19Z"
 status:
   addresses:
   - address: 10.0.0.3
