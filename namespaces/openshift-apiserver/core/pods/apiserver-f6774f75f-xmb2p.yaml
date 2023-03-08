@@ -317,6 +317,24 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:56:08Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          .: {}
+          k:{"type":"PodScheduled"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:56:08Z"
   name: apiserver-f6774f75f-xmb2p
   namespace: openshift-apiserver
   ownerReferences:
@@ -326,7 +344,7 @@ metadata:
     kind: ReplicaSet
     name: apiserver-f6774f75f
     uid: 49c4edcc-df63-47cb-aa6f-7e0f1ee7160f
-  resourceVersion: "23679"
+  resourceVersion: "23683"
   uid: 94d4f0a8-4d83-4d93-b4b8-b2ed99fb35f7
 spec:
   affinity:
@@ -591,5 +609,15 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:56:08Z"
+    message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+      3 node(s) didn''t match pod anti-affinity rules. preemption: 0/6 nodes are available:
+      3 Preemption is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity
+      rules.'
+    reason: Unschedulable
+    status: "False"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
