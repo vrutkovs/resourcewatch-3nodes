@@ -219,13 +219,12 @@ metadata:
         f:desiredNumberScheduled: {}
         f:numberAvailable: {}
         f:numberReady: {}
-        f:numberUnavailable: {}
         f:observedGeneration: {}
         f:updatedNumberScheduled: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:45Z"
+    time: "2023-03-08T11:52:46Z"
   name: tuned
   namespace: openshift-cluster-node-tuning-operator
   ownerReferences:
@@ -235,7 +234,7 @@ metadata:
     kind: Tuned
     name: default
     uid: ae090c76-1c31-4056-be24-878aa7f64dcb
-  resourceVersion: "20350"
+  resourceVersion: "20380"
   uid: ae80aa6c-15a4-4ac0-8acd-6ad1e60315e3
 spec:
   revisionHistoryLimit: 10
@@ -375,9 +374,8 @@ spec:
 status:
   currentNumberScheduled: 6
   desiredNumberScheduled: 6
-  numberAvailable: 5
+  numberAvailable: 6
   numberMisscheduled: 0
-  numberReady: 5
-  numberUnavailable: 1
+  numberReady: 6
   observedGeneration: 1
   updatedNumberScheduled: 6
