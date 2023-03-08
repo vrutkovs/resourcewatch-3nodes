@@ -498,6 +498,8 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -512,19 +514,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:44:46Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:status:
-        f:conditions:
-          k:{"type":"Ready"}:
-            f:lastTransitionTime: {}
-            f:status: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:51:16Z"
+    time: "2023-03-08T11:51:34Z"
   name: ovnkube-node-48khr
   namespace: openshift-ovn-kubernetes
   ownerReferences:
@@ -534,7 +524,7 @@ metadata:
     kind: DaemonSet
     name: ovnkube-node
     uid: 4b4c01b5-0c51-4c6d-b35d-1fb8796e0b7c
-  resourceVersion: "16982"
+  resourceVersion: "17366"
   uid: de2e631c-17f6-4126-828b-8aacb1bb68b1
 spec:
   affinity:
@@ -1044,8 +1034,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:51:16Z"
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:44:46Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:44:46Z"
