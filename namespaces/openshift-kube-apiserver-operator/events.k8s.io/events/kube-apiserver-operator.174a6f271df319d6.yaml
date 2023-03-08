@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:47:04Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:04Z"
+deprecatedSource:
+  component: kube-apiserver-operator-target-config-controller-targetconfigcontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:47:04Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:47:04Z"
+  name: kube-apiserver-operator.174a6f271df319d6
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "10347"
+  uid: 9e7466cc-67c1-49bd-a765-1d7c640e6180
+note: Created ConfigMap/client-ca -n openshift-kube-apiserver because it was missing
+reason: ConfigMapCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
