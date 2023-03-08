@@ -1,0 +1,44 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:57:56Z"
+deprecatedLastTimestamp: "2023-03-08T11:57:56Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:57:56Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:57:56Z"
+  name: prometheus-operator-6b5ccd8984-sk97l.174a6fbed82dd700
+  namespace: openshift-monitoring
+  resourceVersion: "24449"
+  uid: d6cebbfe-a52a-43e4-ae14-68085e1e6133
+note: 'Unable to attach or mount volumes: unmounted volumes=[prometheus-operator-tls],
+  unattached volumes=[prometheus-operator-kube-rbac-proxy-config kube-api-access-r5m7z
+  prometheus-operator-tls metrics-client-ca]: timed out waiting for the condition'
+reason: FailedMount
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: prometheus-operator-6b5ccd8984-sk97l
+  namespace: openshift-monitoring
+  resourceVersion: "22974"
+  uid: 12af0e98-7b46-428a-90f1-eacd289e1f32
+type: Warning
