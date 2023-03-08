@@ -182,7 +182,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:34Z"
+    time: "2023-03-08T11:55:18Z"
   name: machine-config-controller-7d66fd8577-4xdqg
   namespace: openshift-machine-config-operator
   ownerReferences:
@@ -192,7 +192,7 @@ metadata:
     kind: ReplicaSet
     name: machine-config-controller-7d66fd8577
     uid: 88357450-9acd-4de9-9f47-63eec74d002f
-  resourceVersion: "17354"
+  resourceVersion: "22486"
   uid: 0b0c24c7-2c8f-4b7b-9c60-e3310302bfe3
 spec:
   containers:
@@ -333,11 +333,11 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:06Z"
+    lastTransitionTime: "2023-03-08T11:55:12Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:06Z"
+    lastTransitionTime: "2023-03-08T11:55:12Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
@@ -345,17 +345,23 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://b0376652667866491a51fc1f3a0d12d2062c7cbfc939c5b9ef1511538a821915
+  - containerID: cri-o://97786ae2d006138ab644fd1c554e2bfa8b8d768cabac4f3458670524aeff8e6a
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a7cea4a88ef47288a649346deaa52a62f9d38c3df8a2c6e4e177b2fc039fef61
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a7cea4a88ef47288a649346deaa52a62f9d38c3df8a2c6e4e177b2fc039fef61
-    lastState: {}
+    lastState:
+      terminated:
+        containerID: cri-o://b0376652667866491a51fc1f3a0d12d2062c7cbfc939c5b9ef1511538a821915
+        exitCode: 0
+        finishedAt: "2023-03-08T11:55:10Z"
+        reason: Completed
+        startedAt: "2023-03-08T11:46:06Z"
     name: machine-config-controller
     ready: true
-    restartCount: 0
+    restartCount: 1
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:06Z"
+        startedAt: "2023-03-08T11:55:11Z"
   - containerID: cri-o://1611d4dad70b73242d6417886b67990fbdd8f6c0775e97a08a8ae6b68ba133fe
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
