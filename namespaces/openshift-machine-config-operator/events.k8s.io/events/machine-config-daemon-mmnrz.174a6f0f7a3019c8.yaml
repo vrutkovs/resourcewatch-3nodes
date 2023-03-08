@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:23Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:45:23Z"
+  name: machine-config-daemon-mmnrz.174a6f0f7a3019c8
+  namespace: openshift-machine-config-operator
+  resourceVersion: "5213"
+  uid: 143c1822-ea36-47b3-9300-126f675673bd
+note: Successfully assigned openshift-machine-config-operator/machine-config-daemon-mmnrz
+  to vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: machine-config-daemon-mmnrz
+  namespace: openshift-machine-config-operator
+  resourceVersion: "5202"
+  uid: 81f8c44e-a3c8-477e-8f8b-18154f09b939
+type: Normal
