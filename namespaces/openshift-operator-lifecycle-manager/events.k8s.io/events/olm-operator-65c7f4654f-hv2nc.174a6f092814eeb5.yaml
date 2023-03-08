@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 5
+deprecatedCount: 6
 deprecatedFirstTimestamp: "2023-03-08T11:44:56Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:11Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:27Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:23Z"
+    time: "2023-03-08T11:45:41Z"
   name: olm-operator-65c7f4654f-hv2nc.174a6f092814eeb5
   namespace: openshift-operator-lifecycle-manager
-  resourceVersion: "5273"
+  resourceVersion: "6702"
   uid: 9818f3d2-543a-45ec-a8cc-c8c07cdcb57a
 note: 'MountVolume.SetUp failed for volume "srv-cert" : secret "olm-operator-serving-cert"
   not found'
