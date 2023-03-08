@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:30Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:30Z"
+deprecatedSource:
+  component: gcp-pd-csi-driver-operator-gcppddriverstaticresourcescontroller-gcppddriverstaticresourcescontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:31Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: gcp-pd-csi-driver-operator
+    operation: Update
+    time: "2023-03-08T11:45:31Z"
+  name: gcp-pd-csi-driver-operator.174a6f111f99482d
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "6018"
+  uid: bad9440c-a5e4-4c45-bf12-8b15b8be45ef
+note: Created ClusterRoleBinding.rbac.authorization.k8s.io/gcp-pd-csi-provisioner-binding
+  because it was missing
+reason: ClusterRoleBindingCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: gcp-pd-csi-driver-operator
+  namespace: openshift-cluster-csi-drivers
+  uid: 9fa381f3-4b90-4ed2-849b-21a984daad9c
+type: Normal
