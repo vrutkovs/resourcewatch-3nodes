@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:45:16Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:39Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:18Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:46:39Z"
+    time: "2023-03-08T11:55:18Z"
   name: authentication-operator-695c7bc445-btjmj.174a6f0dcd8c3126
   namespace: openshift-authentication-operator
-  resourceVersion: "9370"
+  resourceVersion: "22465"
   uid: 7d3e7b49-7758-40c8-9547-232533748608
 note: Created container authentication-operator
 reason: Created
