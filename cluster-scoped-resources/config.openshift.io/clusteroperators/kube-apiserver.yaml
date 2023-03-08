@@ -44,14 +44,14 @@ metadata:
     manager: cluster-kube-apiserver-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:59Z"
+    time: "2023-03-08T11:47:01Z"
   name: kube-apiserver
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "10220"
+  resourceVersion: "10254"
   uid: ef706269-fd7e-4416-af64-7cfc9719f1d3
 spec: {}
 status:
@@ -59,7 +59,7 @@ status:
   - lastTransitionTime: "2023-03-08T11:45:20Z"
     message: |-
       NodeControllerDegraded: All master nodes are ready
-      GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal]
+      GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal]
       InstallerControllerDegraded: missing required resources: [configmaps: client-ca, secrets: node-kubeconfigs, configmaps: bound-sa-token-signing-certs-1,config-1,etcd-serving-ca-1,kube-apiserver-audit-policies-1,kube-apiserver-cert-syncer-kubeconfig-1,kube-apiserver-pod-1,kubelet-serving-ca-1,sa-token-signing-certs-1, secrets: etcd-client-1,localhost-recovery-client-token-1,localhost-recovery-serving-certkey-1]
       NodeKubeconfigControllerDegraded: "secret/node-kubeconfigs": configmap "kube-apiserver-server-ca" not found
       RevisionControllerDegraded: configmaps "kube-apiserver-pod" not found
