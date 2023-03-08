@@ -166,6 +166,7 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -184,6 +185,7 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -199,7 +201,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:44Z"
+    time: "2023-03-08T11:52:17Z"
   name: installer-5-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   namespace: openshift-kube-apiserver
   ownerReferences:
@@ -207,7 +209,7 @@ metadata:
     kind: ConfigMap
     name: revision-status-5
     uid: 711404af-ea6e-4118-b2a4-2bd9c5124533
-  resourceVersion: "19694"
+  resourceVersion: "19761"
   uid: f8960c1b-cc9c-470b-8190-7df149ec6c4f
 spec:
   automountServiceAccountToken: false
@@ -350,12 +352,14 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:51:44Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:52:17Z"
+    reason: PodFailed
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:51:44Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:52:17Z"
+    reason: PodFailed
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:51:42Z"
@@ -367,14 +371,34 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
     lastState: {}
     name: installer
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://20211e15541bb2345c8825b887c3fe0d584cf0eb92e919c6550bd4512ce9e185
+        exitCode: 1
+        finishedAt: "2023-03-08T11:52:17Z"
+        message: |
+          er-pod-5/configmaps/kubelet-serving-ca/ca-bundle.crt" ...
+          I0308 11:52:16.465428       1 cmd.go:274] Creating directory "/etc/kubernetes/static-pod-resources/kube-apiserver-pod-5/configmaps/sa-token-signing-certs" ...
+          I0308 11:52:16.465485       1 cmd.go:626] Writing config file "/etc/kubernetes/static-pod-resources/kube-apiserver-pod-5/configmaps/sa-token-signing-certs/service-account-001.pub" ...
+          I0308 11:52:16.465591       1 cmd.go:626] Writing config file "/etc/kubernetes/static-pod-resources/kube-apiserver-pod-5/configmaps/sa-token-signing-certs/service-account-002.pub" ...
+          I0308 11:52:16.465678       1 cmd.go:274] Creating directory "/etc/kubernetes/static-pod-resources/kube-apiserver-pod-5/configmaps/cloud-config" ...
+          I0308 11:52:16.465775       1 cmd.go:626] Writing config file "/etc/kubernetes/static-pod-resources/kube-apiserver-pod-5/configmaps/cloud-config/cloud.conf" ...
+          I0308 11:52:16.465860       1 cmd.go:274] Creating directory "/etc/kubernetes/static-pod-resources/kube-apiserver-pod-5/configmaps/kube-apiserver-server-ca" ...
+          I0308 11:52:16.466523       1 cmd.go:626] Writing config file "/etc/kubernetes/static-pod-resources/kube-apiserver-pod-5/configmaps/kube-apiserver-server-ca/ca-bundle.crt" ...
+          I0308 11:52:16.466620       1 cmd.go:218] Creating target resource directory "/etc/kubernetes/static-pod-resources/kube-apiserver-certs" ...
+          I0308 11:52:16.466676       1 cmd.go:226] Getting secrets ...
+          I0308 11:52:16.696287       1 copy.go:32] Got secret openshift-kube-apiserver/aggregator-client
+          I0308 11:52:16.844655       1 copy.go:32] Got secret openshift-kube-apiserver/bound-service-account-signing-key
+          I0308 11:52:16.871235       1 cmd.go:124] Received SIGTERM or SIGINT signal, shutting down the process.
+          I0308 11:52:16.871363       1 copy.go:24] Failed to get secret openshift-kube-apiserver/check-endpoints-client-cert-key: client rate limiter Wait returned an error: context canceled
+          F0308 11:52:17.059082       1 cmd.go:106] failed to copy: client rate limiter Wait returned an error: context canceled
+        reason: Error
         startedAt: "2023-03-08T11:51:44Z"
   hostIP: 10.0.0.3
-  phase: Running
+  phase: Failed
   podIP: 10.130.0.19
   podIPs:
   - ip: 10.130.0.19
