@@ -599,7 +599,7 @@ metadata:
     kind: StatefulSet
     name: prometheus-k8s
     uid: 64bf94c0-7125-4d69-824b-802c773560a3
-  resourceVersion: "26334"
+  resourceVersion: "26337"
   uid: 94754bec-b69a-4c34-9593-539c810bea91
 spec:
   affinity:
@@ -1011,6 +1011,7 @@ spec:
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
       name: kube-api-access-pp8f4
       readOnly: true
+  nodeName: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
   nodeSelector:
     kubernetes.io/os: linux
   preemptionPolicy: PreemptLowerPriority
@@ -1139,5 +1140,10 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:59:08Z"
+    status: "True"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
