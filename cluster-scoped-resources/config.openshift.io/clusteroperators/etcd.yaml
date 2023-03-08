@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "11148"
+  resourceVersion: "11153"
   uid: f01b7c7e-3e09-4722-ad7f-959168c885a2
 spec: {}
 status:
@@ -60,6 +60,7 @@ status:
     message: |-
       NodeControllerDegraded: All master nodes are ready
       GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal]
+      ClusterMemberControllerDegraded: unhealthy members found during reconciling members
       EtcdEndpointsDegraded: no etcd members are present
       EtcdMembersDegraded: No unhealthy members found
     reason: AsExpected
