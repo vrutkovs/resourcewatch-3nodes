@@ -1,0 +1,36 @@
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource:
+  component: apiserver
+  host: apiserver-6c795f96d5-72zft
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:49:31Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:involvedObject: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: oauth-apiserver
+    operation: Update
+    time: "2023-03-08T11:49:31Z"
+  name: kube-system.174a6f49233d90a0
+  namespace: default
+  resourceVersion: "13315"
+  uid: 73be21d6-00f0-4470-be3c-dee7425a7cc1
+note: All pre-shutdown hooks have been finished
+reason: TerminationPreShutdownHooksFinished
+regarding:
+  apiVersion: v1
+  kind: Namespace
+  name: kube-system
+  namespace: default
+type: Normal
