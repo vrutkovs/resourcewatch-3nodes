@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:21Z"
 deprecatedLastTimestamp: "2023-03-08T11:45:21Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:45:21Z"
   name: openshift-kube-scheduler-guard-pdb.174a6f0eebf96d50
   namespace: openshift-kube-scheduler
-  resourceVersion: "4833"
+  resourceVersion: "4851"
   uid: bfebd460-7646-4b5b-8505-1fcf7a5f7903
 note: No matching pods found
 reason: NoPods
