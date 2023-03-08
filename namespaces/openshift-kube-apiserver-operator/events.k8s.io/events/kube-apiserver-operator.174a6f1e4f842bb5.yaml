@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:27Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:27Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:51Z"
 deprecatedSource:
   component: kube-apiserver-operator-config-observer-configobserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-kube-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:46:30Z"
+    time: "2023-03-08T11:46:51Z"
   name: kube-apiserver-operator.174a6f1e4f842bb5
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "8983"
+  resourceVersion: "10029"
   uid: ab7d305a-0d96-400c-8836-e6d6090ba5f1
 note: Updated apiServerArguments.feature-gates to APIPriorityAndFairness=true,RotateKubeletServerCertificate=true,DownwardAPIHugePages=true,CSIMigrationAzureFile=false,CSIMigrationvSphere=false
 reason: ObserveFeatureFlagsUpdated
