@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:49:55Z"
-deprecatedLastTimestamp: "2023-03-08T11:50:00Z"
+deprecatedLastTimestamp: "2023-03-08T11:50:05Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:50:00Z"
+    time: "2023-03-08T11:50:05Z"
   name: apiserver-5fdfb76cd4-cnl5v.174a6f4ee0c86f89
   namespace: openshift-apiserver
-  resourceVersion: "14907"
+  resourceVersion: "16145"
   uid: a900d0ff-5187-4080-b4ac-33bf2bea0d81
 note: "Readiness probe error: Get \"https://10.128.0.19:8443/readyz\": dial tcp 10.128.0.19:8443:
   connect: connection refused\nbody: \n"
