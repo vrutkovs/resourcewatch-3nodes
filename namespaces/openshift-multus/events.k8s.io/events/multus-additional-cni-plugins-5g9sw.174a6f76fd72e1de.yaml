@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:47Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:47Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:47Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:52:47Z"
+  name: multus-additional-cni-plugins-5g9sw.174a6f76fd72e1de
+  namespace: openshift-multus
+  resourceVersion: "20418"
+  uid: fa7bea34-e282-4804-b261-97be64b91164
+note: Started container bond-cni-plugin
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.initContainers{bond-cni-plugin}
+  kind: Pod
+  name: multus-additional-cni-plugins-5g9sw
+  namespace: openshift-multus
+  resourceVersion: "18994"
+  uid: 4e9e49cc-5625-442a-ac2e-cb130b0c9424
+type: Normal
