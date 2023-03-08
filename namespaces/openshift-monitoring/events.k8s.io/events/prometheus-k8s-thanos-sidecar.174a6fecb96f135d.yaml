@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:01:13Z"
+deprecatedLastTimestamp: "2023-03-08T12:01:13Z"
+deprecatedSource:
+  component: endpoint-slice-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:01:42Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T12:01:42Z"
+  name: prometheus-k8s-thanos-sidecar.174a6fecb96f135d
+  namespace: openshift-monitoring
+  resourceVersion: "28470"
+  uid: 8c75af76-838f-4cba-a032-4eaf42e4341b
+note: 'Error updating Endpoint Slices for Service openshift-monitoring/prometheus-k8s-thanos-sidecar:
+  failed to update prometheus-k8s-thanos-sidecar-zdxg8 EndpointSlice for Service openshift-monitoring/prometheus-k8s-thanos-sidecar:
+  Timeout: request did not complete within requested timeout - context deadline exceeded'
+reason: FailedToUpdateEndpointSlices
+regarding:
+  apiVersion: v1
+  kind: Service
+  name: prometheus-k8s-thanos-sidecar
+  namespace: openshift-monitoring
+  resourceVersion: "26044"
+  uid: d2eb68d9-52b7-42d0-b958-7f44a01ac9cb
+type: Warning
