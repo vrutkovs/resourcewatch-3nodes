@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "9864"
+  resourceVersion: "9873"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
@@ -60,8 +60,7 @@ status:
     message: "OAuthServerServiceEndpointAccessibleControllerDegraded: Get \"https://172.30.73.115:443/healthz\":
       dial tcp 172.30.73.115:443: connect: connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerDegraded:
       oauth service endpoints are not ready\nOAuthAPIServerConfigObservationDegraded:
-      configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found\nOAuthServerConfigObservationDegraded:
-      secret \"v4-0-config-system-router-certs\" not found\nIngressStateEndpointsDegraded:
+      configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found\nIngressStateEndpointsDegraded:
       No subsets found for the endpoints of oauth-server\nAPIServerDeploymentDegraded:
       waiting for observed configuration to have mandatory apiServerArguments.etcd-servers\nAPIServerDeploymentDegraded: "
     reason: AsExpected
