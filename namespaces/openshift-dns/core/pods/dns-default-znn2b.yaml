@@ -214,8 +214,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -231,6 +229,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:46:48Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:54:19Z"
   name: dns-default-znn2b
   namespace: openshift-dns
   ownerReferences:
@@ -240,7 +250,7 @@ metadata:
     kind: DaemonSet
     name: dns-default
     uid: d78a4539-441f-4b96-9bce-996168ecc497
-  resourceVersion: "9860"
+  resourceVersion: "21360"
   uid: 09490639-6cae-42cc-ab65-a900871934cd
 spec:
   affinity:
@@ -405,8 +415,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:48Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:54:19Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:48Z"
