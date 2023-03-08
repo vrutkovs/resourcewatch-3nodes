@@ -1,0 +1,44 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:51:52Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:52Z"
+deprecatedSource:
+  component: openshift-apiserver-operator-status-controller-statussyncer_openshift-apiserver
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:52Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-openshift-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:51:52Z"
+  name: openshift-apiserver-operator.174a6f6a0d8d64d9
+  namespace: openshift-apiserver-operator
+  resourceVersion: "18627"
+  uid: 58175d69-5b67-4ac0-b8f1-2d6baa32c595
+note: 'Status for clusteroperator/openshift-apiserver changed: Progressing message
+  changed from "APIServerDeploymentProgressing: deployment/apiserver.openshift-apiserver:
+  observed generation is 3, desired generation is 4.\nOperatorConfigProgressing: openshiftapiserveroperatorconfigs/instance:
+  observed generation is 5, desired generation is 6." to "APIServerDeploymentProgressing:
+  deployment/apiserver.openshift-apiserver: observed generation is 3, desired generation
+  is 4."'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-apiserver-operator
+  namespace: openshift-apiserver-operator
+  uid: a090ef40-3910-461a-9091-b7c2d013133c
+type: Normal
