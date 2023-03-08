@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:54:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:20Z"
+deprecatedSource:
+  component: node-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:54:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:54:20Z"
+  name: network-metrics-daemon-mc8rq.174a6f8c6c9fd70d
+  namespace: openshift-multus
+  resourceVersion: "21497"
+  uid: 1fc19456-3911-48c5-b6e6-a483001dc1c0
+note: Node is not ready
+reason: NodeNotReady
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: network-metrics-daemon-mc8rq
+  namespace: openshift-multus
+  resourceVersion: "7292"
+  uid: 124ca80b-c48c-4828-b5fa-d86031d1193a
+type: Warning
