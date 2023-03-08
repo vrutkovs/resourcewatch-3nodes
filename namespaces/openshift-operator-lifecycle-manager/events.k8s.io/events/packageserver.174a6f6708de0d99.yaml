@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:51:39Z"
-deprecatedLastTimestamp: "2023-03-08T11:51:39Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:55Z"
 deprecatedSource:
   component: operator-lifecycle-manager
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: olm
     operation: Update
-    time: "2023-03-08T11:51:39Z"
+    time: "2023-03-08T11:55:55Z"
   name: packageserver.174a6f6708de0d99
   namespace: openshift-operator-lifecycle-manager
-  resourceVersion: "17578"
+  resourceVersion: "23177"
   uid: 4fc1254e-81ca-4706-8e34-e2d67f78e658
 note: install strategy completed with no errors
 reason: InstallSucceeded
