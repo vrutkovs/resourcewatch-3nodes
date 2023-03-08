@@ -259,7 +259,7 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:17Z"
+    time: "2023-03-08T11:51:22Z"
   name: apiserver-c9c8564b9
   namespace: openshift-oauth-apiserver
   ownerReferences:
@@ -269,7 +269,7 @@ metadata:
     kind: Deployment
     name: apiserver
     uid: 62a01473-77e6-462a-ac02-eae02830d991
-  resourceVersion: "17137"
+  resourceVersion: "17178"
   uid: c990828d-15ba-4bde-8403-ebf0a36b8376
 spec:
   replicas: 3
@@ -473,8 +473,8 @@ spec:
           type: ""
         name: audit-dir
 status:
-  availableReplicas: 1
+  availableReplicas: 2
   fullyLabeledReplicas: 3
   observedGeneration: 4
-  readyReplicas: 1
+  readyReplicas: 2
   replicas: 3
