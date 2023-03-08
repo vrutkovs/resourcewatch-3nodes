@@ -122,7 +122,7 @@ metadata:
     kind: Network
     name: cluster
     uid: 0ac8c00f-db30-4ed0-a498-7a1162bac022
-  resourceVersion: "21306"
+  resourceVersion: "21374"
   uid: 396bd4d6-9776-454b-a437-d4a084553e96
 spec:
   revisionHistoryLimit: 10
@@ -221,9 +221,9 @@ spec:
 status:
   currentNumberScheduled: 6
   desiredNumberScheduled: 6
-  numberAvailable: 2
+  numberAvailable: 1
   numberMisscheduled: 0
-  numberReady: 2
-  numberUnavailable: 4
+  numberReady: 1
+  numberUnavailable: 5
   observedGeneration: 1
   updatedNumberScheduled: 6
