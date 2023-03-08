@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:11Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:11Z"
+deprecatedSource:
+  component: machineconfigcontroller-rendercontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:11Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: machine-config-controller
+    operation: Update
+    time: "2023-03-08T11:46:11Z"
+  name: worker.174a6f1ab4b2e5e9
+  namespace: default
+  resourceVersion: "8144"
+  uid: 3bd195e2-c929-4090-b632-12a30caa5c60
+note: 'rendered-worker-cbb7fad69073628742d20bb0a24d29bc successfully generated (release
+  version: 4.12.0-0.okd-2023-03-04-063026, controller version: 4099f3c4f4ea9df85a7516a6300a4c6e5504a5cd)'
+reason: RenderedConfigGenerated
+regarding:
+  apiVersion: machineconfiguration.openshift.io/v1
+  kind: MachineConfigPool
+  name: worker
+  resourceVersion: "4980"
+  uid: 93fd2ffe-2de4-4f9f-8b82-6a74ddef60f5
+type: Normal
