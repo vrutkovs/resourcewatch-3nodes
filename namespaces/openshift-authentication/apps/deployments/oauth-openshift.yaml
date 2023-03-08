@@ -309,7 +309,7 @@ metadata:
     time: "2023-03-08T11:58:57Z"
   name: oauth-openshift
   namespace: openshift-authentication
-  resourceVersion: "25675"
+  resourceVersion: "25681"
   uid: 797a38d4-d6e9-4804-87be-ecc7f64e6aec
 spec:
   progressDeadlineSeconds: 600
@@ -531,6 +531,6 @@ status:
     type: Progressing
   observedGeneration: 2
   readyReplicas: 2
-  replicas: 2
+  replicas: 3
   unavailableReplicas: 1
-  updatedReplicas: 1
+  updatedReplicas: 2
