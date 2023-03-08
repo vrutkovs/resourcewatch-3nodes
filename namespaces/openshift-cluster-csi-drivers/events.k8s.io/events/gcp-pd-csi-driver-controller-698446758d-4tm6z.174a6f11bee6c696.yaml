@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:33Z"
 deprecatedLastTimestamp: "2023-03-08T11:45:33Z"
 deprecatedSource:
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:42Z"
+    time: "2023-03-08T11:45:43Z"
   name: gcp-pd-csi-driver-controller-698446758d-4tm6z.174a6f11bee6c696
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "6778"
+  resourceVersion: "6782"
   uid: 266d1a57-8a2e-4bba-8216-abf70ac13673
 note: 'MountVolume.SetUp failed for volume "metrics-serving-cert" : secret "gcp-pd-csi-driver-controller-metrics-serving-cert"
   not found'
