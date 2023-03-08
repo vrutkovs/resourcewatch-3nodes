@@ -1,0 +1,40 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:53:04.084768Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:53:04Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:53:04Z"
+  name: ingress-canary-54n5f.174a6f7abc4cde75
+  namespace: openshift-ingress-canary
+  resourceVersion: "20810"
+  uid: 77d5db87-1321-487e-9948-4906948e6283
+note: Successfully assigned openshift-ingress-canary/ingress-canary-54n5f to vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: ingress-canary-54n5f
+  namespace: openshift-ingress-canary
+  resourceVersion: "20798"
+  uid: 71f70268-024b-450c-82a9-b091ab618e24
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
