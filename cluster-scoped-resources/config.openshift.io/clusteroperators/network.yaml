@@ -39,17 +39,6 @@ metadata:
   - apiVersion: config.openshift.io/v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:status:
-        f:conditions: {}
-        f:relatedObjects: {}
-        f:versions: {}
-    manager: cluster-network-operator
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:51:35Z"
-  - apiVersion: config.openshift.io/v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:metadata:
         f:annotations:
           f:network.operator.openshift.io/last-seen-state: {}
@@ -57,13 +46,24 @@ metadata:
     manager: cluster-network-operator
     operation: Update
     time: "2023-03-08T11:51:36Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions: {}
+        f:relatedObjects: {}
+        f:versions: {}
+    manager: cluster-network-operator
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:36Z"
   name: network
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "17398"
+  resourceVersion: "17400"
   uid: c452e0a4-6e32-4ed2-a5a9-8eaa2903cb12
 spec: {}
 status:
@@ -78,10 +78,8 @@ status:
     status: "True"
     type: Upgradeable
   - lastTransitionTime: "2023-03-08T11:43:07Z"
-    message: |-
-      DaemonSet "/openshift-ovn-kubernetes/ovnkube-node" is not available (awaiting 1 nodes)
-      Deployment "/openshift-network-diagnostics/network-check-source" is waiting for other operators to become ready
-      Deployment "/openshift-multus/multus-admission-controller" is waiting for other operators to become ready
+    message: Deployment "/openshift-network-diagnostics/network-check-source" is waiting
+      for other operators to become ready
     reason: Deploying
     status: "True"
     type: Progressing
