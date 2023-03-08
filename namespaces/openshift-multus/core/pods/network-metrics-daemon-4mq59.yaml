@@ -178,8 +178,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -195,6 +193,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:45:54Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:54:19Z"
   name: network-metrics-daemon-4mq59
   namespace: openshift-multus
   ownerReferences:
@@ -204,7 +214,7 @@ metadata:
     kind: DaemonSet
     name: network-metrics-daemon
     uid: 396bd4d6-9776-454b-a437-d4a084553e96
-  resourceVersion: "7317"
+  resourceVersion: "21369"
   uid: 63eb6136-03a5-4b1b-a18d-d02ed5fca9f4
 spec:
   affinity:
@@ -321,8 +331,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:54Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:54:19Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:54Z"
