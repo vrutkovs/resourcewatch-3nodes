@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
+    deployment.kubernetes.io/revision: "1"
     exclude.release.openshift.io/internal-openshift-hosted: "true"
     include.release.openshift.io/self-managed-high-availability: "true"
   creationTimestamp: "2023-03-08T11:42:23Z"
@@ -106,6 +107,27 @@ metadata:
     manager: cluster-version-operator
     operation: Update
     time: "2023-03-08T11:42:23Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:deployment.kubernetes.io/revision: {}
+      f:status:
+        f:conditions:
+          .: {}
+          k:{"type":"Progressing"}:
+            .: {}
+            f:lastTransitionTime: {}
+            f:lastUpdateTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:42:23Z"
   name: control-plane-machine-set-operator
   namespace: openshift-machine-api
   ownerReferences:
@@ -113,7 +135,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "2286"
+  resourceVersion: "2289"
   uid: 2bb6f316-2db1-4fc0-8209-ac13632c6757
 spec:
   progressDeadlineSeconds: 600
@@ -188,4 +210,11 @@ spec:
         secret:
           defaultMode: 420
           secretName: control-plane-machine-set-operator-tls
-status: {}
+status:
+  conditions:
+  - lastTransitionTime: "2023-03-08T11:42:23Z"
+    lastUpdateTime: "2023-03-08T11:42:23Z"
+    message: Created new replica set "control-plane-machine-set-operator-778f787748"
+    reason: NewReplicaSetCreated
+    status: "True"
+    type: Progressing
