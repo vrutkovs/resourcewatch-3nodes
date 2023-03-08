@@ -175,7 +175,7 @@ metadata:
     kind: ReplicaSet
     name: route-controller-manager-77679cb69b
     uid: d4821fa0-501e-4b03-a80c-d228724af0b2
-  resourceVersion: "12877"
+  resourceVersion: "13242"
   uid: d9568bc7-6ba5-4f0f-8fd5-45ca806dbbff
 spec:
   affinity:
@@ -243,6 +243,7 @@ spec:
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
+  nodeName: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
   nodeSelector:
     node-role.kubernetes.io/master: ""
   preemptionPolicy: PreemptLowerPriority
@@ -314,12 +315,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:49:09Z"
-    message: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.
-      preemption: 0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity
-      rules.'
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:49:29Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
