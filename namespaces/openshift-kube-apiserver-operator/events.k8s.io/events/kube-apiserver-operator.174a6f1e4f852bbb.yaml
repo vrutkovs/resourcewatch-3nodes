@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:27Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:27Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:58Z"
 deprecatedSource:
   component: kube-apiserver-operator-config-observer-configobserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-kube-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:46:31Z"
+    time: "2023-03-08T11:46:58Z"
   name: kube-apiserver-operator.174a6f1e4f852bbb
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "9024"
+  resourceVersion: "10178"
   uid: b8d60e63-794f-4c13-8806-f003fd659720
 note: CloudProvider config file changed to /etc/kubernetes/static-pod-resources/configmaps/cloud-config/cloud.conf
 reason: ObserveCloudProviderNamesChanges
