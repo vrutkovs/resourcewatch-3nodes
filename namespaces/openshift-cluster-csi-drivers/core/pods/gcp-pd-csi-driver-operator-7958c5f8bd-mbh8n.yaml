@@ -158,8 +158,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -175,6 +173,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:45:27Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:17Z"
   name: gcp-pd-csi-driver-operator-7958c5f8bd-mbh8n
   namespace: openshift-cluster-csi-drivers
   ownerReferences:
@@ -184,7 +194,7 @@ metadata:
     kind: ReplicaSet
     name: gcp-pd-csi-driver-operator-7958c5f8bd
     uid: ba4c3055-1555-4e22-808d-ffd53127ec92
-  resourceVersion: "5602"
+  resourceVersion: "17115"
   uid: 7c672722-8a21-42ce-85f1-fe5ca30c2b10
 spec:
   containers:
@@ -300,8 +310,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:27Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:51:17Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:27Z"
