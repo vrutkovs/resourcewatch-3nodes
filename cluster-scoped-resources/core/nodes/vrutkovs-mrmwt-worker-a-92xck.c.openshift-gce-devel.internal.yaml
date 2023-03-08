@@ -10,6 +10,7 @@ metadata:
     machineconfiguration.openshift.io/currentConfig: rendered-worker-cbb7fad69073628742d20bb0a24d29bc
     machineconfiguration.openshift.io/desiredConfig: rendered-worker-cbb7fad69073628742d20bb0a24d29bc
     machineconfiguration.openshift.io/desiredDrain: uncordon-rendered-worker-cbb7fad69073628742d20bb0a24d29bc
+    machineconfiguration.openshift.io/lastAppliedDrain: uncordon-rendered-worker-cbb7fad69073628742d20bb0a24d29bc
     machineconfiguration.openshift.io/state: Done
     volumes.kubernetes.io/controller-managed-attach-detach: "true"
   creationTimestamp: "2023-03-08T11:52:13Z"
@@ -99,17 +100,6 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:machineconfiguration.openshift.io/controlPlaneTopology: {}
-      f:spec:
-        f:taints: {}
-    manager: machine-config-controller
-    operation: Update
-    time: "2023-03-08T11:52:21Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:status:
         f:conditions:
           k:{"type":"DiskPressure"}:
@@ -137,8 +127,20 @@ metadata:
     manager: machine-config-daemon
     operation: Update
     time: "2023-03-08T11:52:28Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:machineconfiguration.openshift.io/controlPlaneTopology: {}
+          f:machineconfiguration.openshift.io/lastAppliedDrain: {}
+      f:spec:
+        f:taints: {}
+    manager: machine-config-controller
+    operation: Update
+    time: "2023-03-08T11:52:33Z"
   name: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
-  resourceVersion: "19980"
+  resourceVersion: "20090"
   uid: 1a8cd3af-23ff-49d3-90d8-1bacf0fe2106
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-a/vrutkovs-mrmwt-worker-a-92xck
