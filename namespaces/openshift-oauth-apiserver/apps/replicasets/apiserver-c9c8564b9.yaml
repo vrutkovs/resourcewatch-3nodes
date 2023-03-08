@@ -269,7 +269,7 @@ metadata:
     kind: Deployment
     name: apiserver
     uid: 62a01473-77e6-462a-ac02-eae02830d991
-  resourceVersion: "13565"
+  resourceVersion: "13580"
   uid: c990828d-15ba-4bde-8403-ebf0a36b8376
 spec:
   replicas: 2
@@ -475,6 +475,6 @@ spec:
 status:
   availableReplicas: 1
   fullyLabeledReplicas: 1
-  observedGeneration: 2
+  observedGeneration: 3
   readyReplicas: 1
   replicas: 1
