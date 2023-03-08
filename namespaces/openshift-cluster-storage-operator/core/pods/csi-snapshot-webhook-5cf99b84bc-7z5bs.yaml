@@ -154,8 +154,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -171,6 +169,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:45:58Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:17Z"
   name: csi-snapshot-webhook-5cf99b84bc-7z5bs
   namespace: openshift-cluster-storage-operator
   ownerReferences:
@@ -180,7 +190,7 @@ metadata:
     kind: ReplicaSet
     name: csi-snapshot-webhook-5cf99b84bc
     uid: a87606c3-f716-47cc-be5a-63448514d1f1
-  resourceVersion: "7525"
+  resourceVersion: "17110"
   uid: ecf502a8-0dde-469b-8c63-2fed38f04637
 spec:
   affinity:
@@ -293,8 +303,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:58Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:51:17Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:58Z"
