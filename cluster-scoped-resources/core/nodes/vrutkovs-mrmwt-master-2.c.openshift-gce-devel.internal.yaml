@@ -25,14 +25,6 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:spec:
-        f:taints: {}
-    manager: kube-controller-manager
-    operation: Update
-    time: "2023-03-08T11:43:02Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:metadata:
         f:annotations:
           .: {}
@@ -80,6 +72,14 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:spec:
+        f:taints: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:44:42Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:metadata:
         f:annotations:
           f:k8s.ovn.org/node-gateway-router-lrp-ifaddr: {}
@@ -102,7 +102,7 @@ metadata:
     subresource: status
     time: "2023-03-08T11:44:42Z"
   name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
-  resourceVersion: "3695"
+  resourceVersion: "3697"
   uid: 68230a61-3998-42ae-824b-1cc75bc72bd7
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-c/vrutkovs-mrmwt-master-2
@@ -111,9 +111,6 @@ spec:
     key: node-role.kubernetes.io/master
   - effect: NoSchedule
     key: node.kubernetes.io/not-ready
-  - effect: NoSchedule
-    key: node.kubernetes.io/network-unavailable
-    timeAdded: "2023-03-08T11:43:02Z"
 status:
   addresses:
   - address: 10.0.0.3
