@@ -642,8 +642,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -656,8 +654,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -684,7 +680,7 @@ metadata:
     kind: StatefulSet
     name: prometheus-k8s
     uid: 64bf94c0-7125-4d69-824b-802c773560a3
-  resourceVersion: "26676"
+  resourceVersion: "26677"
   uid: 94754bec-b69a-4c34-9593-539c810bea91
 spec:
   affinity:
@@ -1231,16 +1227,12 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:59:08Z"
-    message: 'containers with unready status: [prometheus]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:59:24Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:59:08Z"
-    message: 'containers with unready status: [prometheus]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:59:24Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:59:08Z"
@@ -1285,7 +1277,7 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:91e7d68b28aa00e209065604b2b9ac1400671d9102581e8b49b37726acd7b6e4
     lastState: {}
     name: prometheus
-    ready: false
+    ready: true
     restartCount: 0
     started: true
     state:
