@@ -155,7 +155,9 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -169,7 +171,7 @@ metadata:
     kind: Deployment
     name: prometheus-operator
     uid: 3c1b4249-4d33-4dcb-b413-7fb8df58ee6f
-  resourceVersion: "22407"
+  resourceVersion: "22410"
   uid: a4338cf0-3b80-4356-80ed-2f4b628d5238
 spec:
   replicas: 1
@@ -284,5 +286,6 @@ spec:
           name: metrics-client-ca
         name: metrics-client-ca
 status:
+  fullyLabeledReplicas: 1
   observedGeneration: 1
-  replicas: 0
+  replicas: 1
