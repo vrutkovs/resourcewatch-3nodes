@@ -33,6 +33,8 @@ metadata:
     operator.openshift.io/dep-openshift-apiserver.image-import-ca.configmap: OUXnWA==
     operator.openshift.io/dep-openshift-apiserver.trusted-ca-bundle.configmap: O1lK1A==
   creationTimestamp: "2023-03-08T11:51:40Z"
+  deletionGracePeriodSeconds: 90
+  deletionTimestamp: "2023-03-08T11:53:18Z"
   generateName: apiserver-74cdd77d9b-
   labels:
     apiserver: "true"
@@ -411,7 +413,7 @@ metadata:
     kind: ReplicaSet
     name: apiserver-74cdd77d9b
     uid: 6377fba3-5dda-4a64-9b49-4f0415a22c93
-  resourceVersion: "17794"
+  resourceVersion: "18511"
   uid: b620abd8-5de7-4c79-9bbc-71a62cecad68
 spec:
   affinity:
