@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:33Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:33Z"
+deprecatedSource:
+  component: gcp-pd-csi-driver-operator-gcppddriverstaticresourcescontroller-gcppddriverstaticresourcescontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:33Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: gcp-pd-csi-driver-operator
+    operation: Update
+    time: "2023-03-08T11:45:33Z"
+  name: gcp-pd-csi-driver-operator.174a6f11de93006f
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "6260"
+  uid: 99afbb72-4ff7-452b-b47e-ee5f72b19806
+note: Created RoleBinding.rbac.authorization.k8s.io/gcp-pd-csi-driver-prometheus -n
+  openshift-cluster-csi-drivers because it was missing
+reason: RoleBindingCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: gcp-pd-csi-driver-operator
+  namespace: openshift-cluster-csi-drivers
+  uid: 9fa381f3-4b90-4ed2-849b-21a984daad9c
+type: Normal
