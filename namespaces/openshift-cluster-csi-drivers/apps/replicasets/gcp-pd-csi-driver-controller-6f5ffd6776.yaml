@@ -411,7 +411,7 @@ metadata:
     kind: Deployment
     name: gcp-pd-csi-driver-controller
     uid: c7179cc3-3b74-4f83-b872-a437a7b51e6e
-  resourceVersion: "6184"
+  resourceVersion: "6195"
   uid: aa62a819-3836-4605-b527-b86540f7a1e2
 spec:
   replicas: 1
@@ -723,6 +723,6 @@ spec:
               expirationSeconds: 3600
               path: token
 status:
-  fullyLabeledReplicas: 2
+  fullyLabeledReplicas: 1
   observedGeneration: 2
-  replicas: 2
+  replicas: 1
