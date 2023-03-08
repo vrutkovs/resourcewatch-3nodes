@@ -1,0 +1,46 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:47:24Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:24Z"
+deprecatedSource:
+  component: oauth-apiserver-status-controller-statussyncer_authentication
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:47:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: authentication-operator
+    operation: Update
+    time: "2023-03-08T11:47:24Z"
+  name: authentication-operator.174a6f2b91fe9b3e
+  namespace: openshift-authentication-operator
+  resourceVersion: "10832"
+  uid: e3cd169e-fe0e-4a5c-a429-d087ec469b1d
+note: 'Status for clusteroperator/authentication changed: Degraded changed from False
+  to True ("APIServerDeploymentDegraded: waiting for observed configuration to have
+  mandatory apiServerArguments.etcd-servers\nAPIServerDeploymentDegraded: \nIngressStateEndpointsDegraded:
+  No subsets found for the endpoints of oauth-server\nOAuthAPIServerConfigObservationDegraded:
+  configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found\nOAuthServerServiceEndpointAccessibleControllerDegraded:
+  Get \"https://172.30.73.115:443/healthz\": dial tcp 172.30.73.115:443: connect:
+  connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerDegraded:
+  oauth service endpoints are not ready")'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: authentication-operator
+  namespace: openshift-authentication-operator
+  uid: 0efac7b0-177c-4814-9d2b-04ba66ce84f1
+type: Normal
