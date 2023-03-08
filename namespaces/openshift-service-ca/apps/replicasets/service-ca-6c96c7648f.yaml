@@ -114,10 +114,8 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -132,7 +130,7 @@ metadata:
     kind: Deployment
     name: service-ca
     uid: ac9feeb8-822e-4149-94eb-80a47b3c84fd
-  resourceVersion: "5976"
+  resourceVersion: "17052"
   uid: 75e76e63-a5fc-4c5d-9c11-9deefc56af7d
 spec:
   replicas: 1
@@ -209,8 +207,6 @@ spec:
           name: signing-cabundle
         name: signing-cabundle
 status:
-  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
