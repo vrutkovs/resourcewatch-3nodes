@@ -492,6 +492,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -504,6 +506,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -519,7 +523,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:59:45Z"
+    time: "2023-03-08T12:00:00Z"
   name: alertmanager-main-1
   namespace: openshift-monitoring
   ownerReferences:
@@ -529,7 +533,7 @@ metadata:
     kind: StatefulSet
     name: alertmanager-main
     uid: 3d2e73f5-0ea8-41ff-b2d2-5c651c8a2d8d
-  resourceVersion: "27267"
+  resourceVersion: "27303"
   uid: d9d2da8d-4bce-42f6-a2ac-2bcca4c37511
 spec:
   affinity:
@@ -963,12 +967,18 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:59:45Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T12:00:00Z"
+    message: 'containers with unready status: [alertmanager config-reloader alertmanager-proxy
+      kube-rbac-proxy kube-rbac-proxy-metric prom-label-proxy]'
+    reason: ContainersNotReady
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:59:45Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T12:00:00Z"
+    message: 'containers with unready status: [alertmanager config-reloader alertmanager-proxy
+      kube-rbac-proxy kube-rbac-proxy-metric prom-label-proxy]'
+    reason: ContainersNotReady
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:59:05Z"
@@ -996,66 +1006,107 @@ status:
         reason: Error
         startedAt: "2023-03-08T11:59:10Z"
     name: alertmanager
-    ready: true
+    ready: false
     restartCount: 1
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://cdeb741642c4805c40aede69a71594c314e0238376973c694fc9aee9dd246106
+        exitCode: 0
+        finishedAt: "2023-03-08T11:59:59Z"
+        reason: Completed
         startedAt: "2023-03-08T11:59:19Z"
   - containerID: cri-o://2eb93affe2d51576ef669b21e20381a4dd01020d45932d4da5704ab91507795c
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
     lastState: {}
     name: alertmanager-proxy
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://2eb93affe2d51576ef669b21e20381a4dd01020d45932d4da5704ab91507795c
+        exitCode: 2
+        finishedAt: "2023-03-08T11:59:59Z"
+        message: |
+          2023/03/08 11:59:13 provider.go:129: Defaulting client-id to system:serviceaccount:openshift-monitoring:alertmanager-main
+          2023/03/08 11:59:13 provider.go:134: Defaulting client-secret to service account token /var/run/secrets/kubernetes.io/serviceaccount/token
+          2023/03/08 11:59:13 provider.go:358: Delegation of authentication and authorization to OpenShift is enabled for bearer tokens and client certificates.
+          2023/03/08 11:59:13 oauthproxy.go:203: mapping path "/" => upstream "http://localhost:9093/"
+          2023/03/08 11:59:13 oauthproxy.go:230: OAuthProxy configured for  Client ID: system:serviceaccount:openshift-monitoring:alertmanager-main
+          2023/03/08 11:59:13 oauthproxy.go:240: Cookie settings: name:_oauth_proxy secure(https):true httponly:true expiry:168h0m0s domain:<default> samesite: refresh:disabled
+          I0308 11:59:13.817475       1 dynamic_serving_content.go:130] Starting serving::/etc/tls/private/tls.crt::/etc/tls/private/tls.key
+          2023/03/08 11:59:13 http.go:107: HTTPS: listening on [::]:9095
+        reason: Error
         startedAt: "2023-03-08T11:59:13Z"
   - containerID: cri-o://c12520593308820a2dc297785a33f0975a2c55ab3e95b3119417fa9edced842c
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f7088516f2eeba84a8fdbed70658a4b5958247051bc9cb489667864ed74fc08
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f7088516f2eeba84a8fdbed70658a4b5958247051bc9cb489667864ed74fc08
     lastState: {}
     name: config-reloader
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://c12520593308820a2dc297785a33f0975a2c55ab3e95b3119417fa9edced842c
+        exitCode: 2
+        finishedAt: "2023-03-08T11:59:59Z"
+        message: |
+          level=info ts=2023-03-08T11:59:13.60921673Z caller=main.go:111 msg="Starting prometheus-config-reloader" version="(version=0.60.1, branch=release-4.12, revision=57e7c5741)"
+          level=info ts=2023-03-08T11:59:13.609274911Z caller=main.go:112 build_context="(go=go1.19.4, user=root, date=20230216-09:14:16)"
+          level=info ts=2023-03-08T11:59:13.609455583Z caller=main.go:149 msg="Starting web server for metrics" listen=localhost:8080
+          level=error ts=2023-03-08T11:59:13.611056885Z caller=runutil.go:100 msg="function failed. Retrying in next tick" err="trigger reload: reload request failed: Post \"http://localhost:9093/-/reload\": dial tcp [::1]:9093: connect: connection refused"
+          level=error ts=2023-03-08T11:59:18.615631233Z caller=runutil.go:100 msg="function failed. Retrying in next tick" err="trigger reload: reload request failed: Post \"http://localhost:9093/-/reload\": dial tcp [::1]:9093: connect: connection refused"
+          level=info ts=2023-03-08T11:59:23.619208123Z caller=reloader.go:374 msg="Reload triggered" cfg_in=/etc/alertmanager/config/alertmanager.yaml.gz cfg_out=/etc/alertmanager/config_out/alertmanager.env.yaml watched_dirs="/etc/alertmanager/secrets/alertmanager-main-tls, /etc/alertmanager/secrets/alertmanager-main-proxy, /etc/alertmanager/secrets/alertmanager-kube-rbac-proxy, /etc/alertmanager/secrets/alertmanager-kube-rbac-proxy-metric"
+          level=info ts=2023-03-08T11:59:23.619294776Z caller=reloader.go:235 msg="started watching config file and directories for changes" cfg=/etc/alertmanager/config/alertmanager.yaml.gz out=/etc/alertmanager/config_out/alertmanager.env.yaml dirs=/etc/alertmanager/secrets/alertmanager-main-tls,/etc/alertmanager/secrets/alertmanager-main-proxy,/etc/alertmanager/secrets/alertmanager-kube-rbac-proxy,/etc/alertmanager/secrets/alertmanager-kube-rbac-proxy-metric
+        reason: Error
         startedAt: "2023-03-08T11:59:13Z"
   - containerID: cri-o://2940da516f3d4b1ff473f1af776c936c8e66bacf4d8da83348c4288d0911ca45
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://2940da516f3d4b1ff473f1af776c936c8e66bacf4d8da83348c4288d0911ca45
+        exitCode: 0
+        finishedAt: "2023-03-08T11:59:59Z"
+        reason: Completed
         startedAt: "2023-03-08T11:59:13Z"
   - containerID: cri-o://5bc69e1e6fa6cb1ef218d36422be030ea48f60f7a8e267b8452a32e6f3fd6f1a
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy-metric
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://5bc69e1e6fa6cb1ef218d36422be030ea48f60f7a8e267b8452a32e6f3fd6f1a
+        exitCode: 0
+        finishedAt: "2023-03-08T11:59:59Z"
+        reason: Completed
         startedAt: "2023-03-08T11:59:14Z"
   - containerID: cri-o://14ed388edad38ef9de44c59d605003c7129bfdb5e0372c8f736ed1c3f8748a43
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:63a03be7e8759270b4a2c75112207867ef51774db5f682d4d2f711d0934fc816
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:63a03be7e8759270b4a2c75112207867ef51774db5f682d4d2f711d0934fc816
     lastState: {}
     name: prom-label-proxy
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://14ed388edad38ef9de44c59d605003c7129bfdb5e0372c8f736ed1c3f8748a43
+        exitCode: 0
+        finishedAt: "2023-03-08T11:59:59Z"
+        reason: Completed
         startedAt: "2023-03-08T11:59:18Z"
   hostIP: 10.0.128.4
   phase: Running
