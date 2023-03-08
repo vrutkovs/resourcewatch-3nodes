@@ -93,6 +93,24 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:45:00Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          .: {}
+          k:{"type":"PodScheduled"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:45:00Z"
   name: collect-profiles-27971265-xx8nw
   namespace: openshift-operator-lifecycle-manager
   ownerReferences:
@@ -102,7 +120,7 @@ metadata:
     kind: Job
     name: collect-profiles-27971265
     uid: 65ff9d67-a0a5-4697-bfab-05e93af03e80
-  resourceVersion: "4034"
+  resourceVersion: "4038"
   uid: e68ee4c5-5d3c-45bf-8ee2-657e7bfba163
 spec:
   containers:
@@ -202,5 +220,13 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:45:00Z"
+    message: '0/3 nodes are available: 3 node(s) had untolerated taint {node-role.kubernetes.io/master:
+      }. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.'
+    reason: Unschedulable
+    status: "False"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
