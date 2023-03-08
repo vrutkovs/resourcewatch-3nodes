@@ -3,6 +3,28 @@ kind: Pod
 metadata:
   annotations:
     k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.128.0.9/23"],"mac_address":"0a:58:0a:80:00:09","gateway_ips":["10.128.0.1"],"ip_address":"10.128.0.9/23","gateway_ip":"10.128.0.1"}}'
+    k8s.v1.cni.cncf.io/network-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.128.0.9"
+          ],
+          "mac": "0a:58:0a:80:00:09",
+          "default": true,
+          "dns": {}
+      }]
+    k8s.v1.cni.cncf.io/networks-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.128.0.9"
+          ],
+          "mac": "0a:58:0a:80:00:09",
+          "default": true,
+          "dns": {}
+      }]
   creationTimestamp: "2023-03-08T11:51:43Z"
   labels:
     app: guard
@@ -107,9 +129,20 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:51:44Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:44Z"
   name: etcd-guard-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
   namespace: openshift-etcd
-  resourceVersion: "17993"
+  resourceVersion: "18168"
   uid: f648cd67-8539-48ce-9a92-a6cb686681d5
 spec:
   containers:
