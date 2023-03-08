@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:53:37Z"
+deprecatedLastTimestamp: "2023-03-08T11:53:37Z"
+deprecatedSource:
+  component: kube-controller-manager
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:53:37Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:53:37Z"
+  name: kube-controller-manager.174a6f827bf5b0cb
+  namespace: kube-system
+  resourceVersion: "20958"
+  uid: 7545c23d-43a1-499b-80e5-6b7ffbe056c6
+note: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal_67360266-3c5c-44c4-82f0-5d7c00816a72
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: kube-controller-manager
+  namespace: kube-system
+  resourceVersion: "20956"
+  uid: eacacc3f-21f1-41d1-ad7b-3ad20d9b3170
+type: Normal
