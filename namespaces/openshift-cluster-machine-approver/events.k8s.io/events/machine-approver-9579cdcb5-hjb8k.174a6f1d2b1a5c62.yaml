@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:22Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:11Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:46:25Z"
+    time: "2023-03-08T11:55:14Z"
   name: machine-approver-9579cdcb5-hjb8k.174a6f1d2b1a5c62
   namespace: openshift-cluster-machine-approver
-  resourceVersion: "8669"
+  resourceVersion: "22436"
   uid: 47a27634-7e70-48ad-88e3-3cd8e4c2eb53
 note: Started container machine-approver-controller
 reason: Started
