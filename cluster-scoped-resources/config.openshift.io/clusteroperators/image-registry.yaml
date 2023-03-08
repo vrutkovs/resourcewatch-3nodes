@@ -43,14 +43,14 @@ metadata:
     manager: cluster-image-registry-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:06Z"
+    time: "2023-03-08T11:52:45Z"
   name: image-registry
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "19040"
+  resourceVersion: "20323"
   uid: 9aa1cf6b-4e41-4c7d-bbe0-7d3471dbc991
 spec: {}
 status:
@@ -70,9 +70,10 @@ status:
     reason: DeploymentNotCompleted::NodeCADaemonUnavailable
     status: "True"
     type: Progressing
-  - lastTransitionTime: "2023-03-08T11:51:42Z"
-    reason: AsExpected
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:52:45Z"
+    message: 'Degraded: The deployment does not have available replicas'
+    reason: Unavailable
+    status: "True"
     type: Degraded
   extension: null
   relatedObjects:
