@@ -43,14 +43,14 @@ metadata:
     manager: cluster-image-registry-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:45Z"
+    time: "2023-03-08T11:52:46Z"
   name: image-registry
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "20323"
+  resourceVersion: "20375"
   uid: 9aa1cf6b-4e41-4c7d-bbe0-7d3471dbc991
 spec: {}
 status:
@@ -66,8 +66,8 @@ status:
   - lastTransitionTime: "2023-03-08T11:51:43Z"
     message: |-
       Progressing: The deployment has not completed
-      NodeCADaemonProgressing: The daemon set node-ca is deploying node pods
-    reason: DeploymentNotCompleted::NodeCADaemonUnavailable
+      NodeCADaemonProgressing: The daemon set node-ca is deployed
+    reason: DeploymentNotCompleted
     status: "True"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:52:45Z"
