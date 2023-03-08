@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:00:22Z"
+deprecatedLastTimestamp: "2023-03-08T12:00:22Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:00:22Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T12:00:22Z"
+  name: revision-pruner-6-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal.174a6fe0eb6e098e
+  namespace: openshift-kube-scheduler
+  resourceVersion: "27732"
+  uid: c2de5f27-6a4c-4909-bf4d-2b1fd441b097
+note: Started container pruner
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{pruner}
+  kind: Pod
+  name: revision-pruner-6-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+  namespace: openshift-kube-scheduler
+  resourceVersion: "27721"
+  uid: 9cfa1c20-7e09-4ee4-8ec4-1e01ea78412c
+type: Normal
