@@ -258,6 +258,24 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:58:56Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          .: {}
+          k:{"type":"PodScheduled"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:58:57Z"
   name: oauth-openshift-68c5547565-ntpss
   namespace: openshift-authentication
   ownerReferences:
@@ -267,7 +285,7 @@ metadata:
     kind: ReplicaSet
     name: oauth-openshift-68c5547565
     uid: 6dde1525-5e59-4f9e-88aa-665cef8e3794
-  resourceVersion: "25668"
+  resourceVersion: "25672"
   uid: c3558560-a545-4a30-8f69-0d43212b4373
 spec:
   affinity:
@@ -483,5 +501,15 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:58:57Z"
+    message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+      3 node(s) didn''t match pod anti-affinity rules. preemption: 0/6 nodes are available:
+      3 Preemption is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity
+      rules.'
+    reason: Unschedulable
+    status: "False"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
