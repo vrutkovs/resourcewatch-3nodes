@@ -51,16 +51,15 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "19240"
+  resourceVersion: "19243"
   uid: ef706269-fd7e-4416-af64-7cfc9719f1d3
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:47:22Z"
-    message: |-
-      GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal]
-      RevisionControllerDegraded: conflicting latestAvailableRevision 6
-    reason: GuardController_SyncError::RevisionController_Error
+    message: 'GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal,
+      Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal]'
+    reason: GuardController_SyncError
     status: "True"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:46:24Z"
