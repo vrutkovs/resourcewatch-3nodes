@@ -250,7 +250,7 @@ metadata:
     kind: ReplicaSet
     name: apiserver-86c9ff68c6
     uid: 80dbd918-5c00-4f43-af31-c20519489df0
-  resourceVersion: "18436"
+  resourceVersion: "18589"
   uid: 271e687d-f6d3-48fe-adad-5bd82ccaff67
 spec:
   affinity:
@@ -387,6 +387,7 @@ spec:
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
       name: kube-api-access-nsdj7
       readOnly: true
+  nodeName: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
   nodeSelector:
     node-role.kubernetes.io/master: ""
   preemptionPolicy: PreemptLowerPriority
@@ -473,12 +474,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:51:47Z"
-    message: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.
-      preemption: 0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity
-      rules.'
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:51:50Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
