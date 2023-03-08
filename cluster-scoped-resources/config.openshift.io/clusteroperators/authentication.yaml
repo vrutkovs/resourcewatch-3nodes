@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "24498"
+  resourceVersion: "24503"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
@@ -63,8 +63,7 @@ status:
       OAuthServerRouteEndpointAccessibleControllerDegraded: Get "https://oauth-openshift.apps.vrutkovs.origin-gce.dev.openshift.com/healthz": EOF
       OAuthServerServiceEndpointAccessibleControllerDegraded: Get "https://172.30.73.115:443/healthz": dial tcp 172.30.73.115:443: connect: connection refused
       OAuthServerServiceEndpointsEndpointAccessibleControllerDegraded: oauth service endpoints are not ready
-      WellKnownReadyControllerDegraded: failed to get oauth metadata from openshift-config-managed/oauth-openshift ConfigMap: configmap "oauth-openshift" not found (check authentication operator, it is supposed to create this)
-    reason: APIServerDeployment_UnavailablePod::IngressStateEndpoints_MissingSubsets::OAuthServerRouteEndpointAccessibleController_SyncError::OAuthServerServiceEndpointAccessibleController_SyncError::OAuthServerServiceEndpointsEndpointAccessibleController_SyncError::WellKnownReadyController_SyncError
+    reason: APIServerDeployment_UnavailablePod::IngressStateEndpoints_MissingSubsets::OAuthServerRouteEndpointAccessibleController_SyncError::OAuthServerServiceEndpointAccessibleController_SyncError::OAuthServerServiceEndpointsEndpointAccessibleController_SyncError
     status: "True"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:57:57Z"
