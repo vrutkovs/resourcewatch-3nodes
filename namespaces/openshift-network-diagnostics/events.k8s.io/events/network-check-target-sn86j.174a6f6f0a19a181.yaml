@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:52:13Z"
-deprecatedLastTimestamp: "2023-03-08T11:52:13Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:14Z"
 deprecatedSource:
   component: controlplane
 eventTime: null
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:52:14Z"
   name: network-check-target-sn86j.174a6f6f0a19a181
   namespace: openshift-network-diagnostics
-  resourceVersion: "19545"
+  resourceVersion: "19555"
   uid: 6311c9ab-90d5-4ed6-94ae-59460a2213a2
 note: 'addLogicalPort failed for openshift-network-diagnostics/network-check-target-sn86j:
   unable to parse node L3 gw annotation: k8s.ovn.org/l3-gateway-config annotation
