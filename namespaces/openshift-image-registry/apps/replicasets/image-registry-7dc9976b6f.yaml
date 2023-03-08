@@ -294,6 +294,15 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:51:44Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:observedGeneration: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:44Z"
   name: image-registry-7dc9976b6f
   namespace: openshift-image-registry
   ownerReferences:
@@ -303,7 +312,7 @@ metadata:
     kind: Deployment
     name: image-registry
     uid: eb3c9ce4-e686-45ad-bb89-a15500e8fd78
-  resourceVersion: "18096"
+  resourceVersion: "18154"
   uid: f7ac657b-a1f5-43c4-9d6a-74a9ff90bb6c
 spec:
   replicas: 1
@@ -503,4 +512,5 @@ spec:
               expirationSeconds: 3600
               path: token
 status:
+  observedGeneration: 1
   replicas: 0
