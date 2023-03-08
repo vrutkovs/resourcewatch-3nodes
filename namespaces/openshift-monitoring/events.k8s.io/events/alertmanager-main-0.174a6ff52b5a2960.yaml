@@ -1,0 +1,40 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T12:01:49.933924Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:01:49Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T12:01:49Z"
+  name: alertmanager-main-0.174a6ff52b5a2960
+  namespace: openshift-monitoring
+  resourceVersion: "28593"
+  uid: 2d3957a7-039b-44e9-b080-7dd0a70e2b65
+note: Successfully assigned openshift-monitoring/alertmanager-main-0 to vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: alertmanager-main-0
+  namespace: openshift-monitoring
+  resourceVersion: "28589"
+  uid: ed3b89ac-04c7-4465-ab7d-bb182af3d371
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+type: Normal

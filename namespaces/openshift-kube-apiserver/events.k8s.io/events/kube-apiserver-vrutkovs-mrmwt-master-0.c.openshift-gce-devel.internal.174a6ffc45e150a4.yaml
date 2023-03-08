@@ -1,0 +1,22 @@
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource:
+  component: apiserver
+  host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:02:20Z"
+  name: kube-apiserver-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6ffc45e150a4
+  namespace: openshift-kube-apiserver
+  resourceVersion: "28859"
+  uid: 6c96f0a0-300d-4b98-bf54-700050da678e
+note: All non long-running request(s) in-flight have drained
+reason: InFlightRequestsDrained
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: kube-apiserver-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+  namespace: openshift-kube-apiserver
+type: Normal
