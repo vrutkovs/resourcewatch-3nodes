@@ -171,9 +171,9 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:59:50Z"
+    time: "2023-03-08T12:00:20Z"
   name: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
-  resourceVersion: "27130"
+  resourceVersion: "27688"
   uid: 1a8cd3af-23ff-49d3-90d8-1bacf0fe2106
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-a/vrutkovs-mrmwt-worker-a-92xck
@@ -208,25 +208,25 @@ status:
     reason: RouteCreated
     status: "False"
     type: NetworkUnavailable
-  - lastHeartbeatTime: "2023-03-08T11:59:50Z"
+  - lastHeartbeatTime: "2023-03-08T12:00:20Z"
     lastTransitionTime: "2023-03-08T11:54:54Z"
     message: kubelet has sufficient memory available
     reason: KubeletHasSufficientMemory
     status: "False"
     type: MemoryPressure
-  - lastHeartbeatTime: "2023-03-08T11:59:50Z"
+  - lastHeartbeatTime: "2023-03-08T12:00:20Z"
     lastTransitionTime: "2023-03-08T11:54:54Z"
     message: kubelet has no disk pressure
     reason: KubeletHasNoDiskPressure
     status: "False"
     type: DiskPressure
-  - lastHeartbeatTime: "2023-03-08T11:59:50Z"
+  - lastHeartbeatTime: "2023-03-08T12:00:20Z"
     lastTransitionTime: "2023-03-08T11:54:54Z"
     message: kubelet has sufficient PID available
     reason: KubeletHasSufficientPID
     status: "False"
     type: PIDPressure
-  - lastHeartbeatTime: "2023-03-08T11:59:50Z"
+  - lastHeartbeatTime: "2023-03-08T12:00:20Z"
     lastTransitionTime: "2023-03-08T11:54:54Z"
     message: kubelet is posting ready status
     reason: KubeletReady
@@ -282,6 +282,9 @@ status:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:f674b597694b13b7060c9ee611a403f1f87a98e05682c33f9a86140061ee9d9e
     sizeBytes: 404212434
   - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9696f8f231d49aadf63ab980ec5c17c4fd87011930daecd30cc9e4ee102f1aeb
+    sizeBytes: 402351209
+  - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b2b43aedb2296989c3b4015bdf7ea568f4a117a7e1369d21ab61855b3f6e4417
     sizeBytes: 396164794
   - names:
@@ -294,11 +297,17 @@ status:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
     sizeBytes: 377361805
   - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f7088516f2eeba84a8fdbed70658a4b5958247051bc9cb489667864ed74fc08
+    sizeBytes: 359897039
+  - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f5c985e58fff4038fc1c8b580cdec0c50f13e090c7c5590634df00cb18ee8ab
     sizeBytes: 354455179
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:3338297e46a48994447e209ebbbc28389106965bd04e328719030d2cfe262807
     sizeBytes: 351853372
+  - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:e6173b5d77def9e8058c7ff82f1ad65f537d1a81f88fcdabe6d8e30bff49ca89
+    sizeBytes: 333780768
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:63a03be7e8759270b4a2c75112207867ef51774db5f682d4d2f711d0934fc816
     sizeBytes: 309576938
