@@ -44,26 +44,34 @@ metadata:
     manager: cluster-kube-controller-manager-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:55:04Z"
+    time: "2023-03-08T11:58:27Z"
   name: kube-controller-manager
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "22071"
+  resourceVersion: "25128"
   uid: b847a3b2-5e9a-4598-8142-d35d20a8b280
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:47:21Z"
-    message: "BackingResourceControllerDegraded: \"manifests/installer-sa.yaml\" (string):
-      the server was unable to return a response in the time allotted, but may still
-      be processing the request (get serviceaccounts installer-sa)\nBackingResourceControllerDegraded:
-      \nGarbageCollectorDegraded: error fetching rules: Get \"https://thanos-querier.openshift-monitoring.svc:9091/api/v1/rules\":
+    message: "GarbageCollectorDegraded: error fetching rules: Get \"https://thanos-querier.openshift-monitoring.svc:9091/api/v1/rules\":
       dial tcp: lookup thanos-querier.openshift-monitoring.svc on 172.30.0.10:53:
-      no such host"
-    reason: BackingResourceController_SyncError::GarbageCollector_Error
+      no such host\nKubeControllerManagerStaticResourcesDegraded: \"assets/kube-controller-manager/localhost-recovery-sa.yaml\"
+      (string): the server was unable to return a response in the time allotted, but
+      may still be processing the request (get serviceaccounts localhost-recovery-client)\nKubeControllerManagerStaticResourcesDegraded:
+      \"assets/kube-controller-manager/csr_approver_clusterrole.yaml\" (string): the
+      server was unable to return a response in the time allotted, but may still be
+      processing the request (get clusterroles.rbac.authorization.k8s.io system:openshift:controller:cluster-csr-approver-controller)\nKubeControllerManagerStaticResourcesDegraded:
+      \nTargetConfigControllerDegraded: \"configmap/kube-controller-manager-pod\":
+      the server was unable to return a response in the time allotted, but may still
+      be processing the request (get configmaps config)\nTargetConfigControllerDegraded:
+      \"configmap/trusted-ca-bundle\": the server was unable to return a response
+      in the time allotted, but may still be processing the request (get configmaps
+      trusted-ca-bundle)"
+    reason: GarbageCollector_Error::KubeControllerManagerStaticResources_SyncError::TargetConfigController_SynchronizationError
     status: "True"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:45:25Z"
