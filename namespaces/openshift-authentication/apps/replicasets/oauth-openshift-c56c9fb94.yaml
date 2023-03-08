@@ -281,7 +281,9 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -295,7 +297,7 @@ metadata:
     kind: Deployment
     name: oauth-openshift
     uid: 797a38d4-d6e9-4804-87be-ecc7f64e6aec
-  resourceVersion: "24475"
+  resourceVersion: "24479"
   uid: 9d0ce48b-d3b3-4caf-99ac-0ed29d66b029
 spec:
   replicas: 3
@@ -496,5 +498,6 @@ spec:
           optional: true
         name: v4-0-config-system-trusted-ca-bundle
 status:
+  fullyLabeledReplicas: 3
   observedGeneration: 1
-  replicas: 0
+  replicas: 3
