@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:16Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:16Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:40Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:32Z"
+    time: "2023-03-08T11:46:40Z"
   name: insights-operator-67cf785b46-szjwj.174a6f0dd35469d0
   namespace: openshift-insights
-  resourceVersion: "6123"
+  resourceVersion: "9436"
   uid: e5cfd4c2-2ef3-4e46-995a-c11f560e5091
 note: Started container insights-operator
 reason: Started
