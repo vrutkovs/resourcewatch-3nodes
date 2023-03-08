@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "8814"
+  resourceVersion: "8847"
   uid: f01b7c7e-3e09-4722-ad7f-959168c885a2
 spec: {}
 status:
@@ -62,6 +62,7 @@ status:
       EtcdMembersControllerDegraded: getting cache client could not retrieve endpoints: node lister not synced
       NodeControllerDegraded: All master nodes are ready
       ScriptControllerDegraded: "configmap/etcd-pod": missing env var values
+      ClusterMemberControllerDegraded: could not get list of unhealthy members: getting cache client could not retrieve endpoints: node lister not synced
       EtcdEndpointsDegraded: no etcd members are present
       EtcdMembersDegraded: No unhealthy members found
     reason: AsExpected
