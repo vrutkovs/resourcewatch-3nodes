@@ -418,7 +418,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:55Z"
+    time: "2023-03-08T11:52:56Z"
   name: multus-additional-cni-plugins-5g9sw
   namespace: openshift-multus
   ownerReferences:
@@ -428,7 +428,7 @@ metadata:
     kind: DaemonSet
     name: multus-additional-cni-plugins
     uid: 54f8703d-bc01-42c1-bb67-b29ebf0051fe
-  resourceVersion: "20546"
+  resourceVersion: "20552"
   uid: 4e9e49cc-5625-442a-ac2e-cb130b0c9424
 spec:
   affinity:
@@ -805,8 +805,7 @@ status:
   conditions:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:52:07Z"
-    message: 'containers with incomplete status: [routeoverride-cni whereabouts-cni-bincopy
-      whereabouts-cni]'
+    message: 'containers with incomplete status: [whereabouts-cni-bincopy whereabouts-cni]'
     reason: ContainersNotInitialized
     status: "False"
     type: Initialized
@@ -886,10 +885,14 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a8bcc8cf428e222c7e6677fe5f7f05e79da2aed1ded851cad696d83c94860b4c
     lastState: {}
     name: routeoverride-cni
-    ready: false
+    ready: true
     restartCount: 0
     state:
-      running:
+      terminated:
+        containerID: cri-o://22c681b76570a004b2fa3ca1f7697632e455d054ed6e5989b7f5efae87f31de0
+        exitCode: 0
+        finishedAt: "2023-03-08T11:52:55Z"
+        reason: Completed
         startedAt: "2023-03-08T11:52:55Z"
   - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fa8f2d15c8fbc0a91334c557192733cc08614e2ec49fc41c4bee3d7c8a3aad0a
     imageID: ""
