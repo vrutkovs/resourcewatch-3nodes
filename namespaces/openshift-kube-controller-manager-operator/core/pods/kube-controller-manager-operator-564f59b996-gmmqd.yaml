@@ -215,6 +215,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -227,6 +229,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -242,7 +246,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:17Z"
+    time: "2023-03-08T11:46:43Z"
   name: kube-controller-manager-operator-564f59b996-gmmqd
   namespace: openshift-kube-controller-manager-operator
   ownerReferences:
@@ -252,7 +256,7 @@ metadata:
     kind: ReplicaSet
     name: kube-controller-manager-operator-564f59b996
     uid: ce2f34fb-ccc0-4152-b452-e2203c8f7da9
-  resourceVersion: "4244"
+  resourceVersion: "9589"
   uid: e8106043-befe-46c0-8242-cbb22b264b95
 spec:
   automountServiceAccountToken: false
@@ -374,12 +378,16 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:17Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:46:43Z"
+    message: 'containers with unready status: [kube-controller-manager-operator]'
+    reason: ContainersNotReady
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:17Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:46:43Z"
+    message: 'containers with unready status: [kube-controller-manager-operator]'
+    reason: ContainersNotReady
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:44:53Z"
@@ -391,11 +399,15 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
     lastState: {}
     name: kube-controller-manager-operator
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://a266830a1d5f574ca1de94e2aeaa0802e55be5c52c662f75301e39317fb29602
+        exitCode: 0
+        finishedAt: "2023-03-08T11:46:43Z"
+        reason: Completed
         startedAt: "2023-03-08T11:45:16Z"
   hostIP: 10.0.0.3
   phase: Running
