@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:01:15Z"
+deprecatedLastTimestamp: "2023-03-08T12:01:15Z"
+deprecatedSource:
+  component: endpoint-slice-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:01:42Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T12:01:42Z"
+  name: alertmanager-main.174a6fed2a8ae1f5
+  namespace: openshift-monitoring
+  resourceVersion: "28474"
+  uid: 291a15aa-59e6-4681-a599-16a250e28c3e
+note: 'Error updating Endpoint Slices for Service openshift-monitoring/alertmanager-main:
+  failed to update alertmanager-main-2rj9m EndpointSlice for Service openshift-monitoring/alertmanager-main:
+  Timeout: request did not complete within requested timeout - context deadline exceeded'
+reason: FailedToUpdateEndpointSlices
+regarding:
+  apiVersion: v1
+  kind: Service
+  name: alertmanager-main
+  namespace: openshift-monitoring
+  resourceVersion: "25961"
+  uid: 2648ab84-c557-47a3-964a-1aed348fd0cd
+type: Warning
