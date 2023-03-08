@@ -151,6 +151,46 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:52:13Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.0.128.3"}:
+            .: {}
+            f:ip: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:52:14Z"
   name: multus-pq7vm
   namespace: openshift-multus
   ownerReferences:
@@ -160,7 +200,7 @@ metadata:
     kind: DaemonSet
     name: multus
     uid: e45c8b1f-32f4-4ba0-87c5-7b1e0564bf30
-  resourceVersion: "19456"
+  resourceVersion: "19559"
   uid: be18467d-2998-41fb-9259-b20cc91177e1
 spec:
   affinity:
@@ -282,8 +322,40 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:52:14Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:52:14Z"
+    message: 'containers with unready status: [kube-multus]'
+    reason: ContainersNotReady
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:52:14Z"
+    message: 'containers with unready status: [kube-multus]'
+    reason: ContainersNotReady
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:52:13Z"
     status: "True"
     type: PodScheduled
+  containerStatuses:
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:cc6f52aff25ba6cad2df5f4dc4ca65abcb0e46880438397646d194b9e595001f
+    imageID: ""
+    lastState: {}
+    name: kube-multus
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  hostIP: 10.0.128.3
   phase: Pending
+  podIP: 10.0.128.3
+  podIPs:
+  - ip: 10.0.128.3
   qosClass: Burstable
+  startTime: "2023-03-08T11:52:14Z"
