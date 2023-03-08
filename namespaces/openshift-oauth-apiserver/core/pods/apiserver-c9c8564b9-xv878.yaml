@@ -325,7 +325,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:57Z"
+    time: "2023-03-08T11:51:58Z"
   name: apiserver-c9c8564b9-xv878
   namespace: openshift-oauth-apiserver
   ownerReferences:
@@ -335,7 +335,7 @@ metadata:
     kind: ReplicaSet
     name: apiserver-c9c8564b9
     uid: c990828d-15ba-4bde-8403-ebf0a36b8376
-  resourceVersion: "18749"
+  resourceVersion: "18771"
   uid: 3f956ae5-fcea-4f3c-973b-88255bc4aa78
 spec:
   affinity:
@@ -583,9 +583,13 @@ status:
     name: oauth-apiserver
     ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://1c693b949733efb833cfdac1bfb294ce781e52d91695f1cbe735622b5d1ee05a
+        exitCode: 0
+        finishedAt: "2023-03-08T11:51:57Z"
+        reason: Completed
         startedAt: "2023-03-08T11:49:42Z"
   hostIP: 10.0.0.5
   initContainerStatuses:
