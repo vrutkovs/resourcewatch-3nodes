@@ -1,0 +1,62 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:10Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:10Z"
+deprecatedSource:
+  component: oauth-apiserver-status-controller-statussyncer_authentication
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:10Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: authentication-operator
+    operation: Update
+    time: "2023-03-08T11:46:10Z"
+  name: authentication-operator.174a6f1a7eb0e337
+  namespace: openshift-authentication-operator
+  resourceVersion: "8126"
+  uid: c9f21d64-1efb-4d10-8801-ca200bc2356d
+note: 'Status for clusteroperator/authentication changed: Degraded message changed
+  from "OAuthServerServiceEndpointAccessibleControllerDegraded: \"service-ca.crt\"
+  key of the \"openshift-authentication/v4-0-config-system-service-ca\" CM is empty\nOAuthServerServiceEndpointsEndpointAccessibleControllerDegraded:
+  oauth service endpoints are not ready\nOAuthServiceDegraded: Unable to get oauth
+  server service: service \"oauth-openshift\" not found\nOAuthAPIServerConfigObservationDegraded:
+  configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found\nOAuthServerConfigObservationDegraded:
+  secret \"v4-0-config-system-router-certs\" not found\nWebhookAuthenticatorControllerDegraded:
+  failed to retrieve service openshift-oauth-apiserver/api: service \"api\" not found\nIngressStateEndpointsDegraded:
+  No endpoints found for oauth-server\nRevisionControllerDegraded: namespaces \"openshift-oauth-apiserver\"
+  not found\nAPIServerDeploymentDegraded: waiting for observed configuration to have
+  mandatory apiServerArguments.etcd-servers\nAPIServerDeploymentDegraded: " to "OAuthServerServiceEndpointAccessibleControllerDegraded:
+  \"service-ca.crt\" key of the \"openshift-authentication/v4-0-config-system-service-ca\"
+  CM is empty\nOAuthServerServiceEndpointsEndpointAccessibleControllerDegraded: oauth
+  service endpoints are not ready\nOAuthServiceDegraded: Unable to get oauth server
+  service: service \"oauth-openshift\" not found\nOAuthAPIServerConfigObservationDegraded:
+  configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found\nOAuthServerConfigObservationDegraded:
+  secret \"v4-0-config-system-router-certs\" not found\nWebhookAuthenticatorControllerDegraded:
+  failed to retrieve service openshift-oauth-apiserver/api: service \"api\" not found\nIngressStateEndpointsDegraded:
+  No endpoints found for oauth-server\nRevisionControllerDegraded: namespaces \"openshift-oauth-apiserver\"
+  not found\nAPIServerDeploymentDegraded: waiting for observed configuration to have
+  mandatory apiServerArguments.etcd-servers\nAPIServerDeploymentDegraded: \nRouterCertsDomainValidationControllerDegraded:
+  Operation cannot be fulfilled on authentications.operator.openshift.io \"cluster\":
+  the object has been modified; please apply your changes to the latest version and
+  try again"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: authentication-operator
+  namespace: openshift-authentication-operator
+  uid: 0efac7b0-177c-4814-9d2b-04ba66ce84f1
+type: Normal
