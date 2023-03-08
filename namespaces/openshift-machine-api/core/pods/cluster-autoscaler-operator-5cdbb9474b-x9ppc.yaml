@@ -256,7 +256,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:22Z"
+    time: "2023-03-08T11:55:19Z"
   name: cluster-autoscaler-operator-5cdbb9474b-x9ppc
   namespace: openshift-machine-api
   ownerReferences:
@@ -266,7 +266,7 @@ metadata:
     kind: ReplicaSet
     name: cluster-autoscaler-operator-5cdbb9474b
     uid: 0fbbb967-fe00-465e-ad7d-69dc4e559cb6
-  resourceVersion: "8465"
+  resourceVersion: "22497"
   uid: 03442a5d-fe7e-4b60-b95c-7545172214fa
 spec:
   containers:
@@ -443,11 +443,11 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:22Z"
+    lastTransitionTime: "2023-03-08T11:55:12Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:22Z"
+    lastTransitionTime: "2023-03-08T11:55:12Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
@@ -455,17 +455,38 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://74b169e36ec4165a8413c4d84fe2c0498abd3edbde70da8acc4f5bc3bd1375fb
+  - containerID: cri-o://102c84297b9ca8dd4710676cec699b17a97d729585b81563155c36a90e9dcf63
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:3bd53d6eb3d5e1024df149164c5f742d69eccc0b9ec4fec24026ac7eaf641ed1
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:3bd53d6eb3d5e1024df149164c5f742d69eccc0b9ec4fec24026ac7eaf641ed1
-    lastState: {}
+    lastState:
+      terminated:
+        containerID: cri-o://74b169e36ec4165a8413c4d84fe2c0498abd3edbde70da8acc4f5bc3bd1375fb
+        exitCode: 255
+        finishedAt: "2023-03-08T11:55:10Z"
+        message: |
+          us.go:373] machine-api-operator not ready yet
+          W0308 11:52:16.188602       1 status.go:261] Operator status degraded: machine-api not ready
+          I0308 11:52:31.188650       1 status.go:373] machine-api-operator not ready yet
+          W0308 11:52:31.188663       1 status.go:261] Operator status degraded: machine-api not ready
+          I0308 11:52:46.187085       1 status.go:373] machine-api-operator not ready yet
+          W0308 11:52:46.187098       1 status.go:261] Operator status degraded: machine-api not ready
+          I0308 11:53:01.186377       1 status.go:373] machine-api-operator not ready yet
+          W0308 11:53:01.186391       1 status.go:261] Operator status degraded: machine-api not ready
+          E0308 11:54:16.185738       1 status.go:362] failed to get dependency machine-api status: the server was unable to return a response in the time allotted, but may still be processing the request (get clusteroperators.config.openshift.io machine-api)
+          W0308 11:54:16.185755       1 status.go:261] Operator status degraded: error checking machine-api status: the server was unable to return a response in the time allotted, but may still be processing the request (get clusteroperators.config.openshift.io machine-api)
+          E0308 11:54:23.435656       1 leaderelection.go:330] error retrieving resource lock openshift-machine-api/cluster-autoscaler-operator-leader: the server was unable to return a response in the time allotted, but may still be processing the request (get leases.coordination.k8s.io cluster-autoscaler-operator-leader)
+          E0308 11:55:10.434512       1 leaderelection.go:330] error retrieving resource lock openshift-machine-api/cluster-autoscaler-operator-leader: Get "https://172.30.0.1:443/apis/coordination.k8s.io/v1/namespaces/openshift-machine-api/leases/cluster-autoscaler-operator-leader": context deadline exceeded
+          I0308 11:55:10.434611       1 leaderelection.go:283] failed to renew lease openshift-machine-api/cluster-autoscaler-operator-leader: timed out waiting for the condition
+          F0308 11:55:10.434883       1 main.go:38] Failed to start operator: leader election lost
+        reason: Error
+        startedAt: "2023-03-08T11:46:22Z"
     name: cluster-autoscaler-operator
     ready: true
-    restartCount: 0
+    restartCount: 1
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:22Z"
+        startedAt: "2023-03-08T11:55:12Z"
   - containerID: cri-o://44dbd31f41c2cd82df0fc26207fae3bf9f2437f9d9bdf882b99f352dec775307
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
