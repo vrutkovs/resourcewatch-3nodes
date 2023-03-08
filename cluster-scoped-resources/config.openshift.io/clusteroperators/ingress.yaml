@@ -50,26 +50,32 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "9490"
+  resourceVersion: "9548"
   uid: 8fb9029b-29a2-4cc2-80f7-92ffd048ae08
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:46:42Z"
-    message: The "default" ingress controller is not reporting an Available status
-      condition.
-    reason: IngressDoesNotHaveAvailableCondition
-    status: Unknown
+    message: 'The "default" ingress controller reports Available=False: IngressControllerUnavailable:
+      One or more status conditions indicate unavailable: DeploymentAvailable=Unknown
+      (DeploymentAvailabilityUnknown: The deployment has no Available status condition
+      set), LoadBalancerReady=False (LoadBalancerPending: The LoadBalancer service
+      is pending)'
+    reason: IngressUnavailable
+    status: "False"
     type: Available
   - lastTransitionTime: "2023-03-08T11:46:42Z"
-    message: Not all ingress controllers are available.
+    message: |-
+      ingresscontroller "default" is progressing: IngressControllerProgressing: One or more status conditions indicate progressing: DeploymentRollingOut=True (DeploymentRollingOut: Waiting for router deployment rollout to finish: 0 out of 2 new replica(s) have been updated...
+      ).
+      Not all ingress controllers are available.
     reason: Reconciling
     status: "True"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:46:42Z"
-    message: The "default" ingress controller is not reporting a Degraded status condition.
-    reason: IngressDoesNotHaveDegradedCondition
-    status: Unknown
+    message: The "default" ingress controller reports Degraded=False.
+    reason: IngressNotDegraded
+    status: "False"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:46:42Z"
     reason: IngressControllersUpgradeable
@@ -92,3 +98,6 @@ status:
     name: ""
     namespace: openshift-ingress-operator
     resource: dnsrecords
+  - group: ""
+    name: openshift-ingress
+    resource: namespaces
