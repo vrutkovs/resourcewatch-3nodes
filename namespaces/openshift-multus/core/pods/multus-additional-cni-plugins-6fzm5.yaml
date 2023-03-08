@@ -418,7 +418,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:43:37Z"
+    time: "2023-03-08T11:43:42Z"
   name: multus-additional-cni-plugins-6fzm5
   namespace: openshift-multus
   ownerReferences:
@@ -428,7 +428,7 @@ metadata:
     kind: DaemonSet
     name: multus-additional-cni-plugins
     uid: 54f8703d-bc01-42c1-bb67-b29ebf0051fe
-  resourceVersion: "3129"
+  resourceVersion: "3204"
   uid: f4aabc7b-faa2-4c34-a450-b92b2cf29e70
 spec:
   affinity:
@@ -803,8 +803,8 @@ status:
   conditions:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:43:10Z"
-    message: 'containers with incomplete status: [bond-cni-plugin routeoverride-cni
-      whereabouts-cni-bincopy whereabouts-cni]'
+    message: 'containers with incomplete status: [routeoverride-cni whereabouts-cni-bincopy
+      whereabouts-cni]'
     reason: ContainersNotInitialized
     status: "False"
     type: Initialized
@@ -865,15 +865,20 @@ status:
         finishedAt: "2023-03-08T11:43:36Z"
         reason: Completed
         startedAt: "2023-03-08T11:43:36Z"
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f5c985e58fff4038fc1c8b580cdec0c50f13e090c7c5590634df00cb18ee8ab
-    imageID: ""
+  - containerID: cri-o://fd9fc3365bc4ba5b2f6dd80d8354a1c5211e43b9a1b818a6b4a4c6b9eb91555e
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f5c985e58fff4038fc1c8b580cdec0c50f13e090c7c5590634df00cb18ee8ab
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f5c985e58fff4038fc1c8b580cdec0c50f13e090c7c5590634df00cb18ee8ab
     lastState: {}
     name: bond-cni-plugin
-    ready: false
+    ready: true
     restartCount: 0
     state:
-      waiting:
-        reason: PodInitializing
+      terminated:
+        containerID: cri-o://fd9fc3365bc4ba5b2f6dd80d8354a1c5211e43b9a1b818a6b4a4c6b9eb91555e
+        exitCode: 0
+        finishedAt: "2023-03-08T11:43:41Z"
+        reason: Completed
+        startedAt: "2023-03-08T11:43:41Z"
   - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a8bcc8cf428e222c7e6677fe5f7f05e79da2aed1ded851cad696d83c94860b4c
     imageID: ""
     lastState: {}
