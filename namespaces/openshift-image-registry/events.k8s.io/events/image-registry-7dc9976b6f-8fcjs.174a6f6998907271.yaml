@@ -1,0 +1,42 @@
+action: Scheduling
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:51:50.470781Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:50Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:51:50Z"
+  name: image-registry-7dc9976b6f-8fcjs.174a6f6998907271
+  namespace: openshift-image-registry
+  resourceVersion: "18591"
+  uid: e3a4cd08-ba6a-42a7-9b6e-fecc31e96d30
+note: '0/3 nodes are available: 3 node(s) didn''t match pod topology spread constraints
+  (missing required label), 3 node(s) had untolerated taint {node-role.kubernetes.io/master:
+  }. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.'
+reason: FailedScheduling
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: image-registry-7dc9976b6f-8fcjs
+  namespace: openshift-image-registry
+  resourceVersion: "18249"
+  uid: 4466c8a8-4015-4e22-91e0-6df5d4d000fb
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Warning
