@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:19Z"
+deprecatedSource:
+  component: controllermanager
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:19Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:45:19Z"
+  name: csi-snapshot-controller-pdb.174a6f0eac1f95ed
+  namespace: openshift-cluster-storage-operator
+  resourceVersion: "4538"
+  uid: 816a81d3-a2a0-4348-8c25-f19261805057
+note: No matching pods found
+reason: NoPods
+regarding:
+  apiVersion: policy/v1
+  kind: PodDisruptionBudget
+  name: csi-snapshot-controller-pdb
+  namespace: openshift-cluster-storage-operator
+  resourceVersion: "4536"
+  uid: 8d437a40-0452-4535-bc59-50086af766fb
+type: Normal
