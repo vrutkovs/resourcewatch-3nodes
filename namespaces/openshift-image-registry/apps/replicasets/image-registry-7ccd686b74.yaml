@@ -298,7 +298,6 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
         f:replicas: {}
     manager: kube-controller-manager
@@ -314,7 +313,7 @@ metadata:
     kind: Deployment
     name: image-registry
     uid: eb3c9ce4-e686-45ad-bb89-a15500e8fd78
-  resourceVersion: "22196"
+  resourceVersion: "22201"
   uid: d76c3e18-dcef-4536-b9b4-6de2e2bdcfc9
 spec:
   replicas: 0
@@ -514,6 +513,5 @@ spec:
               expirationSeconds: 3600
               path: token
 status:
-  fullyLabeledReplicas: 1
   observedGeneration: 3
-  replicas: 1
+  replicas: 0
