@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:01:12Z"
+deprecatedLastTimestamp: "2023-03-08T12:01:12Z"
+deprecatedSource:
+  component: endpoint-slice-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:01:12Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T12:01:12Z"
+  name: prometheus-adapter.174a6fec8cc44bff
+  namespace: openshift-monitoring
+  resourceVersion: "28465"
+  uid: 9d7733a7-aacc-409f-9c9b-97662ecac9a2
+note: 'Error updating Endpoint Slices for Service openshift-monitoring/prometheus-adapter:
+  failed to update prometheus-adapter-lt9jg EndpointSlice for Service openshift-monitoring/prometheus-adapter:
+  Timeout: request did not complete within requested timeout - context deadline exceeded'
+reason: FailedToUpdateEndpointSlices
+regarding:
+  apiVersion: v1
+  kind: Service
+  name: prometheus-adapter
+  namespace: openshift-monitoring
+  resourceVersion: "25962"
+  uid: 590d82ba-9e96-47ae-8c81-2f586857e69a
+type: Warning
