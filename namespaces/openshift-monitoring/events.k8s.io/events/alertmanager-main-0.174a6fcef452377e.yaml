@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:05Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:05Z"
+deprecatedSource:
+  component: multus
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:05Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: multus
+    operation: Update
+    time: "2023-03-08T11:59:05Z"
+  name: alertmanager-main-0.174a6fcef452377e
+  namespace: openshift-monitoring
+  resourceVersion: "26209"
+  uid: 4f87c624-bfb9-4c7d-b386-96d54f049eff
+note: Add eth0 [10.129.2.13/23] from ovn-kubernetes
+reason: AddedInterface
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: alertmanager-main-0
+  namespace: openshift-monitoring
+  resourceVersion: "26174"
+  uid: c7f67fc9-630f-468e-b13f-99c65af64149
+type: Normal
