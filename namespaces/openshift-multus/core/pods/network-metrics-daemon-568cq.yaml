@@ -3,6 +3,28 @@ kind: Pod
 metadata:
   annotations:
     k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.129.0.4/23"],"mac_address":"0a:58:0a:81:00:04","gateway_ips":["10.129.0.1"],"ip_address":"10.129.0.4/23","gateway_ip":"10.129.0.1"}}'
+    k8s.v1.cni.cncf.io/network-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.129.0.4"
+          ],
+          "mac": "0a:58:0a:81:00:04",
+          "default": true,
+          "dns": {}
+      }]
+    k8s.v1.cni.cncf.io/networks-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.129.0.4"
+          ],
+          "mac": "0a:58:0a:81:00:04",
+          "default": true,
+          "dns": {}
+      }]
   creationTimestamp: "2023-03-08T11:43:11Z"
   generateName: network-metrics-daemon-
   labels:
@@ -159,6 +181,17 @@ metadata:
     manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     operation: Update
     time: "2023-03-08T11:44:42Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:47:21Z"
   name: network-metrics-daemon-568cq
   namespace: openshift-multus
   ownerReferences:
@@ -168,7 +201,7 @@ metadata:
     kind: DaemonSet
     name: network-metrics-daemon
     uid: 396bd4d6-9776-454b-a437-d4a084553e96
-  resourceVersion: "3700"
+  resourceVersion: "10781"
   uid: c68645eb-32c3-4625-81d1-a10c0daa67dd
 spec:
   affinity:
