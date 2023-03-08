@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:00:23Z"
+deprecatedLastTimestamp: "2023-03-08T12:00:23Z"
+deprecatedSource:
+  component: statefulset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:00:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T12:00:23Z"
+  name: prometheus-k8s.174a6fe1120f7055
+  namespace: openshift-monitoring
+  resourceVersion: "27760"
+  uid: 581d42bb-e3b3-45b7-b34a-270f59cb4201
+note: create Pod prometheus-k8s-0 in StatefulSet prometheus-k8s successful
+reason: SuccessfulCreate
+regarding:
+  apiVersion: apps/v1
+  kind: StatefulSet
+  name: prometheus-k8s
+  namespace: openshift-monitoring
+  resourceVersion: "27715"
+  uid: 64bf94c0-7125-4d69-824b-802c773560a3
+type: Normal
