@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:45Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:45Z"
+deprecatedSource:
+  component: machine-api-controllers-67b4c49c5-snjk7_a825cb9a-85c7-4ee5-a4ad-91d1ef6a87b8
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:45Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: machine-healthcheck
+    operation: Update
+    time: "2023-03-08T11:46:45Z"
+  name: cluster-api-provider-healthcheck-leader.174a6f2287ab870e
+  namespace: openshift-machine-api
+  resourceVersion: "9695"
+  uid: dabedff9-b95e-480a-b95f-dd4a07d17200
+note: machine-api-controllers-67b4c49c5-snjk7_a825cb9a-85c7-4ee5-a4ad-91d1ef6a87b8
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: cluster-api-provider-healthcheck-leader
+  namespace: openshift-machine-api
+  resourceVersion: "9694"
+  uid: 4477c7db-7547-4c5a-b703-17e223ee9884
+type: Normal
