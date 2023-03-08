@@ -3,7 +3,9 @@ kind: Service
 metadata:
   annotations:
     operator.openshift.io/spec-hash: 86f8d0f1ae746e18d091343255dbbfc29e6d7c1dbfd3fa840287b3985fd33cfa
+    service.alpha.openshift.io/serving-cert-signed-by: openshift-service-serving-signer@1678275922
     service.beta.openshift.io/serving-cert-secret-name: gcp-pd-csi-driver-controller-metrics-serving-cert
+    service.beta.openshift.io/serving-cert-signed-by: openshift-service-serving-signer@1678275922
   creationTimestamp: "2023-03-08T11:45:29Z"
   labels:
     app: gcp-pd-csi-driver-controller-metrics
@@ -53,9 +55,19 @@ metadata:
     manager: gcp-pd-csi-driver-operator
     operation: Update
     time: "2023-03-08T11:45:29Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:service.alpha.openshift.io/serving-cert-signed-by: {}
+          f:service.beta.openshift.io/serving-cert-signed-by: {}
+    manager: service-ca-operator
+    operation: Update
+    time: "2023-03-08T11:45:34Z"
   name: gcp-pd-csi-driver-controller-metrics
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "5761"
+  resourceVersion: "6312"
   uid: 7590d747-5f2b-4975-974e-96aed743a9d9
 spec:
   clusterIP: 172.30.127.103
