@@ -1,0 +1,36 @@
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource:
+  component: apiserver
+  host: apiserver-c9c8564b9-4b7tr
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:47Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:involvedObject: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: oauth-apiserver
+    operation: Update
+    time: "2023-03-08T11:51:47Z"
+  name: kube-system.174a6f68ef9a4dd4
+  namespace: default
+  resourceVersion: "18429"
+  uid: f5867365-cd3a-4b83-8a4d-9235f50b387d
+note: Server has stopped listening
+reason: TerminationStoppedServing
+regarding:
+  apiVersion: v1
+  kind: Namespace
+  name: kube-system
+  namespace: default
+type: Normal
