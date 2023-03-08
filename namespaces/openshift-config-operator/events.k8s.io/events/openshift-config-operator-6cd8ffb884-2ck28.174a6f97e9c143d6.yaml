@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:55:09Z"
-deprecatedLastTimestamp: "2023-03-08T11:55:09Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:10Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:55:09Z"
+    time: "2023-03-08T11:55:10Z"
   name: openshift-config-operator-6cd8ffb884-2ck28.174a6f97e9c143d6
   namespace: openshift-config-operator
-  resourceVersion: "22243"
+  resourceVersion: "22269"
   uid: 43329337-9f82-4dc0-9aeb-1aeceaea9e1b
 note: Back-off restarting failed container
 reason: BackOff
