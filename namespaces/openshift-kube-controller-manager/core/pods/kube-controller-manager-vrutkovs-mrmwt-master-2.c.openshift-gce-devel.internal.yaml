@@ -295,6 +295,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -313,6 +315,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -328,7 +332,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:55:19Z"
+    time: "2023-03-08T11:59:27Z"
   name: kube-controller-manager-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   namespace: openshift-kube-controller-manager
   ownerReferences:
@@ -337,7 +341,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
     uid: 68230a61-3998-42ae-824b-1cc75bc72bd7
-  resourceVersion: "22530"
+  resourceVersion: "26715"
   uid: 1b795a92-27be-4273-b189-f3a4ec730115
 spec:
   containers:
@@ -574,81 +578,66 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:53:31Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:59:27Z"
+    message: 'containers with unready status: [kube-controller-manager cluster-policy-controller
+      kube-controller-manager-cert-syncer kube-controller-manager-recovery-controller]'
+    reason: ContainersNotReady
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:53:31Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:59:27Z"
+    message: 'containers with unready status: [kube-controller-manager cluster-policy-controller
+      kube-controller-manager-cert-syncer kube-controller-manager-recovery-controller]'
+    reason: ContainersNotReady
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:49:11Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://92e8ce5f4d6b51a4223edd989f5857873d24392d53735c9a99404137dfd290b6
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:6a1373735d0dbfa1a4b13ac508690c0bad0b82136b309eb9caa802511ac75266
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:6a1373735d0dbfa1a4b13ac508690c0bad0b82136b309eb9caa802511ac75266
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:6a1373735d0dbfa1a4b13ac508690c0bad0b82136b309eb9caa802511ac75266
+    imageID: ""
     lastState: {}
     name: cluster-policy-controller
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:49:24Z"
-  - containerID: cri-o://f043cb70460cc8beee0123fc9a501a0009bfc4b10da2cd77c4344537868f05eb
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
-    lastState:
-      terminated:
-        containerID: cri-o://a6944b1e6e47bf7827eb5224d8aefed19604bec56bdca03c9477f9dccf374d3f
-        exitCode: 1
-        finishedAt: "2023-03-08T11:53:18Z"
-        message: |
-          ls.go:120] "Update ready status of pods on node" node="vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal"
-          I0308 11:53:13.659166       1 controller.go:778] Successfully updated 1 out of 1 load balancers to direct traffic to the updated set of nodes
-          I0308 11:53:13.659184       1 controller.go:771] Syncing backends for all LB services.
-          I0308 11:53:13.659220       1 event.go:294] "Event occurred" object="openshift-ingress/router-default" fieldPath="" kind="Service" apiVersion="v1" type="Normal" reason="UpdatedLoadBalancer" message="Updated load balancer with new hosts"
-          I0308 11:53:13.659210       1 controller.go:836] Updating backends for load balancer openshift-ingress/router-default with node set: map[vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal:{} vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal:{} vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal:{} vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal:{} vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal:{} vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal:{}]
-          W0308 11:53:13.704081       1 transport.go:313] Unable to cancel request for *app.rejectIfNotReadyHeaderRT
-          E0308 11:53:13.704196       1 leaderelection.go:330] error retrieving resource lock kube-system/kube-controller-manager: Get "https://api-int.vrutkovs.origin-gce.dev.openshift.com:6443/api/v1/namespaces/kube-system/configmaps/kube-controller-manager?timeout=5s": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
-          E0308 11:53:18.704240       1 leaderelection.go:330] error retrieving resource lock kube-system/kube-controller-manager: Get "https://api-int.vrutkovs.origin-gce.dev.openshift.com:6443/api/v1/namespaces/kube-system/configmaps/kube-controller-manager?timeout=5s": context deadline exceeded
-          I0308 11:53:18.704298       1 leaderelection.go:283] failed to renew lease kube-system/kube-controller-manager: timed out waiting for the condition
-          E0308 11:53:18.704374       1 controllermanager.go:318] "leaderelection lost"
-        reason: Error
-        startedAt: "2023-03-08T11:49:19Z"
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+    imageID: ""
+    lastState: {}
     name: kube-controller-manager
-    ready: true
-    restartCount: 1
-    started: true
+    ready: false
+    restartCount: 0
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:53:19Z"
-  - containerID: cri-o://cd91fd252f7ac922612c5c2868bf5c5f8f0a9e8e46b08c30a4d1f9eca58e815f
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
+    imageID: ""
     lastState: {}
     name: kube-controller-manager-cert-syncer
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:49:24Z"
-  - containerID: cri-o://4e5f622a8ce05ed86d6b3abd0ce2859670dcfce257944d131fd44dcd576f01fd
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
+    imageID: ""
     lastState: {}
     name: kube-controller-manager-recovery-controller
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:49:24Z"
+      waiting:
+        reason: ContainerCreating
   hostIP: 10.0.0.3
-  phase: Running
+  phase: Pending
   podIP: 10.0.0.3
   podIPs:
   - ip: 10.0.0.3
