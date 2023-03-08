@@ -37,9 +37,9 @@ metadata:
     manager: cluster-version-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:42:40Z"
+    time: "2023-03-08T11:43:40Z"
   name: version
-  resourceVersion: "2515"
+  resourceVersion: "3167"
   uid: e60de632-2954-4109-a630-deda141a29af
 spec:
   channel: stable-4
@@ -190,7 +190,7 @@ status:
   - lastTransitionTime: "2023-03-08T11:41:40Z"
     message: |-
       Multiple errors are preventing progress:
-      * Cluster operators authentication, baremetal, cloud-controller-manager, cluster-autoscaler, config-operator, control-plane-machine-set, csi-snapshot-controller, dns, etcd, image-registry, ingress, insights, kube-apiserver, kube-controller-manager, kube-scheduler, kube-storage-version-migrator, machine-api, machine-approver, machine-config, marketplace, monitoring, network, node-tuning, openshift-apiserver, openshift-controller-manager, service-ca, storage are not available
+      * Cluster operators authentication, baremetal, cloud-controller-manager, cluster-autoscaler, config-operator, control-plane-machine-set, csi-snapshot-controller, dns, etcd, image-registry, ingress, insights, kube-apiserver, kube-controller-manager, kube-scheduler, kube-storage-version-migrator, machine-api, machine-approver, machine-config, marketplace, monitoring, node-tuning, openshift-apiserver, openshift-controller-manager, service-ca, storage are not available
       * Could not update imagestream "openshift/driver-toolkit" (572 of 835): resource may have been deleted
       * Could not update oauthclient "console" (515 of 835): the server does not recognize this resource, check extension API servers
       * Could not update role "openshift-apiserver/prometheus-k8s" (810 of 835): resource may have been deleted
