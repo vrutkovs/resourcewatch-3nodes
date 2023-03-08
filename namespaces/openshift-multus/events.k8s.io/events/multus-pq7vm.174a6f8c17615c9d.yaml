@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:54:18Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:18Z"
+deprecatedSource:
+  component: node-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:54:18Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:54:18Z"
+  name: multus-pq7vm.174a6f8c17615c9d
+  namespace: openshift-multus
+  resourceVersion: "21115"
+  uid: 7d982d58-9601-46ba-9425-54c445cadedc
+note: Node is not ready
+reason: NodeNotReady
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: multus-pq7vm
+  namespace: openshift-multus
+  resourceVersion: "20374"
+  uid: be18467d-2998-41fb-9259-b20cc91177e1
+type: Warning
