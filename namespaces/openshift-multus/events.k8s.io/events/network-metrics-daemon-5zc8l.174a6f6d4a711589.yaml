@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:06Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:06Z"
+deprecatedSource:
+  component: controlplane
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:06Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:52:06Z"
+  name: network-metrics-daemon-5zc8l.174a6f6d4a711589
+  namespace: openshift-multus
+  resourceVersion: "18974"
+  uid: fed79a35-5377-4d23-9e1c-5c2eba880cb8
+note: 'addLogicalPort failed for openshift-multus/network-metrics-daemon-5zc8l: timed
+  out waiting for logical switch in logical switch cache "vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal"
+  subnet: error getting logical switch for node vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal:
+  switch not in logical switch cache'
+reason: ErrorAddingLogicalPort
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: network-metrics-daemon-5zc8l
+  namespace: openshift-multus
+  resourceVersion: "18968"
+  uid: cfed1056-7a60-4c90-b918-acb4745c2792
+type: Warning
