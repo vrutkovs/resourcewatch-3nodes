@@ -3,6 +3,8 @@ kind: Service
 metadata:
   annotations:
     service.alpha.openshift.io/serving-cert-secret-name: router-metrics-certs-default
+    service.alpha.openshift.io/serving-cert-signed-by: openshift-service-serving-signer@1678275922
+    service.beta.openshift.io/serving-cert-signed-by: openshift-service-serving-signer@1678275922
   creationTimestamp: "2023-03-08T11:46:42Z"
   labels:
     ingresscontroller.operator.openshift.io/owning-ingresscontroller: default
@@ -48,6 +50,16 @@ metadata:
     manager: ingress-operator
     operation: Update
     time: "2023-03-08T11:46:42Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:service.alpha.openshift.io/serving-cert-signed-by: {}
+          f:service.beta.openshift.io/serving-cert-signed-by: {}
+    manager: service-ca-operator
+    operation: Update
+    time: "2023-03-08T11:46:42Z"
   name: router-internal-default
   namespace: openshift-ingress
   ownerReferences:
@@ -56,7 +68,7 @@ metadata:
     kind: Deployment
     name: router-default
     uid: af68616a-a6b5-4a2b-b8e1-6b2e06b46aa8
-  resourceVersion: "9533"
+  resourceVersion: "9552"
   uid: 35c40560-5942-41c4-a685-a5d6a67bbd61
 spec:
   clusterIP: 172.30.15.120
