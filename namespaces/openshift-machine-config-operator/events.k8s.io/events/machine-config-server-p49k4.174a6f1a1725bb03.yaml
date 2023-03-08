@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:08Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:08Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:09Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:46:08Z"
+  name: machine-config-server-p49k4.174a6f1a1725bb03
+  namespace: openshift-machine-config-operator
+  resourceVersion: "8088"
+  uid: cc1cc4d7-2cd5-44a1-8d60-bba0b757ec70
+note: Successfully assigned openshift-machine-config-operator/machine-config-server-p49k4
+  to vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: machine-config-server-p49k4
+  namespace: openshift-machine-config-operator
+  resourceVersion: "8077"
+  uid: e60781a2-d5be-4dee-943f-e32ff4e079a6
+type: Normal
