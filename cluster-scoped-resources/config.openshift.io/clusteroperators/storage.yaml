@@ -46,14 +46,14 @@ metadata:
     manager: cluster-storage-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:06Z"
+    time: "2023-03-08T11:52:54Z"
   name: storage
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "19038"
+  resourceVersion: "20527"
   uid: b0a3f029-1b40-4919-9a2a-f2c3558d8152
 spec: {}
 status:
@@ -63,11 +63,10 @@ status:
     reason: AsExpected
     status: "False"
     type: Degraded
-  - lastTransitionTime: "2023-03-08T11:52:06Z"
-    message: 'GCPPDCSIDriverOperatorCRProgressing: GCPPDDriverNodeServiceControllerProgressing:
-      Waiting for DaemonSet to deploy node pods'
-    reason: GCPPDCSIDriverOperatorCR_GCPPDDriverNodeServiceController_Deploying
-    status: "True"
+  - lastTransitionTime: "2023-03-08T11:52:54Z"
+    message: 'GCPPDCSIDriverOperatorCRProgressing: All is well'
+    reason: AsExpected
+    status: "False"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:45:57Z"
     message: |-
