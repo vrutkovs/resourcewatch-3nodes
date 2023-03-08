@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:43:36Z"
+deprecatedLastTimestamp: "2023-03-08T11:43:36Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:43:37Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:43:37Z"
+  name: ovnkube-node-48khr.174a6ef698b57ce6
+  namespace: openshift-ovn-kubernetes
+  resourceVersion: "3128"
+  uid: 4089b7e9-715f-4eae-909b-aab514c7874a
+note: Started container ovn-acl-logging
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{ovn-acl-logging}
+  kind: Pod
+  name: ovnkube-node-48khr
+  namespace: openshift-ovn-kubernetes
+  resourceVersion: "2976"
+  uid: de2e631c-17f6-4126-828b-8aacb1bb68b1
+type: Normal
