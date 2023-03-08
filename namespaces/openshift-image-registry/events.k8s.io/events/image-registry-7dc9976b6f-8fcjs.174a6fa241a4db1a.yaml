@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:55:53Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:53Z"
+deprecatedSource:
+  component: multus
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:55:53Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: multus
+    operation: Update
+    time: "2023-03-08T11:55:53Z"
+  name: image-registry-7dc9976b6f-8fcjs.174a6fa241a4db1a
+  namespace: openshift-image-registry
+  resourceVersion: "22992"
+  uid: fb59629b-b662-4130-ad9d-a6c246d207e1
+note: Add eth0 [10.128.2.8/23] from ovn-kubernetes
+reason: AddedInterface
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: image-registry-7dc9976b6f-8fcjs
+  namespace: openshift-image-registry
+  resourceVersion: "22954"
+  uid: 4466c8a8-4015-4e22-91e0-6df5d4d000fb
+type: Normal
