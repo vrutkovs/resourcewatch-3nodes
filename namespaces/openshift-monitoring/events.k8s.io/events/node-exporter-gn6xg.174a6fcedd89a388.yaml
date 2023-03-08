@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:05Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:05Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:05Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:59:05Z"
+  name: node-exporter-gn6xg.174a6fcedd89a388
+  namespace: openshift-monitoring
+  resourceVersion: "26192"
+  uid: bfaab5a7-6f7f-49a9-b1e2-a15f53e69727
+note: Created container node-exporter
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{node-exporter}
+  kind: Pod
+  name: node-exporter-gn6xg
+  namespace: openshift-monitoring
+  resourceVersion: "25861"
+  uid: b32414a6-aefd-412c-92d9-a9bef771b7ae
+type: Normal
