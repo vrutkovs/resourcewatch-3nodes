@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:53:11Z"
+deprecatedLastTimestamp: "2023-03-08T11:53:11Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:54:58Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:54:58Z"
+  name: dns-default-wt97l.174a6f7c8e3ec212
+  namespace: openshift-dns
+  resourceVersion: "21878"
+  uid: d0ff86f7-ae86-4b39-9583-04eb7c744f8c
+note: Started container dns
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{dns}
+  kind: Pod
+  name: dns-default-wt97l
+  namespace: openshift-dns
+  resourceVersion: "20828"
+  uid: eff22757-7fc3-4c9e-b718-916042109fb6
+type: Normal
