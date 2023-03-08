@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:58:59Z"
-deprecatedLastTimestamp: "2023-03-08T11:58:59Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:01Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:58:59Z"
+    time: "2023-03-08T11:59:01Z"
   name: openshift-kube-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal.174a6fcd67d867e7
   namespace: openshift-kube-scheduler
-  resourceVersion: "25862"
+  resourceVersion: "26015"
   uid: 3f1dbe72-f37f-448a-8446-770cbc1ae6e4
 note: Stopping container kube-scheduler-cert-syncer
 reason: Killing
