@@ -473,7 +473,7 @@ metadata:
     kind: Alertmanager
     name: main
     uid: 87525969-0340-4b5e-b367-029ae5850d32
-  resourceVersion: "27045"
+  resourceVersion: "27052"
   uid: 3d2e73f5-0ea8-41ff-b2d2-5c651c8a2d8d
 spec:
   podManagementPolicy: Parallel
@@ -828,12 +828,12 @@ spec:
   updateStrategy:
     type: RollingUpdate
 status:
-  availableReplicas: 1
+  availableReplicas: 2
   collisionCount: 0
   currentReplicas: 2
   currentRevision: alertmanager-main-85b495847b
   observedGeneration: 1
-  readyReplicas: 1
+  readyReplicas: 2
   replicas: 2
   updateRevision: alertmanager-main-85b495847b
   updatedReplicas: 2
