@@ -201,7 +201,7 @@ metadata:
     kind: Deployment
     name: controller-manager
     uid: d4b28c78-d70c-4e89-8abd-e4dc311b8c4b
-  resourceVersion: "19278"
+  resourceVersion: "19285"
   uid: fb46097b-53aa-4e63-a89f-dc735ce35b2a
 spec:
   replicas: 1
@@ -334,8 +334,8 @@ spec:
           name: openshift-global-ca
         name: proxy-ca-bundles
 status:
-  availableReplicas: 2
-  fullyLabeledReplicas: 2
+  availableReplicas: 1
+  fullyLabeledReplicas: 1
   observedGeneration: 6
-  readyReplicas: 2
-  replicas: 2
+  readyReplicas: 1
+  replicas: 1
