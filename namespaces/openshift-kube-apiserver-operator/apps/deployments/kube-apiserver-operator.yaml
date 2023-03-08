@@ -162,7 +162,6 @@ metadata:
         f:annotations:
           f:deployment.kubernetes.io/revision: {}
       f:status:
-        f:availableReplicas: {}
         f:conditions:
           .: {}
           k:{"type":"Available"}:
@@ -182,13 +181,13 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
+        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:24Z"
+    time: "2023-03-08T11:54:20Z"
   name: kube-apiserver-operator
   namespace: openshift-kube-apiserver-operator
   ownerReferences:
@@ -196,7 +195,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "8600"
+  resourceVersion: "21500"
   uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
 spec:
   progressDeadlineSeconds: 600
@@ -318,7 +317,6 @@ spec:
                   fieldPath: metadata.namespace
                 path: namespace
 status:
-  availableReplicas: 1
   conditions:
   - lastTransitionTime: "2023-03-08T11:41:28Z"
     lastUpdateTime: "2023-03-08T11:45:17Z"
@@ -326,13 +324,13 @@ status:
     reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
-  - lastTransitionTime: "2023-03-08T11:46:24Z"
-    lastUpdateTime: "2023-03-08T11:46:24Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
+  - lastTransitionTime: "2023-03-08T11:54:20Z"
+    lastUpdateTime: "2023-03-08T11:54:20Z"
+    message: Deployment does not have minimum availability.
+    reason: MinimumReplicasUnavailable
+    status: "False"
     type: Available
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
+  unavailableReplicas: 1
   updatedReplicas: 1
