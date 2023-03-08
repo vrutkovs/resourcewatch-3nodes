@@ -30,29 +30,53 @@ metadata:
       f:status:
         .: {}
         f:extension: {}
-        f:relatedObjects: {}
     manager: cluster-version-operator
     operation: Update
     subresource: status
     time: "2023-03-08T11:40:41Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions: {}
+        f:relatedObjects: {}
+        f:versions: {}
+    manager: config-sync-controllers
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:43:58Z"
   name: cloud-controller-manager
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "668"
+  resourceVersion: "3361"
   uid: 1684d28f-0b03-4898-85f2-02fe09436372
 spec: {}
 status:
+  conditions:
+  - lastTransitionTime: "2023-03-08T11:43:58Z"
+    message: Trusted CA Bundle Controller works as expected
+    reason: AsExpected
+    status: "True"
+    type: TrustedCABundleControllerControllerAvailable
+  - lastTransitionTime: "2023-03-08T11:43:58Z"
+    message: Trusted CA Bundle Controller works as expected
+    reason: AsExpected
+    status: "False"
+    type: TrustedCABundleControllerControllerDegraded
   extension: null
   relatedObjects:
+  - group: ""
+    name: openshift-cloud-controller-manager-operator
+    resource: namespaces
   - group: config.openshift.io
     name: cloud-controller-manager
     resource: clusteroperators
   - group: ""
     name: openshift-cloud-controller-manager
     resource: namespaces
-  - group: ""
-    name: openshift-cloud-controller-manager-operator
-    resource: namespaces
+  versions:
+  - name: operator
+    version: 4.12.0-0.okd-2023-03-04-063026
