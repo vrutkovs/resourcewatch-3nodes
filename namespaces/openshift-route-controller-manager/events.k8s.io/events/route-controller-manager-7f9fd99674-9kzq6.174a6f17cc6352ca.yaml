@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 5
+deprecatedCount: 6
 deprecatedFirstTimestamp: "2023-03-08T11:45:59Z"
-deprecatedLastTimestamp: "2023-03-08T11:47:13Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:24Z"
 deprecatedSource:
   component: default-scheduler
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: kube-scheduler
     operation: Update
-    time: "2023-03-08T11:47:13Z"
+    time: "2023-03-08T11:47:24Z"
   name: route-controller-manager-7f9fd99674-9kzq6.174a6f17cc6352ca
   namespace: openshift-route-controller-manager
-  resourceVersion: "10608"
+  resourceVersion: "10839"
   uid: a7d8cee1-8755-4031-81fd-01a64e09674e
 note: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules. preemption:
   0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.'
