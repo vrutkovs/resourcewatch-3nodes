@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:14Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:14Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:14Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:59:14Z"
+  name: openshift-kube-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal.174a6fd0f1eb56b7
+  namespace: openshift-kube-scheduler
+  resourceVersion: "26475"
+  uid: fcd92fb4-478e-4e8f-b2e8-81e87452c883
+note: Created container wait-for-host-port
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.initContainers{wait-for-host-port}
+  kind: Pod
+  name: openshift-kube-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+  namespace: openshift-kube-scheduler
+  uid: ae900befedc289912f20d24bba721672
+type: Normal
