@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:48:17Z"
-deprecatedLastTimestamp: "2023-03-08T11:48:17Z"
+deprecatedLastTimestamp: "2023-03-08T11:48:19Z"
 deprecatedSource:
   component: openshift-apiserver-operator-apiservice-openshift-apiserver-controller-apiservicecontroller_openshift-apiserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-openshift-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:48:18Z"
+    time: "2023-03-08T11:48:19Z"
   name: openshift-apiserver-operator.174a6f37fe977d3c
   namespace: openshift-apiserver-operator
-  resourceVersion: "12113"
+  resourceVersion: "12171"
   uid: 40387eaa-090f-44ad-bb0d-e0947b006ec5
 note: '"security.openshift.io.v1" failed with an attempt failed with statusCode =
   503, err = the server is currently unable to handle the request'
