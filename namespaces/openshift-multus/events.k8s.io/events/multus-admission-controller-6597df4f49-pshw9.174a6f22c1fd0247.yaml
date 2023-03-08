@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:46Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:46Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:46Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:46:46Z"
+  name: multus-admission-controller-6597df4f49-pshw9.174a6f22c1fd0247
+  namespace: openshift-multus
+  resourceVersion: "9759"
+  uid: def6e900-a18f-4b70-86cc-2d0a52635a8b
+note: Successfully assigned openshift-multus/multus-admission-controller-6597df4f49-pshw9
+  to vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: multus-admission-controller-6597df4f49-pshw9
+  namespace: openshift-multus
+  resourceVersion: "9753"
+  uid: daa1e606-6913-4f68-abfb-b1ff4b4395f8
+type: Normal
