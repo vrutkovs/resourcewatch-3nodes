@@ -30,21 +30,49 @@ metadata:
       f:status:
         .: {}
         f:extension: {}
-        f:relatedObjects: {}
     manager: cluster-version-operator
     operation: Update
     subresource: status
     time: "2023-03-08T11:40:41Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions: {}
+        f:relatedObjects: {}
+        f:versions: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:45:20Z"
   name: kube-apiserver
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "672"
+  resourceVersion: "4706"
   uid: ef706269-fd7e-4416-af64-7cfc9719f1d3
 spec: {}
 status:
+  conditions:
+  - lastTransitionTime: "2023-03-08T11:45:20Z"
+    reason: NoData
+    status: Unknown
+    type: Degraded
+  - lastTransitionTime: "2023-03-08T11:45:20Z"
+    reason: NoData
+    status: Unknown
+    type: Progressing
+  - lastTransitionTime: "2023-03-08T11:45:20Z"
+    reason: NoData
+    status: Unknown
+    type: Available
+  - lastTransitionTime: "2023-03-08T11:45:20Z"
+    message: All is well
+    reason: AsExpected
+    status: "True"
+    type: Upgradeable
   extension: null
   relatedObjects:
   - group: operator.openshift.io
@@ -81,3 +109,9 @@ status:
   - group: apiserver.openshift.io
     name: ""
     resource: apirequestcounts
+  - group: config.openshift.io
+    name: cluster
+    resource: nodes
+  versions:
+  - name: raw-internal
+    version: 4.12.0-0.okd-2023-03-04-063026
