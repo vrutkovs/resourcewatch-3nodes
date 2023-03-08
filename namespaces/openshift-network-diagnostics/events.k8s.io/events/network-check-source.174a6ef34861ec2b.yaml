@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:43:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:43:22Z"
+deprecatedSource:
+  component: deployment-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:43:22Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:43:22Z"
+  name: network-check-source.174a6ef34861ec2b
+  namespace: openshift-network-diagnostics
+  resourceVersion: "3011"
+  uid: ce1b0bad-fe8d-4ded-b945-2241042aa2f2
+note: Scaled up replica set network-check-source-7d8cf97c5c to 1
+reason: ScalingReplicaSet
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: network-check-source
+  namespace: openshift-network-diagnostics
+  resourceVersion: "3009"
+  uid: 90ef07d3-bc1b-44fc-a2fa-129ae614492e
+type: Normal
