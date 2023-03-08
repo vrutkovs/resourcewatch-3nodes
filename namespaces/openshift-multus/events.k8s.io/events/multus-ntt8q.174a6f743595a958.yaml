@@ -1,0 +1,44 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:36Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:36Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:36Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:52:36Z"
+  name: multus-ntt8q.174a6f743595a958
+  namespace: openshift-multus
+  resourceVersion: "20156"
+  uid: ace358af-4136-428a-8ae0-da1dff2eb160
+note: Successfully pulled image "registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:cc6f52aff25ba6cad2df5f4dc4ca65abcb0e46880438397646d194b9e595001f"
+  in 26.315188125s
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{kube-multus}
+  kind: Pod
+  name: multus-ntt8q
+  namespace: openshift-multus
+  resourceVersion: "18988"
+  uid: 7ac446ab-060c-4e64-9fcd-edd545c2c47d
+type: Normal
