@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:07Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:07Z"
+deprecatedSource:
+  component: multus
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:07Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: multus
+    operation: Update
+    time: "2023-03-08T11:59:07Z"
+  name: thanos-querier-85d87986c5-snwx6.174a6fcf5d847ae1
+  namespace: openshift-monitoring
+  resourceVersion: "26296"
+  uid: d2bd948b-ccac-4998-b5df-8b9498f90585
+note: Add eth0 [10.129.2.14/23] from ovn-kubernetes
+reason: AddedInterface
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: thanos-querier-85d87986c5-snwx6
+  namespace: openshift-monitoring
+  resourceVersion: "26276"
+  uid: 9d0cda85-8aa2-4126-9b9d-269d9006ba92
+type: Normal
