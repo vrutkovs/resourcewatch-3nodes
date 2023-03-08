@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:45:16Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:26Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:46:30Z"
+    time: "2023-03-08T11:55:26Z"
   name: kube-apiserver-operator-5d4bb497dd-hfz4q.174a6f0dd3097669
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "8966"
+  resourceVersion: "22745"
   uid: 2cfa41af-e4ce-4057-90be-a441425524bd
 note: Started container kube-apiserver-operator
 reason: Started
