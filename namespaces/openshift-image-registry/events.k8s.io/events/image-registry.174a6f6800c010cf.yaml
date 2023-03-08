@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:51:43Z"
 deprecatedLastTimestamp: "2023-03-08T11:51:43Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:51:43Z"
   name: image-registry.174a6f6800c010cf
   namespace: openshift-image-registry
-  resourceVersion: "17876"
+  resourceVersion: "17902"
   uid: 67c51c99-c980-48f8-932a-43c1957b742c
 note: No matching pods found
 reason: NoPods
