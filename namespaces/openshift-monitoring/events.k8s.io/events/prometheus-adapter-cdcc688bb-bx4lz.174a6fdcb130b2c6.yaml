@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:00:04Z"
+deprecatedLastTimestamp: "2023-03-08T12:00:04Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:00:04Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T12:00:04Z"
+  name: prometheus-adapter-cdcc688bb-bx4lz.174a6fdcb130b2c6
+  namespace: openshift-monitoring
+  resourceVersion: "27372"
+  uid: 40034969-7c7a-489a-98ec-bdf417c90563
+note: Started container prometheus-adapter
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{prometheus-adapter}
+  kind: Pod
+  name: prometheus-adapter-cdcc688bb-bx4lz
+  namespace: openshift-monitoring
+  resourceVersion: "27230"
+  uid: 2a5c35c5-87d8-4b2d-910f-ecf75ecc702f
+type: Normal
