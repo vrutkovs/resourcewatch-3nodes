@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:27Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:27Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:51Z"
 deprecatedSource:
   component: kube-apiserver-operator-config-observer-configobserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-kube-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:46:27Z"
+    time: "2023-03-08T11:46:51Z"
   name: kube-apiserver-operator.174a6f1e4f80647d
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "8843"
+  resourceVersion: "10027"
   uid: d8be8bc3-1806-4778-b420-aaee3a746975
 note: minTLSVersion changed to VersionTLS12
 reason: ObserveTLSSecurityProfile
