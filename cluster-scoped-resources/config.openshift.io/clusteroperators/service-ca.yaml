@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "6002"
+  resourceVersion: "6006"
   uid: 526c09cf-40ca-4c1c-a5c2-1467fe242e6e
 spec: {}
 status:
@@ -61,10 +61,10 @@ status:
     reason: AsExpected
     status: "False"
     type: Degraded
-  - lastTransitionTime: "2023-03-08T11:45:23Z"
-    message: "Progressing: \nProgressing: service-ca does not have available replicas"
-    reason: _ManagedDeploymentsAvailable
-    status: "True"
+  - lastTransitionTime: "2023-03-08T11:45:30Z"
+    message: 'Progressing: All service-ca-operator deployments updated'
+    reason: AsExpected
+    status: "False"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:45:23Z"
     message: All is well
