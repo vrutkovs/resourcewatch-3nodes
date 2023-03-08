@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:43:39Z"
-deprecatedLastTimestamp: "2023-03-08T11:43:40Z"
+deprecatedLastTimestamp: "2023-03-08T11:43:41Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:43:40Z"
+    time: "2023-03-08T11:43:41Z"
   name: network-check-target-x8lqg.174a6ef752a587cc
   namespace: openshift-network-diagnostics
-  resourceVersion: "3166"
+  resourceVersion: "3187"
   uid: 799a4ec6-109b-443a-a3d8-183df96ed622
 note: 'MountVolume.SetUp failed for volume "kube-api-access-dkhs7" : [object "openshift-network-diagnostics"/"kube-root-ca.crt"
   not registered, object "openshift-network-diagnostics"/"openshift-service-ca.crt"
