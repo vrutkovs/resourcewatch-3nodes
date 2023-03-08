@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:44:42Z"
 deprecatedLastTimestamp: "2023-03-08T11:44:42Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:44:42Z"
   name: network-metrics-daemon-mc8rq.174a6f05ef670efc
   namespace: openshift-multus
-  resourceVersion: "3703"
+  resourceVersion: "3723"
   uid: efd2112b-1952-4b24-83f3-c30f73076c9e
 note: 'addLogicalPort failed for openshift-multus/network-metrics-daemon-mc8rq: unable
   to parse node L3 gw annotation: k8s.ovn.org/l3-gateway-config annotation not found
