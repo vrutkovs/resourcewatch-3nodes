@@ -42,6 +42,7 @@ metadata:
       f:status:
         f:conditions: {}
         f:relatedObjects: {}
+        f:versions: {}
     manager: csi-snapshot-controller-operator
     operation: Update
     subresource: status
@@ -52,7 +53,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "5608"
+  resourceVersion: "5614"
   uid: 4aea2da5-2cca-4299-b86e-0c01ef4a71d7
 spec: {}
 status:
@@ -86,3 +87,8 @@ status:
   - group: operator.openshift.io
     name: cluster
     resource: csisnapshotcontrollers
+  versions:
+  - name: operator
+    version: 4.12.0-0.okd-2023-03-04-063026
+  - name: csi-snapshot-controller
+    version: 4.12.0-0.okd-2023-03-04-063026
