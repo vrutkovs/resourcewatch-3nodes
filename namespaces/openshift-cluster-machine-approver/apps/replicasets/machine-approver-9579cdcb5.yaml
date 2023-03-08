@@ -151,6 +151,15 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:42:24Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:observedGeneration: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:42:24Z"
   name: machine-approver-9579cdcb5
   namespace: openshift-cluster-machine-approver
   ownerReferences:
@@ -160,7 +169,7 @@ metadata:
     kind: Deployment
     name: machine-approver
     uid: b4980ed5-1718-410e-aa36-e8d1c118fe38
-  resourceVersion: "2310"
+  resourceVersion: "2317"
   uid: a9bb65e4-02f9-41b8-a4b0-cc03cd106658
 spec:
   replicas: 1
@@ -274,4 +283,5 @@ spec:
           optional: true
         name: config
 status:
+  observedGeneration: 1
   replicas: 0
