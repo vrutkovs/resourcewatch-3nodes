@@ -44,14 +44,14 @@ metadata:
     manager: cluster-openshift-apiserver-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:49:37Z"
+    time: "2023-03-08T11:49:40Z"
   name: openshift-apiserver
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "13488"
+  resourceVersion: "13610"
   uid: 017094da-4624-48c3-a0e8-1ce824dc2841
 spec: {}
 status:
@@ -62,10 +62,9 @@ status:
     status: "False"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:49:37Z"
-    message: |-
-      APIServerDeploymentProgressing: deployment/apiserver.openshift-apiserver: observed generation is 1, desired generation is 2.
-      OperatorConfigProgressing: openshiftapiserveroperatorconfigs/instance: observed generation is 3, desired generation is 4.
-    reason: APIServerDeployment_NewGeneration::OperatorConfig_NewGeneration
+    message: 'APIServerDeploymentProgressing: deployment/apiserver.openshift-apiserver:
+      observed generation is 1, desired generation is 2.'
+    reason: APIServerDeployment_NewGeneration
     status: "True"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:45:32Z"
