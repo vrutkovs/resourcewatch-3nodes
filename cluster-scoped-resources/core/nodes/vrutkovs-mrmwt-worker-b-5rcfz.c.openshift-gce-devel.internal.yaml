@@ -4,7 +4,11 @@ metadata:
   annotations:
     cloud.network.openshift.io/egress-ipconfig: '[{"interface":"nic0","ifaddr":{"ipv4":"10.0.128.0/17"},"capacity":{"ip":10}}]'
     csi.volume.kubernetes.io/nodeid: '{"pd.csi.storage.gke.io":"projects/openshift-gce-devel/zones/europe-west2-b/instances/vrutkovs-mrmwt-worker-b-5rcfz"}'
+    k8s.ovn.org/l3-gateway-config: '{"default":{"mode":"shared","interface-id":"br-ex_vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal","mac-address":"42:01:0a:00:80:03","ip-addresses":["10.0.128.3/32"],"ip-address":"10.0.128.3/32","next-hops":["10.0.128.1"],"next-hop":"10.0.128.1","node-port-enable":"true","vlan-id":"0"}}'
+    k8s.ovn.org/node-chassis-id: 1402cc40-6419-4d47-b86c-152332264cc9
     k8s.ovn.org/node-gateway-router-lrp-ifaddr: '{"ipv4":"100.64.0.7/16"}'
+    k8s.ovn.org/node-mgmt-port-mac-address: 46:22:5e:d7:f3:ca
+    k8s.ovn.org/node-primary-ifaddr: '{"ipv4":"10.0.128.3/32"}'
     k8s.ovn.org/node-subnets: '{"default":"10.129.2.0/23"}'
     machine.openshift.io/machine: openshift-machine-api/vrutkovs-mrmwt-worker-b-5rcfz
     machineconfiguration.openshift.io/controlPlaneTopology: HighlyAvailable
@@ -149,8 +153,20 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:52:53Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.ovn.org/l3-gateway-config: {}
+          f:k8s.ovn.org/node-chassis-id: {}
+          f:k8s.ovn.org/node-mgmt-port-mac-address: {}
+          f:k8s.ovn.org/node-primary-ifaddr: {}
+    manager: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:52:54Z"
   name: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
-  resourceVersion: "20514"
+  resourceVersion: "20534"
   uid: 2ac4c672-b94a-4a56-a828-6ab375b8bcb9
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-b/vrutkovs-mrmwt-worker-b-5rcfz
