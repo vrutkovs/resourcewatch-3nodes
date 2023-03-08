@@ -1,0 +1,41 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:13.296675Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:13Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:13Z"
+  name: machine-config-daemon-t4r8p.174a6f6ee9180cd1
+  namespace: openshift-machine-config-operator
+  resourceVersion: "19372"
+  uid: eec42a18-231f-48ed-ae94-fdb72431d0f0
+note: Successfully assigned openshift-machine-config-operator/machine-config-daemon-t4r8p
+  to vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: machine-config-daemon-t4r8p
+  namespace: openshift-machine-config-operator
+  resourceVersion: "19364"
+  uid: d70d1ef0-c47a-4af2-a1ec-2eb3bd897410
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
