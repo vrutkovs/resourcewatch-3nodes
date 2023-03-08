@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:07Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:07Z"
+deprecatedSource:
+  component: oauth-apiserver-status-controller-statussyncer_authentication
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:07Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: authentication-operator
+    operation: Update
+    time: "2023-03-08T11:58:07Z"
+  name: authentication-operator.174a6fc163be5b5a
+  namespace: openshift-authentication-operator
+  resourceVersion: "24638"
+  uid: 7a723c96-a12e-407c-9827-893113aed06a
+note: 'Status for clusteroperator/authentication changed: Degraded message changed
+  from "IngressStateEndpointsDegraded: No subsets found for the endpoints of oauth-server\nOAuthServerRouteEndpointAccessibleControllerDegraded:
+  Get \"https://oauth-openshift.apps.vrutkovs.origin-gce.dev.openshift.com/healthz\":
+  EOF" to "IngressStateEndpointsDegraded: No subsets found for the endpoints of oauth-server"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: authentication-operator
+  namespace: openshift-authentication-operator
+  uid: 0efac7b0-177c-4814-9d2b-04ba66ce84f1
+type: Normal
