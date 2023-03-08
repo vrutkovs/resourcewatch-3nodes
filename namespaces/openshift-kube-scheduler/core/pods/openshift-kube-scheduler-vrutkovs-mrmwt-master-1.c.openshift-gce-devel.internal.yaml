@@ -220,12 +220,16 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"PodScheduled"}:
@@ -238,6 +242,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -254,7 +260,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:58:28Z"
+    time: "2023-03-08T11:59:14Z"
   name: openshift-kube-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
   namespace: openshift-kube-scheduler
   ownerReferences:
@@ -263,7 +269,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
     uid: d1bb260b-ed05-4c1f-9090-1cf4ac4bb308
-  resourceVersion: "25167"
+  resourceVersion: "26450"
   uid: 24a959c4-ec13-4541-b9a2-907e898bd4ce
 spec:
   containers:
@@ -428,103 +434,72 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:48:26Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:59:14Z"
+    message: 'containers with incomplete status: [wait-for-host-port]'
+    reason: ContainersNotInitialized
+    status: "False"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:58:28Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:59:14Z"
+    message: 'containers with unready status: [kube-scheduler kube-scheduler-cert-syncer
+      kube-scheduler-recovery-controller]'
+    reason: ContainersNotReady
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:58:28Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:59:14Z"
+    message: 'containers with unready status: [kube-scheduler kube-scheduler-cert-syncer
+      kube-scheduler-recovery-controller]'
+    reason: ContainersNotReady
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:24Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://3dc523ff4cf76fd065e2354c17beb5bae0de33b6b9af52e412e605c790165ed6
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
-    lastState:
-      terminated:
-        containerID: cri-o://3848e8bfccc97af8e53bc73171bf628f4763f2cb247225182a986f9221c06e74
-        exitCode: 1
-        finishedAt: "2023-03-08T11:55:04Z"
-        message: |
-          8 11:54:56.060609       1 schedule_one.go:885] "Error updating pod" err="Timeout: request did not complete within requested timeout - context deadline exceeded" pod="openshift-apiserver/apiserver-f6774f75f-42d5r"
-          I0308 11:54:56.082838       1 schedule_one.go:266] "Successfully bound pod to node" pod="openshift-image-registry/image-registry-7ccd686b74-sxb9k" node="vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal" evaluatedNodes=6 feasibleNodes=2
-          I0308 11:54:56.086472       1 schedule_one.go:266] "Successfully bound pod to node" pod="openshift-image-registry/image-registry-7dc9976b6f-8fcjs" node="vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal" evaluatedNodes=6 feasibleNodes=1
-          I0308 11:55:01.070518       1 schedule_one.go:266] "Successfully bound pod to node" pod="openshift-oauth-apiserver/apiserver-86c9ff68c6-m7x6s" node="vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal" evaluatedNodes=6 feasibleNodes=1
-          I0308 11:55:02.575237       1 schedule_one.go:826] "Unable to schedule pod; no fit; waiting" pod="openshift-apiserver/apiserver-f6774f75f-42d5r" err="0/6 nodes are available: 3 node(s) didn't match Pod's node affinity/selector, 3 node(s) didn't match pod anti-affinity rules, 3 node(s) had untolerated taint {node.kubernetes.io/unreachable: }. preemption: 0/6 nodes are available: 3 Preemption is not helpful for scheduling, 3 node(s) didn't match pod anti-affinity rules."
-          E0308 11:55:04.499065       1 leaderelection.go:330] error retrieving resource lock openshift-kube-scheduler/kube-scheduler: Get "https://api-int.vrutkovs.origin-gce.dev.openshift.com:6443/api/v1/namespaces/openshift-kube-scheduler/configmaps/kube-scheduler?timeout=53.5s": context deadline exceeded
-          I0308 11:55:04.499116       1 leaderelection.go:283] failed to renew lease openshift-kube-scheduler/kube-scheduler: timed out waiting for the condition
-          E0308 11:55:04.499165       1 leaderelection.go:306] Failed to release lock: resource name may not be empty
-          E0308 11:55:04.499179       1 server.go:229] "Leaderelection lost"
-        reason: Error
-        startedAt: "2023-03-08T11:48:26Z"
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+    imageID: ""
+    lastState: {}
     name: kube-scheduler
-    ready: true
-    restartCount: 1
-    started: true
+    ready: false
+    restartCount: 0
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:55:05Z"
-  - containerID: cri-o://873cd9fc9f771dc87510388d445fee41309666567993a8e22b6884edb495e9a6
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
-    lastState:
-      terminated:
-        containerID: cri-o://e2e2c762e88eb84a7b19e9dfd32e8f1a91091bd3015b1673d668a3be774b644d
-        exitCode: 1
-        finishedAt: "2023-03-08T11:58:27Z"
-        message: |
-          shift-kube-scheduler/secrets?limit=500&resourceVersion=0": dial tcp [::1]:6443: connect: connection refused
-          W0308 11:57:27.105151       1 reflector.go:424] k8s.io/client-go@v0.25.0/tools/cache/reflector.go:169: failed to list *v1.ConfigMap: Get "https://localhost:6443/api/v1/namespaces/openshift-kube-scheduler/configmaps?limit=500&resourceVersion=0": dial tcp [::1]:6443: connect: connection refused
-          E0308 11:57:27.105281       1 reflector.go:140] k8s.io/client-go@v0.25.0/tools/cache/reflector.go:169: Failed to watch *v1.ConfigMap: failed to list *v1.ConfigMap: Get "https://localhost:6443/api/v1/namespaces/openshift-kube-scheduler/configmaps?limit=500&resourceVersion=0": dial tcp [::1]:6443: connect: connection refused
-          W0308 11:57:52.787793       1 reflector.go:424] k8s.io/client-go@v0.25.0/tools/cache/reflector.go:169: failed to list *v1.Secret: Get "https://localhost:6443/api/v1/namespaces/openshift-kube-scheduler/secrets?limit=500&resourceVersion=0": dial tcp [::1]:6443: connect: connection refused
-          E0308 11:57:52.787822       1 reflector.go:140] k8s.io/client-go@v0.25.0/tools/cache/reflector.go:169: Failed to watch *v1.Secret: failed to list *v1.Secret: Get "https://localhost:6443/api/v1/namespaces/openshift-kube-scheduler/secrets?limit=500&resourceVersion=0": dial tcp [::1]:6443: connect: connection refused
-          W0308 11:58:25.051152       1 reflector.go:424] k8s.io/client-go@v0.25.0/tools/cache/reflector.go:169: failed to list *v1.ConfigMap: Get "https://localhost:6443/api/v1/namespaces/openshift-kube-scheduler/configmaps?limit=500&resourceVersion=0": dial tcp [::1]:6443: connect: connection refused
-          E0308 11:58:25.051212       1 reflector.go:140] k8s.io/client-go@v0.25.0/tools/cache/reflector.go:169: Failed to watch *v1.ConfigMap: failed to list *v1.ConfigMap: Get "https://localhost:6443/api/v1/namespaces/openshift-kube-scheduler/configmaps?limit=500&resourceVersion=0": dial tcp [::1]:6443: connect: connection refused
-          F0308 11:58:27.131458       1 base_controller.go:96] unable to sync caches for CertSyncController
-        reason: Error
-        startedAt: "2023-03-08T11:48:27Z"
+      waiting:
+        reason: PodInitializing
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
+    imageID: ""
+    lastState: {}
     name: kube-scheduler-cert-syncer
-    ready: true
-    restartCount: 1
-    started: true
+    ready: false
+    restartCount: 0
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:58:27Z"
-  - containerID: cri-o://ff9c5dfdfe626378b46cdb1f735438e4f7acc1e14f022ba400fabb56a51c7674
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
+      waiting:
+        reason: PodInitializing
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
+    imageID: ""
     lastState: {}
     name: kube-scheduler-recovery-controller
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:48:27Z"
+      waiting:
+        reason: PodInitializing
   hostIP: 10.0.0.4
   initContainerStatuses:
-  - containerID: cri-o://2d6894316dfcffbfde5272abbbf33fdd6a0d4449bf55bbe79147bbef73db7bbc
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+    imageID: ""
     lastState: {}
     name: wait-for-host-port
-    ready: true
+    ready: false
     restartCount: 0
     state:
-      terminated:
-        containerID: cri-o://2d6894316dfcffbfde5272abbbf33fdd6a0d4449bf55bbe79147bbef73db7bbc
-        exitCode: 0
-        finishedAt: "2023-03-08T11:48:26Z"
-        reason: Completed
-        startedAt: "2023-03-08T11:48:26Z"
-  phase: Running
+      waiting:
+        reason: PodInitializing
+  phase: Pending
   podIP: 10.0.0.4
   podIPs:
   - ip: 10.0.0.4
