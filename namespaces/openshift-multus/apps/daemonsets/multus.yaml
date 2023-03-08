@@ -157,7 +157,7 @@ metadata:
     kind: Network
     name: cluster
     uid: 0ac8c00f-db30-4ed0-a498-7a1162bac022
-  resourceVersion: "19321"
+  resourceVersion: "19458"
   uid: e45c8b1f-32f4-4ba0-87c5-7b1e0564bf30
 spec:
   revisionHistoryLimit: 10
@@ -256,11 +256,11 @@ spec:
       maxUnavailable: 10%
     type: RollingUpdate
 status:
-  currentNumberScheduled: 4
-  desiredNumberScheduled: 5
+  currentNumberScheduled: 6
+  desiredNumberScheduled: 6
   numberAvailable: 3
   numberMisscheduled: 0
   numberReady: 3
-  numberUnavailable: 2
+  numberUnavailable: 3
   observedGeneration: 1
-  updatedNumberScheduled: 4
+  updatedNumberScheduled: 6
