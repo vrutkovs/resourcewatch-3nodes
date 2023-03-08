@@ -951,7 +951,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:49:28Z"
+    time: "2023-03-08T11:49:39Z"
   name: etcd-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   namespace: openshift-etcd
   ownerReferences:
@@ -960,7 +960,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
     uid: 68230a61-3998-42ae-824b-1cc75bc72bd7
-  resourceVersion: "13221"
+  resourceVersion: "13547"
   uid: 327bd52b-0b7f-4e4d-99b2-5762a5a1a761
 spec:
   containers:
@@ -1599,7 +1599,7 @@ status:
     name: etcd
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
       running:
         startedAt: "2023-03-08T11:49:27Z"
