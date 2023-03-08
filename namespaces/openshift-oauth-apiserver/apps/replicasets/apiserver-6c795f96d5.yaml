@@ -10,7 +10,7 @@ metadata:
     operator.openshift.io/dep-openshift-oauth-apiserver.etcd-serving-ca.configmap: ZwVSfQ==
     operator.openshift.io/spec-hash: 356aa27e2ad86041b0f301972a0a97aaa40062e3edaa0c8f5d5ec4cb83042709
   creationTimestamp: "2023-03-08T11:47:47Z"
-  generation: 2
+  generation: 3
   labels:
     apiserver: "true"
     app: openshift-oauth-apiserver
@@ -18,6 +18,19 @@ metadata:
     pod-template-hash: 6c795f96d5
     revision: "1"
   managedFields:
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:availableReplicas: {}
+        f:fullyLabeledReplicas: {}
+        f:observedGeneration: {}
+        f:readyReplicas: {}
+        f:replicas: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:49:31Z"
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -246,20 +259,7 @@ metadata:
                 f:name: {}
     manager: kube-controller-manager
     operation: Update
-    time: "2023-03-08T11:49:31Z"
-  - apiVersion: apps/v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:status:
-        f:availableReplicas: {}
-        f:fullyLabeledReplicas: {}
-        f:observedGeneration: {}
-        f:readyReplicas: {}
-        f:replicas: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:49:31Z"
+    time: "2023-03-08T11:49:39Z"
   name: apiserver-6c795f96d5
   namespace: openshift-oauth-apiserver
   ownerReferences:
@@ -269,10 +269,10 @@ metadata:
     kind: Deployment
     name: apiserver
     uid: 62a01473-77e6-462a-ac02-eae02830d991
-  resourceVersion: "13316"
+  resourceVersion: "13556"
   uid: 999135b4-5f42-415f-a0f9-883cd7370042
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       apiserver: "true"
