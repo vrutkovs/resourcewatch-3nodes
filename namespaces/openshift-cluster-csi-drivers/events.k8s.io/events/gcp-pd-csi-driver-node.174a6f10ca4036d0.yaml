@@ -1,0 +1,67 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:29Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:29Z"
+deprecatedSource:
+  component: daemonset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:29Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:45:29Z"
+  name: gcp-pd-csi-driver-node.174a6f10ca4036d0
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "5752"
+  uid: a6a73fe1-d4c7-4d20-9207-cf0b065ce822
+note: 'Error creating: pods "gcp-pd-csi-driver-node-" is forbidden: unable to validate
+  against any security context constraint: [provider "anyuid": Forbidden: not usable
+  by user or serviceaccount, provider restricted-v2: .spec.securityContext.hostNetwork:
+  Invalid value: true: Host network is not allowed to be used, spec.volumes[0]: Invalid
+  value: "hostPath": hostPath volumes are not allowed to be used, spec.volumes[1]:
+  Invalid value: "hostPath": hostPath volumes are not allowed to be used, spec.volumes[2]:
+  Invalid value: "hostPath": hostPath volumes are not allowed to be used, spec.volumes[3]:
+  Invalid value: "hostPath": hostPath volumes are not allowed to be used, spec.volumes[4]:
+  Invalid value: "hostPath": hostPath volumes are not allowed to be used, spec.volumes[5]:
+  Invalid value: "hostPath": hostPath volumes are not allowed to be used, spec.volumes[6]:
+  Invalid value: "hostPath": hostPath volumes are not allowed to be used, spec.volumes[7]:
+  Invalid value: "hostPath": hostPath volumes are not allowed to be used, spec.containers[0].securityContext.privileged:
+  Invalid value: true: Privileged containers are not allowed, spec.containers[0].securityContext.hostNetwork:
+  Invalid value: true: Host network is not allowed to be used, spec.containers[0].securityContext.containers[0].hostPort:
+  Invalid value: 10300: Host ports are not allowed to be used, spec.containers[1].securityContext.privileged:
+  Invalid value: true: Privileged containers are not allowed, spec.containers[1].securityContext.hostNetwork:
+  Invalid value: true: Host network is not allowed to be used, spec.containers[1].securityContext.containers[0].hostPort:
+  Invalid value: 10300: Host ports are not allowed to be used, spec.containers[2].securityContext.hostNetwork:
+  Invalid value: true: Host network is not allowed to be used, spec.containers[2].securityContext.containers[0].hostPort:
+  Invalid value: 10300: Host ports are not allowed to be used, provider "restricted":
+  Forbidden: not usable by user or serviceaccount, provider "nonroot-v2": Forbidden:
+  not usable by user or serviceaccount, provider "nonroot": Forbidden: not usable
+  by user or serviceaccount, provider "hostmount-anyuid": Forbidden: not usable by
+  user or serviceaccount, provider "machine-api-termination-handler": Forbidden: not
+  usable by user or serviceaccount, provider "hostnetwork-v2": Forbidden: not usable
+  by user or serviceaccount, provider "hostnetwork": Forbidden: not usable by user
+  or serviceaccount, provider "hostaccess": Forbidden: not usable by user or serviceaccount,
+  provider "privileged": Forbidden: not usable by user or serviceaccount]'
+reason: FailedCreate
+regarding:
+  apiVersion: apps/v1
+  kind: DaemonSet
+  name: gcp-pd-csi-driver-node
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "5720"
+  uid: 7c9edea7-f2a7-4b77-8956-d8b37e9680e0
+type: Warning
