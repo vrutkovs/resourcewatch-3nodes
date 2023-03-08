@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "11434"
+  resourceVersion: "11449"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
@@ -74,7 +74,7 @@ status:
     message: |-
       APIServerDeploymentAvailable: no apiserver.openshift-oauth-apiserver pods available on any node.
       APIServicesAvailable: "oauth.openshift.io.v1" is not ready: an attempt failed with statusCode = 503, err = the server is currently unable to handle the request
-      APIServicesAvailable: "user.openshift.io.v1" is not ready: an attempt failed with statusCode = 404, err = the server could not find the requested resource
+      APIServicesAvailable: "user.openshift.io.v1" is not ready: an attempt failed with statusCode = 503, err = the server is currently unable to handle the request
       OAuthServerServiceEndpointAccessibleControllerAvailable: Get "https://172.30.73.115:443/healthz": dial tcp 172.30.73.115:443: connect: connection refused
       OAuthServerServiceEndpointsEndpointAccessibleControllerAvailable: endpoints "oauth-openshift" not found
       ReadyIngressNodesAvailable: Authentication requires functional ingress which requires at least one schedulable and ready node. Got 0 worker nodes, 3 master nodes, 0 custom target nodes (none are schedulable or ready for ingress pods).
