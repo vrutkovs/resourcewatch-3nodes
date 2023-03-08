@@ -50,23 +50,24 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "9548"
+  resourceVersion: "9553"
   uid: 8fb9029b-29a2-4cc2-80f7-92ffd048ae08
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:46:42Z"
     message: 'The "default" ingress controller reports Available=False: IngressControllerUnavailable:
-      One or more status conditions indicate unavailable: DeploymentAvailable=Unknown
-      (DeploymentAvailabilityUnknown: The deployment has no Available status condition
-      set), LoadBalancerReady=False (LoadBalancerPending: The LoadBalancer service
-      is pending)'
+      One or more status conditions indicate unavailable: DeploymentAvailable=False
+      (DeploymentUnavailable: The deployment has Available status condition set to
+      False (reason: MinimumReplicasUnavailable) with message: Deployment does not
+      have minimum availability.), LoadBalancerReady=False (LoadBalancerPending: The
+      LoadBalancer service is pending)'
     reason: IngressUnavailable
     status: "False"
     type: Available
   - lastTransitionTime: "2023-03-08T11:46:42Z"
     message: |-
-      ingresscontroller "default" is progressing: IngressControllerProgressing: One or more status conditions indicate progressing: DeploymentRollingOut=True (DeploymentRollingOut: Waiting for router deployment rollout to finish: 0 out of 2 new replica(s) have been updated...
+      ingresscontroller "default" is progressing: IngressControllerProgressing: One or more status conditions indicate progressing: DeploymentRollingOut=True (DeploymentRollingOut: Waiting for router deployment rollout to finish: 0 of 2 updated replica(s) are available...
       ).
       Not all ingress controllers are available.
     reason: Reconciling
