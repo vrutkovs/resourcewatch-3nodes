@@ -37,9 +37,9 @@ metadata:
     manager: cluster-version-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:47:25Z"
+    time: "2023-03-08T11:47:55Z"
   name: version
-  resourceVersion: "10875"
+  resourceVersion: "11380"
   uid: e60de632-2954-4109-a630-deda141a29af
 spec:
   channel: stable-4
@@ -192,7 +192,7 @@ status:
   - lastTransitionTime: "2023-03-08T11:46:55Z"
     message: |-
       Multiple errors are preventing progress:
-      * Cluster operators authentication, etcd, image-registry, ingress, insights, kube-apiserver, kube-controller-manager, kube-scheduler, machine-api, monitoring, node-tuning, openshift-apiserver, openshift-controller-manager are not available
+      * Cluster operators authentication, etcd, image-registry, ingress, insights, kube-apiserver, kube-controller-manager, kube-scheduler, machine-api, monitoring, openshift-apiserver, openshift-controller-manager are not available
       * Could not update imagestream "openshift/driver-toolkit" (572 of 835): resource may have been deleted
       * Could not update oauthclient "console" (515 of 835): the server does not recognize this resource, check extension API servers
       * Could not update role "openshift-console-operator/prometheus-k8s" (752 of 835): resource may have been deleted
