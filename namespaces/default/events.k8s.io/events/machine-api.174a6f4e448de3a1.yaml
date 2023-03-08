@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:49:53Z"
-deprecatedLastTimestamp: "2023-03-08T11:49:58Z"
+deprecatedLastTimestamp: "2023-03-08T11:50:03Z"
 deprecatedSource:
   component: machineapioperator
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: machine-api-operator
     operation: Update
-    time: "2023-03-08T11:49:58Z"
+    time: "2023-03-08T11:50:03Z"
   name: machine-api.174a6f4e448de3a1
   namespace: default
-  resourceVersion: "14891"
+  resourceVersion: "15703"
   uid: 089da368-5045-49a4-8e27-fd1e9dcb50d1
 note: 'minimum worker replica count (2) not yet met: current running replicas 0, waiting
   for [vrutkovs-mrmwt-worker-a-92xck vrutkovs-mrmwt-worker-b-5rcfz vrutkovs-mrmwt-worker-c-hztvh]'
