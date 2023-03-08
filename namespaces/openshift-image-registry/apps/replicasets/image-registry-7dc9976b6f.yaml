@@ -314,7 +314,7 @@ metadata:
     kind: Deployment
     name: image-registry
     uid: eb3c9ce4-e686-45ad-bb89-a15500e8fd78
-  resourceVersion: "18248"
+  resourceVersion: "18265"
   uid: f7ac657b-a1f5-43c4-9d6a-74a9ff90bb6c
 spec:
   replicas: 2
@@ -514,6 +514,6 @@ spec:
               expirationSeconds: 3600
               path: token
 status:
-  fullyLabeledReplicas: 1
+  fullyLabeledReplicas: 2
   observedGeneration: 2
-  replicas: 1
+  replicas: 2
