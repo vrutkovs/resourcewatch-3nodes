@@ -159,10 +159,8 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -177,7 +175,7 @@ metadata:
     kind: Deployment
     name: olm-operator
     uid: b591d7ec-626f-45a7-a30c-813d854f46cc
-  resourceVersion: "7726"
+  resourceVersion: "21674"
   uid: d06a5ec1-4276-4042-ab0c-561790fb1f4a
 spec:
   replicas: 1
@@ -301,8 +299,6 @@ spec:
           defaultMode: 420
           secretName: pprof-cert
 status:
-  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
