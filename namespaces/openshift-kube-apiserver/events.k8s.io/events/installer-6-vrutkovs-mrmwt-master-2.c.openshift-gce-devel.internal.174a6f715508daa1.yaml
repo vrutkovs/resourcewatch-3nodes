@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:23Z"
+deprecatedSource:
+  component: multus
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: multus
+    operation: Update
+    time: "2023-03-08T11:52:23Z"
+  name: installer-6-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal.174a6f715508daa1
+  namespace: openshift-kube-apiserver
+  resourceVersion: "19924"
+  uid: 137c08d8-3e23-423f-9e13-9f7e9033af82
+note: Add eth0 [10.130.0.37/23] from ovn-kubernetes
+reason: AddedInterface
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: installer-6-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+  namespace: openshift-kube-apiserver
+  resourceVersion: "19906"
+  uid: ef50ab92-80e0-48e4-b302-5e84b2e17fa7
+type: Normal
