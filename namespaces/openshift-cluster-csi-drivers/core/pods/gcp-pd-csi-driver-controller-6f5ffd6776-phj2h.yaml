@@ -381,6 +381,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -393,6 +395,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -408,7 +412,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:58Z"
+    time: "2023-03-08T11:45:59Z"
   name: gcp-pd-csi-driver-controller-6f5ffd6776-phj2h
   namespace: openshift-cluster-csi-drivers
   ownerReferences:
@@ -418,7 +422,7 @@ metadata:
     kind: ReplicaSet
     name: gcp-pd-csi-driver-controller-6f5ffd6776
     uid: aa62a819-3836-4605-b527-b86540f7a1e2
-  resourceVersion: "7523"
+  resourceVersion: "7640"
   uid: fcbdd441-0eca-4504-9713-9bc6eed8408c
 spec:
   affinity:
@@ -790,12 +794,20 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:58Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:45:59Z"
+    message: 'containers with unready status: [csi-driver csi-provisioner provisioner-kube-rbac-proxy
+      csi-attacher attacher-kube-rbac-proxy csi-resizer resizer-kube-rbac-proxy csi-snapshotter
+      snapshotter-kube-rbac-proxy csi-liveness-probe]'
+    reason: ContainersNotReady
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:58Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:45:59Z"
+    message: 'containers with unready status: [csi-driver csi-provisioner provisioner-kube-rbac-proxy
+      csi-attacher attacher-kube-rbac-proxy csi-resizer resizer-kube-rbac-proxy csi-snapshotter
+      snapshotter-kube-rbac-proxy csi-liveness-probe]'
+    reason: ContainersNotReady
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:29Z"
@@ -807,110 +819,150 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: attacher-kube-rbac-proxy
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://60154e388b207edf7be6a191dabfd758e450d5ae240257bac5344ab995efce67
+        exitCode: 0
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Completed
         startedAt: "2023-03-08T11:45:47Z"
   - containerID: cri-o://3a2bf689cc6ba92a78845c08399f37e67af4c8c876f0bb41bb0de94ac3118d0a
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c12ae333ed7dc5e9bdff760653ab9c93a0fd033c3baad25cec6e9347c6731a3c
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c12ae333ed7dc5e9bdff760653ab9c93a0fd033c3baad25cec6e9347c6731a3c
     lastState: {}
     name: csi-attacher
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://3a2bf689cc6ba92a78845c08399f37e67af4c8c876f0bb41bb0de94ac3118d0a
+        exitCode: 2
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Error
         startedAt: "2023-03-08T11:45:47Z"
   - containerID: cri-o://00a2e448556974c38fd937d6300f2620062db6dde476ef91d685a11b27797a46
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b2b43aedb2296989c3b4015bdf7ea568f4a117a7e1369d21ab61855b3f6e4417
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b2b43aedb2296989c3b4015bdf7ea568f4a117a7e1369d21ab61855b3f6e4417
     lastState: {}
     name: csi-driver
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://00a2e448556974c38fd937d6300f2620062db6dde476ef91d685a11b27797a46
+        exitCode: 2
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Error
         startedAt: "2023-03-08T11:45:37Z"
   - containerID: cri-o://09b4193bdeb86f0b81324e8032b01a240d8ef4b418232f32a2bccb34e809d29c
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ea25c2f3749dee6981359b4655a9acfcd4d95547066ccdf328354b548da74932
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ea25c2f3749dee6981359b4655a9acfcd4d95547066ccdf328354b548da74932
     lastState: {}
     name: csi-liveness-probe
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://09b4193bdeb86f0b81324e8032b01a240d8ef4b418232f32a2bccb34e809d29c
+        exitCode: 2
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Error
         startedAt: "2023-03-08T11:45:57Z"
   - containerID: cri-o://96a4e2cec17c78e91ad5242e9eeea9c1ebd0c9331a892f6de2075f844c87acb2
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9f72c0dcc965dd85343e7b31e37c926ccd77ab7d7ce3ab6097755cc05958df43
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9f72c0dcc965dd85343e7b31e37c926ccd77ab7d7ce3ab6097755cc05958df43
     lastState: {}
     name: csi-provisioner
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://96a4e2cec17c78e91ad5242e9eeea9c1ebd0c9331a892f6de2075f844c87acb2
+        exitCode: 2
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Error
         startedAt: "2023-03-08T11:45:41Z"
   - containerID: cri-o://5f17e3507556d4cb833dcbb4234aca095b2ce9eb263e254529011949542d58b1
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:756f467707ce5a7b61755327167fea9dd9360b728b1b48508e012bf5102ca174
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:756f467707ce5a7b61755327167fea9dd9360b728b1b48508e012bf5102ca174
     lastState: {}
     name: csi-resizer
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://5f17e3507556d4cb833dcbb4234aca095b2ce9eb263e254529011949542d58b1
+        exitCode: 2
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Error
         startedAt: "2023-03-08T11:45:51Z"
   - containerID: cri-o://7b9c5e172d802db516169a00f5236aa50597cd774b347da5290913fa2a65ebda
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a44a2abb11a91246bb4c9dff91b97303523fa7b2a6a92c570dc13e6b41537b0e
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a44a2abb11a91246bb4c9dff91b97303523fa7b2a6a92c570dc13e6b41537b0e
     lastState: {}
     name: csi-snapshotter
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://7b9c5e172d802db516169a00f5236aa50597cd774b347da5290913fa2a65ebda
+        exitCode: 2
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Error
         startedAt: "2023-03-08T11:45:57Z"
   - containerID: cri-o://e0eb6f76f1f63c37dbbbb43d78229b2cd747f4622023b796202ceae5a46d34c8
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: provisioner-kube-rbac-proxy
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://e0eb6f76f1f63c37dbbbb43d78229b2cd747f4622023b796202ceae5a46d34c8
+        exitCode: 0
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Completed
         startedAt: "2023-03-08T11:45:41Z"
   - containerID: cri-o://d3256dfea9eb2df17afc56d0c19072c28fb8b7179322d9b156522c903d6c7f8e
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: resizer-kube-rbac-proxy
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://d3256dfea9eb2df17afc56d0c19072c28fb8b7179322d9b156522c903d6c7f8e
+        exitCode: 0
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Completed
         startedAt: "2023-03-08T11:45:51Z"
   - containerID: cri-o://1b6b52642ca932b585d7729dcdd5da67d9b05b309be00cfc39c1f3e4e03099a1
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: snapshotter-kube-rbac-proxy
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://1b6b52642ca932b585d7729dcdd5da67d9b05b309be00cfc39c1f3e4e03099a1
+        exitCode: 0
+        finishedAt: "2023-03-08T11:45:58Z"
+        reason: Completed
         startedAt: "2023-03-08T11:45:57Z"
   hostIP: 10.0.0.5
   phase: Running
