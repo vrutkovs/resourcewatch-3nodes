@@ -116,6 +116,7 @@ metadata:
         f:annotations:
           f:deployment.kubernetes.io/revision: {}
       f:status:
+        f:availableReplicas: {}
         f:conditions:
           .: {}
           k:{"type":"Available"}:
@@ -135,13 +136,13 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
-        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:41:21Z"
+    time: "2023-03-08T11:45:17Z"
   name: csi-snapshot-controller-operator
   namespace: openshift-cluster-storage-operator
   ownerReferences:
@@ -149,7 +150,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "1807"
+  resourceVersion: "4256"
   uid: 7ecf14bc-365f-4dfd-93bf-56fe36844200
 spec:
   progressDeadlineSeconds: 600
@@ -229,20 +230,22 @@ spec:
         key: node-role.kubernetes.io/master
         operator: Exists
 status:
+  availableReplicas: 1
   conditions:
-  - lastTransitionTime: "2023-03-08T11:41:21Z"
-    lastUpdateTime: "2023-03-08T11:41:21Z"
-    message: Deployment does not have minimum availability.
-    reason: MinimumReplicasUnavailable
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:45:17Z"
+    lastUpdateTime: "2023-03-08T11:45:17Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
     type: Available
   - lastTransitionTime: "2023-03-08T11:41:21Z"
-    lastUpdateTime: "2023-03-08T11:41:21Z"
-    message: ReplicaSet "csi-snapshot-controller-operator-f965f4fbc" is progressing.
-    reason: ReplicaSetUpdated
+    lastUpdateTime: "2023-03-08T11:45:17Z"
+    message: ReplicaSet "csi-snapshot-controller-operator-f965f4fbc" has successfully
+      progressed.
+    reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
   observedGeneration: 1
+  readyReplicas: 1
   replicas: 1
-  unavailableReplicas: 1
   updatedReplicas: 1
