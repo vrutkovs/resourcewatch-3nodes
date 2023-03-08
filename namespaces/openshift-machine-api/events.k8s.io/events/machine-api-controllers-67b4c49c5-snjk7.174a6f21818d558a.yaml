@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:40Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:40Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:42Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:46:42Z"
+  name: machine-api-controllers-67b4c49c5-snjk7.174a6f21818d558a
+  namespace: openshift-machine-api
+  resourceVersion: "9555"
+  uid: b034341f-6bfc-467a-be7e-c7c76613fbd4
+note: Started container kube-rbac-proxy-mhc-mtrc
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{kube-rbac-proxy-mhc-mtrc}
+  kind: Pod
+  name: machine-api-controllers-67b4c49c5-snjk7
+  namespace: openshift-machine-api
+  resourceVersion: "8492"
+  uid: 8806971b-4232-425e-a991-bab6fbcb8ad5
+type: Normal
