@@ -101,6 +101,40 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:58:09Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:58:09Z"
   name: downloads-7dcb49757d-gkxwl
   namespace: openshift-console
   ownerReferences:
@@ -110,7 +144,7 @@ metadata:
     kind: ReplicaSet
     name: downloads-7dcb49757d
     uid: 4696ba9b-c3bd-4250-8561-bf9aba8c375a
-  resourceVersion: "24710"
+  resourceVersion: "24714"
   uid: 37cf97aa-33bb-4aee-a8e2-6491572d079c
 spec:
   affinity:
@@ -285,6 +319,35 @@ status:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:58:09Z"
     status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:58:09Z"
+    message: 'containers with unready status: [download-server]'
+    reason: ContainersNotReady
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:58:09Z"
+    message: 'containers with unready status: [download-server]'
+    reason: ContainersNotReady
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:58:09Z"
+    status: "True"
     type: PodScheduled
+  containerStatuses:
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:086bd25d58b410e2d97217df24fc1eb869aab4e2b0c6d266600b4c595c5557e9
+    imageID: ""
+    lastState: {}
+    name: download-server
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  hostIP: 10.0.128.3
   phase: Pending
   qosClass: Burstable
+  startTime: "2023-03-08T11:58:09Z"
