@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:01:13Z"
+deprecatedLastTimestamp: "2023-03-08T12:01:13Z"
+deprecatedSource:
+  component: endpoint-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:01:42Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T12:01:42Z"
+  name: prometheus-operated.174a6fecb976bf81
+  namespace: openshift-monitoring
+  resourceVersion: "28473"
+  uid: 91ef12c8-e580-40e1-bda3-83fc45c08639
+note: 'Failed to update endpoint openshift-monitoring/prometheus-operated: Timeout:
+  request did not complete within requested timeout - context deadline exceeded'
+reason: FailedToUpdateEndpoint
+regarding:
+  apiVersion: v1
+  kind: Endpoints
+  name: prometheus-operated
+  namespace: openshift-monitoring
+  resourceVersion: "27800"
+  uid: 2357a12c-3ded-4dde-9f26-b1bfb5c44c9d
+type: Warning
