@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:14Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:14Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:14Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:58:14Z"
+  name: etcd-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal.174a6fc2f8564e6c
+  namespace: openshift-etcd
+  resourceVersion: "24849"
+  uid: 6f86862f-94c2-43bf-8574-f5fc0582cbb2
+note: Stopping container etcd-metrics
+reason: Killing
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{etcd-metrics}
+  kind: Pod
+  name: etcd-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+  namespace: openshift-etcd
+  uid: 402bb00e1b984d96cace8942d9bc591c
+type: Normal
