@@ -1,0 +1,40 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T12:07:51.179654Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:07:51Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T12:07:51Z"
+  name: community-operators-2kvzs.174a704947468d67
+  namespace: openshift-marketplace
+  resourceVersion: "31538"
+  uid: 959aefc0-d84e-4da1-9dff-6c1852d8e10f
+note: Successfully assigned openshift-marketplace/community-operators-2kvzs to vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: community-operators-2kvzs
+  namespace: openshift-marketplace
+  resourceVersion: "31535"
+  uid: 7a643725-5e72-4ca6-b93f-a41a47df23c8
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+type: Normal
