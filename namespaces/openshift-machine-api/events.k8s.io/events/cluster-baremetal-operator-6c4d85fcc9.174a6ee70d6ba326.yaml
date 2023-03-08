@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:42:29Z"
+deprecatedLastTimestamp: "2023-03-08T11:42:29Z"
+deprecatedSource:
+  component: replicaset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:42:29Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:42:29Z"
+  name: cluster-baremetal-operator-6c4d85fcc9.174a6ee70d6ba326
+  namespace: openshift-machine-api
+  resourceVersion: "2457"
+  uid: 37133612-4889-4aed-8dc4-ebaf8f72a593
+note: 'Created pod: cluster-baremetal-operator-6c4d85fcc9-rx9xh'
+reason: SuccessfulCreate
+regarding:
+  apiVersion: apps/v1
+  kind: ReplicaSet
+  name: cluster-baremetal-operator-6c4d85fcc9
+  namespace: openshift-machine-api
+  resourceVersion: "2451"
+  uid: 9d7571b3-1e13-48c4-ac7b-01eb826d2f46
+type: Normal
