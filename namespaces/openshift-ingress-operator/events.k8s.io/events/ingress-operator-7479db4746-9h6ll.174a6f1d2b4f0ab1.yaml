@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:46:22Z"
-deprecatedLastTimestamp: "2023-03-08T11:48:43Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:29Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:48:43Z"
+    time: "2023-03-08T11:51:29Z"
   name: ingress-operator-7479db4746-9h6ll.174a6f1d2b4f0ab1
   namespace: openshift-ingress-operator
-  resourceVersion: "12535"
+  resourceVersion: "17211"
   uid: d730d161-ec57-44a2-9ae8-6c470dbdece4
 note: Created container ingress-operator
 reason: Created
