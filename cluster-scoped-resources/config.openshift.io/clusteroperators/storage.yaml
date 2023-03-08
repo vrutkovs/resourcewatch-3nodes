@@ -53,7 +53,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "5176"
+  resourceVersion: "5291"
   uid: b0a3f029-1b40-4919-9a2a-f2c3558d8152
 spec: {}
 status:
@@ -65,13 +65,16 @@ status:
     reason: AsExpected
     status: "False"
     type: Degraded
-  - lastTransitionTime: "2023-03-08T11:45:19Z"
-    reason: NoData
-    status: Unknown
+  - lastTransitionTime: "2023-03-08T11:45:23Z"
+    message: All is well
+    reason: AsExpected
+    status: "False"
     type: Progressing
-  - lastTransitionTime: "2023-03-08T11:45:19Z"
-    reason: NoData
-    status: Unknown
+  - lastTransitionTime: "2023-03-08T11:45:23Z"
+    message: 'DefaultStorageClassControllerAvailable: StorageClass provided by supplied
+      CSI Driver instead of the cluster-storage-operator'
+    reason: AsExpected
+    status: "True"
     type: Available
   - lastTransitionTime: "2023-03-08T11:45:21Z"
     message: All is well
