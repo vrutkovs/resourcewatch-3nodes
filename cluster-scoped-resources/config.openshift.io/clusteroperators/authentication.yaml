@@ -44,22 +44,22 @@ metadata:
     manager: authentication-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:06Z"
+    time: "2023-03-08T11:52:10Z"
   name: authentication
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "18964"
+  resourceVersion: "19220"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:47:24Z"
     message: "APIServerDeploymentDegraded: 1 of 3 requested instances are unavailable
-      for apiserver.openshift-oauth-apiserver ()\nIngressStateEndpointsDegraded: No
-      subsets found for the endpoints of oauth-server\nOAuthServerDeploymentDegraded:
+      for apiserver.openshift-oauth-apiserver (container is not ready in apiserver-c9c8564b9-95qsw
+      pod)\nIngressStateEndpointsDegraded: No subsets found for the endpoints of oauth-server\nOAuthServerDeploymentDegraded:
       waiting for the oauth-openshift route to contain an admitted ingress: no admitted
       ingress for route oauth-openshift in namespace openshift-authentication\nOAuthServerDeploymentDegraded:
       \nOAuthServerRouteEndpointAccessibleControllerDegraded: route \"openshift-authentication/oauth-openshift\":
