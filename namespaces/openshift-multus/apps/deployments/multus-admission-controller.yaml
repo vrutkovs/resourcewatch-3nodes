@@ -144,7 +144,7 @@ metadata:
     kind: Network
     name: cluster
     uid: 0ac8c00f-db30-4ed0-a498-7a1162bac022
-  resourceVersion: "9762"
+  resourceVersion: "9763"
   uid: 3e8b5ec7-a6ed-4455-a1f8-decd089d7077
 spec:
   progressDeadlineSeconds: 600
@@ -264,6 +264,6 @@ status:
     type: Progressing
   observedGeneration: 2
   readyReplicas: 2
-  replicas: 2
+  replicas: 3
   unavailableReplicas: 1
-  updatedReplicas: 1
+  updatedReplicas: 2
