@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:32Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:32Z"
+deprecatedSource:
+  component: node-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:32Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:59:32Z"
+  name: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal.174a6fd520c5b120
+  namespace: default
+  resourceVersion: "26847"
+  uid: decd8850-5d40-45b8-b797-c36013be3acb
+note: 'Node vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal event: Registered
+  Node vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal in Controller'
+reason: RegisteredNode
+regarding:
+  apiVersion: v1
+  kind: Node
+  name: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+  uid: 1a8cd3af-23ff-49d3-90d8-1bacf0fe2106
+type: Normal
