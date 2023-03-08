@@ -258,7 +258,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:27Z"
+    time: "2023-03-08T11:55:23Z"
   name: etcd-operator-76984547ff-7dcqv
   namespace: openshift-etcd-operator
   ownerReferences:
@@ -268,7 +268,7 @@ metadata:
     kind: ReplicaSet
     name: etcd-operator-76984547ff
     uid: e1d1904e-8f8d-49f1-a235-7a18c0e8b89b
-  resourceVersion: "8825"
+  resourceVersion: "22650"
   uid: e3d74919-984d-47a9-9e97-d99c7be81598
 spec:
   containers:
@@ -413,11 +413,11 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:27Z"
+    lastTransitionTime: "2023-03-08T11:55:23Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:27Z"
+    lastTransitionTime: "2023-03-08T11:55:23Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
@@ -425,23 +425,23 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://31f96f1c106e47cf443e4cf830128ebe949859e4f051432db529ce3f6212a639
+  - containerID: cri-o://6b01ffa290370d1205573ea66acb634cbe786c5580469caefae24aada274b390
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a62fd1ab5fab0a9273eac253eed4e90c410771ae37fe1ab57fba8a8535922d1c
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a62fd1ab5fab0a9273eac253eed4e90c410771ae37fe1ab57fba8a8535922d1c
     lastState:
       terminated:
-        containerID: cri-o://d005ff6a7e622684a8b7f0dea21992b5ae19b74516a735125169b5197c2a53dd
+        containerID: cri-o://31f96f1c106e47cf443e4cf830128ebe949859e4f051432db529ce3f6212a639
         exitCode: 0
-        finishedAt: "2023-03-08T11:46:25Z"
+        finishedAt: "2023-03-08T11:55:10Z"
         reason: Completed
-        startedAt: "2023-03-08T11:45:15Z"
+        startedAt: "2023-03-08T11:46:26Z"
     name: etcd-operator
     ready: true
-    restartCount: 1
+    restartCount: 2
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:26Z"
+        startedAt: "2023-03-08T11:55:22Z"
   hostIP: 10.0.0.3
   phase: Running
   podIP: 10.130.0.29
