@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:05Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:05Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:05Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:59:05Z"
+  name: kube-state-metrics-6d5dbc966-nwbnn.174a6fced780fb39
+  namespace: openshift-monitoring
+  resourceVersion: "26183"
+  uid: 277e2a37-c8c0-46b8-8de5-47378362188a
+note: Started container kube-rbac-proxy-main
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{kube-rbac-proxy-main}
+  kind: Pod
+  name: kube-state-metrics-6d5dbc966-nwbnn
+  namespace: openshift-monitoring
+  resourceVersion: "25804"
+  uid: a8b7e42a-242c-4fe5-9408-4188ecee349d
+type: Normal
