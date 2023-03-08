@@ -158,7 +158,7 @@ metadata:
     manager: kube-scheduler
     operation: Update
     subresource: status
-    time: "2023-03-08T11:41:28Z"
+    time: "2023-03-08T11:42:25Z"
   name: insights-operator-67cf785b46-szjwj
   namespace: openshift-insights
   ownerReferences:
@@ -168,7 +168,7 @@ metadata:
     kind: ReplicaSet
     name: insights-operator-67cf785b46
     uid: 9bbcfacc-0df2-4de9-a7fb-40cb545ff1cf
-  resourceVersion: "2027"
+  resourceVersion: "2400"
   uid: e31043d3-a0a4-4a14-be6d-0d3cf03853b3
 spec:
   containers:
@@ -302,7 +302,8 @@ status:
   conditions:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:41:28Z"
-    message: no nodes available to schedule pods
+    message: '0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready:
+      }. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.'
     reason: Unschedulable
     status: "False"
     type: PodScheduled
