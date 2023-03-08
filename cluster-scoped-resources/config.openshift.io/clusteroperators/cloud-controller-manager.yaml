@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "3361"
+  resourceVersion: "3364"
   uid: 1684d28f-0b03-4898-85f2-02fe09436372
 spec: {}
 status:
@@ -66,6 +66,16 @@ status:
     reason: AsExpected
     status: "False"
     type: TrustedCABundleControllerControllerDegraded
+  - lastTransitionTime: "2023-03-08T11:43:58Z"
+    message: Cloud Config Controller works as expected
+    reason: AsExpected
+    status: "True"
+    type: CloudConfigControllerAvailable
+  - lastTransitionTime: "2023-03-08T11:43:58Z"
+    message: Cloud Config Controller works as expected
+    reason: AsExpected
+    status: "False"
+    type: CloudConfigControllerDegraded
   extension: null
   relatedObjects:
   - group: ""
