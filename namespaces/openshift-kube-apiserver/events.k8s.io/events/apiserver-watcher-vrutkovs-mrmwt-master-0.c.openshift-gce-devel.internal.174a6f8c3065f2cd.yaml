@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:54:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:19Z"
+deprecatedSource:
+  component: node-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:54:19Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:54:19Z"
+  name: apiserver-watcher-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6f8c3065f2cd
+  namespace: openshift-kube-apiserver
+  resourceVersion: "21248"
+  uid: 9b2151b7-fcc4-4f7e-bb99-e6c49f57d629
+note: Node is not ready
+reason: NodeNotReady
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: apiserver-watcher-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+  namespace: openshift-kube-apiserver
+  resourceVersion: "17348"
+  uid: 84eff40a-6afd-4f2b-ba85-49462ffb4250
+type: Warning
