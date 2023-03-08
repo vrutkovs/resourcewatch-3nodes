@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "4910"
+  resourceVersion: "5030"
   uid: b847a3b2-5e9a-4598-8142-d35d20a8b280
 spec: {}
 status:
@@ -60,6 +60,7 @@ status:
     message: |-
       NodeControllerDegraded: All master nodes are ready
       InstallerControllerDegraded: missing required resources: [configmaps: aggregator-client-ca,client-ca, secrets: csr-signer,kube-controller-manager-client-cert-key, configmaps: cluster-policy-controller-config-0,config-0,controller-manager-kubeconfig-0,kube-controller-cert-syncer-kubeconfig-0,kube-controller-manager-pod-0,recycler-config-0,service-ca-0,serviceaccount-ca-0, secrets: localhost-recovery-client-token-0,service-account-private-key-0]
+      GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal]
     reason: AsExpected
     status: "False"
     type: Degraded
