@@ -44,14 +44,14 @@ metadata:
     manager: dns-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:37Z"
+    time: "2023-03-08T11:52:46Z"
   name: dns
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "20192"
+  resourceVersion: "20364"
   uid: a3caedc9-3281-4798-96b2-aca0237d461d
 spec: {}
 status:
@@ -61,8 +61,8 @@ status:
     reason: AsExpected
     status: "True"
     type: Available
-  - lastTransitionTime: "2023-03-08T11:52:37Z"
-    message: 'DNS "default" reports Progressing=True: "Have 4 available node-resolver
+  - lastTransitionTime: "2023-03-08T11:52:46Z"
+    message: 'DNS "default" reports Progressing=True: "Have 5 available node-resolver
       pods, want 6."'
     reason: DNSReportsProgressingIsTrue
     status: "True"
