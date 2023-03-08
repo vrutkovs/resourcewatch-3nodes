@@ -42,16 +42,8 @@ metadata:
     fieldsV1:
       f:metadata:
         f:annotations:
-          f:cloud.network.openshift.io/egress-ipconfig: {}
-    manager: cloud-network-config-controller
-    operation: Update
-    time: "2023-03-08T11:52:13Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
           .: {}
+          f:cloud.network.openshift.io/egress-ipconfig: {}
           f:volumes.kubernetes.io/controller-managed-attach-detach: {}
         f:labels:
           .: {}
@@ -70,7 +62,7 @@ metadata:
           f:topology.kubernetes.io/zone: {}
       f:spec:
         f:providerID: {}
-    manager: kubelet
+    manager: ancient-changes
     operation: Update
     time: "2023-03-08T11:52:13Z"
   - apiVersion: v1
@@ -167,6 +159,14 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:spec:
+        f:taints: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:54:18Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           k:{"type":"DiskPressure"}:
@@ -194,10 +194,14 @@ metadata:
     subresource: status
     time: "2023-03-08T11:54:18Z"
   name: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
-  resourceVersion: "21086"
+  resourceVersion: "21090"
   uid: 2ac4c672-b94a-4a56-a828-6ab375b8bcb9
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-b/vrutkovs-mrmwt-worker-b-5rcfz
+  taints:
+  - effect: NoSchedule
+    key: node.kubernetes.io/unreachable
+    timeAdded: "2023-03-08T11:54:18Z"
 status:
   addresses:
   - address: 10.0.128.3
