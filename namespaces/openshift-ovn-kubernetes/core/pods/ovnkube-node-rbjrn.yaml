@@ -498,8 +498,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -515,6 +513,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:44:51Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:54:19Z"
   name: ovnkube-node-rbjrn
   namespace: openshift-ovn-kubernetes
   ownerReferences:
@@ -524,7 +534,7 @@ metadata:
     kind: DaemonSet
     name: ovnkube-node
     uid: 4b4c01b5-0c51-4c6d-b35d-1fb8796e0b7c
-  resourceVersion: "3779"
+  resourceVersion: "21435"
   uid: 92546ea6-4ec6-4b98-96dc-246ec298604f
 spec:
   affinity:
@@ -1034,8 +1044,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:44:51Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:54:19Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:44:51Z"
