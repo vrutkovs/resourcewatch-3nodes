@@ -104,14 +104,16 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
+        f:replicas: {}
         f:unavailableReplicas: {}
+        f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
     time: "2023-03-08T11:45:19Z"
   name: migrator
   namespace: openshift-kube-storage-version-migrator
-  resourceVersion: "4371"
+  resourceVersion: "4389"
   uid: a25fefd9-12d9-48c3-8060-7259612efd23
 spec:
   progressDeadlineSeconds: 600
@@ -180,15 +182,17 @@ status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:45:19Z"
     lastUpdateTime: "2023-03-08T11:45:19Z"
-    message: Created new replica set "migrator-55b6c4684f"
-    reason: NewReplicaSetCreated
-    status: "True"
-    type: Progressing
-  - lastTransitionTime: "2023-03-08T11:45:19Z"
-    lastUpdateTime: "2023-03-08T11:45:19Z"
     message: Deployment does not have minimum availability.
     reason: MinimumReplicasUnavailable
     status: "False"
     type: Available
+  - lastTransitionTime: "2023-03-08T11:45:19Z"
+    lastUpdateTime: "2023-03-08T11:45:19Z"
+    message: ReplicaSet "migrator-55b6c4684f" is progressing.
+    reason: ReplicaSetUpdated
+    status: "True"
+    type: Progressing
   observedGeneration: 1
+  replicas: 1
   unavailableReplicas: 1
+  updatedReplicas: 1
