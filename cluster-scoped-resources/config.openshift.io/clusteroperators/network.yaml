@@ -56,14 +56,14 @@ metadata:
     manager: cluster-network-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:51Z"
+    time: "2023-03-08T11:46:52Z"
   name: network
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "10050"
+  resourceVersion: "10059"
   uid: c452e0a4-6e32-4ed2-a5a9-8eaa2903cb12
 spec: {}
 status:
@@ -80,7 +80,6 @@ status:
   - lastTransitionTime: "2023-03-08T11:43:07Z"
     message: |-
       DaemonSet "/openshift-multus/network-metrics-daemon" is not available (awaiting 1 nodes)
-      Deployment "/openshift-multus/multus-admission-controller" update is rolling out (2 out of 3 updated)
       Deployment "/openshift-network-diagnostics/network-check-source" is waiting for other operators to become ready
     reason: Deploying
     status: "True"
