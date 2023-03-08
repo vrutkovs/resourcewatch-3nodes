@@ -39,20 +39,21 @@ metadata:
         f:conditions: {}
         f:extension:
           .: {}
+          f:lastSyncError: {}
           f:master: {}
           f:worker: {}
         f:relatedObjects: {}
     manager: machine-config-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:51Z"
+    time: "2023-03-08T11:46:52Z"
   name: machine-config
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "10058"
+  resourceVersion: "10078"
   uid: 157e8dfa-4a1d-4b32-aa9b-71f9e9e70ea2
 spec: {}
 status:
@@ -78,6 +79,8 @@ status:
     status: "False"
     type: Upgradeable
   extension:
+    lastSyncError: 'error pool master is not ready, retrying. Status: (pool degraded:
+      true total: 3, ready 1, updated: 1, unavailable: 2)'
     master: 'pool is degraded because nodes fail with "2 nodes are reporting degraded
       status on sync": "Node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
       is reporting: \"machineconfig.machineconfiguration.openshift.io \\\"rendered-master-71fec459b968d060c60cad7d0f3a5602\\\"
