@@ -295,6 +295,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -313,6 +315,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -328,7 +332,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:33Z"
+    time: "2023-03-08T11:52:33Z"
   name: kube-controller-manager-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
   namespace: openshift-kube-controller-manager
   ownerReferences:
@@ -337,7 +341,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     uid: 3becf630-5199-4621-aa21-11f188b903aa
-  resourceVersion: "17265"
+  resourceVersion: "20092"
   uid: 54ff8116-93f4-456f-a64b-bcb1950639c7
 spec:
   containers:
@@ -574,64 +578,66 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:48:28Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:52:33Z"
+    message: 'containers with unready status: [kube-controller-manager cluster-policy-controller
+      kube-controller-manager-cert-syncer kube-controller-manager-recovery-controller]'
+    reason: ContainersNotReady
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:48:28Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:52:33Z"
+    message: 'containers with unready status: [kube-controller-manager cluster-policy-controller
+      kube-controller-manager-cert-syncer kube-controller-manager-recovery-controller]'
+    reason: ContainersNotReady
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:48:05Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://a141e414a23ceeb5893d44d290b0928c42cf5424c7a39957311ada6c6fadad74
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:6a1373735d0dbfa1a4b13ac508690c0bad0b82136b309eb9caa802511ac75266
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:6a1373735d0dbfa1a4b13ac508690c0bad0b82136b309eb9caa802511ac75266
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:6a1373735d0dbfa1a4b13ac508690c0bad0b82136b309eb9caa802511ac75266
+    imageID: ""
     lastState: {}
     name: cluster-policy-controller
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:48:18Z"
-  - containerID: cri-o://5db068592de95987cee486c83725add0f2dab685204214e0c0e6d5c86659227c
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+    imageID: ""
     lastState: {}
     name: kube-controller-manager
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:48:14Z"
-  - containerID: cri-o://b455b9d69167d3698022122d9d5612cde1d0f866b244c586c4e4fd1d946fc37a
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
+    imageID: ""
     lastState: {}
     name: kube-controller-manager-cert-syncer
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:48:18Z"
-  - containerID: cri-o://f458550bf14862ce0563cf90751f78db0bae68e256d38325a67d8d54507c56d9
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
+    imageID: ""
     lastState: {}
     name: kube-controller-manager-recovery-controller
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:48:18Z"
+      waiting:
+        reason: ContainerCreating
   hostIP: 10.0.0.5
-  phase: Running
+  phase: Pending
   podIP: 10.0.0.5
   podIPs:
   - ip: 10.0.0.5
