@@ -208,7 +208,7 @@ metadata:
     time: "2023-03-08T11:49:09Z"
   name: controller-manager
   namespace: openshift-controller-manager
-  resourceVersion: "12859"
+  resourceVersion: "12867"
   uid: d4b28c78-d70c-4e89-8abd-e4dc311b8c4b
 spec:
   progressDeadlineSeconds: 600
@@ -355,10 +355,10 @@ status:
     type: Available
   - lastTransitionTime: "2023-03-08T11:45:20Z"
     lastUpdateTime: "2023-03-08T11:49:09Z"
-    message: Created new replica set "controller-manager-7d8bc76f8b"
-    reason: NewReplicaSetCreated
+    message: ReplicaSet "controller-manager-7d8bc76f8b" is progressing.
+    reason: ReplicaSetUpdated
     status: "True"
     type: Progressing
   observedGeneration: 4
-  replicas: 3
+  replicas: 2
   unavailableReplicas: 3
