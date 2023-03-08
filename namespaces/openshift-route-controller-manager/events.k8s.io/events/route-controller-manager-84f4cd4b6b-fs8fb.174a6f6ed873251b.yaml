@@ -1,0 +1,41 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:13.017434Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:13Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:13Z"
+  name: route-controller-manager-84f4cd4b6b-fs8fb.174a6f6ed873251b
+  namespace: openshift-route-controller-manager
+  resourceVersion: "19304"
+  uid: f1eba2c0-2b14-4f56-ab77-4be53e56e864
+note: Successfully assigned openshift-route-controller-manager/route-controller-manager-84f4cd4b6b-fs8fb
+  to vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: route-controller-manager-84f4cd4b6b-fs8fb
+  namespace: openshift-route-controller-manager
+  resourceVersion: "19188"
+  uid: d9b3a96b-5775-44e2-9235-e4e48ecef37b
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
