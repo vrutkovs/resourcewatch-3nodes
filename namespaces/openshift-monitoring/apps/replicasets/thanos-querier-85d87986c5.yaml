@@ -390,13 +390,15 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:59:07Z"
+    time: "2023-03-08T11:59:32Z"
   name: thanos-querier-85d87986c5
   namespace: openshift-monitoring
   ownerReferences:
@@ -406,7 +408,7 @@ metadata:
     kind: Deployment
     name: thanos-querier
     uid: 81a9e335-8844-40f7-bb14-fcfdef7e1b6a
-  resourceVersion: "26275"
+  resourceVersion: "26806"
   uid: b715ece4-35c8-4be1-aa27-bb6aeab67d14
 spec:
   replicas: 2
@@ -721,6 +723,8 @@ spec:
           defaultMode: 420
           secretName: thanos-querier-grpc-tls-30qn69e7ba115
 status:
+  availableReplicas: 2
   fullyLabeledReplicas: 2
   observedGeneration: 1
+  readyReplicas: 2
   replicas: 2
