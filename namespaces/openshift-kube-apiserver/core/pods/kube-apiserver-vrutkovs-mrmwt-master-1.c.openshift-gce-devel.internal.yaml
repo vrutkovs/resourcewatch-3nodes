@@ -387,6 +387,7 @@ metadata:
         f:containerStatuses: {}
         f:hostIP: {}
         f:initContainerStatuses: {}
+        f:phase: {}
         f:podIP: {}
         f:podIPs:
           .: {}
@@ -397,7 +398,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T12:00:05Z"
+    time: "2023-03-08T12:00:06Z"
   name: kube-apiserver-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
   namespace: openshift-kube-apiserver
   ownerReferences:
@@ -406,7 +407,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
     uid: d1bb260b-ed05-4c1f-9090-1cf4ac4bb308
-  resourceVersion: "27433"
+  resourceVersion: "27481"
   uid: e74ffadb-be70-48b3-8dc6-8519c5f1a9d7
 spec:
   containers:
@@ -720,15 +721,13 @@ status:
     type: Initialized
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T12:00:04Z"
-    message: 'containers with unready status: [kube-apiserver kube-apiserver-cert-syncer
-      kube-apiserver-cert-regeneration-controller kube-apiserver-insecure-readyz kube-apiserver-check-endpoints]'
+    message: 'containers with unready status: [kube-apiserver kube-apiserver-check-endpoints]'
     reason: ContainersNotReady
     status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T12:00:04Z"
-    message: 'containers with unready status: [kube-apiserver kube-apiserver-cert-syncer
-      kube-apiserver-cert-regeneration-controller kube-apiserver-insecure-readyz kube-apiserver-check-endpoints]'
+    message: 'containers with unready status: [kube-apiserver kube-apiserver-check-endpoints]'
     reason: ContainersNotReady
     status: "False"
     type: ContainersReady
@@ -737,56 +736,61 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
-    imageID: ""
+  - containerID: cri-o://c46d2b09d91105b4543670230451218369f62b375c053603446367aaf57acffa
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
     lastState: {}
     name: kube-apiserver
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T12:00:06Z"
+  - containerID: cri-o://3e42e36adf0ef38e9862ca8927aa3a23625837625a69cbcf4cda5297a424df47
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
     lastState: {}
     name: kube-apiserver-cert-regeneration-controller
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T12:00:06Z"
+  - containerID: cri-o://84270b1d24fd9699ad282fdbd5f5162976363416013f810b6c027878c04c7a98
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
     lastState: {}
     name: kube-apiserver-cert-syncer
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T12:00:06Z"
+  - containerID: cri-o://e77f1b0a90c8e12f0781666abb00e6048110760de02b7c883d91045f3fc269b1
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
     lastState: {}
     name: kube-apiserver-check-endpoints
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T12:00:06Z"
+  - containerID: cri-o://070677f6c7f8bbffbb8e86f2dae8921214bce27f27520f8b137988cf0420d5a4
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
     lastState: {}
     name: kube-apiserver-insecure-readyz
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
+      running:
+        startedAt: "2023-03-08T12:00:06Z"
   hostIP: 10.0.0.4
   initContainerStatuses:
   - containerID: cri-o://ff7a6584f4d4ba7408d951c89e36eeb27494bbe8d3eabbf59a8a02944497e066
@@ -803,7 +807,7 @@ status:
         finishedAt: "2023-03-08T12:00:05Z"
         reason: Completed
         startedAt: "2023-03-08T12:00:05Z"
-  phase: Pending
+  phase: Running
   podIP: 10.0.0.4
   podIPs:
   - ip: 10.0.0.4
