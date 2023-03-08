@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:47:57Z"
 deprecatedLastTimestamp: "2023-03-08T11:47:58Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:47:58Z"
   name: authentication-operator.174a6f3377bc9ae8
   namespace: openshift-authentication-operator
-  resourceVersion: "11436"
+  resourceVersion: "11438"
   uid: a980b28d-c795-488b-961f-b088ffcbe02a
 note: '"oauth.openshift.io.v1" failed with an attempt failed with statusCode = 503,
   err = the server is currently unable to handle the request'
