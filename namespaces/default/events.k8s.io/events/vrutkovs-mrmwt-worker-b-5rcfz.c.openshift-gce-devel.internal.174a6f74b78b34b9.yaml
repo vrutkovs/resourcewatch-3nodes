@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:38Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:38Z"
+deprecatedSource:
+  component: machineconfigdaemon
+  host: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:38Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: machine-config-daemon
+    operation: Update
+    time: "2023-03-08T11:52:38Z"
+  name: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal.174a6f74b78b34b9
+  namespace: default
+  resourceVersion: "20199"
+  uid: 30b49860-38f5-4c13-bbc7-44e05bd61a7f
+note: Update completed for config rendered-worker-cbb7fad69073628742d20bb0a24d29bc
+  and node has been uncordoned
+reason: Uncordon
+regarding:
+  kind: Node
+  name: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+  uid: 2ac4c672-b94a-4a56-a828-6ab375b8bcb9
+type: Normal
