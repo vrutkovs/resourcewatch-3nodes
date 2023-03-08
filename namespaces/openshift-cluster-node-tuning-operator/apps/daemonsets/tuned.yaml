@@ -217,6 +217,8 @@ metadata:
       f:status:
         f:currentNumberScheduled: {}
         f:desiredNumberScheduled: {}
+        f:numberAvailable: {}
+        f:numberReady: {}
         f:numberUnavailable: {}
         f:observedGeneration: {}
         f:updatedNumberScheduled: {}
@@ -233,7 +235,7 @@ metadata:
     kind: Tuned
     name: default
     uid: ae090c76-1c31-4056-be24-878aa7f64dcb
-  resourceVersion: "10528"
+  resourceVersion: "10581"
   uid: ae80aa6c-15a4-4ac0-8acd-6ad1e60315e3
 spec:
   revisionHistoryLimit: 10
@@ -373,8 +375,9 @@ spec:
 status:
   currentNumberScheduled: 3
   desiredNumberScheduled: 3
+  numberAvailable: 1
   numberMisscheduled: 0
-  numberReady: 0
-  numberUnavailable: 3
+  numberReady: 1
+  numberUnavailable: 2
   observedGeneration: 1
   updatedNumberScheduled: 3
