@@ -63,7 +63,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "17145"
+  resourceVersion: "17147"
   uid: c452e0a4-6e32-4ed2-a5a9-8eaa2903cb12
 spec: {}
 status:
@@ -79,7 +79,13 @@ status:
     type: Upgradeable
   - lastTransitionTime: "2023-03-08T11:43:07Z"
     message: |-
+      DaemonSet "/openshift-network-diagnostics/network-check-target" is not available (awaiting 1 nodes)
+      DaemonSet "/openshift-multus/network-metrics-daemon" is not available (awaiting 1 nodes)
+      DaemonSet "/openshift-ovn-kubernetes/ovnkube-master" is not available (awaiting 1 nodes)
       DaemonSet "/openshift-ovn-kubernetes/ovnkube-node" is not available (awaiting 1 nodes)
+      DaemonSet "/openshift-multus/multus" is not available (awaiting 1 nodes)
+      DaemonSet "/openshift-multus/multus-additional-cni-plugins" is not available (awaiting 1 nodes)
+      Deployment "/openshift-multus/multus-admission-controller" is waiting for other operators to become ready
       Deployment "/openshift-network-diagnostics/network-check-source" is waiting for other operators to become ready
     reason: Deploying
     status: "True"
