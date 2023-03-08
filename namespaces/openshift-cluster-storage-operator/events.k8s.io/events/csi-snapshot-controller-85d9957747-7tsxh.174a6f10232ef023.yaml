@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:26Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:26Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:11Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:26Z"
+    time: "2023-03-08T11:55:11Z"
   name: csi-snapshot-controller-85d9957747-7tsxh.174a6f10232ef023
   namespace: openshift-cluster-storage-operator
-  resourceVersion: "5473"
+  resourceVersion: "22291"
   uid: 228715e1-b643-46ed-8c68-00a2ad667904
 note: Started container snapshot-controller
 reason: Started
