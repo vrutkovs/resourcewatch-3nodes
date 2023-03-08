@@ -4,6 +4,7 @@ metadata:
   annotations:
     cloud.network.openshift.io/egress-ipconfig: '[{"interface":"nic0","ifaddr":{"ipv4":"10.0.128.0/17"},"capacity":{"ip":10}}]'
     csi.volume.kubernetes.io/nodeid: '{"pd.csi.storage.gke.io":"projects/openshift-gce-devel/zones/europe-west2-a/instances/vrutkovs-mrmwt-worker-a-92xck"}'
+    k8s.ovn.org/host-addresses: '["10.0.128.2"]'
     k8s.ovn.org/l3-gateway-config: '{"default":{"mode":"shared","interface-id":"br-ex_vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal","mac-address":"42:01:0a:00:80:02","ip-addresses":["10.0.128.2/32"],"ip-address":"10.0.128.2/32","next-hops":["10.0.128.1"],"next-hop":"10.0.128.1","node-port-enable":"true","vlan-id":"0"}}'
     k8s.ovn.org/node-chassis-id: b5469940-d9ea-41d0-94ef-0294bf215a80
     k8s.ovn.org/node-gateway-router-lrp-ifaddr: '{"ipv4":"100.64.0.6/16"}'
@@ -158,6 +159,7 @@ metadata:
     fieldsV1:
       f:metadata:
         f:annotations:
+          f:k8s.ovn.org/host-addresses: {}
           f:k8s.ovn.org/l3-gateway-config: {}
           f:k8s.ovn.org/node-chassis-id: {}
           f:k8s.ovn.org/node-mgmt-port-mac-address: {}
@@ -166,7 +168,7 @@ metadata:
     operation: Update
     time: "2023-03-08T11:52:54Z"
   name: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
-  resourceVersion: "20530"
+  resourceVersion: "20538"
   uid: 1a8cd3af-23ff-49d3-90d8-1bacf0fe2106
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-a/vrutkovs-mrmwt-worker-a-92xck
