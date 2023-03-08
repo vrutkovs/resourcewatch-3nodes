@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:47:32Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:32Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:47:32Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:47:32Z"
+  name: installer-5-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6f2d9e70a163
+  namespace: openshift-kube-controller-manager
+  resourceVersion: "10997"
+  uid: afcd5528-7840-404d-b252-508c9c6b2995
+note: Created container installer
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{installer}
+  kind: Pod
+  name: installer-5-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+  namespace: openshift-kube-controller-manager
+  resourceVersion: "10929"
+  uid: 5df29eb2-1036-4575-9762-bd8957bd566f
+type: Normal
