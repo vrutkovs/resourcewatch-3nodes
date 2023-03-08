@@ -100,16 +100,13 @@ metadata:
     subresource: status
     time: "2023-03-08T11:52:13Z"
   name: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
-  resourceVersion: "19387"
+  resourceVersion: "19393"
   uid: 1a8cd3af-23ff-49d3-90d8-1bacf0fe2106
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-a/vrutkovs-mrmwt-worker-a-92xck
   taints:
   - effect: NoSchedule
     key: node.kubernetes.io/not-ready
-  - effect: NoSchedule
-    key: node.kubernetes.io/network-unavailable
-    timeAdded: "2023-03-08T11:52:13Z"
 status:
   addresses:
   - address: 10.0.128.2
