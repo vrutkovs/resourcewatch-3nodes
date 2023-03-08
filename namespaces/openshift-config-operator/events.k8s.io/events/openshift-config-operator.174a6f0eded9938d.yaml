@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:20Z"
+deprecatedSource:
+  component: config-operator-configoperatorcontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-config-operator
+    operation: Update
+    time: "2023-03-08T11:45:20Z"
+  name: openshift-config-operator.174a6f0eded9938d
+  namespace: openshift-config-operator
+  resourceVersion: "4758"
+  uid: e7586731-50cf-434b-a6a2-a6f20b989e2f
+note: 'Operator conditions defaulted: [{OperatorAvailable True 2023-03-08 11:45:20
+  +0000 UTC AsExpected } {OperatorProgressing False 2023-03-08 11:45:20 +0000 UTC
+  AsExpected } {OperatorUpgradeable True 2023-03-08 11:45:20 +0000 UTC AsExpected
+  }]'
+reason: ConfigOperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-config-operator
+  namespace: openshift-config-operator
+  uid: ea60e7a4-f073-4e12-b077-efe69f34a8c0
+type: Normal
