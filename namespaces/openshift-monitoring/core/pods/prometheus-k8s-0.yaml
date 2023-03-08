@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   annotations:
+    k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.129.2.15/23"],"mac_address":"0a:58:0a:81:02:0f","gateway_ips":["10.129.2.1"],"ip_address":"10.129.2.15/23","gateway_ip":"10.129.2.1"}}'
     kubectl.kubernetes.io/default-container: prometheus
     openshift.io/scc: nonroot
   creationTimestamp: "2023-03-08T11:59:08Z"
@@ -627,6 +628,15 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:59:08Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:59:08Z"
   name: prometheus-k8s-0
   namespace: openshift-monitoring
   ownerReferences:
@@ -636,7 +646,7 @@ metadata:
     kind: StatefulSet
     name: prometheus-k8s
     uid: 64bf94c0-7125-4d69-824b-802c773560a3
-  resourceVersion: "26343"
+  resourceVersion: "26348"
   uid: 94754bec-b69a-4c34-9593-539c810bea91
 spec:
   affinity:
