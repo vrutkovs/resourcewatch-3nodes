@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 8
+deprecatedCount: 28
 deprecatedFirstTimestamp: "2023-03-08T11:47:21Z"
-deprecatedLastTimestamp: "2023-03-08T11:53:28Z"
+deprecatedLastTimestamp: "2023-03-08T12:00:38Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:55:04Z"
+    time: "2023-03-08T12:00:38Z"
   name: etcd-guard-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6f2ae9db7ead
   namespace: openshift-etcd
-  resourceVersion: "22065"
+  resourceVersion: "27928"
   uid: 1373022d-e81e-4654-a911-726c76c55e13
 note: "Readiness probe error: Get \"https://10.0.0.5:9980/healthz\": dial tcp 10.0.0.5:9980:
   connect: connection refused\nbody: \n"
