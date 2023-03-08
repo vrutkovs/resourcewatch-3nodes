@@ -1,0 +1,54 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:51:58Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:58Z"
+deprecatedSource:
+  component: oauth-apiserver-status-controller-statussyncer_authentication
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:58Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: authentication-operator
+    operation: Update
+    time: "2023-03-08T11:51:58Z"
+  name: authentication-operator.174a6f6b94123c81
+  namespace: openshift-authentication-operator
+  resourceVersion: "18790"
+  uid: d5ac42b3-1c13-46a9-a980-3e1923c79152
+note: 'Status for clusteroperator/authentication changed: Available message changed
+  from "OAuthServerServiceEndpointAccessibleControllerAvailable: Get \"https://172.30.73.115:443/healthz\":
+  dial tcp 172.30.73.115:443: connect: connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerAvailable:
+  endpoints \"oauth-openshift\" not found\nReadyIngressNodesAvailable: Authentication
+  requires functional ingress which requires at least one schedulable and ready node.
+  Got 0 worker nodes, 3 master nodes, 0 custom target nodes (none are schedulable
+  or ready for ingress pods)." to "OAuthServerServiceEndpointAccessibleControllerAvailable:
+  Get \"https://172.30.73.115:443/healthz\": dial tcp 172.30.73.115:443: connect:
+  connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerAvailable:
+  endpoints \"oauth-openshift\" not found\nReadyIngressNodesAvailable: Authentication
+  requires functional ingress which requires at least one schedulable and ready node.
+  Got 0 worker nodes, 3 master nodes, 0 custom target nodes (none are schedulable
+  or ready for ingress pods).\nWellKnownAvailable: The well-known endpoint is not
+  yet available: failed to get oauth metadata from openshift-config-managed/oauth-openshift
+  ConfigMap: configmap \"oauth-openshift\" not found (check authentication operator,
+  it is supposed to create this)"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: authentication-operator
+  namespace: openshift-authentication-operator
+  uid: 0efac7b0-177c-4814-9d2b-04ba66ce84f1
+type: Normal
