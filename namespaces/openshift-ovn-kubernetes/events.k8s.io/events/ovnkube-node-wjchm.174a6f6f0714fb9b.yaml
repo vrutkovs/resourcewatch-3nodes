@@ -1,0 +1,40 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:13.799791Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:13Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:13Z"
+  name: ovnkube-node-wjchm.174a6f6f0714fb9b
+  namespace: openshift-ovn-kubernetes
+  resourceVersion: "19466"
+  uid: 3548c10e-be28-4d3a-b870-3722fb4a0ebb
+note: Successfully assigned openshift-ovn-kubernetes/ovnkube-node-wjchm to vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: ovnkube-node-wjchm
+  namespace: openshift-ovn-kubernetes
+  resourceVersion: "19453"
+  uid: 0987c850-23ff-4ed4-acc6-6ac47c16357c
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
