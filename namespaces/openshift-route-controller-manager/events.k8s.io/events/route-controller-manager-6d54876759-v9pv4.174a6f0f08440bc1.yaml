@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 5
+deprecatedCount: 6
 deprecatedFirstTimestamp: "2023-03-08T11:45:21Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:29Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:37Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:29Z"
+    time: "2023-03-08T11:45:37Z"
   name: route-controller-manager-6d54876759-v9pv4.174a6f0f08440bc1
   namespace: openshift-route-controller-manager
-  resourceVersion: "5763"
+  resourceVersion: "6468"
   uid: cfc89223-347f-4f30-a153-885c164b71d1
 note: 'MountVolume.SetUp failed for volume "client-ca" : configmap "client-ca" not
   found'
