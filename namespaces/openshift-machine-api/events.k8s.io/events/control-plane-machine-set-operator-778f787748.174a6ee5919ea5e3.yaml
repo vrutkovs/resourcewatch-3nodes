@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:42:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:42:23Z"
+deprecatedSource:
+  component: replicaset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:42:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:42:23Z"
+  name: control-plane-machine-set-operator-778f787748.174a6ee5919ea5e3
+  namespace: openshift-machine-api
+  resourceVersion: "2293"
+  uid: 28f366a9-b9bc-4048-b131-bd9944cca2c1
+note: 'Created pod: control-plane-machine-set-operator-778f787748-xrqzb'
+reason: SuccessfulCreate
+regarding:
+  apiVersion: apps/v1
+  kind: ReplicaSet
+  name: control-plane-machine-set-operator-778f787748
+  namespace: openshift-machine-api
+  resourceVersion: "2287"
+  uid: 034217ac-353e-4987-91f0-55f349205256
+type: Normal
