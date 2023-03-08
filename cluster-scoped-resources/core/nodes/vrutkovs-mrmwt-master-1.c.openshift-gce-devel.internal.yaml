@@ -87,8 +87,22 @@ metadata:
     manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     operation: Update
     time: "2023-03-08T11:44:42Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"NetworkUnavailable"}:
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:44:42Z"
   name: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
-  resourceVersion: "3686"
+  resourceVersion: "3687"
   uid: d1bb260b-ed05-4c1f-9090-1cf4ac4bb308
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-b/vrutkovs-mrmwt-master-1
@@ -126,10 +140,10 @@ status:
     pods: "250"
   conditions:
   - lastHeartbeatTime: null
-    lastTransitionTime: "2023-03-08T11:43:03Z"
-    message: Node created without a route
-    reason: NoRouteCreated
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:44:42Z"
+    message: ovn-kube cleared kubelet-set NoRouteCreated
+    reason: RouteCreated
+    status: "False"
     type: NetworkUnavailable
   - lastHeartbeatTime: "2023-03-08T11:44:25Z"
     lastTransitionTime: "2023-03-08T11:43:03Z"
