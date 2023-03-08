@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:58Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:58Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:26Z"
 deprecatedSource:
   component: kube-controller-manager-operator-status-controller-statussyncer_kube-controller-manager
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-kube-controller-manager-operator
     operation: Update
-    time: "2023-03-08T11:45:58Z"
+    time: "2023-03-08T11:46:26Z"
   name: kube-controller-manager-operator.174a6f17a91c96e7
   namespace: openshift-kube-controller-manager-operator
-  resourceVersion: "7515"
+  resourceVersion: "8677"
   uid: dccb714f-7f79-4c53-b2dd-c6dc0872afc2
 note: 'Status for clusteroperator/kube-controller-manager changed: Degraded message
   changed from "NodeControllerDegraded: All master nodes are ready\nGarbageCollectorDegraded:
