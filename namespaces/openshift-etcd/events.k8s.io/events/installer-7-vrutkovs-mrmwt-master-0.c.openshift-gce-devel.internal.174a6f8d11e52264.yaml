@@ -1,0 +1,47 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:54:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:22Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:55:08Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:55:08Z"
+  name: installer-7-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6f8d11e52264
+  namespace: openshift-etcd
+  resourceVersion: "22150"
+  uid: 317546a4-5def-40d5-bb03-ceee288617c2
+note: 'error killing pod: failed to "KillPodSandbox" for "1a928d10-04d1-4f03-9334-7b4d014f0b62"
+  with KillPodSandboxError: "rpc error: code = Unknown desc = failed to destroy network
+  for pod sandbox k8s_installer-7-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal_openshift-etcd_1a928d10-04d1-4f03-9334-7b4d014f0b62_0(d317b3250ec5369bcab7e76242d640be87bc9b23004d5af95a74e7f76028892f):
+  error removing pod openshift-etcd_installer-7-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+  from CNI network \"multus-cni-network\": plugin type=\"multus\" name=\"multus-cni-network\"
+  failed (delete): netplugin failed with no error message: signal: killed"'
+reason: FailedKillPod
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: installer-7-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+  namespace: openshift-etcd
+  resourceVersion: "18859"
+  uid: 1a928d10-04d1-4f03-9334-7b4d014f0b62
+type: Warning
