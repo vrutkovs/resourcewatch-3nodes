@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: Pod
 metadata:
+  annotations:
+    k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.129.0.33/23"],"mac_address":"0a:58:0a:81:00:21","gateway_ips":["10.129.0.1"],"ip_address":"10.129.0.33/23","gateway_ip":"10.129.0.1"}}'
   creationTimestamp: "2023-03-08T11:50:16Z"
   labels:
     app: installer
@@ -109,6 +111,16 @@ metadata:
     manager: cluster-kube-scheduler-operator
     operation: Update
     time: "2023-03-08T11:50:16Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:50:16Z"
   name: installer-6-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
   namespace: openshift-kube-scheduler
   ownerReferences:
@@ -116,7 +128,7 @@ metadata:
     kind: ConfigMap
     name: revision-status-6
     uid: c0460933-6e1c-4f3e-aa15-0cdb49c198c8
-  resourceVersion: "16441"
+  resourceVersion: "16443"
   uid: 2ea5b90f-461e-45df-88db-3c1835159157
 spec:
   automountServiceAccountToken: false
