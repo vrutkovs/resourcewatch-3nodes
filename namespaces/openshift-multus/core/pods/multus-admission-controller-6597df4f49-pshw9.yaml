@@ -140,40 +140,6 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:status:
-        f:conditions:
-          k:{"type":"ContainersReady"}:
-            .: {}
-            f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-            f:type: {}
-          k:{"type":"Initialized"}:
-            .: {}
-            f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
-            f:type: {}
-          k:{"type":"Ready"}:
-            .: {}
-            f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-            f:type: {}
-        f:containerStatuses: {}
-        f:hostIP: {}
-        f:startTime: {}
-    manager: kubelet
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:46:46Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:metadata:
         f:annotations:
           .: {}
@@ -192,6 +158,43 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:46:48Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.128.0.14"}:
+            .: {}
+            f:ip: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:46:51Z"
   name: multus-admission-controller-6597df4f49-pshw9
   namespace: openshift-multus
   ownerReferences:
@@ -201,7 +204,7 @@ metadata:
     kind: ReplicaSet
     name: multus-admission-controller-6597df4f49
     uid: 8fe3098f-afd0-4c85-95c8-67b2acb80c55
-  resourceVersion: "9889"
+  resourceVersion: "10032"
   uid: daa1e606-6913-4f68-abfb-b1ff4b4395f8
 spec:
   containers:
@@ -331,43 +334,44 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:46Z"
-    message: 'containers with unready status: [multus-admission-controller kube-rbac-proxy]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:46:51Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:46Z"
-    message: 'containers with unready status: [multus-admission-controller kube-rbac-proxy]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:46:51Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:46Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+  - containerID: cri-o://dbd4686a6da28563df74603cda684ffda2f0b790e8495438235bf0ef09e5841f
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b739591edf55806952abc5726fb4d0747d03af78636990abe990bfeaa3be05e0
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:46:51Z"
+  - containerID: cri-o://956e7c1094bbe81c44019ca26a39176a7eb5fda31bbd3be5c17a30884033cbdd
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b739591edf55806952abc5726fb4d0747d03af78636990abe990bfeaa3be05e0
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b739591edf55806952abc5726fb4d0747d03af78636990abe990bfeaa3be05e0
     lastState: {}
     name: multus-admission-controller
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
+      running:
+        startedAt: "2023-03-08T11:46:51Z"
   hostIP: 10.0.0.4
-  phase: Pending
+  phase: Running
+  podIP: 10.128.0.14
+  podIPs:
+  - ip: 10.128.0.14
   qosClass: Burstable
   startTime: "2023-03-08T11:46:46Z"
