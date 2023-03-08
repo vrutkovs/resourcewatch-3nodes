@@ -46,14 +46,14 @@ metadata:
     manager: machine-config-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:49:05Z"
+    time: "2023-03-08T11:52:50Z"
   name: machine-config
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "12798"
+  resourceVersion: "20463"
   uid: 157e8dfa-4a1d-4b32-aa9b-71f9e9e70ea2
 spec: {}
 status:
@@ -76,7 +76,7 @@ status:
     type: Upgradeable
   extension:
     master: all 3 nodes are at latest configuration rendered-master-71fec459b968d060c60cad7d0f3a5602
-    worker: all 0 nodes are at latest configuration rendered-worker-cbb7fad69073628742d20bb0a24d29bc
+    worker: 3 (ready 0) out of 3 nodes are updating to latest configuration rendered-worker-cbb7fad69073628742d20bb0a24d29bc
   relatedObjects:
   - group: ""
     name: openshift-machine-config-operator
