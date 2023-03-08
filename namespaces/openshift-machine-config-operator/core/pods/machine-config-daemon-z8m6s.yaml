@@ -156,6 +156,8 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -170,19 +172,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:01Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:status:
-        f:conditions:
-          k:{"type":"Ready"}:
-            f:lastTransitionTime: {}
-            f:status: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:51:17Z"
+    time: "2023-03-08T11:51:34Z"
   name: machine-config-daemon-z8m6s
   namespace: openshift-machine-config-operator
   ownerReferences:
@@ -192,7 +182,7 @@ metadata:
     kind: DaemonSet
     name: machine-config-daemon
     uid: 248aeaf2-d8ec-47ea-a1cf-4defdfe55674
-  resourceVersion: "17077"
+  resourceVersion: "17296"
   uid: 6e073f1d-9dac-43c8-a736-9a169aeceab6
 spec:
   affinity:
@@ -325,8 +315,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:51:17Z"
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:46:01Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:01Z"
