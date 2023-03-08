@@ -240,15 +240,6 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:conditions:
-          .: {}
-          k:{"type":"ReplicaFailure"}:
-            .: {}
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-            f:type: {}
         f:observedGeneration: {}
     manager: kube-controller-manager
     operation: Update
@@ -263,7 +254,7 @@ metadata:
     kind: Deployment
     name: console-operator
     uid: 355957fc-677d-406a-8253-cc76751a885e
-  resourceVersion: "23849"
+  resourceVersion: "24548"
   uid: 9130c97d-720b-4ac0-ab4e-c20169386747
 spec:
   replicas: 1
@@ -431,12 +422,5 @@ spec:
           optional: true
           secretName: webhook-serving-cert
 status:
-  conditions:
-  - lastTransitionTime: "2023-03-08T11:56:25Z"
-    message: 'pods "console-operator-5849d6575-" is forbidden: error fetching namespace
-      "openshift-console-operator": unable to find annotation openshift.io/sa.scc.uid-range'
-    reason: FailedCreate
-    status: "True"
-    type: ReplicaFailure
   observedGeneration: 1
   replicas: 0
