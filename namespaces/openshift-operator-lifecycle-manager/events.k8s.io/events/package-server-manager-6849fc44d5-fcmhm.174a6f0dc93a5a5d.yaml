@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:16Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:16Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:00Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:30Z"
+    time: "2023-03-08T11:55:06Z"
   name: package-server-manager-6849fc44d5-fcmhm.174a6f0dc93a5a5d
   namespace: openshift-operator-lifecycle-manager
-  resourceVersion: "5908"
+  resourceVersion: "22112"
   uid: 8da3b2b5-abf0-45e3-b6ee-e5eae7a48267
 note: Created container package-server-manager
 reason: Created
