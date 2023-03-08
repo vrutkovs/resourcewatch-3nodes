@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T12:00:06Z"
-deprecatedLastTimestamp: "2023-03-08T12:00:06Z"
+deprecatedLastTimestamp: "2023-03-08T12:00:12Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T12:00:06Z"
+    time: "2023-03-08T12:00:12Z"
   name: alertmanager-main-1.174a6fdd154f6303
   namespace: openshift-monitoring
-  resourceVersion: "27473"
+  resourceVersion: "27586"
   uid: 2c041372-8b06-4db7-a207-ff545b8ca3d3
 note: Started container alertmanager
 reason: Started
