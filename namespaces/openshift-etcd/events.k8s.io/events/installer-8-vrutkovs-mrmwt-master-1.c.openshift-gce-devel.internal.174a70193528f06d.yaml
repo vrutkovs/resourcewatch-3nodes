@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:04:24Z"
+deprecatedLastTimestamp: "2023-03-08T12:04:24Z"
+deprecatedSource:
+  component: static-pod-installer
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:04:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-etcd-operator
+    operation: Update
+    time: "2023-03-08T12:04:24Z"
+  name: installer-8-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal.174a70193528f06d
+  namespace: openshift-etcd
+  resourceVersion: "30055"
+  uid: 7a49582c-7066-454f-a2e1-9e20ef51cd7e
+note: Successfully installed revision 8
+reason: StaticPodInstallerCompleted
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: installer-8-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+  namespace: openshift-etcd
+  uid: 890ed989-11b8-49ab-8ca3-9acc3462deef
+type: Normal
