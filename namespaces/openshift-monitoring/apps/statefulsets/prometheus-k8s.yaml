@@ -613,6 +613,7 @@ metadata:
         f:readyReplicas: {}
         f:replicas: {}
         f:updateRevision: {}
+        f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -626,7 +627,7 @@ metadata:
     kind: Prometheus
     name: k8s
     uid: 6b21d3da-cfd2-48a5-a2dd-ff3d32563453
-  resourceVersion: "27379"
+  resourceVersion: "27392"
   uid: 64bf94c0-7125-4d69-824b-802c773560a3
 spec:
   podManagementPolicy: Parallel
@@ -1103,3 +1104,4 @@ status:
   readyReplicas: 1
   replicas: 2
   updateRevision: prometheus-k8s-59f5f999fd
+  updatedReplicas: 1
