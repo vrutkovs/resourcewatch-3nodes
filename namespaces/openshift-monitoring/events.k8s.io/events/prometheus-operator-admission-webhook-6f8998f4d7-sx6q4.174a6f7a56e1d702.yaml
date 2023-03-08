@@ -1,0 +1,37 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:53:02Z"
+deprecatedLastTimestamp: "2023-03-08T11:53:02Z"
+deprecatedSource:
+  component: taint-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:53:02Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:53:02Z"
+  name: prometheus-operator-admission-webhook-6f8998f4d7-sx6q4.174a6f7a56e1d702
+  namespace: openshift-monitoring
+  resourceVersion: "20754"
+  uid: e1fbef67-a97a-45de-b0ba-bf01bf831344
+note: Cancelling deletion of Pod openshift-monitoring/prometheus-operator-admission-webhook-6f8998f4d7-sx6q4
+reason: TaintManagerEviction
+regarding:
+  kind: Pod
+  name: prometheus-operator-admission-webhook-6f8998f4d7-sx6q4
+  namespace: openshift-monitoring
+type: Normal
