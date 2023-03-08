@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:57Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:57Z"
+deprecatedSource:
+  component: daemonset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:57Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:52:57Z"
+  name: ingress-canary.174a6f793d15dd88
+  namespace: openshift-ingress-canary
+  resourceVersion: "20628"
+  uid: 9594a08e-e5b7-4ac4-aebb-e07aa9caa5ab
+note: 'Created pod: ingress-canary-ltw5l'
+reason: SuccessfulCreate
+regarding:
+  apiVersion: apps/v1
+  kind: DaemonSet
+  name: ingress-canary
+  namespace: openshift-ingress-canary
+  resourceVersion: "16929"
+  uid: 57849325-9a52-432b-9fe5-ba6afbae1635
+type: Normal
