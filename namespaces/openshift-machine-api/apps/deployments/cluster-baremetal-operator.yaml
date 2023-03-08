@@ -185,6 +185,7 @@ metadata:
         f:annotations:
           f:deployment.kubernetes.io/revision: {}
       f:status:
+        f:availableReplicas: {}
         f:conditions:
           .: {}
           k:{"type":"Available"}:
@@ -204,13 +205,13 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
-        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:54:20Z"
+    time: "2023-03-08T11:56:01Z"
   name: cluster-baremetal-operator
   namespace: openshift-machine-api
   ownerReferences:
@@ -218,7 +219,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "21686"
+  resourceVersion: "23343"
   uid: 6b76e3c5-c888-445a-9e71-1ee13c898183
 spec:
   progressDeadlineSeconds: 600
@@ -344,6 +345,7 @@ spec:
           name: cluster-baremetal-operator-images
         name: images
 status:
+  availableReplicas: 1
   conditions:
   - lastTransitionTime: "2023-03-08T11:42:29Z"
     lastUpdateTime: "2023-03-08T11:46:22Z"
@@ -351,13 +353,13 @@ status:
     reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
-  - lastTransitionTime: "2023-03-08T11:54:20Z"
-    lastUpdateTime: "2023-03-08T11:54:20Z"
-    message: Deployment does not have minimum availability.
-    reason: MinimumReplicasUnavailable
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:56:01Z"
+    lastUpdateTime: "2023-03-08T11:56:01Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
     type: Available
   observedGeneration: 1
+  readyReplicas: 1
   replicas: 1
-  unavailableReplicas: 1
   updatedReplicas: 1
