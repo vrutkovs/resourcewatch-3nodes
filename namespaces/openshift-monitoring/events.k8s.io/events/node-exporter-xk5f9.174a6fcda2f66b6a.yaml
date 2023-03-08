@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:00Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:00Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:00Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:59:00Z"
+  name: node-exporter-xk5f9.174a6fcda2f66b6a
+  namespace: openshift-monitoring
+  resourceVersion: "25966"
+  uid: 0f862e57-37b2-4b92-a2a6-81c07601c11e
+note: 'MountVolume.SetUp failed for volume "node-exporter-kube-rbac-proxy-config"
+  : failed to sync secret cache: timed out waiting for the condition'
+reason: FailedMount
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: node-exporter-xk5f9
+  namespace: openshift-monitoring
+  resourceVersion: "25811"
+  uid: 0dfc8e6f-eb2f-4d00-b3b9-d78094470cc2
+type: Warning
