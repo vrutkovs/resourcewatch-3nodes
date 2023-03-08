@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:55:11Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:11Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:55:11Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:55:11Z"
+  name: openshift-controller-manager-operator-74b4f6b6b6-m72x7.174a6f9863efd20e
+  namespace: openshift-controller-manager-operator
+  resourceVersion: "22310"
+  uid: 83b7e905-7586-4ef2-a161-7df4b6b54aa0
+note: Back-off restarting failed container
+reason: BackOff
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{openshift-controller-manager-operator}
+  kind: Pod
+  name: openshift-controller-manager-operator-74b4f6b6b6-m72x7
+  namespace: openshift-controller-manager-operator
+  resourceVersion: "3805"
+  uid: dabc5477-fec6-4bce-85ae-5757b2804c55
+type: Warning
