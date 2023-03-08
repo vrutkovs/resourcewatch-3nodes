@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:58:10Z"
 deprecatedLastTimestamp: "2023-03-08T11:58:10Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:58:10Z"
   name: kube-apiserver-operator.174a6fc203b2440a
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "24790"
+  resourceVersion: "24792"
   uid: ac3526f1-c98d-4766-8f3b-9ad2e7009f4e
 note: "Writing updated observed config:   map[string]interface{}{\n  \t\"admission\":
   \         map[string]interface{}{\"pluginConfig\": map[string]interface{}{\"network.openshift.io/ExternalIPRanger\":
