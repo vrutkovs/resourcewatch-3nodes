@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:49:36Z"
 deprecatedLastTimestamp: "2023-03-08T11:49:36Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:49:36Z"
   name: openshift-apiserver-operator.174a6f4a604b1b38
   namespace: openshift-apiserver-operator
-  resourceVersion: "13440"
+  resourceVersion: "13443"
   uid: 3673904a-07c4-43f7-b72e-1941f9bec097
 note: Updated storage urls to https://10.0.0.3:2379,https://10.0.0.5:2379
 reason: ObserveStorageUpdated
