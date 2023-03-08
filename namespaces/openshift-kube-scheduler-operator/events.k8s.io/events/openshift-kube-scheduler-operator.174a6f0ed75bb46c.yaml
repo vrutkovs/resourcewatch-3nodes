@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:20Z"
+deprecatedSource:
+  component: openshift-cluster-kube-scheduler-operator-status-controller-statussyncer_kube-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:21Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-scheduler-operator
+    operation: Update
+    time: "2023-03-08T11:45:21Z"
+  name: openshift-kube-scheduler-operator.174a6f0ed75bb46c
+  namespace: openshift-kube-scheduler-operator
+  resourceVersion: "4888"
+  uid: eb2245a1-70be-4eb6-b0de-8e3796de6a6c
+note: 'Status for clusteroperator/kube-scheduler changed: Upgradeable changed from
+  Unknown to True ("All is well")'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-kube-scheduler-operator
+  namespace: openshift-kube-scheduler-operator
+  uid: 23c26502-e53e-4a94-b472-aac9af284787
+type: Normal
