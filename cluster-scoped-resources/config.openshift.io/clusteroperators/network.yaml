@@ -5,7 +5,7 @@ metadata:
     include.release.openshift.io/ibm-cloud-managed: "true"
     include.release.openshift.io/self-managed-high-availability: "true"
     include.release.openshift.io/single-node-developer: "true"
-    network.operator.openshift.io/last-seen-state: '{"DaemonsetStates":[{"ClusterName":"","Namespace":"openshift-ovn-kubernetes","Name":"ovnkube-node","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":3,"observedGeneration":1,"updatedNumberScheduled":6,"numberAvailable":3,"numberUnavailable":3},"LastChangeTime":"2023-03-08T11:52:14.107748455Z"},{"ClusterName":"","Namespace":"openshift-multus","Name":"multus-additional-cni-plugins","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":3,"observedGeneration":1,"updatedNumberScheduled":6,"numberAvailable":3,"numberUnavailable":3},"LastChangeTime":"2023-03-08T11:52:14.039342546Z"}],"DeploymentStates":[],"StatefulsetStates":[]}'
+    network.operator.openshift.io/last-seen-state: '{"DaemonsetStates":[{"ClusterName":"","Namespace":"openshift-ovn-kubernetes","Name":"ovnkube-node","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":4,"observedGeneration":1,"updatedNumberScheduled":6,"numberAvailable":4,"numberUnavailable":2},"LastChangeTime":"2023-03-08T11:52:52.779024048Z"},{"ClusterName":"","Namespace":"openshift-multus","Name":"multus-additional-cni-plugins","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":3,"observedGeneration":1,"updatedNumberScheduled":6,"numberAvailable":3,"numberUnavailable":3},"LastChangeTime":"2023-03-08T11:52:14.039342546Z"}],"DeploymentStates":[],"StatefulsetStates":[]}'
     network.operator.openshift.io/relatedClusterObjects: ""
   creationTimestamp: "2023-03-08T11:40:40Z"
   generation: 1
@@ -39,16 +39,6 @@ metadata:
   - apiVersion: config.openshift.io/v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:network.operator.openshift.io/last-seen-state: {}
-          f:network.operator.openshift.io/relatedClusterObjects: {}
-    manager: cluster-network-operator
-    operation: Update
-    time: "2023-03-08T11:52:46Z"
-  - apiVersion: config.openshift.io/v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:status:
         f:conditions: {}
         f:relatedObjects: {}
@@ -57,13 +47,23 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:52:46Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:network.operator.openshift.io/last-seen-state: {}
+          f:network.operator.openshift.io/relatedClusterObjects: {}
+    manager: cluster-network-operator
+    operation: Update
+    time: "2023-03-08T11:52:52Z"
   name: network
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "20389"
+  resourceVersion: "20474"
   uid: c452e0a4-6e32-4ed2-a5a9-8eaa2903cb12
 spec: {}
 status:
