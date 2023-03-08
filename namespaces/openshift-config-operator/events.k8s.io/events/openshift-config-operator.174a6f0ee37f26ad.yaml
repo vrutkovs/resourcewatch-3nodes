@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:20Z"
+deprecatedSource:
+  component: config-operator-status-controller-statussyncer_config-operator
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-config-operator
+    operation: Update
+    time: "2023-03-08T11:45:20Z"
+  name: openshift-config-operator.174a6f0ee37f26ad
+  namespace: openshift-config-operator
+  resourceVersion: "4784"
+  uid: 310cb6f0-3e16-4570-bcbd-2e6f922d9fd0
+note: 'Status for clusteroperator/config-operator changed: Degraded changed from Unknown
+  to False ("All is well")'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-config-operator
+  namespace: openshift-config-operator
+  uid: ea60e7a4-f073-4e12-b077-efe69f34a8c0
+type: Normal
