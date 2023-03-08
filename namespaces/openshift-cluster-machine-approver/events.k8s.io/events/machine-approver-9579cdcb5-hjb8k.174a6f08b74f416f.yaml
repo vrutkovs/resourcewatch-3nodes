@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:44:54Z"
 deprecatedLastTimestamp: "2023-03-08T11:44:54Z"
 deprecatedSource:
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:44:54Z"
+    time: "2023-03-08T11:44:55Z"
   name: machine-approver-9579cdcb5-hjb8k.174a6f08b74f416f
   namespace: openshift-cluster-machine-approver
-  resourceVersion: "3895"
+  resourceVersion: "3922"
   uid: 61b2b34f-b4c8-4a30-802f-b907017da2fa
 note: 'MountVolume.SetUp failed for volume "machine-approver-tls" : secret "machine-approver-tls"
   not found'
