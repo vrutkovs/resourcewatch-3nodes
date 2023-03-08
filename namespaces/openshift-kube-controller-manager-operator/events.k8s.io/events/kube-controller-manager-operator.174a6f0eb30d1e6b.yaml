@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:20Z"
 deprecatedLastTimestamp: "2023-03-08T11:45:20Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:45:20Z"
   name: kube-controller-manager-operator.174a6f0eb30d1e6b
   namespace: openshift-kube-controller-manager-operator
-  resourceVersion: "4577"
+  resourceVersion: "4728"
   uid: c9ef7bfe-f262-42e5-b4fb-e3749fd397cd
 note: Observed new master node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
 reason: MasterNodeObserved
