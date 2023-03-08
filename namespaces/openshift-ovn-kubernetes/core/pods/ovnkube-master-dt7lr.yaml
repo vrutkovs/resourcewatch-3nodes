@@ -576,8 +576,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -593,6 +591,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:45:41Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:54:19Z"
   name: ovnkube-master-dt7lr
   namespace: openshift-ovn-kubernetes
   ownerReferences:
@@ -602,7 +612,7 @@ metadata:
     kind: DaemonSet
     name: ovnkube-master
     uid: 338793fb-01a5-482d-ba71-a400c8ada556
-  resourceVersion: "6703"
+  resourceVersion: "21444"
   uid: 40d316e8-481a-45c3-9bc2-07c898e7dc55
 spec:
   affinity:
@@ -1476,8 +1486,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:41Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:54:19Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:41Z"
