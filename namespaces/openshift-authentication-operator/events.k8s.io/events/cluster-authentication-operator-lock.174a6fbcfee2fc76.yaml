@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:57:48Z"
+deprecatedLastTimestamp: "2023-03-08T11:57:48Z"
+deprecatedSource:
+  component: cluster-authentication-operator
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:57:48Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: authentication-operator
+    operation: Update
+    time: "2023-03-08T11:57:48Z"
+  name: cluster-authentication-operator-lock.174a6fbcfee2fc76
+  namespace: openshift-authentication-operator
+  resourceVersion: "24395"
+  uid: cecccfea-6b97-441c-a8cb-5b7f49ccbf4a
+note: authentication-operator-695c7bc445-btjmj_e16f735c-1d0f-4185-b76e-f49ac8bdcd9e
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: cluster-authentication-operator-lock
+  namespace: openshift-authentication-operator
+  resourceVersion: "24393"
+  uid: cd93431f-c9bc-48a8-94ff-1e962866cd97
+type: Normal
