@@ -98,7 +98,7 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:17Z"
+    time: "2023-03-08T11:51:35Z"
   name: csi-snapshot-controller-85d9957747
   namespace: openshift-cluster-storage-operator
   ownerReferences:
@@ -108,7 +108,7 @@ metadata:
     kind: Deployment
     name: csi-snapshot-controller
     uid: a6920e1f-a3c3-4858-9f1c-c4596389cc7b
-  resourceVersion: "17050"
+  resourceVersion: "17387"
   uid: 62b7bce1-4b04-4797-8d10-7a3412341425
 spec:
   replicas: 2
@@ -182,8 +182,8 @@ spec:
         key: node-role.kubernetes.io/master
         operator: Exists
 status:
-  availableReplicas: 1
+  availableReplicas: 2
   fullyLabeledReplicas: 2
   observedGeneration: 1
-  readyReplicas: 1
+  readyReplicas: 2
   replicas: 2
