@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:44:55Z"
+deprecatedLastTimestamp: "2023-03-08T11:44:55Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:06Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:45:06Z"
+  name: insights-operator-67cf785b46-szjwj.174a6f090f9ab3ee
+  namespace: openshift-insights
+  resourceVersion: "4100"
+  uid: 50edca9e-219e-4748-9cb5-88cbc3431229
+note: 'MountVolume.SetUp failed for volume "kube-api-access-q7kvf" : failed to sync
+  configmap cache: timed out waiting for the condition'
+reason: FailedMount
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: insights-operator-67cf785b46-szjwj
+  namespace: openshift-insights
+  resourceVersion: "3817"
+  uid: e31043d3-a0a4-4a14-be6d-0d3cf03853b3
+type: Warning
