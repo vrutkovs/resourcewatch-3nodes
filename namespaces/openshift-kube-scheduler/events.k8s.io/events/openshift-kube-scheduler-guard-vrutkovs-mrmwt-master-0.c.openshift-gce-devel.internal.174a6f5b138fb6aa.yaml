@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 10
+deprecatedCount: 11
 deprecatedFirstTimestamp: "2023-03-08T11:50:48Z"
-deprecatedLastTimestamp: "2023-03-08T11:51:28Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:33Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:51:43Z"
+    time: "2023-03-08T11:51:45Z"
   name: openshift-kube-scheduler-guard-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6f5b138fb6aa
   namespace: openshift-kube-scheduler
-  resourceVersion: "17854"
+  resourceVersion: "18292"
   uid: 2821d724-dd36-40d0-ad1b-0afa11c30c2e
 note: 'Readiness probe failed: Get "https://10.0.0.5:10259/healthz": dial tcp 10.0.0.5:10259:
   connect: connection refused'
