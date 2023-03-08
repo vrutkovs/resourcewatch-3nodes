@@ -1,0 +1,41 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:58:02.348758Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:02Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:58:02Z"
+  name: console-operator-5849d6575-z7xhf.174a6fc02e383f4f
+  namespace: openshift-console-operator
+  resourceVersion: "24549"
+  uid: 2cf84397-74fb-4293-ae3f-69cc98ccd947
+note: Successfully assigned openshift-console-operator/console-operator-5849d6575-z7xhf
+  to vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: console-operator-5849d6575-z7xhf
+  namespace: openshift-console-operator
+  resourceVersion: "24545"
+  uid: 5e3bbaf3-29b7-4c40-a5ed-2f8b6ecf7b68
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+type: Normal
