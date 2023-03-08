@@ -236,8 +236,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -250,8 +248,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -267,7 +263,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T12:00:05Z"
+    time: "2023-03-08T12:00:38Z"
   name: prometheus-adapter-cdcc688bb-dkfpq
   namespace: openshift-monitoring
   ownerReferences:
@@ -277,7 +273,7 @@ metadata:
     kind: ReplicaSet
     name: prometheus-adapter-cdcc688bb
     uid: 52da58d6-d10a-4b86-8d89-1fd9d375228d
-  resourceVersion: "27396"
+  resourceVersion: "27934"
   uid: 86eab170-0bc4-4a48-a69d-5a36a815ab4e
 spec:
   affinity:
@@ -467,16 +463,12 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:59:58Z"
-    message: 'containers with unready status: [prometheus-adapter]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T12:00:38Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:59:58Z"
-    message: 'containers with unready status: [prometheus-adapter]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T12:00:38Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:59:58Z"
@@ -488,7 +480,7 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9696f8f231d49aadf63ab980ec5c17c4fd87011930daecd30cc9e4ee102f1aeb
     lastState: {}
     name: prometheus-adapter
-    ready: false
+    ready: true
     restartCount: 0
     started: true
     state:
