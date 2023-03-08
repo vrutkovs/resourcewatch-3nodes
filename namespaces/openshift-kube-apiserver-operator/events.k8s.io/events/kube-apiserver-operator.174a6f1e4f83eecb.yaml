@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:27Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:27Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:51Z"
 deprecatedSource:
   component: kube-apiserver-operator-config-observer-configobserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-kube-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:46:29Z"
+    time: "2023-03-08T11:46:51Z"
   name: kube-apiserver-operator.174a6f1e4f83eecb
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "8948"
+  resourceVersion: "10026"
   uid: bd362a73-b3ca-493c-9469-364428a4f61d
 note: Updated storage urls to https://localhost:2379
 reason: ObserveStorageUpdated
