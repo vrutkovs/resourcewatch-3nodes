@@ -44,20 +44,23 @@ metadata:
     manager: cluster-openshift-controller-manager-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:29Z"
+    time: "2023-03-08T11:55:04Z"
   name: openshift-controller-manager
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "19983"
+  resourceVersion: "22078"
   uid: 73d9177d-dba0-4888-98f7-a187fd05c2ac
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:45:19Z"
-    message: All is well
+    message: "OpenshiftControllerManagerStaticResourcesDegraded: \"v3.11.0/openshift-controller-manager/informer-clusterrole.yaml\"
+      (string): the server was unable to return a response in the time allotted, but
+      may still be processing the request (get clusterroles.rbac.authorization.k8s.io
+      system:openshift:openshift-controller-manager)\nOpenshiftControllerManagerStaticResourcesDegraded: "
     reason: AsExpected
     status: "False"
     type: Degraded
