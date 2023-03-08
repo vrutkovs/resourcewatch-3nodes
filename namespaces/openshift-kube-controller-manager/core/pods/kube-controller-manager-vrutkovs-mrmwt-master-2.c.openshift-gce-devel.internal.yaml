@@ -341,7 +341,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
     uid: 68230a61-3998-42ae-824b-1cc75bc72bd7
-  resourceVersion: "13333"
+  resourceVersion: "13334"
   uid: 1b795a92-27be-4273-b189-f3a4ec730115
 spec:
   containers:
@@ -601,7 +601,7 @@ status:
     name: cluster-policy-controller
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
       running:
         startedAt: "2023-03-08T11:49:24Z"
