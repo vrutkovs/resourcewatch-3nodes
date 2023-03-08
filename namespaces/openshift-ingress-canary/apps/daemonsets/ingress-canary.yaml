@@ -92,7 +92,6 @@ metadata:
         f:numberAvailable: {}
         f:numberMisscheduled: {}
         f:numberReady: {}
-        f:numberUnavailable: {}
         f:observedGeneration: {}
         f:updatedNumberScheduled: {}
     manager: kube-controller-manager
@@ -101,7 +100,7 @@ metadata:
     time: "2023-03-08T11:55:12Z"
   name: ingress-canary
   namespace: openshift-ingress-canary
-  resourceVersion: "22335"
+  resourceVersion: "22376"
   uid: 57849325-9a52-432b-9fe5-ba6afbae1635
 spec:
   revisionHistoryLimit: 10
@@ -162,9 +161,8 @@ spec:
 status:
   currentNumberScheduled: 3
   desiredNumberScheduled: 3
-  numberAvailable: 2
+  numberAvailable: 3
   numberMisscheduled: 0
-  numberReady: 2
-  numberUnavailable: 1
+  numberReady: 3
   observedGeneration: 1
   updatedNumberScheduled: 3
