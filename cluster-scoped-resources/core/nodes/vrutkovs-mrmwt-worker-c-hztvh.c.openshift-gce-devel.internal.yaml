@@ -24,6 +24,14 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:spec:
+        f:taints: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:52:06Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:metadata:
         f:annotations:
           .: {}
@@ -59,13 +67,16 @@ metadata:
     operation: Update
     time: "2023-03-08T11:52:06Z"
   name: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
-  resourceVersion: "18959"
+  resourceVersion: "18962"
   uid: 68c44a0e-aae1-4394-9355-77647b7bf962
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-c/vrutkovs-mrmwt-worker-c-hztvh
   taints:
   - effect: NoSchedule
     key: node.kubernetes.io/not-ready
+  - effect: NoSchedule
+    key: node.kubernetes.io/network-unavailable
+    timeAdded: "2023-03-08T11:52:06Z"
 status:
   addresses:
   - address: 10.0.128.4
