@@ -433,7 +433,7 @@ metadata:
     time: "2023-03-08T11:45:32Z"
   name: gcp-pd-csi-driver-controller
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "6196"
+  resourceVersion: "6205"
   uid: c7179cc3-3b74-4f83-b872-a437a7b51e6e
 spec:
   progressDeadlineSeconds: 600
@@ -770,10 +770,10 @@ status:
     type: Available
   - lastTransitionTime: "2023-03-08T11:45:29Z"
     lastUpdateTime: "2023-03-08T11:45:32Z"
-    message: Created new replica set "gcp-pd-csi-driver-controller-698446758d"
-    reason: NewReplicaSetCreated
+    message: ReplicaSet "gcp-pd-csi-driver-controller-698446758d" is progressing.
+    reason: ReplicaSetUpdated
     status: "True"
     type: Progressing
   observedGeneration: 2
-  replicas: 2
+  replicas: 1
   unavailableReplicas: 2
