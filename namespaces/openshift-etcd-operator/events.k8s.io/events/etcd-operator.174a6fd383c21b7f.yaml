@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:25Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:25Z"
+deprecatedSource:
+  component: openshift-cluster-etcd-operator-installer-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-etcd-operator
+    operation: Update
+    time: "2023-03-08T11:59:25Z"
+  name: etcd-operator.174a6fd383c21b7f
+  namespace: openshift-etcd-operator
+  resourceVersion: "26685"
+  uid: efdf624f-c562-4c90-8a81-f816b039a2e9
+note: Updated node "vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal" from revision
+  5 to 7 because static pod is ready
+reason: NodeCurrentRevisionChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: etcd-operator
+  namespace: openshift-etcd-operator
+  uid: dd494886-7eb4-4625-9190-f606d6faab1b
+type: Normal
