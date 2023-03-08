@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:22Z"
+deprecatedSource:
+  component: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal_f8474b59-e924-423f-ac56-b97558c2d3d5
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:22Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: machine-approver
+    operation: Update
+    time: "2023-03-08T11:46:22Z"
+  name: cluster-machine-approver-leader.174a6f1d3d81c594
+  namespace: openshift-cluster-machine-approver
+  resourceVersion: "8474"
+  uid: 3ca9e42f-8f7a-45dc-a355-8f76efd1134e
+note: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal_f8474b59-e924-423f-ac56-b97558c2d3d5
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: cluster-machine-approver-leader
+  namespace: openshift-cluster-machine-approver
+  resourceVersion: "8469"
+  uid: 71a80ef2-bac1-4130-9450-c2c4a9ac3570
+type: Normal
