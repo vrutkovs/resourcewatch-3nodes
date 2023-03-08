@@ -464,6 +464,26 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:59:05Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:59:05Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           k:{"type":"ContainersReady"}:
@@ -490,31 +510,18 @@ metadata:
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.131.0.12"}:
+            .: {}
+            f:ip: {}
         f:startTime: {}
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:59:05Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.v1.cni.cncf.io/network-status: {}
-          f:k8s.v1.cni.cncf.io/networks-status: {}
-    manager: multus
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:59:05Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.ovn.org/pod-networks: {}
-    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
-    operation: Update
-    time: "2023-03-08T11:59:05Z"
+    time: "2023-03-08T11:59:18Z"
   name: alertmanager-main-1
   namespace: openshift-monitoring
   ownerReferences:
@@ -524,7 +531,7 @@ metadata:
     kind: StatefulSet
     name: alertmanager-main
     uid: 3d2e73f5-0ea8-41ff-b2d2-5c651c8a2d8d
-  resourceVersion: "26206"
+  resourceVersion: "26576"
   uid: d9d2da8d-4bce-42f6-a2ac-2bcca4c37511
 spec:
   affinity:
@@ -959,15 +966,13 @@ status:
     type: Initialized
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:59:05Z"
-    message: 'containers with unready status: [alertmanager config-reloader alertmanager-proxy
-      kube-rbac-proxy kube-rbac-proxy-metric prom-label-proxy]'
+    message: 'containers with unready status: [alertmanager]'
     reason: ContainersNotReady
     status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:59:05Z"
-    message: 'containers with unready status: [alertmanager config-reloader alertmanager-proxy
-      kube-rbac-proxy kube-rbac-proxy-metric prom-label-proxy]'
+    message: 'containers with unready status: [alertmanager]'
     reason: ContainersNotReady
     status: "False"
     type: ContainersReady
@@ -976,67 +981,90 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:e6173b5d77def9e8058c7ff82f1ad65f537d1a81f88fcdabe6d8e30bff49ca89
-    imageID: ""
+  - containerID: cri-o://f4eec58430d34e465a03ab0d2ae39782e1ea7b99122ec2c3e4ff98e261945669
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:e6173b5d77def9e8058c7ff82f1ad65f537d1a81f88fcdabe6d8e30bff49ca89
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:e6173b5d77def9e8058c7ff82f1ad65f537d1a81f88fcdabe6d8e30bff49ca89
     lastState: {}
     name: alertmanager
     ready: false
     restartCount: 0
     started: false
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
-    imageID: ""
+      terminated:
+        containerID: cri-o://f4eec58430d34e465a03ab0d2ae39782e1ea7b99122ec2c3e4ff98e261945669
+        exitCode: 1
+        finishedAt: "2023-03-08T11:59:10Z"
+        message: |
+          ts=2023-03-08T11:59:10.723Z caller=main.go:231 level=info msg="Starting Alertmanager" version="(version=0.24.0, branch=master, revision=86b18354a463c04bb8d54b1e686d9fe54ff449e9)"
+          ts=2023-03-08T11:59:10.723Z caller=main.go:232 level=info build_context="(go=go1.19.1, user=root@d300d7450dc1, date=20221006-13:57:05)"
+          ts=2023-03-08T11:59:10.784Z caller=cluster.go:260 level=warn component=cluster msg="failed to join cluster" err="2 errors occurred:\n\t* Failed to resolve alertmanager-main-0.alertmanager-operated:9094: lookup alertmanager-main-0.alertmanager-operated on 172.30.0.10:53: no such host\n\t* Failed to resolve alertmanager-main-1.alertmanager-operated:9094: lookup alertmanager-main-1.alertmanager-operated on 172.30.0.10:53: no such host\n\n"
+          ts=2023-03-08T11:59:10.784Z caller=cluster.go:262 level=info component=cluster msg="will retry joining cluster every 10s"
+          ts=2023-03-08T11:59:10.784Z caller=main.go:329 level=warn msg="unable to join gossip mesh" err="2 errors occurred:\n\t* Failed to resolve alertmanager-main-0.alertmanager-operated:9094: lookup alertmanager-main-0.alertmanager-operated on 172.30.0.10:53: no such host\n\t* Failed to resolve alertmanager-main-1.alertmanager-operated:9094: lookup alertmanager-main-1.alertmanager-operated on 172.30.0.10:53: no such host\n\n"
+          ts=2023-03-08T11:59:10.784Z caller=cluster.go:680 level=info component=cluster msg="Waiting for gossip to settle..." interval=2s
+          ts=2023-03-08T11:59:10.808Z caller=coordinator.go:113 level=info component=configuration msg="Loading configuration file" file=/etc/alertmanager/config_out/alertmanager.env.yaml
+          ts=2023-03-08T11:59:10.809Z caller=coordinator.go:118 level=error component=configuration msg="Loading configuration file failed" file=/etc/alertmanager/config_out/alertmanager.env.yaml err="open /etc/alertmanager/config_out/alertmanager.env.yaml: no such file or directory"
+          ts=2023-03-08T11:59:10.809Z caller=cluster.go:689 level=info component=cluster msg="gossip not settled but continuing anyway" polls=0 elapsed=24.547064ms
+        reason: Error
+        startedAt: "2023-03-08T11:59:10Z"
+  - containerID: cri-o://2eb93affe2d51576ef669b21e20381a4dd01020d45932d4da5704ab91507795c
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
     lastState: {}
     name: alertmanager-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f7088516f2eeba84a8fdbed70658a4b5958247051bc9cb489667864ed74fc08
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:59:13Z"
+  - containerID: cri-o://c12520593308820a2dc297785a33f0975a2c55ab3e95b3119417fa9edced842c
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f7088516f2eeba84a8fdbed70658a4b5958247051bc9cb489667864ed74fc08
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f7088516f2eeba84a8fdbed70658a4b5958247051bc9cb489667864ed74fc08
     lastState: {}
     name: config-reloader
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:59:13Z"
+  - containerID: cri-o://2940da516f3d4b1ff473f1af776c936c8e66bacf4d8da83348c4288d0911ca45
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:59:13Z"
+  - containerID: cri-o://5bc69e1e6fa6cb1ef218d36422be030ea48f60f7a8e267b8452a32e6f3fd6f1a
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy-metric
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:63a03be7e8759270b4a2c75112207867ef51774db5f682d4d2f711d0934fc816
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:59:14Z"
+  - containerID: cri-o://14ed388edad38ef9de44c59d605003c7129bfdb5e0372c8f736ed1c3f8748a43
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:63a03be7e8759270b4a2c75112207867ef51774db5f682d4d2f711d0934fc816
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:63a03be7e8759270b4a2c75112207867ef51774db5f682d4d2f711d0934fc816
     lastState: {}
     name: prom-label-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
+      running:
+        startedAt: "2023-03-08T11:59:18Z"
   hostIP: 10.0.128.4
-  phase: Pending
+  phase: Running
+  podIP: 10.131.0.12
+  podIPs:
+  - ip: 10.131.0.12
   qosClass: Burstable
   startTime: "2023-03-08T11:59:05Z"
