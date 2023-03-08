@@ -200,7 +200,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:47:12Z"
+    time: "2023-03-08T11:47:13Z"
   name: installer-2-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
   namespace: openshift-etcd
   ownerReferences:
@@ -208,7 +208,7 @@ metadata:
     kind: ConfigMap
     name: revision-status-2
     uid: 81a7a96e-cff9-42ab-b3fb-e6607b4a77f2
-  resourceVersion: "10543"
+  resourceVersion: "10605"
   uid: 0ffeb856-71ce-4b40-a3e1-497942d44616
 spec:
   automountServiceAccountToken: false
@@ -352,7 +352,7 @@ status:
         reason: Completed
         startedAt: "2023-03-08T11:46:39Z"
   hostIP: 10.0.0.5
-  phase: Running
+  phase: Succeeded
   podIP: 10.129.0.15
   podIPs:
   - ip: 10.129.0.15
