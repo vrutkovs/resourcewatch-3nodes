@@ -383,6 +383,26 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:46:22Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:46:23Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           k:{"type":"ContainersReady"}:
@@ -409,31 +429,18 @@ metadata:
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.129.0.13"}:
+            .: {}
+            f:ip: {}
         f:startTime: {}
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:22Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.ovn.org/pod-networks: {}
-    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
-    operation: Update
-    time: "2023-03-08T11:46:22Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.v1.cni.cncf.io/network-status: {}
-          f:k8s.v1.cni.cncf.io/networks-status: {}
-    manager: multus
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:46:23Z"
+    time: "2023-03-08T11:46:40Z"
   name: machine-api-controllers-67b4c49c5-snjk7
   namespace: openshift-machine-api
   ownerReferences:
@@ -443,7 +450,7 @@ metadata:
     kind: ReplicaSet
     name: machine-api-controllers-67b4c49c5
     uid: bdd11b63-5329-4ae2-8a56-321acd7c8946
-  resourceVersion: "8521"
+  resourceVersion: "9444"
   uid: 8806971b-4232-425e-a991-bab6fbcb8ad5
 spec:
   containers:
@@ -855,16 +862,14 @@ status:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:22Z"
     message: 'containers with unready status: [machineset-controller machine-controller
-      nodelink-controller machine-healthcheck-controller kube-rbac-proxy-machineset-mtrc
-      kube-rbac-proxy-machine-mtrc kube-rbac-proxy-mhc-mtrc]'
+      machine-healthcheck-controller]'
     reason: ContainersNotReady
     status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:22Z"
     message: 'containers with unready status: [machineset-controller machine-controller
-      nodelink-controller machine-healthcheck-controller kube-rbac-proxy-machineset-mtrc
-      kube-rbac-proxy-machine-mtrc kube-rbac-proxy-mhc-mtrc]'
+      machine-healthcheck-controller]'
     reason: ContainersNotReady
     status: "False"
     type: ContainersReady
@@ -873,77 +878,87 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+  - containerID: cri-o://76eb9d8ffcf1b77b2f13e4085e4705c8018c0fa5993b9520da235b5363e280d9
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy-machine-mtrc
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:46:40Z"
+  - containerID: cri-o://1fe9c8eadedbc958b2b36e2c97166329b229100c9f16d3a8492d78c50bc60b70
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy-machineset-mtrc
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:46:40Z"
+  - containerID: cri-o://d7d65d9804fc29592727c751362a6248d36261e9fdcada74f877fc634dd79fcc
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy-mhc-mtrc
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ec7b40bc7728833abc1d506d4fd98ae362d9ace4cad6ae6cf011eb0c5c474771
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:46:40Z"
+  - containerID: cri-o://ddddfd1d58c260640d6043ef59a721640af0d814fafae2d12b9bd3b33dacbb15
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ec7b40bc7728833abc1d506d4fd98ae362d9ace4cad6ae6cf011eb0c5c474771
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ec7b40bc7728833abc1d506d4fd98ae362d9ace4cad6ae6cf011eb0c5c474771
     lastState: {}
     name: machine-controller
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:46:39Z"
+  - containerID: cri-o://ff3ef9004f9320e2a073a46a978c7828aa784b9f6f30213e29d5ad522404d05f
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
     lastState: {}
     name: machine-healthcheck-controller
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:46:40Z"
+  - containerID: cri-o://7e743cd48e3f78467232600869e430f8c63318fc9743e4d873c36c0d5bcbdf0e
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
     lastState: {}
     name: machineset-controller
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:46:30Z"
+  - containerID: cri-o://19b8cca8166cff9d159199ef58b68c41b1fc033fe1ca6be74aa42a7e0c0eb47c
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
     lastState: {}
     name: nodelink-controller
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
+      running:
+        startedAt: "2023-03-08T11:46:40Z"
   hostIP: 10.0.0.5
-  phase: Pending
+  phase: Running
+  podIP: 10.129.0.13
+  podIPs:
+  - ip: 10.129.0.13
   qosClass: Burstable
   startTime: "2023-03-08T11:46:22Z"
