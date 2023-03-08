@@ -44,14 +44,14 @@ metadata:
     manager: authentication-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:41Z"
+    time: "2023-03-08T11:51:46Z"
   name: authentication
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "17658"
+  resourceVersion: "18361"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
@@ -65,8 +65,11 @@ status:
       ingress.config/cluster does not yet have status for the \"openshift-authentication/oauth-openshift\"
       route\nOAuthServerServiceEndpointAccessibleControllerDegraded: Get \"https://172.30.73.115:443/healthz\":
       dial tcp 172.30.73.115:443: connect: connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerDegraded:
-      oauth service endpoints are not ready"
-    reason: APIServerDeployment_UnavailablePod::IngressStateEndpoints_MissingSubsets::OAuthServerDeployment_PreconditionNotFulfilled::OAuthServerRouteEndpointAccessibleController_SyncError::OAuthServerServiceEndpointAccessibleController_SyncError::OAuthServerServiceEndpointsEndpointAccessibleController_SyncError
+      oauth service endpoints are not ready\nWellKnownReadyControllerDegraded: failed
+      to get oauth metadata from openshift-config-managed/oauth-openshift ConfigMap:
+      configmap \"oauth-openshift\" not found (check authentication operator, it is
+      supposed to create this)"
+    reason: APIServerDeployment_UnavailablePod::IngressStateEndpoints_MissingSubsets::OAuthServerDeployment_PreconditionNotFulfilled::OAuthServerRouteEndpointAccessibleController_SyncError::OAuthServerServiceEndpointAccessibleController_SyncError::OAuthServerServiceEndpointsEndpointAccessibleController_SyncError::WellKnownReadyController_SyncError
     status: "True"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:50:05Z"
