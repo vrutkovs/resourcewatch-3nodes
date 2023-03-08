@@ -102,7 +102,7 @@ metadata:
     kind: Job
     name: collect-profiles-27971280
     uid: 916759ff-6cde-4ca0-a40c-331425372fb9
-  resourceVersion: "27281"
+  resourceVersion: "27284"
   uid: b403027d-9bc7-4529-84a8-d37b7ccdd519
 spec:
   containers:
@@ -144,6 +144,7 @@ spec:
   enableServiceLinks: true
   imagePullSecrets:
   - name: collect-profiles-dockercfg-4d7f9
+  nodeName: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
   preemptionPolicy: PreemptLowerPriority
   priority: 1000000000
   priorityClassName: openshift-user-critical
@@ -204,5 +205,10 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T12:00:00Z"
+    status: "True"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
