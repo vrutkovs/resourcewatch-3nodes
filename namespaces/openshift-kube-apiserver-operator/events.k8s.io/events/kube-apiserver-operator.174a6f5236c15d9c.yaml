@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:50:10Z"
+deprecatedLastTimestamp: "2023-03-08T11:50:10Z"
+deprecatedSource:
+  component: kube-apiserver-operator-resource-sync-controller-resourcesynccontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:50:10Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:50:10Z"
+  name: kube-apiserver-operator.174a6f5236c15d9c
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "16315"
+  uid: 97d077b0-0167-4410-8fe8-e9b27526ab51
+note: |-
+  Updated ConfigMap/sa-token-signing-certs -n openshift-kube-apiserver:
+  cause by changes in data.service-account-002.pub
+reason: ConfigMapUpdated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
