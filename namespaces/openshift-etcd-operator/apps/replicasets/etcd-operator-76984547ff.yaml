@@ -187,10 +187,8 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -205,7 +203,7 @@ metadata:
     kind: Deployment
     name: etcd-operator
     uid: dd494886-7eb4-4625-9190-f606d6faab1b
-  resourceVersion: "8828"
+  resourceVersion: "21525"
   uid: e1d1904e-8f8d-49f1-a235-7a18c0e8b89b
 spec:
   replicas: 1
@@ -326,8 +324,6 @@ spec:
           defaultMode: 420
           secretName: etcd-client
 status:
-  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
