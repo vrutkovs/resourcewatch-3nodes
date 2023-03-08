@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "19328"
+  resourceVersion: "19356"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
@@ -84,7 +84,7 @@ status:
     message: |-
       OAuthServerServiceEndpointAccessibleControllerAvailable: Get "https://172.30.73.115:443/healthz": dial tcp 172.30.73.115:443: connect: connection refused
       OAuthServerServiceEndpointsEndpointAccessibleControllerAvailable: endpoints "oauth-openshift" not found
-      ReadyIngressNodesAvailable: Authentication requires functional ingress which requires at least one schedulable and ready node. Got 2 worker nodes, 3 master nodes, 0 custom target nodes (none are schedulable or ready for ingress pods).
+      ReadyIngressNodesAvailable: Authentication requires functional ingress which requires at least one schedulable and ready node. Got 3 worker nodes, 3 master nodes, 0 custom target nodes (none are schedulable or ready for ingress pods).
       WellKnownAvailable: The well-known endpoint is not yet available: failed to get oauth metadata from openshift-config-managed/oauth-openshift ConfigMap: configmap "oauth-openshift" not found (check authentication operator, it is supposed to create this)
     reason: OAuthServerDeployment_PreconditionNotFulfilled::OAuthServerServiceEndpointAccessibleController_EndpointUnavailable::OAuthServerServiceEndpointsEndpointAccessibleController_ResourceNotFound::ReadyIngressNodes_NoReadyIngressNodes::WellKnown_NotReady
     status: "False"
