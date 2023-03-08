@@ -109,8 +109,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -129,8 +127,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -146,10 +142,10 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:49:30Z"
+    time: "2023-03-08T11:49:31Z"
   name: etcd-guard-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   namespace: openshift-etcd
-  resourceVersion: "13273"
+  resourceVersion: "13329"
   uid: 77e89b71-bc94-4826-8f2c-50bf4f09820d
 spec:
   containers:
@@ -245,16 +241,12 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:49:28Z"
-    message: 'containers with unready status: [guard]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:49:31Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:49:28Z"
-    message: 'containers with unready status: [guard]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:49:31Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:49:28Z"
@@ -266,7 +258,7 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a62fd1ab5fab0a9273eac253eed4e90c410771ae37fe1ab57fba8a8535922d1c
     lastState: {}
     name: guard
-    ready: false
+    ready: true
     restartCount: 0
     started: true
     state:
