@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:44:55Z"
+deprecatedLastTimestamp: "2023-03-08T11:44:55Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:03Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:45:03Z"
+  name: cluster-image-registry-operator-d85965cc4-5jdnw.174a6f09030fa48c
+  namespace: openshift-image-registry
+  resourceVersion: "4076"
+  uid: 5790763a-902b-47a8-9ae9-3e1c67021df1
+note: 'MountVolume.SetUp failed for volume "kube-api-access-st9nl" : failed to sync
+  configmap cache: timed out waiting for the condition'
+reason: FailedMount
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: cluster-image-registry-operator-d85965cc4-5jdnw
+  namespace: openshift-image-registry
+  resourceVersion: "3809"
+  uid: e2a7a2c7-26f2-409f-906c-ab8968231307
+type: Warning
