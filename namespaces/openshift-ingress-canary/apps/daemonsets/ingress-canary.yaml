@@ -96,10 +96,10 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:54:54Z"
+    time: "2023-03-08T11:54:55Z"
   name: ingress-canary
   namespace: openshift-ingress-canary
-  resourceVersion: "21821"
+  resourceVersion: "21826"
   uid: 57849325-9a52-432b-9fe5-ba6afbae1635
 spec:
   revisionHistoryLimit: 10
@@ -158,10 +158,10 @@ spec:
       maxUnavailable: 10%
     type: RollingUpdate
 status:
-  currentNumberScheduled: 1
-  desiredNumberScheduled: 1
-  numberMisscheduled: 2
+  currentNumberScheduled: 2
+  desiredNumberScheduled: 2
+  numberMisscheduled: 1
   numberReady: 0
-  numberUnavailable: 1
+  numberUnavailable: 2
   observedGeneration: 1
-  updatedNumberScheduled: 1
+  updatedNumberScheduled: 2
