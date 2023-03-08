@@ -63,18 +63,13 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "23246"
+  resourceVersion: "23257"
   uid: c452e0a4-6e32-4ed2-a5a9-8eaa2903cb12
 spec: {}
 status:
   conditions:
-  - lastTransitionTime: "2023-03-08T11:55:41Z"
-    message: 'Error while updating operator configuration: could not apply (/v1, Kind=Namespace)
-      /openshift-multus: failed to apply / update (/v1, Kind=Namespace) /openshift-multus:
-      Timeout: request did not complete within requested timeout - context deadline
-      exceeded'
-    reason: ApplyOperatorConfig
-    status: "True"
+  - lastTransitionTime: "2023-03-08T11:55:58Z"
+    status: "False"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:43:01Z"
     status: "False"
