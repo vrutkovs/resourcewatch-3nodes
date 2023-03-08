@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "5961"
+  resourceVersion: "5979"
   uid: 0a41b8f0-4a3d-4f14-9d01-84b34a9a54a7
 spec: {}
 status:
@@ -62,6 +62,7 @@ status:
       InstallerControllerDegraded: missing required resources: [secrets: kube-scheduler-client-cert-key, configmaps: config-1,kube-scheduler-cert-syncer-kubeconfig-1,kube-scheduler-pod-1,scheduler-kubeconfig-1,serviceaccount-ca-1, secrets: localhost-recovery-client-token-1]
       GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal]
       RevisionControllerDegraded: configmaps "kube-scheduler-pod" not found
+      TargetConfigControllerDegraded: "serviceaccount/localhost-recovery-client": serviceaccounts "localhost-recovery-client" not found
     reason: AsExpected
     status: "False"
     type: Degraded
