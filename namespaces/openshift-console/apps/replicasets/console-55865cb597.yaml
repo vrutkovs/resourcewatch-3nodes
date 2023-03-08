@@ -219,7 +219,6 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
         f:replicas: {}
     manager: kube-controller-manager
@@ -235,7 +234,7 @@ metadata:
     kind: Deployment
     name: console
     uid: 8f84f431-418b-4093-8b7b-7db6c01ba2b1
-  resourceVersion: "27783"
+  resourceVersion: "27789"
   uid: 24798fbd-c982-4e83-95eb-5836d19a6acb
 spec:
   replicas: 0
@@ -386,6 +385,5 @@ spec:
           name: oauth-serving-cert
         name: oauth-serving-cert
 status:
-  fullyLabeledReplicas: 1
   observedGeneration: 3
-  replicas: 1
+  replicas: 0
