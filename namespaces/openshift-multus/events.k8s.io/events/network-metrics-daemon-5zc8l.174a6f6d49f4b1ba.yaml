@@ -1,0 +1,40 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:06.331813Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:06Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:06Z"
+  name: network-metrics-daemon-5zc8l.174a6f6d49f4b1ba
+  namespace: openshift-multus
+  resourceVersion: "18972"
+  uid: c96422c2-8dab-4266-94a3-3b8c778f72ed
+note: Successfully assigned openshift-multus/network-metrics-daemon-5zc8l to vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: network-metrics-daemon-5zc8l
+  namespace: openshift-multus
+  resourceVersion: "18966"
+  uid: cfed1056-7a60-4c90-b918-acb4745c2792
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
