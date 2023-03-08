@@ -380,7 +380,9 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -394,7 +396,7 @@ metadata:
     kind: Deployment
     name: machine-api-controllers
     uid: 1cbd80a1-c5e2-453e-8050-c7c8ca139c58
-  resourceVersion: "8494"
+  resourceVersion: "8498"
   uid: bdd11b63-5329-4ae2-8a56-321acd7c8946
 spec:
   replicas: 1
@@ -708,5 +710,6 @@ spec:
           optional: true
         name: trusted-ca
 status:
+  fullyLabeledReplicas: 1
   observedGeneration: 1
-  replicas: 0
+  replicas: 1
