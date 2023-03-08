@@ -100,7 +100,7 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:55:08Z"
+    time: "2023-03-08T11:55:12Z"
   name: network-check-target
   namespace: openshift-network-diagnostics
   ownerReferences:
@@ -110,7 +110,7 @@ metadata:
     kind: Network
     name: cluster
     uid: 0ac8c00f-db30-4ed0-a498-7a1162bac022
-  resourceVersion: "22214"
+  resourceVersion: "22343"
   uid: 1d6e35dc-eeff-4a24-8471-b41c0d5b1fa6
 spec:
   revisionHistoryLimit: 10
@@ -194,9 +194,9 @@ spec:
 status:
   currentNumberScheduled: 6
   desiredNumberScheduled: 6
-  numberAvailable: 1
+  numberAvailable: 2
   numberMisscheduled: 0
-  numberReady: 1
-  numberUnavailable: 5
+  numberReady: 2
+  numberUnavailable: 4
   observedGeneration: 1
   updatedNumberScheduled: 6
