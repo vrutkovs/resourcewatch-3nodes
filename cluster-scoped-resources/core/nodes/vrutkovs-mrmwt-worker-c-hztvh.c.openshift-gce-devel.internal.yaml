@@ -100,25 +100,25 @@ metadata:
     fieldsV1:
       f:metadata:
         f:annotations:
-          f:machineconfiguration.openshift.io/controlPlaneTopology: {}
-      f:spec:
-        f:taints: {}
-    manager: machine-config-controller
-    operation: Update
-    time: "2023-03-08T11:52:11Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
           f:machineconfiguration.openshift.io/currentConfig: {}
           f:machineconfiguration.openshift.io/desiredConfig: {}
           f:machineconfiguration.openshift.io/state: {}
     manager: machine-config-daemon
     operation: Update
     time: "2023-03-08T11:52:12Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:machineconfiguration.openshift.io/controlPlaneTopology: {}
+      f:spec:
+        f:taints: {}
+    manager: machine-config-controller
+    operation: Update
+    time: "2023-03-08T11:52:16Z"
   name: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
-  resourceVersion: "19265"
+  resourceVersion: "19630"
   uid: 68c44a0e-aae1-4394-9355-77647b7bf962
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-c/vrutkovs-mrmwt-worker-c-hztvh
@@ -128,8 +128,6 @@ spec:
   - effect: NoExecute
     key: node.kubernetes.io/not-ready
     timeAdded: "2023-03-08T11:52:07Z"
-  - effect: PreferNoSchedule
-    key: UpdateInProgress
 status:
   addresses:
   - address: 10.0.128.4
