@@ -203,14 +203,15 @@ metadata:
         f:observedGeneration: {}
         f:readyReplicas: {}
         f:replicas: {}
+        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:50:08Z"
+    time: "2023-03-08T11:51:17Z"
   name: controller-manager
   namespace: openshift-controller-manager
-  resourceVersion: "16279"
+  resourceVersion: "17071"
   uid: d4b28c78-d70c-4e89-8abd-e4dc311b8c4b
 spec:
   progressDeadlineSeconds: 600
@@ -348,7 +349,7 @@ spec:
           name: openshift-global-ca
         name: proxy-ca-bundles
 status:
-  availableReplicas: 3
+  availableReplicas: 2
   conditions:
   - lastTransitionTime: "2023-03-08T11:50:02Z"
     lastUpdateTime: "2023-03-08T11:50:02Z"
@@ -363,6 +364,7 @@ status:
     status: "True"
     type: Progressing
   observedGeneration: 5
-  readyReplicas: 3
+  readyReplicas: 2
   replicas: 3
+  unavailableReplicas: 1
   updatedReplicas: 3
