@@ -39,7 +39,7 @@ metadata:
     subresource: status
     time: "2023-03-08T11:48:40Z"
   name: version
-  resourceVersion: "12495"
+  resourceVersion: "12496"
   uid: e60de632-2954-4109-a630-deda141a29af
 spec:
   channel: stable-4
@@ -168,11 +168,9 @@ status:
     status: "True"
     type: RetrievedUpdates
   - lastTransitionTime: "2023-03-08T11:40:40Z"
-    message: |-
-      Cluster should not be upgraded between minor versions for multiple reasons: ClusterVersionOverridesSet,DegradedPool
-      * Disabling ownership via cluster version overrides prevents upgrades. Please remove overrides before continuing.
-      * Cluster operator machine-config should not be upgraded between minor versions: One or more machine config pools are degraded, please see `oc get mcp` for further details and resolve before upgrading
-    reason: MultipleReasons
+    message: Disabling ownership via cluster version overrides prevents upgrades.
+      Please remove overrides before continuing.
+    reason: ClusterVersionOverridesSet
     status: "False"
     type: Upgradeable
   - lastTransitionTime: "2023-03-08T11:40:40Z"
@@ -206,19 +204,6 @@ status:
     reason: MultipleErrors
     status: "True"
     type: Progressing
-  - lastTransitionTime: "2023-03-08T11:46:25Z"
-    message: 'Cluster operator machine-config should not be upgraded between minor
-      versions: One or more machine config pools are degraded, please see `oc get
-      mcp` for further details and resolve before upgrading'
-    reason: DegradedPool
-    status: "False"
-    type: UpgradeableClusterOperators
-  - lastTransitionTime: "2023-03-08T11:46:25Z"
-    message: Disabling ownership via cluster version overrides prevents upgrades.
-      Please remove overrides before continuing.
-    reason: ClusterVersionOverridesSet
-    status: "False"
-    type: UpgradeableClusterVersionOverrides
   desired:
     image: registry.ci.openshift.org/origin/release@sha256:f4bc695a8ea05f8d20cb5306b2923f328ec15b8774c3b583deff031007930ba4
     version: 4.12.0-0.okd-2023-03-04-063026
