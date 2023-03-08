@@ -34,14 +34,90 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:40:41Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions: {}
+        f:relatedObjects: {}
+        f:versions: {}
+    manager: authentication-operator
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:45:21Z"
   name: authentication
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "681"
+  resourceVersion: "4907"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
+  conditions:
+  - lastTransitionTime: "2023-03-08T11:45:21Z"
+    message: All is well
+    reason: AsExpected
+    status: "False"
+    type: Degraded
+  - lastTransitionTime: "2023-03-08T11:45:21Z"
+    reason: NoData
+    status: Unknown
+    type: Progressing
+  - lastTransitionTime: "2023-03-08T11:45:21Z"
+    message: 'ReadyIngressNodesAvailable: Authentication requires functional ingress
+      which requires at least one schedulable and ready node. Got 0 worker nodes,
+      3 master nodes, 0 custom target nodes (none are schedulable or ready for ingress
+      pods).'
+    reason: ReadyIngressNodes_NoReadyIngressNodes
+    status: "False"
+    type: Available
+  - lastTransitionTime: "2023-03-08T11:45:21Z"
+    message: All is well
+    reason: AsExpected
+    status: "True"
+    type: Upgradeable
   extension: null
+  relatedObjects:
+  - group: operator.openshift.io
+    name: cluster
+    resource: authentications
+  - group: config.openshift.io
+    name: cluster
+    resource: authentications
+  - group: config.openshift.io
+    name: cluster
+    resource: infrastructures
+  - group: config.openshift.io
+    name: cluster
+    resource: oauths
+  - group: route.openshift.io
+    name: oauth-openshift
+    namespace: openshift-authentication
+    resource: routes
+  - group: ""
+    name: oauth-openshift
+    namespace: openshift-authentication
+    resource: services
+  - group: ""
+    name: openshift-config
+    resource: namespaces
+  - group: ""
+    name: openshift-config-managed
+    resource: namespaces
+  - group: ""
+    name: openshift-authentication
+    resource: namespaces
+  - group: ""
+    name: openshift-authentication-operator
+    resource: namespaces
+  - group: ""
+    name: openshift-ingress
+    resource: namespaces
+  - group: ""
+    name: openshift-oauth-apiserver
+    resource: namespaces
+  versions:
+  - name: operator
+    version: 4.12.0-0.okd-2023-03-04-063026
