@@ -1,0 +1,43 @@
+action: Scheduling
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:58:57.049682Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:57Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:58:57Z"
+  name: oauth-openshift-68c5547565-ntpss.174a6fcceaa5f128
+  namespace: openshift-authentication
+  resourceVersion: "25671"
+  uid: a1cfd52f-1597-474a-884e-85bc0f414d52
+note: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+  3 node(s) didn''t match pod anti-affinity rules. preemption: 0/6 nodes are available:
+  3 Preemption is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity
+  rules.'
+reason: FailedScheduling
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: oauth-openshift-68c5547565-ntpss
+  namespace: openshift-authentication
+  resourceVersion: "25668"
+  uid: c3558560-a545-4a30-8f69-0d43212b4373
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+type: Warning
