@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:51:45Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:45Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:45Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:51:45Z"
+  name: kube-controller-manager-guard-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal.174a6f68818d8269
+  namespace: openshift-kube-controller-manager
+  resourceVersion: "18331"
+  uid: c8518a84-0bfa-4463-bc30-a9720a094e2a
+note: Started container guard
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{guard}
+  kind: Pod
+  name: kube-controller-manager-guard-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+  namespace: openshift-kube-controller-manager
+  resourceVersion: "18263"
+  uid: 077432a1-1c1f-4bf1-aedc-fe42ed7529b7
+type: Normal
