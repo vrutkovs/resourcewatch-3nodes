@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:44:54Z"
+deprecatedLastTimestamp: "2023-03-08T11:44:54Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:44:54Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:44:54Z"
+  name: cluster-baremetal-operator-6c4d85fcc9-rx9xh.174a6f08b1189bd2
+  namespace: openshift-machine-api
+  resourceVersion: "3887"
+  uid: 1ecb364e-f108-44b2-aecc-e9780c1c740a
+note: 'MountVolume.SetUp failed for volume "cert" : secret "cluster-baremetal-webhook-server-cert"
+  not found'
+reason: FailedMount
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: cluster-baremetal-operator-6c4d85fcc9-rx9xh
+  namespace: openshift-machine-api
+  resourceVersion: "3794"
+  uid: 0b6401ad-70ca-4204-8335-db86b7294866
+type: Warning
