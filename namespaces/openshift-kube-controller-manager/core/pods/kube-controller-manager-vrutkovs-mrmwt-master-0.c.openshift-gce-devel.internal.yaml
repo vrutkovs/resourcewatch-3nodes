@@ -341,7 +341,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     uid: 3becf630-5199-4621-aa21-11f188b903aa
-  resourceVersion: "12257"
+  resourceVersion: "12258"
   uid: 54ff8116-93f4-456f-a64b-bcb1950639c7
 spec:
   containers:
@@ -612,7 +612,7 @@ status:
     name: kube-controller-manager
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
       running:
         startedAt: "2023-03-08T11:48:14Z"
