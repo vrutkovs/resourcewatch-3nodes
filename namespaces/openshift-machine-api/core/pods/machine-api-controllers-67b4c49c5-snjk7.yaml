@@ -436,7 +436,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:34Z"
+    time: "2023-03-08T11:55:23Z"
   name: machine-api-controllers-67b4c49c5-snjk7
   namespace: openshift-machine-api
   ownerReferences:
@@ -446,7 +446,7 @@ metadata:
     kind: ReplicaSet
     name: machine-api-controllers-67b4c49c5
     uid: bdd11b63-5329-4ae2-8a56-321acd7c8946
-  resourceVersion: "17375"
+  resourceVersion: "22620"
   uid: 8806971b-4232-425e-a991-bab6fbcb8ad5
 spec:
   containers:
@@ -856,11 +856,11 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:53Z"
+    lastTransitionTime: "2023-03-08T11:55:23Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:53Z"
+    lastTransitionTime: "2023-03-08T11:55:23Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
@@ -901,50 +901,74 @@ status:
     state:
       running:
         startedAt: "2023-03-08T11:46:40Z"
-  - containerID: cri-o://ddddfd1d58c260640d6043ef59a721640af0d814fafae2d12b9bd3b33dacbb15
+  - containerID: cri-o://d4fdca0bfc224c80448ac3641544036e07ca8a61d8159e750263689836aadbab
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ec7b40bc7728833abc1d506d4fd98ae362d9ace4cad6ae6cf011eb0c5c474771
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ec7b40bc7728833abc1d506d4fd98ae362d9ace4cad6ae6cf011eb0c5c474771
-    lastState: {}
+    lastState:
+      terminated:
+        containerID: cri-o://ddddfd1d58c260640d6043ef59a721640af0d814fafae2d12b9bd3b33dacbb15
+        exitCode: 255
+        finishedAt: "2023-03-08T11:55:09Z"
+        reason: Error
+        startedAt: "2023-03-08T11:46:39Z"
     name: machine-controller
     ready: true
-    restartCount: 0
+    restartCount: 1
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:39Z"
-  - containerID: cri-o://ff3ef9004f9320e2a073a46a978c7828aa784b9f6f30213e29d5ad522404d05f
+        startedAt: "2023-03-08T11:55:10Z"
+  - containerID: cri-o://3e12bbc0b05cb4a98cfa3b2a38fede37f2b2cefcc84b12207db1ca84f888f472
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
-    lastState: {}
+    lastState:
+      terminated:
+        containerID: cri-o://ff3ef9004f9320e2a073a46a978c7828aa784b9f6f30213e29d5ad522404d05f
+        exitCode: 255
+        finishedAt: "2023-03-08T11:55:10Z"
+        reason: Error
+        startedAt: "2023-03-08T11:46:40Z"
     name: machine-healthcheck-controller
     ready: true
-    restartCount: 0
+    restartCount: 1
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:40Z"
-  - containerID: cri-o://7e743cd48e3f78467232600869e430f8c63318fc9743e4d873c36c0d5bcbdf0e
+        startedAt: "2023-03-08T11:55:11Z"
+  - containerID: cri-o://e7e4c415b63a36a827ca37b97d6b21affdc0523c2d3c7845470a305a00b562c1
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
-    lastState: {}
+    lastState:
+      terminated:
+        containerID: cri-o://7e743cd48e3f78467232600869e430f8c63318fc9743e4d873c36c0d5bcbdf0e
+        exitCode: 1
+        finishedAt: "2023-03-08T11:54:57Z"
+        reason: Error
+        startedAt: "2023-03-08T11:46:30Z"
     name: machineset-controller
     ready: true
-    restartCount: 0
+    restartCount: 1
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:30Z"
-  - containerID: cri-o://19b8cca8166cff9d159199ef58b68c41b1fc033fe1ca6be74aa42a7e0c0eb47c
+        startedAt: "2023-03-08T11:54:58Z"
+  - containerID: cri-o://4719c54e30a409aac02eb2462597213d27379df370f0f7cecd0a7d3430063c55
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
-    lastState: {}
+    lastState:
+      terminated:
+        containerID: cri-o://19b8cca8166cff9d159199ef58b68c41b1fc033fe1ca6be74aa42a7e0c0eb47c
+        exitCode: 255
+        finishedAt: "2023-03-08T11:55:10Z"
+        reason: Error
+        startedAt: "2023-03-08T11:46:40Z"
     name: nodelink-controller
     ready: true
-    restartCount: 0
+    restartCount: 1
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:40Z"
+        startedAt: "2023-03-08T11:55:11Z"
   hostIP: 10.0.0.5
   phase: Running
   podIP: 10.129.0.13
