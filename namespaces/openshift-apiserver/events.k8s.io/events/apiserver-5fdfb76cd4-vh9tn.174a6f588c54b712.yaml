@@ -1,0 +1,36 @@
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource:
+  component: apiserver
+  host: apiserver-5fdfb76cd4-vh9tn
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:50:37Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:involvedObject: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: openshift-apiserver
+    operation: Update
+    time: "2023-03-08T11:50:37Z"
+  name: apiserver-5fdfb76cd4-vh9tn.174a6f588c54b712
+  namespace: openshift-apiserver
+  resourceVersion: "16777"
+  uid: c87f7edf-5e99-40aa-aa19-67629c4303ed
+note: The minimal shutdown duration of 15s finished
+reason: TerminationMinimalShutdownDurationFinished
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: apiserver-5fdfb76cd4-vh9tn
+  namespace: openshift-apiserver
+type: Normal
