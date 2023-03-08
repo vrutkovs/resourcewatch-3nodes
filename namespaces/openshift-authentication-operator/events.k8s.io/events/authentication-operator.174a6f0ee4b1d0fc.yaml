@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:20Z"
+deprecatedSource:
+  component: oauth-apiserver-audit-policy-controller-auditpolicycontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: authentication-operator
+    operation: Update
+    time: "2023-03-08T11:45:20Z"
+  name: authentication-operator.174a6f0ee4b1d0fc
+  namespace: openshift-authentication-operator
+  resourceVersion: "4793"
+  uid: 4053b7b6-f999-4f31-8653-e33dee36b5ab
+note: Controller "auditPolicyController" resync interval is set to 10s which might
+  lead to client request throttling
+reason: FastControllerResync
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: authentication-operator
+  namespace: openshift-authentication-operator
+  uid: 0efac7b0-177c-4814-9d2b-04ba66ce84f1
+type: Warning
