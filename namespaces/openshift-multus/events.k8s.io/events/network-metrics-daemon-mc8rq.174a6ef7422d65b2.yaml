@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 11
+deprecatedCount: 12
 deprecatedFirstTimestamp: "2023-03-08T11:43:39Z"
-deprecatedLastTimestamp: "2023-03-08T11:43:59Z"
+deprecatedLastTimestamp: "2023-03-08T11:44:01Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:44:00Z"
+    time: "2023-03-08T11:44:01Z"
   name: network-metrics-daemon-mc8rq.174a6ef7422d65b2
   namespace: openshift-multus
-  resourceVersion: "3398"
+  resourceVersion: "3409"
   uid: 4112ab8c-c41e-4fb6-9738-a1c70d52b13d
 note: 'network is not ready: container runtime network not ready: NetworkReady=false
   reason:NetworkPluginNotReady message:Network plugin returns error: No CNI configuration
