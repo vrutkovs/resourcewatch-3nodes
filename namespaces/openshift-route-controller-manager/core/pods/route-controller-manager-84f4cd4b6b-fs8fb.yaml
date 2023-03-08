@@ -218,8 +218,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -246,6 +244,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:52:14Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:54:19Z"
   name: route-controller-manager-84f4cd4b6b-fs8fb
   namespace: openshift-route-controller-manager
   ownerReferences:
@@ -255,7 +265,7 @@ metadata:
     kind: ReplicaSet
     name: route-controller-manager-84f4cd4b6b
     uid: 13a315ce-c5c6-4853-a515-8577587649a7
-  resourceVersion: "19566"
+  resourceVersion: "21282"
   uid: d9b3a96b-5775-44e2-9235-e4e48ecef37b
 spec:
   affinity:
@@ -401,8 +411,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:52:14Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:54:19Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:52:14Z"
