@@ -110,6 +110,7 @@ metadata:
         f:annotations:
           f:deployment.kubernetes.io/revision: {}
       f:status:
+        f:availableReplicas: {}
         f:conditions:
           .: {}
           k:{"type":"Available"}:
@@ -129,16 +130,16 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
-        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:17Z"
+    time: "2023-03-08T11:51:34Z"
   name: service-ca
   namespace: openshift-service-ca
-  resourceVersion: "17056"
+  resourceVersion: "17295"
   uid: ac9feeb8-822e-4149-94eb-80a47b3c84fd
 spec:
   progressDeadlineSeconds: 600
@@ -217,6 +218,7 @@ spec:
           name: signing-cabundle
         name: signing-cabundle
 status:
+  availableReplicas: 1
   conditions:
   - lastTransitionTime: "2023-03-08T11:45:23Z"
     lastUpdateTime: "2023-03-08T11:45:30Z"
@@ -224,13 +226,13 @@ status:
     reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
-  - lastTransitionTime: "2023-03-08T11:51:17Z"
-    lastUpdateTime: "2023-03-08T11:51:17Z"
-    message: Deployment does not have minimum availability.
-    reason: MinimumReplicasUnavailable
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:51:34Z"
+    lastUpdateTime: "2023-03-08T11:51:34Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
     type: Available
   observedGeneration: 1
+  readyReplicas: 1
   replicas: 1
-  unavailableReplicas: 1
   updatedReplicas: 1
