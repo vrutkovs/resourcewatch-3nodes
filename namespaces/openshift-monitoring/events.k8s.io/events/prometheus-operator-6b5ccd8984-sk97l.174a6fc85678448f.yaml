@@ -1,0 +1,48 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:37Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:37Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:37Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:58:37Z"
+  name: prometheus-operator-6b5ccd8984-sk97l.174a6fc85678448f
+  namespace: openshift-monitoring
+  resourceVersion: "25354"
+  uid: 9f22e693-8b92-408c-af79-44c82ebb0d2d
+note: 'Failed to create pod sandbox: rpc error: code = Unknown desc = failed to create
+  pod network sandbox k8s_prometheus-operator-6b5ccd8984-sk97l_openshift-monitoring_12af0e98-7b46-428a-90f1-eacd289e1f32_0(6043e7d5ebe18c79902c76cf6a2926269ff427e96afc3cdc4b659f013edd89a7):
+  error adding pod openshift-monitoring_prometheus-operator-6b5ccd8984-sk97l to CNI
+  network "multus-cni-network": plugin type="multus" name="multus-cni-network" failed
+  (add): Multus: [openshift-monitoring/prometheus-operator-6b5ccd8984-sk97l/12af0e98-7b46-428a-90f1-eacd289e1f32]:
+  error getting pod: Get "https://[api-int.vrutkovs.origin-gce.dev.openshift.com]:6443/api/v1/namespaces/openshift-monitoring/pods/prometheus-operator-6b5ccd8984-sk97l?timeout=1m0s":
+  dial tcp 10.0.0.2:6443: i/o timeout'
+reason: FailedCreatePodSandBox
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: prometheus-operator-6b5ccd8984-sk97l
+  namespace: openshift-monitoring
+  resourceVersion: "22974"
+  uid: 12af0e98-7b46-428a-90f1-eacd289e1f32
+type: Warning
