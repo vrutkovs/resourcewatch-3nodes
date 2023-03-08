@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "10451"
+  resourceVersion: "10453"
   uid: ef706269-fd7e-4416-af64-7cfc9719f1d3
 spec: {}
 status:
@@ -60,7 +60,7 @@ status:
     message: |-
       NodeControllerDegraded: All master nodes are ready
       GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal]
-      InstallerControllerDegraded: missing required resources: [secrets: node-kubeconfigs, configmaps: bound-sa-token-signing-certs-1,config-1,etcd-serving-ca-1,kube-apiserver-audit-policies-1,kube-apiserver-cert-syncer-kubeconfig-1,kube-apiserver-pod-1,kubelet-serving-ca-1,sa-token-signing-certs-1, secrets: etcd-client-1,localhost-recovery-client-token-1,localhost-recovery-serving-certkey-1]
+      InstallerControllerDegraded: missing required resources: [configmaps: bound-sa-token-signing-certs-1,config-1,etcd-serving-ca-1,kube-apiserver-audit-policies-1,kube-apiserver-cert-syncer-kubeconfig-1,kube-apiserver-pod-1,kubelet-serving-ca-1,sa-token-signing-certs-1, secrets: etcd-client-1,localhost-recovery-client-token-1,localhost-recovery-serving-certkey-1]
       RevisionControllerDegraded: configmaps "kube-apiserver-pod" not found
       ConfigObservationDegraded: configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found
     reason: AsExpected
