@@ -117,7 +117,7 @@ metadata:
     kind: ReplicaSet
     name: csi-snapshot-controller-operator-f965f4fbc
     uid: 33464f00-90d0-4e17-a68f-94c26995e6f1
-  resourceVersion: "2380"
+  resourceVersion: "3806"
   uid: 2c9ab36f-10d4-4ae4-8a6b-220fbafb29be
 spec:
   containers:
@@ -159,6 +159,7 @@ spec:
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
+  nodeName: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   nodeSelector:
     node-role.kubernetes.io/master: ""
   preemptionPolicy: PreemptLowerPriority
@@ -218,11 +219,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:41:21Z"
-    message: '0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready:
-      }. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.'
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:44:54Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
