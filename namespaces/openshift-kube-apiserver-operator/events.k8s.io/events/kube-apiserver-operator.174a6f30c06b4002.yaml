@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:47:46Z"
-deprecatedLastTimestamp: "2023-03-08T11:47:46Z"
+deprecatedLastTimestamp: "2023-03-08T11:49:36Z"
 deprecatedSource:
   component: kube-apiserver-operator-target-config-controller-targetconfigcontroller
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-kube-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:47:46Z"
+    time: "2023-03-08T11:49:36Z"
   name: kube-apiserver-operator.174a6f30c06b4002
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "11194"
+  resourceVersion: "13438"
   uid: d83b8ec1-794b-4e2c-b823-00fa9b094423
 note: |-
   Updated ConfigMap/config -n openshift-kube-apiserver:
