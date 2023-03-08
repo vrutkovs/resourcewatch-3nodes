@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:04:13Z"
+deprecatedLastTimestamp: "2023-03-08T12:04:13Z"
+deprecatedSource:
+  component: kube-apiserver-operator-prunecontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:04:13Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T12:04:13Z"
+  name: kube-apiserver-operator.174a70169a0722b2
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "29942"
+  uid: f14bcdce-10b5-40eb-ae26-b7c0cb809ac4
+note: Created Pod/revision-pruner-7-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+  -n openshift-kube-apiserver because it was missing
+reason: PodCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
