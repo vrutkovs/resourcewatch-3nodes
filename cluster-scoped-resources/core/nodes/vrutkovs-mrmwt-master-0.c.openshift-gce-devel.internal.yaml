@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Node
 metadata:
   annotations:
+    cloud.network.openshift.io/egress-ipconfig: '[{"interface":"nic0","ifaddr":{"ipv4":"10.0.0.0/17"},"capacity":{"ip":10}}]'
     csi.volume.kubernetes.io/nodeid: '{"pd.csi.storage.gke.io":"projects/openshift-gce-devel/zones/europe-west2-a/instances/vrutkovs-mrmwt-master-0"}'
     k8s.ovn.org/host-addresses: '["10.0.0.5"]'
     k8s.ovn.org/l3-gateway-config: '{"default":{"mode":"shared","interface-id":"br-ex_vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal","mac-address":"42:01:0a:00:00:05","ip-addresses":["10.0.0.5/32"],"ip-address":"10.0.0.5/32","next-hops":["10.0.0.1"],"next-hop":"10.0.0.1","node-port-enable":"true","vlan-id":"0"}}'
@@ -161,8 +162,17 @@ metadata:
     manager: machine-config-daemon
     operation: Update
     time: "2023-03-08T11:47:00Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:cloud.network.openshift.io/egress-ipconfig: {}
+    manager: cloud-network-config-controller
+    operation: Update
+    time: "2023-03-08T11:47:26Z"
   name: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
-  resourceVersion: "10239"
+  resourceVersion: "10898"
   uid: 3becf630-5199-4621-aa21-11f188b903aa
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-a/vrutkovs-mrmwt-master-0
