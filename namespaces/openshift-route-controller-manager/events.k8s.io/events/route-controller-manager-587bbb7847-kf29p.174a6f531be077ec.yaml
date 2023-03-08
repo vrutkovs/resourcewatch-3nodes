@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:50:13Z"
+deprecatedLastTimestamp: "2023-03-08T11:50:13Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:50:13Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:50:13Z"
+  name: route-controller-manager-587bbb7847-kf29p.174a6f531be077ec
+  namespace: openshift-route-controller-manager
+  resourceVersion: "16390"
+  uid: d79e4d77-4c49-4dcc-a254-6cd2bb4637e5
+note: Started container route-controller-manager
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{route-controller-manager}
+  kind: Pod
+  name: route-controller-manager-587bbb7847-kf29p
+  namespace: openshift-route-controller-manager
+  resourceVersion: "16367"
+  uid: 48615650-fca8-44dd-8e47-06656c0e166a
+type: Normal
