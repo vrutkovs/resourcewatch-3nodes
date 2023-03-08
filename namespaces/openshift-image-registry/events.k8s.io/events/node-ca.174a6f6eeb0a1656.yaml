@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:13Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:13Z"
+deprecatedSource:
+  component: daemonset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:13Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:52:13Z"
+  name: node-ca.174a6f6eeb0a1656
+  namespace: openshift-image-registry
+  resourceVersion: "19378"
+  uid: f98d27c7-940c-40ef-82f2-e2884799fdd6
+note: 'Created pod: node-ca-mlf8v'
+reason: SuccessfulCreate
+regarding:
+  apiVersion: apps/v1
+  kind: DaemonSet
+  name: node-ca
+  namespace: openshift-image-registry
+  resourceVersion: "19058"
+  uid: bf26b238-4c1e-4e98-99e7-060c5d6244ed
+type: Normal
