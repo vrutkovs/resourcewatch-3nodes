@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:44:54Z"
+deprecatedLastTimestamp: "2023-03-08T11:44:54Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:44:54Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:44:54Z"
+  name: olm-operator-65c7f4654f-hv2nc.174a6f08a3f03b06
+  namespace: openshift-operator-lifecycle-manager
+  resourceVersion: "3871"
+  uid: 5478c182-e98c-4a04-954c-0bdbe3e2b015
+note: Successfully assigned openshift-operator-lifecycle-manager/olm-operator-65c7f4654f-hv2nc
+  to vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: olm-operator-65c7f4654f-hv2nc
+  namespace: openshift-operator-lifecycle-manager
+  resourceVersion: "2393"
+  uid: 2e3d6059-f61f-47ff-85b4-eab7275c0bde
+type: Normal
