@@ -165,7 +165,7 @@ metadata:
     kind: ReplicaSet
     name: cluster-version-operator-79cdd6dcf6
     uid: 30b29e72-ecd0-4bed-9e51-36fee2fd0d39
-  resourceVersion: "2262"
+  resourceVersion: "2330"
   uid: 2c9b4b1e-44e2-49ed-bacc-a84b1c5117b3
 spec:
   automountServiceAccountToken: false
@@ -227,6 +227,7 @@ spec:
   dnsPolicy: ClusterFirstWithHostNet
   enableServiceLinks: true
   hostNetwork: true
+  nodeName: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
   nodeSelector:
     node-role.kubernetes.io/master: ""
   preemptionPolicy: PreemptLowerPriority
@@ -300,10 +301,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:42:20Z"
-    message: no nodes available to schedule pods
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:42:25Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
