@@ -1,0 +1,88 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    traffic-policy.network.alpha.openshift.io/local-with-fallback: ""
+  creationTimestamp: "2023-03-08T11:46:42Z"
+  labels:
+    app: router
+    ingresscontroller.operator.openshift.io/owning-ingresscontroller: default
+    router: router-default
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:traffic-policy.network.alpha.openshift.io/local-with-fallback: {}
+        f:labels:
+          .: {}
+          f:app: {}
+          f:ingresscontroller.operator.openshift.io/owning-ingresscontroller: {}
+          f:router: {}
+        f:ownerReferences:
+          .: {}
+          k:{"uid":"af68616a-a6b5-4a2b-b8e1-6b2e06b46aa8"}: {}
+      f:spec:
+        f:allocateLoadBalancerNodePorts: {}
+        f:externalTrafficPolicy: {}
+        f:internalTrafficPolicy: {}
+        f:ports:
+          .: {}
+          k:{"port":80,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+          k:{"port":443,"protocol":"TCP"}:
+            .: {}
+            f:name: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: ingress-operator
+    operation: Update
+    time: "2023-03-08T11:46:42Z"
+  name: router-default
+  namespace: openshift-ingress
+  ownerReferences:
+  - apiVersion: apps/v1
+    controller: true
+    kind: Deployment
+    name: router-default
+    uid: af68616a-a6b5-4a2b-b8e1-6b2e06b46aa8
+  resourceVersion: "9518"
+  uid: c5a8ca61-9e2b-4fe6-801d-4565fad2a0ba
+spec:
+  allocateLoadBalancerNodePorts: true
+  clusterIP: 172.30.19.129
+  clusterIPs:
+  - 172.30.19.129
+  externalTrafficPolicy: Local
+  healthCheckNodePort: 30520
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: http
+    nodePort: 32463
+    port: 80
+    protocol: TCP
+    targetPort: http
+  - name: https
+    nodePort: 31491
+    port: 443
+    protocol: TCP
+    targetPort: https
+  selector:
+    ingresscontroller.operator.openshift.io/deployment-ingresscontroller: default
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
