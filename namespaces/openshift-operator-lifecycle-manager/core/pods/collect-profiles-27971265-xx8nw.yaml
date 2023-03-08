@@ -120,7 +120,7 @@ metadata:
     kind: Job
     name: collect-profiles-27971265
     uid: 65ff9d67-a0a5-4697-bfab-05e93af03e80
-  resourceVersion: "4038"
+  resourceVersion: "20638"
   uid: e68ee4c5-5d3c-45bf-8ee2-657e7bfba163
 spec:
   containers:
@@ -160,6 +160,7 @@ spec:
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
+  nodeName: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
   preemptionPolicy: PreemptLowerPriority
   priority: 1000000000
   priorityClassName: openshift-user-critical
@@ -222,11 +223,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:00Z"
-    message: '0/3 nodes are available: 3 node(s) had untolerated taint {node-role.kubernetes.io/master:
-      }. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.'
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:52:57Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
