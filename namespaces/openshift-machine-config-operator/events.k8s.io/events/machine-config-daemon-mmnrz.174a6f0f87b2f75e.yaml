@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:23Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:45:23Z"
+  name: machine-config-daemon-mmnrz.174a6f0f87b2f75e
+  namespace: openshift-machine-config-operator
+  resourceVersion: "5266"
+  uid: 1c2ba40c-61b3-47a7-8f98-f08b522587b6
+note: 'MountVolume.SetUp failed for volume "proxy-tls" : secret "proxy-tls" not found'
+reason: FailedMount
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: machine-config-daemon-mmnrz
+  namespace: openshift-machine-config-operator
+  resourceVersion: "5205"
+  uid: 81f8c44e-a3c8-477e-8f8b-18154f09b939
+type: Warning
