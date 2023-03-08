@@ -317,40 +317,6 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:status:
-        f:conditions:
-          k:{"type":"ContainersReady"}:
-            .: {}
-            f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-            f:type: {}
-          k:{"type":"Initialized"}:
-            .: {}
-            f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
-            f:type: {}
-          k:{"type":"Ready"}:
-            .: {}
-            f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-            f:type: {}
-        f:containerStatuses: {}
-        f:hostIP: {}
-        f:startTime: {}
-    manager: kubelet
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:52:57Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:metadata:
         f:annotations:
           f:k8s.ovn.org/pod-networks: {}
@@ -368,6 +334,43 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:52:59Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.131.0.6"}:
+            .: {}
+            f:ip: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:55:08Z"
   name: router-default-5bff75df6-fj2m5
   namespace: openshift-ingress
   ownerReferences:
@@ -377,7 +380,7 @@ metadata:
     kind: ReplicaSet
     name: router-default-5bff75df6
     uid: ddc22581-33e1-42c9-bc1b-10a46e27cad5
-  resourceVersion: "20705"
+  resourceVersion: "22179"
   uid: 6ac5c0d5-bbe9-4dad-8858-fee4b80ba6ba
 spec:
   affinity:
@@ -622,33 +625,33 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:52:57Z"
-    message: 'containers with unready status: [router]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:53:11Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:52:57Z"
-    message: 'containers with unready status: [router]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:53:11Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:52:57Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:bfd14188641a2d34e5b2b2ed3336b3b440155533f3fd7c6de776300dc3ff9e3b
-    imageID: ""
+  - containerID: cri-o://3432b62f7cd3a1e9c95bbca4388c0d5ac8a8aa40fdcd87a8111104d6c694beae
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:bfd14188641a2d34e5b2b2ed3336b3b440155533f3fd7c6de776300dc3ff9e3b
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:bfd14188641a2d34e5b2b2ed3336b3b440155533f3fd7c6de776300dc3ff9e3b
     lastState: {}
     name: router
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
+      running:
+        startedAt: "2023-03-08T11:53:09Z"
   hostIP: 10.0.128.4
-  phase: Pending
+  phase: Running
+  podIP: 10.131.0.6
+  podIPs:
+  - ip: 10.131.0.6
   qosClass: Burstable
   startTime: "2023-03-08T11:52:57Z"
