@@ -286,7 +286,7 @@ metadata:
     time: "2023-03-08T11:54:18Z"
   name: gcp-pd-csi-driver-node
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "21075"
+  resourceVersion: "21093"
   uid: 7c9edea7-f2a7-4b77-8956-d8b37e9680e0
 spec:
   revisionHistoryLimit: 10
@@ -469,9 +469,9 @@ spec:
 status:
   currentNumberScheduled: 6
   desiredNumberScheduled: 6
-  numberAvailable: 5
+  numberAvailable: 4
   numberMisscheduled: 0
-  numberReady: 5
-  numberUnavailable: 1
+  numberReady: 4
+  numberUnavailable: 2
   observedGeneration: 2
   updatedNumberScheduled: 6
