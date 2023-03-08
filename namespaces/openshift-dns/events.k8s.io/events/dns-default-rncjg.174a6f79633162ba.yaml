@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:58Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:58Z"
+deprecatedSource:
+  component: multus
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:58Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: multus
+    operation: Update
+    time: "2023-03-08T11:52:58Z"
+  name: dns-default-rncjg.174a6f79633162ba
+  namespace: openshift-dns
+  resourceVersion: "20661"
+  uid: 9dc2dc39-fc5e-4813-94b8-3c71af2e6557
+note: Add eth0 [10.131.0.8/23] from ovn-kubernetes
+reason: AddedInterface
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: dns-default-rncjg
+  namespace: openshift-dns
+  resourceVersion: "20643"
+  uid: 1f504043-4271-4399-a2dd-a9056a528646
+type: Normal
