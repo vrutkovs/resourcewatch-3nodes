@@ -5,7 +5,7 @@ metadata:
     include.release.openshift.io/ibm-cloud-managed: "true"
     include.release.openshift.io/self-managed-high-availability: "true"
     include.release.openshift.io/single-node-developer: "true"
-    network.operator.openshift.io/last-seen-state: '{"DaemonsetStates":[{"ClusterName":"","Namespace":"openshift-multus","Name":"multus-additional-cni-plugins","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":3,"observedGeneration":1,"updatedNumberScheduled":6,"numberAvailable":3,"numberUnavailable":3},"LastChangeTime":"2023-03-08T11:52:14.039342546Z"},{"ClusterName":"","Namespace":"openshift-ovn-kubernetes","Name":"ovnkube-master","LastSeenStatus":{"currentNumberScheduled":3,"numberMisscheduled":0,"desiredNumberScheduled":3,"numberReady":1,"observedGeneration":1,"updatedNumberScheduled":3,"numberAvailable":1,"numberUnavailable":2},"LastChangeTime":"2023-03-08T11:55:41.511011586Z"},{"ClusterName":"","Namespace":"openshift-ovn-kubernetes","Name":"ovnkube-node","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":1,"observedGeneration":1,"updatedNumberScheduled":6,"numberAvailable":1,"numberUnavailable":5},"LastChangeTime":"2023-03-08T11:55:53.274353506Z"},{"ClusterName":"","Namespace":"openshift-multus","Name":"multus","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":0,"observedGeneration":1,"updatedNumberScheduled":6,"numberUnavailable":6},"LastChangeTime":"2023-03-08T11:55:41.525203332Z"}],"DeploymentStates":[],"StatefulsetStates":[]}'
+    network.operator.openshift.io/last-seen-state: '{"DaemonsetStates":[{"ClusterName":"","Namespace":"openshift-multus","Name":"multus-additional-cni-plugins","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":3,"observedGeneration":1,"updatedNumberScheduled":6,"numberAvailable":3,"numberUnavailable":3},"LastChangeTime":"2023-03-08T11:52:14.039342546Z"},{"ClusterName":"","Namespace":"openshift-ovn-kubernetes","Name":"ovnkube-master","LastSeenStatus":{"currentNumberScheduled":3,"numberMisscheduled":0,"desiredNumberScheduled":3,"numberReady":1,"observedGeneration":1,"updatedNumberScheduled":3,"numberAvailable":1,"numberUnavailable":2},"LastChangeTime":"2023-03-08T11:55:41.511011586Z"},{"ClusterName":"","Namespace":"openshift-ovn-kubernetes","Name":"ovnkube-node","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":1,"observedGeneration":1,"updatedNumberScheduled":6,"numberAvailable":1,"numberUnavailable":5},"LastChangeTime":"2023-03-08T11:55:53.274353506Z"},{"ClusterName":"","Namespace":"openshift-multus","Name":"multus","LastSeenStatus":{"currentNumberScheduled":6,"numberMisscheduled":0,"desiredNumberScheduled":6,"numberReady":1,"observedGeneration":1,"updatedNumberScheduled":6,"numberAvailable":1,"numberUnavailable":5},"LastChangeTime":"2023-03-08T11:55:53.560307851Z"}],"DeploymentStates":[],"StatefulsetStates":[]}'
     network.operator.openshift.io/relatedClusterObjects: ""
   creationTimestamp: "2023-03-08T11:40:40Z"
   generation: 1
@@ -63,7 +63,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "22969"
+  resourceVersion: "22983"
   uid: c452e0a4-6e32-4ed2-a5a9-8eaa2903cb12
 spec: {}
 status:
