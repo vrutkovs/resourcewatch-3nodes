@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:57Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:57Z"
+deprecatedSource:
+  component: openshift-cluster-etcd-operator-installer-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:57Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-etcd-operator
+    operation: Update
+    time: "2023-03-08T11:59:57Z"
+  name: etcd-operator.174a6fdb1b14216f
+  namespace: openshift-etcd-operator
+  resourceVersion: "27209"
+  uid: 10fc12ae-d18e-4911-9846-c5a87c379467
+note: Updating node "vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal" from
+  revision 7 to 8 because node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+  with revision 7 is the oldest
+reason: NodeTargetRevisionChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: etcd-operator
+  namespace: openshift-etcd-operator
+  uid: dd494886-7eb4-4625-9190-f606d6faab1b
+type: Normal
