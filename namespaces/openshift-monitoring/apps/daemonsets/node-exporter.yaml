@@ -259,7 +259,7 @@ metadata:
     time: "2023-03-08T11:59:05Z"
   name: node-exporter
   namespace: openshift-monitoring
-  resourceVersion: "26198"
+  resourceVersion: "26204"
   uid: 25b31347-4b74-454f-95ec-989fbe31a212
 spec:
   revisionHistoryLimit: 10
@@ -441,9 +441,9 @@ spec:
 status:
   currentNumberScheduled: 6
   desiredNumberScheduled: 6
-  numberAvailable: 2
+  numberAvailable: 3
   numberMisscheduled: 0
-  numberReady: 2
-  numberUnavailable: 4
+  numberReady: 3
+  numberUnavailable: 3
   observedGeneration: 1
   updatedNumberScheduled: 6
