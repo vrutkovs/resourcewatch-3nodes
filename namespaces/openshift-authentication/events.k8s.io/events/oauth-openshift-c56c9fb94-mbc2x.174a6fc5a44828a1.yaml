@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:25Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:25Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:58:25Z"
+  name: oauth-openshift-c56c9fb94-mbc2x.174a6fc5a44828a1
+  namespace: openshift-authentication
+  resourceVersion: "25074"
+  uid: 08f13475-1c64-420d-9528-9b1de887fc95
+note: Stopping container oauth-openshift
+reason: Killing
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{oauth-openshift}
+  kind: Pod
+  name: oauth-openshift-c56c9fb94-mbc2x
+  namespace: openshift-authentication
+  resourceVersion: "24473"
+  uid: 0dfc63a7-e197-410c-bca0-a40974770a79
+type: Normal
