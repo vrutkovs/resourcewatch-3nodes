@@ -156,7 +156,6 @@ metadata:
         f:annotations:
           f:deployment.kubernetes.io/revision: {}
       f:status:
-        f:availableReplicas: {}
         f:conditions:
           .: {}
           k:{"type":"Available"}:
@@ -176,13 +175,13 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
+        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:22Z"
+    time: "2023-03-08T11:54:20Z"
   name: machine-approver
   namespace: openshift-cluster-machine-approver
   ownerReferences:
@@ -190,7 +189,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "8446"
+  resourceVersion: "21575"
   uid: b4980ed5-1718-410e-aa36-e8d1c118fe38
 spec:
   progressDeadlineSeconds: 600
@@ -306,21 +305,20 @@ spec:
           optional: true
         name: config
 status:
-  availableReplicas: 1
   conditions:
-  - lastTransitionTime: "2023-03-08T11:46:22Z"
-    lastUpdateTime: "2023-03-08T11:46:22Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
   - lastTransitionTime: "2023-03-08T11:42:24Z"
     lastUpdateTime: "2023-03-08T11:46:22Z"
     message: ReplicaSet "machine-approver-9579cdcb5" has successfully progressed.
     reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
+  - lastTransitionTime: "2023-03-08T11:54:20Z"
+    lastUpdateTime: "2023-03-08T11:54:20Z"
+    message: Deployment does not have minimum availability.
+    reason: MinimumReplicasUnavailable
+    status: "False"
+    type: Available
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
+  unavailableReplicas: 1
   updatedReplicas: 1
