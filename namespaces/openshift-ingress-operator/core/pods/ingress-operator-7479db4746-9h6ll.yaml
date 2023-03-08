@@ -226,8 +226,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -240,8 +238,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -257,7 +253,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:29Z"
+    time: "2023-03-08T11:51:30Z"
   name: ingress-operator-7479db4746-9h6ll
   namespace: openshift-ingress-operator
   ownerReferences:
@@ -267,7 +263,7 @@ metadata:
     kind: ReplicaSet
     name: ingress-operator-7479db4746
     uid: 9dd9b2b4-7d05-48e0-acd1-e065ffee5640
-  resourceVersion: "17210"
+  resourceVersion: "17217"
   uid: 39841c1d-6137-4a34-b24a-0aab2a04577e
 spec:
   containers:
@@ -438,23 +434,19 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:51:16Z"
-    message: 'containers with unready status: [ingress-operator]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:51:30Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:51:16Z"
-    message: 'containers with unready status: [ingress-operator]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:51:30Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:44:54Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://2fbb8b34033b57aaf4523df963832ec2345e4b92d0af16f2d342911209fa2384
+  - containerID: cri-o://314a62f49cd0a3f0282e4dd6b05b7e3ac637d387aa363b4d525afecb445d1955
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b79ae5b794a95f814a3454c300ec678169285167f9f117d1465f7ad8f4cb4806
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b79ae5b794a95f814a3454c300ec678169285167f9f117d1465f7ad8f4cb4806
     lastState:
@@ -487,13 +479,12 @@ status:
         reason: Error
         startedAt: "2023-03-08T11:48:43Z"
     name: ingress-operator
-    ready: false
-    restartCount: 1
-    started: false
+    ready: true
+    restartCount: 2
+    started: true
     state:
-      waiting:
-        message: back-off 10s restarting failed container=ingress-operator pod=ingress-operator-7479db4746-9h6ll_openshift-ingress-operator(39841c1d-6137-4a34-b24a-0aab2a04577e)
-        reason: CrashLoopBackOff
+      running:
+        startedAt: "2023-03-08T11:51:29Z"
   - containerID: cri-o://0a0f3b7985f941a6c6c206f9308c82cce46bb3d4ec7b275bb5edfe8464ac11e0
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
