@@ -51,13 +51,13 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "4610"
+  resourceVersion: "4641"
   uid: b847a3b2-5e9a-4598-8142-d35d20a8b280
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:45:20Z"
-    message: All is well
+    message: 'NodeControllerDegraded: All master nodes are ready'
     reason: AsExpected
     status: "False"
     type: Degraded
