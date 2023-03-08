@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:30Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:30Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:11Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:30Z"
+    time: "2023-03-08T11:55:14Z"
   name: service-ca-6c96c7648f-wd9ht.174a6f11061e9d66
   namespace: openshift-service-ca
-  resourceVersion: "5905"
+  resourceVersion: "22435"
   uid: b76d1095-3c49-4d30-903b-ada0fd0cf4d8
 note: Started container service-ca-controller
 reason: Started
