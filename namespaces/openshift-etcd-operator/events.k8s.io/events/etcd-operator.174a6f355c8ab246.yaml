@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:48:06Z"
+deprecatedLastTimestamp: "2023-03-08T11:48:06Z"
+deprecatedSource:
+  component: openshift-cluster-etcd-operator-installer-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:48:06Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-etcd-operator
+    operation: Update
+    time: "2023-03-08T11:48:06Z"
+  name: etcd-operator.174a6f355c8ab246
+  namespace: openshift-etcd-operator
+  resourceVersion: "11633"
+  uid: 797096b6-5ff2-4015-8680-12bb980fbdfa
+note: Created Pod/installer-3-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+  -n openshift-etcd because it was missing
+reason: PodCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: etcd-operator
+  namespace: openshift-etcd-operator
+  uid: dd494886-7eb4-4625-9190-f606d6faab1b
+type: Normal
