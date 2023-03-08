@@ -18,13 +18,17 @@ metadata:
       f:regarding: {}
       f:reportingController: {}
       f:reportingInstance: {}
+      f:series:
+        .: {}
+        f:count: {}
+        f:lastObservedTime: {}
       f:type: {}
     manager: kube-scheduler
     operation: Update
-    time: "2023-03-08T11:55:36Z"
+    time: "2023-03-08T12:05:03Z"
   name: image-registry-7ccd686b74-sxb9k.174a6f9e5479f3cf
   namespace: openshift-image-registry
-  resourceVersion: "22826"
+  resourceVersion: "30317"
   uid: d641920c-e25d-42a4-897d-5f18d82852f5
 note: 'binding rejected: running Bind plugin "DefaultBinder": Operation cannot be
   fulfilled on pods/binding "image-registry-7ccd686b74-sxb9k": pod image-registry-7ccd686b74-sxb9k
@@ -39,4 +43,7 @@ regarding:
   uid: 19038b98-01df-4fa8-9fca-d45be8ec0573
 reportingController: default-scheduler
 reportingInstance: default-scheduler-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+series:
+  count: 3
+  lastObservedTime: "2023-03-08T11:55:46.948071Z"
 type: Warning
