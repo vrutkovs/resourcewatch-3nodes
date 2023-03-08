@@ -275,7 +275,6 @@ metadata:
       f:status:
         f:currentNumberScheduled: {}
         f:desiredNumberScheduled: {}
-        f:numberAvailable: {}
         f:numberReady: {}
         f:numberUnavailable: {}
         f:observedGeneration: {}
@@ -286,7 +285,7 @@ metadata:
     time: "2023-03-08T11:45:46Z"
   name: gcp-pd-csi-driver-node
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "6958"
+  resourceVersion: "6964"
   uid: 7c9edea7-f2a7-4b77-8956-d8b37e9680e0
 spec:
   revisionHistoryLimit: 10
@@ -469,9 +468,8 @@ spec:
 status:
   currentNumberScheduled: 3
   desiredNumberScheduled: 3
-  numberAvailable: 1
   numberMisscheduled: 0
-  numberReady: 1
-  numberUnavailable: 2
+  numberReady: 0
+  numberUnavailable: 3
   observedGeneration: 2
   updatedNumberScheduled: 2
