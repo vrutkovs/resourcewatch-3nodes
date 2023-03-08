@@ -26,8 +26,8 @@ metadata:
           "dns": {}
       }]
   creationTimestamp: "2023-03-08T11:51:42Z"
-  deletionGracePeriodSeconds: 30
-  deletionTimestamp: "2023-03-08T11:52:46Z"
+  deletionGracePeriodSeconds: 0
+  deletionTimestamp: "2023-03-08T11:52:16Z"
   labels:
     app: installer
   managedFields:
@@ -209,7 +209,7 @@ metadata:
     kind: ConfigMap
     name: revision-status-5
     uid: 711404af-ea6e-4118-b2a4-2bd9c5124533
-  resourceVersion: "19761"
+  resourceVersion: "19767"
   uid: f8960c1b-cc9c-470b-8190-7df149ec6c4f
 spec:
   automountServiceAccountToken: false
