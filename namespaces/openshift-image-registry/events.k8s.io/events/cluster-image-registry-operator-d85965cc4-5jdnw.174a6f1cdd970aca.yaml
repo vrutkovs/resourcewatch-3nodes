@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:20Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:11Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:46:24Z"
+    time: "2023-03-08T11:55:13Z"
   name: cluster-image-registry-operator-d85965cc4-5jdnw.174a6f1cdd970aca
   namespace: openshift-image-registry
-  resourceVersion: "8564"
+  resourceVersion: "22421"
   uid: f7621750-03e1-4bc8-8f6b-f2b59b471aae
 note: Created container cluster-image-registry-operator
 reason: Created
