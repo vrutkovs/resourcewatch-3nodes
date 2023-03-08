@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 4
+deprecatedCount: 5
 deprecatedFirstTimestamp: "2023-03-08T11:46:27Z"
 deprecatedLastTimestamp: "2023-03-08T11:47:07Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:47:07Z"
   name: kube-apiserver-operator.174a6f1e4f83db5d
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "10424"
+  resourceVersion: "10425"
   uid: 9d0260db-43e1-4da3-8fd0-da085dc24850
 note: 'configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found'
 reason: ObserveStorageFailed
