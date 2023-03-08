@@ -1,0 +1,44 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:27Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:27Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:27Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:58:27Z"
+  name: console-55865cb597-k5mkw.174a6fc60a3c9cbe
+  namespace: openshift-console
+  resourceVersion: "25138"
+  uid: 77c0fbcb-5b34-4f3a-8da2-5fda8f5b2b80
+note: "Readiness probe error: Get \"https://10.128.0.24:8443/health\": dial tcp 10.128.0.24:8443:
+  connect: connection refused\nbody: \n"
+reason: ProbeError
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{console}
+  kind: Pod
+  name: console-55865cb597-k5mkw
+  namespace: openshift-console
+  resourceVersion: "24915"
+  uid: 2b22d1d8-027a-4031-a658-e5c2643a3bf6
+type: Warning
