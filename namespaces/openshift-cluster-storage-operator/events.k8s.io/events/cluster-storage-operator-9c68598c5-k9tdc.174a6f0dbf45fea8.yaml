@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:45:15Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:33Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:24Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:46:34Z"
+    time: "2023-03-08T11:55:24Z"
   name: cluster-storage-operator-9c68598c5-k9tdc.174a6f0dbf45fea8
   namespace: openshift-cluster-storage-operator
-  resourceVersion: "9157"
+  resourceVersion: "22695"
   uid: e8df7496-90a2-462f-ba6a-aafde4c2e966
 note: Started container cluster-storage-operator
 reason: Started
