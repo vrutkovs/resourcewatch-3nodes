@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:43:22Z"
-deprecatedLastTimestamp: "2023-03-08T11:43:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:48:48Z"
 deprecatedSource:
   component: default-scheduler
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: kube-scheduler
     operation: Update
-    time: "2023-03-08T11:43:22Z"
+    time: "2023-03-08T11:48:48Z"
   name: network-check-source-7d8cf97c5c-5vvvq.174a6ef349486370
   namespace: openshift-network-diagnostics
-  resourceVersion: "3016"
+  resourceVersion: "12583"
   uid: 2b7cd201-2772-4d9a-b5b3-0823e423034f
 note: '0/3 nodes are available: 3 node(s) had untolerated taint {node-role.kubernetes.io/master:
   }. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.'
