@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:20Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:21Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:20Z"
+    time: "2023-03-08T11:45:21Z"
   name: csi-snapshot-webhook-5cf99b84bc-cwhp8.174a6f0ecd8d824e
   namespace: openshift-cluster-storage-operator
-  resourceVersion: "4701"
+  resourceVersion: "4839"
   uid: ad0e16f1-dc12-4c31-aee8-b7bc6a183f30
 note: 'MountVolume.SetUp failed for volume "certs" : secret "csi-snapshot-webhook-secret"
   not found'
