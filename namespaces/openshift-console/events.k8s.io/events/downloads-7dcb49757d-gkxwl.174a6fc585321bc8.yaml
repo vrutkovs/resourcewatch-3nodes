@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:25Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:25Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:58:25Z"
+  name: downloads-7dcb49757d-gkxwl.174a6fc585321bc8
+  namespace: openshift-console
+  resourceVersion: "25049"
+  uid: 9b59d4f7-8617-42c5-a3d5-cd7483581d4d
+note: Created container download-server
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{download-server}
+  kind: Pod
+  name: downloads-7dcb49757d-gkxwl
+  namespace: openshift-console
+  resourceVersion: "24710"
+  uid: 37cf97aa-33bb-4aee-a8e2-6491572d079c
+type: Normal
