@@ -395,7 +395,6 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
         f:replicas: {}
     manager: kube-controller-manager
@@ -411,7 +410,7 @@ metadata:
     kind: Deployment
     name: gcp-pd-csi-driver-controller
     uid: c7179cc3-3b74-4f83-b872-a437a7b51e6e
-  resourceVersion: "7439"
+  resourceVersion: "7444"
   uid: aa62a819-3836-4605-b527-b86540f7a1e2
 spec:
   replicas: 0
@@ -723,6 +722,5 @@ spec:
               expirationSeconds: 3600
               path: token
 status:
-  fullyLabeledReplicas: 1
   observedGeneration: 3
-  replicas: 1
+  replicas: 0
