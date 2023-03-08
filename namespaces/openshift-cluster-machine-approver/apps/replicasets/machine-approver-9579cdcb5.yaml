@@ -155,10 +155,8 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -173,7 +171,7 @@ metadata:
     kind: Deployment
     name: machine-approver
     uid: b4980ed5-1718-410e-aa36-e8d1c118fe38
-  resourceVersion: "8443"
+  resourceVersion: "21573"
   uid: a9bb65e4-02f9-41b8-a4b0-cc03cd106658
 spec:
   replicas: 1
@@ -287,8 +285,6 @@ spec:
           optional: true
         name: config
 status:
-  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
