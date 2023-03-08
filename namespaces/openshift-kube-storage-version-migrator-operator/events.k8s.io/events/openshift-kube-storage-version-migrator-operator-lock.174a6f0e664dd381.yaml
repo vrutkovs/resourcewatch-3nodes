@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:18Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:18Z"
+deprecatedSource:
+  component: openshift-kube-storage-version-migrator-operator
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:18Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: Go-http-client
+    operation: Update
+    time: "2023-03-08T11:45:18Z"
+  name: openshift-kube-storage-version-migrator-operator-lock.174a6f0e664dd381
+  namespace: openshift-kube-storage-version-migrator-operator
+  resourceVersion: "4316"
+  uid: 7de56ce8-ca9e-460d-be30-a8b932e5a452
+note: kube-storage-version-migrator-operator-75f889864f-t62bt_02c61c30-bfe1-4b27-b58c-b1605a81a07e
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: v1
+  kind: ConfigMap
+  name: openshift-kube-storage-version-migrator-operator-lock
+  namespace: openshift-kube-storage-version-migrator-operator
+  resourceVersion: "4315"
+  uid: ac812c1e-a2b0-44f6-87ee-75f79e1bcc0e
+type: Normal
