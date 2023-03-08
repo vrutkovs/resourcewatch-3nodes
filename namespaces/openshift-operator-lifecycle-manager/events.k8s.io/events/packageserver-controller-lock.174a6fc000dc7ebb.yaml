@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:01Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:01Z"
+deprecatedSource:
+  component: package-server-manager-6849fc44d5-fcmhm_3d4aba33-8707-445b-b00d-0b09fb3f5d06
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:01Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: psm
+    operation: Update
+    time: "2023-03-08T11:58:01Z"
+  name: packageserver-controller-lock.174a6fc000dc7ebb
+  namespace: openshift-operator-lifecycle-manager
+  resourceVersion: "24541"
+  uid: e6e88848-2eb6-4528-b19c-3f2ec58914a9
+note: package-server-manager-6849fc44d5-fcmhm_3d4aba33-8707-445b-b00d-0b09fb3f5d06
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: packageserver-controller-lock
+  namespace: openshift-operator-lifecycle-manager
+  resourceVersion: "24540"
+  uid: f203646d-5a28-41ce-9864-3182e4d932df
+type: Normal
