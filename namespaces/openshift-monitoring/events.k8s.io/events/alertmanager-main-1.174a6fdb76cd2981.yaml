@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:59Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:59Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:59Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:59:59Z"
+  name: alertmanager-main-1.174a6fdb76cd2981
+  namespace: openshift-monitoring
+  resourceVersion: "27269"
+  uid: 03ec6d77-a6b6-4744-b7c0-ca5d626e3784
+note: Stopping container config-reloader
+reason: Killing
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{config-reloader}
+  kind: Pod
+  name: alertmanager-main-1
+  namespace: openshift-monitoring
+  resourceVersion: "26164"
+  uid: d9d2da8d-4bce-42f6-a2ac-2bcca4c37511
+type: Normal
