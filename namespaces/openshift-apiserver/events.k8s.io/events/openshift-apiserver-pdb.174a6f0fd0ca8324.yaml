@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:24Z"
 deprecatedLastTimestamp: "2023-03-08T11:45:24Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:45:24Z"
   name: openshift-apiserver-pdb.174a6f0fd0ca8324
   namespace: openshift-apiserver
-  resourceVersion: "5385"
+  resourceVersion: "5392"
   uid: b0b9c295-b78e-4901-a387-e5145954cd81
 note: No matching pods found
 reason: NoPods
