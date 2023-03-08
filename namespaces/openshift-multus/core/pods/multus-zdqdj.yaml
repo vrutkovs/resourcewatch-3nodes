@@ -160,7 +160,7 @@ metadata:
     kind: DaemonSet
     name: multus
     uid: e45c8b1f-32f4-4ba0-87c5-7b1e0564bf30
-  resourceVersion: "19308"
+  resourceVersion: "19318"
   uid: 20ec9c9d-b9e5-4e99-b88e-b5d083be4ca8
 spec:
   affinity:
@@ -221,6 +221,7 @@ spec:
   hostNetwork: true
   imagePullSecrets:
   - name: multus-dockercfg-m6sg2
+  nodeName: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
   nodeSelector:
     kubernetes.io/os: linux
   preemptionPolicy: PreemptLowerPriority
@@ -279,5 +280,10 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:52:13Z"
+    status: "True"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
