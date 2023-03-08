@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:51:41Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:41Z"
+deprecatedSource:
+  component: openshift-cluster-etcd-operator-revisioncontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:41Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-etcd-operator
+    operation: Update
+    time: "2023-03-08T11:51:41Z"
+  name: etcd-operator.174a6f677e92cf35
+  namespace: openshift-etcd-operator
+  resourceVersion: "17653"
+  uid: 3aeec38c-de54-452c-973a-9e810107cccc
+note: Created ConfigMap/etcd-metrics-proxy-client-ca-6 -n openshift-etcd because it
+  was missing
+reason: ConfigMapCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: etcd-operator
+  namespace: openshift-etcd-operator
+  uid: dd494886-7eb4-4625-9190-f606d6faab1b
+type: Normal
