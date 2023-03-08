@@ -1,0 +1,43 @@
+action: Scheduling
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:14.608225Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:14Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:14Z"
+  name: route-controller-manager-84f4cd4b6b-tcc89.174a6f6f37449ff2
+  namespace: openshift-route-controller-manager
+  resourceVersion: "19587"
+  uid: c13f5d28-6b7b-43ee-a27d-669f45080cef
+note: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
+  3 node(s) didn''t match pod anti-affinity rules, 3 node(s) had untolerated taint
+  {node.kubernetes.io/not-ready: }. preemption: 0/6 nodes are available: 3 Preemption
+  is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity rules.'
+reason: FailedScheduling
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: route-controller-manager-84f4cd4b6b-tcc89
+  namespace: openshift-route-controller-manager
+  resourceVersion: "19582"
+  uid: 242a38a8-97b0-4252-8aa4-53e5eefc5976
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Warning
