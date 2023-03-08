@@ -17,23 +17,6 @@ metadata:
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:status:
-        f:availableReplicas: {}
-        f:collisionCount: {}
-        f:currentReplicas: {}
-        f:currentRevision: {}
-        f:observedGeneration: {}
-        f:readyReplicas: {}
-        f:replicas: {}
-        f:updateRevision: {}
-        f:updatedReplicas: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:59:39Z"
-  - apiVersion: apps/v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:metadata:
         f:annotations:
           .: {}
@@ -618,6 +601,22 @@ metadata:
     manager: PrometheusOperator
     operation: Update
     time: "2023-03-08T12:00:03Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:availableReplicas: {}
+        f:collisionCount: {}
+        f:currentReplicas: {}
+        f:currentRevision: {}
+        f:observedGeneration: {}
+        f:readyReplicas: {}
+        f:replicas: {}
+        f:updateRevision: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T12:00:03Z"
   name: prometheus-k8s
   namespace: openshift-monitoring
   ownerReferences:
@@ -627,7 +626,7 @@ metadata:
     kind: Prometheus
     name: k8s
     uid: 6b21d3da-cfd2-48a5-a2dd-ff3d32563453
-  resourceVersion: "27339"
+  resourceVersion: "27352"
   uid: 64bf94c0-7125-4d69-824b-802c773560a3
 spec:
   podManagementPolicy: Parallel
@@ -1098,10 +1097,9 @@ spec:
 status:
   availableReplicas: 2
   collisionCount: 0
-  currentReplicas: 2
+  currentReplicas: 1
   currentRevision: prometheus-k8s-fb47d6df6
-  observedGeneration: 1
+  observedGeneration: 2
   readyReplicas: 2
   replicas: 2
-  updateRevision: prometheus-k8s-fb47d6df6
-  updatedReplicas: 2
+  updateRevision: prometheus-k8s-59f5f999fd
