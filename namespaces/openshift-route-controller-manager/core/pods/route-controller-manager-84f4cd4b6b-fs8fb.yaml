@@ -175,7 +175,7 @@ metadata:
     kind: ReplicaSet
     name: route-controller-manager-84f4cd4b6b
     uid: 13a315ce-c5c6-4853-a515-8577587649a7
-  resourceVersion: "19188"
+  resourceVersion: "19303"
   uid: d9b3a96b-5775-44e2-9235-e4e48ecef37b
 spec:
   affinity:
@@ -245,6 +245,7 @@ spec:
   enableServiceLinks: true
   imagePullSecrets:
   - name: route-controller-manager-sa-dockercfg-mx9r8
+  nodeName: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
   nodeSelector:
     node-role.kubernetes.io/master: ""
   preemptionPolicy: PreemptLowerPriority
@@ -316,14 +317,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:52:09Z"
-    message: '0/4 nodes are available: 1 node(s) didn''t match Pod''s node affinity/selector,
-      1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 3 node(s)
-      didn''t match pod anti-affinity rules. preemption: 0/4 nodes are available:
-      1 Preemption is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity
-      rules.'
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:52:13Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
