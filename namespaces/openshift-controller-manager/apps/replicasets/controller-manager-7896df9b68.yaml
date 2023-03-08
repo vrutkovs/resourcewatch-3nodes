@@ -201,7 +201,7 @@ metadata:
     kind: Deployment
     name: controller-manager
     uid: d4b28c78-d70c-4e89-8abd-e4dc311b8c4b
-  resourceVersion: "19284"
+  resourceVersion: "19291"
   uid: 212462f6-1628-43cf-83d4-4eed2049e150
 spec:
   replicas: 2
@@ -336,6 +336,6 @@ spec:
 status:
   availableReplicas: 1
   fullyLabeledReplicas: 1
-  observedGeneration: 2
+  observedGeneration: 3
   readyReplicas: 1
   replicas: 1
