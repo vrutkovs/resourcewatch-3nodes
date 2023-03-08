@@ -439,7 +439,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:03Z"
+    time: "2023-03-08T11:55:12Z"
   name: gcp-pd-csi-driver-controller-698446758d-grtxq
   namespace: openshift-cluster-csi-drivers
   ownerReferences:
@@ -449,7 +449,7 @@ metadata:
     kind: ReplicaSet
     name: gcp-pd-csi-driver-controller-698446758d
     uid: e75b4e83-6635-4ade-8599-427215f5eca9
-  resourceVersion: "7790"
+  resourceVersion: "22322"
   uid: f745d93d-5348-4337-bf35-b50eefbacda9
 spec:
   affinity:
@@ -831,11 +831,11 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:03Z"
+    lastTransitionTime: "2023-03-08T11:55:11Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:03Z"
+    lastTransitionTime: "2023-03-08T11:55:11Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
@@ -898,28 +898,40 @@ status:
     state:
       running:
         startedAt: "2023-03-08T11:45:59Z"
-  - containerID: cri-o://d54981d800134be47445d136f8e18da77176f9927a18b835afc3620757358242
+  - containerID: cri-o://4039c69b776e91afed277a63b76a04100da3b14ce7022e56a4899e2c53855614
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:756f467707ce5a7b61755327167fea9dd9360b728b1b48508e012bf5102ca174
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:756f467707ce5a7b61755327167fea9dd9360b728b1b48508e012bf5102ca174
-    lastState: {}
+    lastState:
+      terminated:
+        containerID: cri-o://d54981d800134be47445d136f8e18da77176f9927a18b835afc3620757358242
+        exitCode: 255
+        finishedAt: "2023-03-08T11:55:10Z"
+        reason: Error
+        startedAt: "2023-03-08T11:46:01Z"
     name: csi-resizer
     ready: true
-    restartCount: 0
+    restartCount: 1
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:01Z"
-  - containerID: cri-o://f0af3a43eed672ea266d8f7f84c432c959eb456bc46270f5c33ca13001916762
+        startedAt: "2023-03-08T11:55:11Z"
+  - containerID: cri-o://64d876d3942ebef193cb95e48fadb707ef19cd0c46bf30f4229160696486f425
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a44a2abb11a91246bb4c9dff91b97303523fa7b2a6a92c570dc13e6b41537b0e
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a44a2abb11a91246bb4c9dff91b97303523fa7b2a6a92c570dc13e6b41537b0e
-    lastState: {}
+    lastState:
+      terminated:
+        containerID: cri-o://f0af3a43eed672ea266d8f7f84c432c959eb456bc46270f5c33ca13001916762
+        exitCode: 255
+        finishedAt: "2023-03-08T11:55:10Z"
+        reason: Error
+        startedAt: "2023-03-08T11:46:01Z"
     name: csi-snapshotter
     ready: true
-    restartCount: 0
+    restartCount: 1
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:01Z"
+        startedAt: "2023-03-08T11:55:11Z"
   - containerID: cri-o://ecfbe608ad86a2aba29c62359697dcf4c3f699465024fd03f5e14129f13b9874
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
