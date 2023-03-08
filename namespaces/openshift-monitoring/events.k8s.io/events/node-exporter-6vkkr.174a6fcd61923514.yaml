@@ -1,0 +1,40 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:58:59.044876Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:59Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:58:59Z"
+  name: node-exporter-6vkkr.174a6fcd61923514
+  namespace: openshift-monitoring
+  resourceVersion: "25830"
+  uid: e13dfdb4-0680-4f8b-a0c6-641ff5f254e6
+note: Successfully assigned openshift-monitoring/node-exporter-6vkkr to vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: node-exporter-6vkkr
+  namespace: openshift-monitoring
+  resourceVersion: "25821"
+  uid: 7b19904c-d54e-400a-8567-4c9c178cc741
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+type: Normal
