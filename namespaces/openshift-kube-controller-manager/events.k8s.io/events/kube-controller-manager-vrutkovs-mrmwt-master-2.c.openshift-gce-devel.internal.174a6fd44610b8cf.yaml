@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:28Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:28Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:59:28Z"
+  name: kube-controller-manager-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal.174a6fd44610b8cf
+  namespace: openshift-kube-controller-manager
+  resourceVersion: "26763"
+  uid: f6defb5b-65f9-41b9-97c4-b642521316c6
+note: Started container kube-controller-manager-recovery-controller
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{kube-controller-manager-recovery-controller}
+  kind: Pod
+  name: kube-controller-manager-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+  namespace: openshift-kube-controller-manager
+  uid: 2a9fda0ac4264c1fecfb02e44b75827c
+type: Normal
