@@ -1,0 +1,77 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:57:57Z"
+deprecatedLastTimestamp: "2023-03-08T11:57:57Z"
+deprecatedSource:
+  component: oauth-apiserver-status-controller-statussyncer_authentication
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:57:57Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: authentication-operator
+    operation: Update
+    time: "2023-03-08T11:57:57Z"
+  name: authentication-operator.174a6fbf2a17661e
+  namespace: openshift-authentication-operator
+  resourceVersion: "24463"
+  uid: e1fec9f7-005c-4b31-b9dc-84cdaa459208
+note: 'Status for clusteroperator/authentication changed: Degraded message changed
+  from "APIServerDeploymentDegraded: 1 of 3 requested instances are unavailable for
+  apiserver.openshift-oauth-apiserver ()\nIngressStateEndpointsDegraded: No subsets
+  found for the endpoints of oauth-server\nOAuthServerDeploymentDegraded: waiting
+  for the oauth-openshift route to contain an admitted ingress: no admitted ingress
+  for route oauth-openshift in namespace openshift-authentication\nOAuthServerDeploymentDegraded:
+  \nOAuthServerRouteEndpointAccessibleControllerDegraded: Get \"https://oauth-openshift.apps.vrutkovs.origin-gce.dev.openshift.com/healthz\":
+  EOF\nOAuthServerServiceEndpointAccessibleControllerDegraded: Get \"https://172.30.73.115:443/healthz\":
+  dial tcp 172.30.73.115:443: connect: connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerDegraded:
+  oauth service endpoints are not ready\nWellKnownReadyControllerDegraded: failed
+  to get oauth metadata from openshift-config-managed/oauth-openshift ConfigMap: configmap
+  \"oauth-openshift\" not found (check authentication operator, it is supposed to
+  create this)" to "APIServerDeploymentDegraded: 1 of 3 requested instances are unavailable
+  for apiserver.openshift-oauth-apiserver ()\nIngressStateEndpointsDegraded: No subsets
+  found for the endpoints of oauth-server\nOAuthServerRouteEndpointAccessibleControllerDegraded:
+  Get \"https://oauth-openshift.apps.vrutkovs.origin-gce.dev.openshift.com/healthz\":
+  EOF\nOAuthServerServiceEndpointAccessibleControllerDegraded: Get \"https://172.30.73.115:443/healthz\":
+  dial tcp 172.30.73.115:443: connect: connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerDegraded:
+  oauth service endpoints are not ready\nWellKnownReadyControllerDegraded: failed
+  to get oauth metadata from openshift-config-managed/oauth-openshift ConfigMap: configmap
+  \"oauth-openshift\" not found (check authentication operator, it is supposed to
+  create this)",Progressing changed from False to True ("OAuthServerDeploymentProgressing:
+  deployment/oauth-openshift.openshift-authentication: observed generation is 0, desired
+  generation is 1."),Available message changed from "OAuthServerRouteEndpointAccessibleControllerAvailable:
+  Get \"https://oauth-openshift.apps.vrutkovs.origin-gce.dev.openshift.com/healthz\":
+  EOF\nOAuthServerServiceEndpointAccessibleControllerAvailable: Get \"https://172.30.73.115:443/healthz\":
+  dial tcp 172.30.73.115:443: connect: connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerAvailable:
+  endpoints \"oauth-openshift\" not found\nWellKnownAvailable: The well-known endpoint
+  is not yet available: failed to get oauth metadata from openshift-config-managed/oauth-openshift
+  ConfigMap: configmap \"oauth-openshift\" not found (check authentication operator,
+  it is supposed to create this)" to "OAuthServerDeploymentAvailable: no oauth-openshift.openshift-authentication
+  pods available on any node.\nOAuthServerRouteEndpointAccessibleControllerAvailable:
+  Get \"https://oauth-openshift.apps.vrutkovs.origin-gce.dev.openshift.com/healthz\":
+  EOF\nOAuthServerServiceEndpointAccessibleControllerAvailable: Get \"https://172.30.73.115:443/healthz\":
+  dial tcp 172.30.73.115:443: connect: connection refused\nOAuthServerServiceEndpointsEndpointAccessibleControllerAvailable:
+  endpoints \"oauth-openshift\" not found\nWellKnownAvailable: The well-known endpoint
+  is not yet available: failed to get oauth metadata from openshift-config-managed/oauth-openshift
+  ConfigMap: configmap \"oauth-openshift\" not found (check authentication operator,
+  it is supposed to create this)"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: authentication-operator
+  namespace: openshift-authentication-operator
+  uid: 0efac7b0-177c-4814-9d2b-04ba66ce84f1
+type: Normal
