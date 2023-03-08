@@ -200,8 +200,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -214,8 +212,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -231,7 +227,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:48Z"
+    time: "2023-03-08T11:46:49Z"
   name: openshift-kube-scheduler-operator-9b7bfbd84-kvltf
   namespace: openshift-kube-scheduler-operator
   ownerReferences:
@@ -241,7 +237,7 @@ metadata:
     kind: ReplicaSet
     name: openshift-kube-scheduler-operator-9b7bfbd84
     uid: a3e41a29-cebc-4374-b209-bd10ec69c140
-  resourceVersion: "9904"
+  resourceVersion: "9970"
   uid: fbaea5b0-5daf-455c-a4ae-e3fe55ddcff5
 spec:
   automountServiceAccountToken: false
@@ -356,37 +352,35 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:48Z"
-    message: 'containers with unready status: [kube-scheduler-operator-container]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:46:49Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:48Z"
-    message: 'containers with unready status: [kube-scheduler-operator-container]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:46:49Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:44:53Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://f3f6131b74584e2b16ab340d170daf9417e35cd43d4605fa75c5808af1cf42f2
+  - containerID: cri-o://37d9efb8c2870d0c50e3f7f7d0f1b06038146f656aef375b2a048b6eb22a2a70
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
-    lastState: {}
-    name: kube-scheduler-operator-container
-    ready: false
-    restartCount: 0
-    started: false
-    state:
+    lastState:
       terminated:
         containerID: cri-o://f3f6131b74584e2b16ab340d170daf9417e35cd43d4605fa75c5808af1cf42f2
         exitCode: 0
         finishedAt: "2023-03-08T11:46:48Z"
         reason: Completed
         startedAt: "2023-03-08T11:45:16Z"
+    name: kube-scheduler-operator-container
+    ready: true
+    restartCount: 1
+    started: true
+    state:
+      running:
+        startedAt: "2023-03-08T11:46:48Z"
   hostIP: 10.0.0.3
   phase: Running
   podIP: 10.130.0.13
