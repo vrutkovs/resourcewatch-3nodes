@@ -44,23 +44,22 @@ metadata:
     manager: cluster-kube-controller-manager-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:59:40Z"
+    time: "2023-03-08T11:59:49Z"
   name: kube-controller-manager
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "26983"
+  resourceVersion: "27116"
   uid: b847a3b2-5e9a-4598-8142-d35d20a8b280
 spec: {}
 status:
   conditions:
-  - lastTransitionTime: "2023-03-08T11:47:21Z"
-    message: 'GarbageCollectorDegraded: error fetching rules: Get "https://thanos-querier.openshift-monitoring.svc:9091/api/v1/rules":
-      dial tcp 172.30.17.48:9091: connect: connection refused'
-    reason: GarbageCollector_Error
-    status: "True"
+  - lastTransitionTime: "2023-03-08T11:59:49Z"
+    message: 'NodeControllerDegraded: All master nodes are ready'
+    reason: AsExpected
+    status: "False"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:45:25Z"
     message: 'NodeInstallerProgressing: 2 nodes are at revision 6; 1 nodes are at
