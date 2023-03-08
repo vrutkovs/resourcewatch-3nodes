@@ -1,0 +1,41 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:06.453253Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:06Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:06Z"
+  name: multus-additional-cni-plugins-5g9sw.174a6f6d5131ad48
+  namespace: openshift-multus
+  resourceVersion: "18999"
+  uid: 5a8f608d-cbdf-4105-b854-b343dbf75ce7
+note: Successfully assigned openshift-multus/multus-additional-cni-plugins-5g9sw to
+  vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: multus-additional-cni-plugins-5g9sw
+  namespace: openshift-multus
+  resourceVersion: "18992"
+  uid: 4e9e49cc-5625-442a-ac2e-cb130b0c9424
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
