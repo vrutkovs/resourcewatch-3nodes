@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:51Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:51Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:23Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:46:51Z"
+    time: "2023-03-08T11:47:23Z"
   name: multus-admission-controller-8fc94998c-zzdls.174a6f24047f8d9d
   namespace: openshift-multus
-  resourceVersion: "10043"
+  resourceVersion: "10824"
   uid: 46dcf620-c140-4faf-b237-124f3ab04950
 note: Stopping container multus-admission-controller
 reason: Killing
