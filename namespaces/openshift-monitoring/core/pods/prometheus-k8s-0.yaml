@@ -625,6 +625,17 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T12:00:24Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           k:{"type":"ContainersReady"}:
@@ -652,6 +663,7 @@ metadata:
         f:containerStatuses: {}
         f:hostIP: {}
         f:initContainerStatuses: {}
+        f:phase: {}
         f:podIP: {}
         f:podIPs:
           .: {}
@@ -662,18 +674,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T12:00:24Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.v1.cni.cncf.io/network-status: {}
-          f:k8s.v1.cni.cncf.io/networks-status: {}
-    manager: multus
-    operation: Update
-    subresource: status
-    time: "2023-03-08T12:00:24Z"
+    time: "2023-03-08T12:00:26Z"
   name: prometheus-k8s-0
   namespace: openshift-monitoring
   ownerReferences:
@@ -683,7 +684,7 @@ metadata:
     kind: StatefulSet
     name: prometheus-k8s
     uid: 64bf94c0-7125-4d69-824b-802c773560a3
-  resourceVersion: "27796"
+  resourceVersion: "27838"
   uid: 51317488-fd52-4202-8369-c40df406a44b
 spec:
   affinity:
@@ -1231,15 +1232,13 @@ status:
     type: Initialized
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T12:00:23Z"
-    message: 'containers with unready status: [prometheus config-reloader thanos-sidecar
-      prometheus-proxy kube-rbac-proxy kube-rbac-proxy-thanos]'
+    message: 'containers with unready status: [prometheus]'
     reason: ContainersNotReady
     status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T12:00:23Z"
-    message: 'containers with unready status: [prometheus config-reloader thanos-sidecar
-      prometheus-proxy kube-rbac-proxy kube-rbac-proxy-thanos]'
+    message: 'containers with unready status: [prometheus]'
     reason: ContainersNotReady
     status: "False"
     type: ContainersReady
@@ -1248,66 +1247,72 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f7088516f2eeba84a8fdbed70658a4b5958247051bc9cb489667864ed74fc08
-    imageID: ""
+  - containerID: cri-o://c9851142a45c426949e25dd3f0058ca1f51acba736967fd6da9a631da30229bf
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f7088516f2eeba84a8fdbed70658a4b5958247051bc9cb489667864ed74fc08
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:0f7088516f2eeba84a8fdbed70658a4b5958247051bc9cb489667864ed74fc08
     lastState: {}
     name: config-reloader
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T12:00:24Z"
+  - containerID: cri-o://d6be2aacf85db3f99b838c11e3caecd726fcc7426c3ac2a50ee812ceabdf6061
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T12:00:25Z"
+  - containerID: cri-o://2a85f3a1b274b435be3f03ed241b1bc175c3a252cb8aa71a132ebfd42f8c79d7
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: kube-rbac-proxy-thanos
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:91e7d68b28aa00e209065604b2b9ac1400671d9102581e8b49b37726acd7b6e4
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T12:00:25Z"
+  - containerID: cri-o://23491cc579feefd30cf6aba73a49ec11bfd698c21289643a5cf726bdf6c354d6
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:91e7d68b28aa00e209065604b2b9ac1400671d9102581e8b49b37726acd7b6e4
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:91e7d68b28aa00e209065604b2b9ac1400671d9102581e8b49b37726acd7b6e4
     lastState: {}
     name: prometheus
     ready: false
     restartCount: 0
     started: false
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T12:00:24Z"
+  - containerID: cri-o://358f2b98b7e21f6a2df7f81fcb81197b89db87df9518cc4fdfd9e2effa32a321
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b6536bfcfaf30a6425d589facd672bae3245f933b2a7399bda3f12e393bd671b
     lastState: {}
     name: prometheus-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a5ebc0877eeb833483b35b36de0bccc2256a7b6eedc06c1e57f7b0ccd8c47bf7
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T12:00:25Z"
+  - containerID: cri-o://85f9e7a9cb119392a5d227bb3f9a05f07e3b9f25d7737e34f6a7d52501250f89
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a5ebc0877eeb833483b35b36de0bccc2256a7b6eedc06c1e57f7b0ccd8c47bf7
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a5ebc0877eeb833483b35b36de0bccc2256a7b6eedc06c1e57f7b0ccd8c47bf7
     lastState: {}
     name: thanos-sidecar
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
+      running:
+        startedAt: "2023-03-08T12:00:25Z"
   hostIP: 10.0.128.3
   initContainerStatuses:
   - containerID: cri-o://f3231b893f6131ffa8b657ac11dae9af479b8b2b39dfe8f0b599a2f391c23d8a
@@ -1324,7 +1329,7 @@ status:
         finishedAt: "2023-03-08T12:00:24Z"
         reason: Completed
         startedAt: "2023-03-08T12:00:24Z"
-  phase: Pending
+  phase: Running
   podIP: 10.129.2.17
   podIPs:
   - ip: 10.129.2.17
