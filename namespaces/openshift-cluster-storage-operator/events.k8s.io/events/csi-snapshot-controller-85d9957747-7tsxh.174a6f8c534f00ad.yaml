@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:54:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:19Z"
+deprecatedSource:
+  component: node-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:54:19Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:54:19Z"
+  name: csi-snapshot-controller-85d9957747-7tsxh.174a6f8c534f00ad
+  namespace: openshift-cluster-storage-operator
+  resourceVersion: "21383"
+  uid: fc71d5ea-1e09-4a9f-9fb5-6607a245a27d
+note: Node is not ready
+reason: NodeNotReady
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: csi-snapshot-controller-85d9957747-7tsxh
+  namespace: openshift-cluster-storage-operator
+  resourceVersion: "5532"
+  uid: a217a9ef-5871-4d37-9e39-a57fb9bdd49e
+type: Warning
