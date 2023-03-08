@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:49:29Z"
+deprecatedLastTimestamp: "2023-03-08T11:49:29Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:49:29Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:49:29Z"
+  name: route-controller-manager-77679cb69b-nttl6.174a6f48aa1ddea5
+  namespace: openshift-route-controller-manager
+  resourceVersion: "13249"
+  uid: 64f30cfe-fb89-406b-9a76-1e252f8e98fa
+note: 'binding rejected: running Bind plugin "DefaultBinder": Operation cannot be
+  fulfilled on pods/binding "route-controller-manager-77679cb69b-nttl6": pod route-controller-manager-77679cb69b-nttl6
+  is already assigned to node "vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal"'
+reason: FailedScheduling
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: route-controller-manager-77679cb69b-nttl6
+  namespace: openshift-route-controller-manager
+  resourceVersion: "12877"
+  uid: d9568bc7-6ba5-4f0f-8fd5-45ca806dbbff
+type: Warning
