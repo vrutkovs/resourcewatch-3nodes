@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:04:15Z"
+deprecatedLastTimestamp: "2023-03-08T12:04:15Z"
+deprecatedSource:
+  component: openshift-cluster-etcd-operator-defrag-controller-defragcontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:04:15Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-etcd-operator
+    operation: Update
+    time: "2023-03-08T12:04:15Z"
+  name: etcd-operator.174a7016f33e9d81
+  namespace: openshift-etcd-operator
+  resourceVersion: "29965"
+  uid: ce2e56da-c6e1-46d3-9749-ba4e40359482
+note: 'Attempting defrag on member: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal,
+  memberID: 481f39f2e248accf, dbSize: 130232320, dbInUse: 66056192, leader ID: 5196936210350124239'
+reason: DefragControllerDefragmentAttempt
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: etcd-operator
+  namespace: openshift-etcd-operator
+  uid: dd494886-7eb4-4625-9190-f606d6faab1b
+type: Normal
