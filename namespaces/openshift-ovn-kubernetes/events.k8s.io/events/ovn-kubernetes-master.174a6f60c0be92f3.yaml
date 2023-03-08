@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:51:12Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:12Z"
+deprecatedSource:
+  component: controlplane
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:12Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:51:12Z"
+  name: ovn-kubernetes-master.174a6f60c0be92f3
+  namespace: openshift-ovn-kubernetes
+  resourceVersion: "16948"
+  uid: 77ac2121-e7ce-4e4e-a096-0cd0badccecb
+note: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal became leader
+reason: LeaderElection
+regarding:
+  apiVersion: v1
+  kind: ConfigMap
+  name: ovn-kubernetes-master
+  namespace: openshift-ovn-kubernetes
+  resourceVersion: "16946"
+  uid: da0d4258-9b9b-4f30-aaec-110afe651917
+type: Normal
