@@ -228,6 +228,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"PodScheduled"}:
@@ -258,7 +260,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:49:56Z"
+    time: "2023-03-08T11:51:32Z"
   name: openshift-kube-scheduler-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
   namespace: openshift-kube-scheduler
   ownerReferences:
@@ -267,7 +269,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     uid: 3becf630-5199-4621-aa21-11f188b903aa
-  resourceVersion: "14878"
+  resourceVersion: "17238"
   uid: ab849afd-bd75-4d64-8ea8-2825fe8b4ca4
 spec:
   containers:
@@ -432,18 +434,22 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:49:55Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:50:58Z"
+    message: 'containers with incomplete status: [wait-for-host-port]'
+    reason: ContainersNotInitialized
+    status: "False"
     type: Initialized
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:49:55Z"
-    message: 'containers with unready status: [kube-scheduler]'
+    message: 'containers with unready status: [kube-scheduler kube-scheduler-cert-syncer
+      kube-scheduler-recovery-controller]'
     reason: ContainersNotReady
     status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:49:55Z"
-    message: 'containers with unready status: [kube-scheduler]'
+    message: 'containers with unready status: [kube-scheduler kube-scheduler-cert-syncer
+      kube-scheduler-recovery-controller]'
     reason: ContainersNotReady
     status: "False"
     type: ContainersReady
@@ -452,56 +458,48 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://5351f3e7807a478793fa68695dbf9776a7c939aa698b4f94ceedb09da0b7b04f
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+    imageID: ""
     lastState: {}
     name: kube-scheduler
     ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:49:55Z"
-  - containerID: cri-o://688d3b6bddf323a0f781d2f09bb3d2d9b0df822d5fc1a71bcda5dace0659841e
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
+      waiting:
+        reason: PodInitializing
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
+    imageID: ""
     lastState: {}
     name: kube-scheduler-cert-syncer
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:49:56Z"
-  - containerID: cri-o://5f6960725749f5f703b7e93cc4287d09455152abd414b9f8a2bf62acb372facf
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
+      waiting:
+        reason: PodInitializing
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:10cd65f1fa350f59f47e0516be74acd81a6f9b1afe596f7b46af67e1f5688322
+    imageID: ""
     lastState: {}
     name: kube-scheduler-recovery-controller
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
-        startedAt: "2023-03-08T11:49:56Z"
+      waiting:
+        reason: PodInitializing
   hostIP: 10.0.0.5
   initContainerStatuses:
-  - containerID: cri-o://e4dcda6788fc44c8bb03d67b4db3e5fe5953a288b14bb251254f78b42ec582af
-    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
-    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:101b679b179be4e937b7770a01d3ca316586b97f61cc4e02f2a0d502cc60c3f0
+    imageID: ""
     lastState: {}
     name: wait-for-host-port
-    ready: true
+    ready: false
     restartCount: 0
     state:
-      terminated:
-        containerID: cri-o://e4dcda6788fc44c8bb03d67b4db3e5fe5953a288b14bb251254f78b42ec582af
-        exitCode: 0
-        finishedAt: "2023-03-08T11:49:55Z"
-        reason: Completed
-        startedAt: "2023-03-08T11:49:55Z"
-  phase: Running
+      waiting:
+        reason: PodInitializing
+  phase: Pending
   podIP: 10.0.0.5
   podIPs:
   - ip: 10.0.0.5
