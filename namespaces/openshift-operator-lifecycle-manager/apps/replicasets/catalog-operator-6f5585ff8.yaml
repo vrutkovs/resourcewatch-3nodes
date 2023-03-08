@@ -149,13 +149,15 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:01Z"
+    time: "2023-03-08T11:56:01Z"
   name: catalog-operator-6f5585ff8
   namespace: openshift-operator-lifecycle-manager
   ownerReferences:
@@ -165,7 +167,7 @@ metadata:
     kind: Deployment
     name: catalog-operator
     uid: bd26a011-de49-4fb2-ae75-62841bd1c4e2
-  resourceVersion: "21631"
+  resourceVersion: "23350"
   uid: a706dd4d-68b7-467a-b6a2-c08dc2a848c9
 spec:
   replicas: 1
@@ -283,6 +285,8 @@ spec:
           defaultMode: 420
           secretName: pprof-cert
 status:
+  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
+  readyReplicas: 1
   replicas: 1
