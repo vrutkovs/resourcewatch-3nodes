@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 3
+deprecatedCount: 4
 deprecatedFirstTimestamp: "2023-03-08T11:53:38Z"
-deprecatedLastTimestamp: "2023-03-08T11:55:10Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:26Z"
 deprecatedSource:
   component: service-controller
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: kube-controller-manager
     operation: Update
-    time: "2023-03-08T11:55:10Z"
+    time: "2023-03-08T11:55:26Z"
   name: router-default.174a6f82c8cae7c3
   namespace: openshift-ingress
-  resourceVersion: "22267"
+  resourceVersion: "22730"
   uid: 88edf0e8-28b9-4e12-a49a-394057324778
 note: Updated load balancer with new hosts
 reason: UpdatedLoadBalancer
