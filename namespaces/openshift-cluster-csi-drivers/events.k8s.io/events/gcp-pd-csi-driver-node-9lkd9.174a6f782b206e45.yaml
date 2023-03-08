@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:53Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:53Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:53Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:52:53Z"
+  name: gcp-pd-csi-driver-node-9lkd9.174a6f782b206e45
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "20486"
+  uid: da13a264-64ce-4916-aabd-eec330eb6c3a
+note: Started container csi-liveness-probe
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{csi-liveness-probe}
+  kind: Pod
+  name: gcp-pd-csi-driver-node-9lkd9
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "19349"
+  uid: bdf386c0-45a0-48ee-9b28-3965364379af
+type: Normal
