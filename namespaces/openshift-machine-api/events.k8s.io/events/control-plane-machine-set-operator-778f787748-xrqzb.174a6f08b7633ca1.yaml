@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:44:54Z"
 deprecatedLastTimestamp: "2023-03-08T11:44:54Z"
 deprecatedSource:
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:44:54Z"
+    time: "2023-03-08T11:44:55Z"
   name: control-plane-machine-set-operator-778f787748-xrqzb.174a6f08b7633ca1
   namespace: openshift-machine-api
-  resourceVersion: "3897"
+  resourceVersion: "3916"
   uid: cab960cc-cf39-47ea-bccb-941699f80f42
 note: 'MountVolume.SetUp failed for volume "control-plane-machine-set-operator-tls"
   : secret "control-plane-machine-set-operator-tls" not found'
