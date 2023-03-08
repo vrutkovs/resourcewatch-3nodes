@@ -81,6 +81,16 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T12:00:16Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           .: {}
@@ -114,21 +124,18 @@ metadata:
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.128.0.34"}:
+            .: {}
+            f:ip: {}
         f:startTime: {}
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T12:00:16Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          .: {}
-          f:k8s.ovn.org/pod-networks: {}
-    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
-    operation: Update
-    time: "2023-03-08T12:00:16Z"
+    time: "2023-03-08T12:00:17Z"
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -142,7 +149,7 @@ metadata:
     time: "2023-03-08T12:00:17Z"
   name: kube-apiserver-guard-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
   namespace: openshift-kube-apiserver
-  resourceVersion: "27637"
+  resourceVersion: "27650"
   uid: fcb99ed7-f652-41c1-8148-c27b19eaf31c
 spec:
   containers:
@@ -256,17 +263,21 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
-    imageID: ""
+  - containerID: cri-o://a99ff81df06f47bbf324b536b79575ab73674476d441f71bd44e70ec4037439c
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c2e732a65219acb4575211cf1ccccbb75e3febb08c0153b510a90cdc1be501e3
     lastState: {}
     name: guard
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
+      running:
+        startedAt: "2023-03-08T12:00:17Z"
   hostIP: 10.0.0.4
-  phase: Pending
+  phase: Running
+  podIP: 10.128.0.34
+  podIPs:
+  - ip: 10.128.0.34
   qosClass: Burstable
   startTime: "2023-03-08T12:00:16Z"
