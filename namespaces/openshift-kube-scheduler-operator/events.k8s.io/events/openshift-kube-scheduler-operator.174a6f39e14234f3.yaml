@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:48:25Z"
+deprecatedLastTimestamp: "2023-03-08T11:48:25Z"
+deprecatedSource:
+  component: openshift-cluster-kube-scheduler-operator-status-controller-statussyncer_kube-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:48:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-scheduler-operator
+    operation: Update
+    time: "2023-03-08T11:48:25Z"
+  name: openshift-kube-scheduler-operator.174a6f39e14234f3
+  namespace: openshift-kube-scheduler-operator
+  resourceVersion: "12254"
+  uid: 0b6ed01c-c123-48ce-946d-1d99746b5d19
+note: 'Status for clusteroperator/kube-scheduler changed: Degraded message changed
+  from "GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal,
+  Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal]"
+  to "GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal,
+  Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal]"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-kube-scheduler-operator
+  namespace: openshift-kube-scheduler-operator
+  uid: 23c26502-e53e-4a94-b472-aac9af284787
+type: Normal
