@@ -26,12 +26,24 @@ metadata:
     manager: cluster-version-operator
     operation: Update
     time: "2023-03-08T11:41:02Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        .: {}
+        f:consoleURL: {}
+    manager: console
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:58:17Z"
   name: cluster
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "1320"
+  resourceVersion: "24902"
   uid: 38230abb-a7ca-4d3e-a021-2f2e877152b5
 spec: {}
+status:
+  consoleURL: https://console-openshift-console.apps.vrutkovs.origin-gce.dev.openshift.com
