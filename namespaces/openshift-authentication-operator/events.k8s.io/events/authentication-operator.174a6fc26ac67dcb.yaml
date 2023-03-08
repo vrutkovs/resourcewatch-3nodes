@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:58:11Z"
-deprecatedLastTimestamp: "2023-03-08T11:58:11Z"
+deprecatedLastTimestamp: "2023-03-08T12:06:41Z"
 deprecatedSource:
   component: oauth-apiserver-status-controller-statussyncer_authentication
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: authentication-operator
     operation: Update
-    time: "2023-03-08T11:58:11Z"
+    time: "2023-03-08T12:06:41Z"
   name: authentication-operator.174a6fc26ac67dcb
   namespace: openshift-authentication-operator
-  resourceVersion: "24801"
+  resourceVersion: "31064"
   uid: f011629e-012c-4882-92cd-5b2e8485d77e
 note: 'Status for clusteroperator/authentication changed: Degraded changed from True
   to False ("All is well")'
