@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:48:11Z"
+deprecatedLastTimestamp: "2023-03-08T11:48:11Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:48:11Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:48:11Z"
+  name: openshift-kube-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal.174a6f36a3a7675d
+  namespace: openshift-kube-scheduler
+  resourceVersion: "11879"
+  uid: 35da7422-58c5-4d27-be4e-0205a6ed2011
+note: Stopping container kube-scheduler
+reason: Killing
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{kube-scheduler}
+  kind: Pod
+  name: openshift-kube-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+  namespace: openshift-kube-scheduler
+  uid: 0d556218ddc49925dd52ca956ca5d488
+type: Normal
