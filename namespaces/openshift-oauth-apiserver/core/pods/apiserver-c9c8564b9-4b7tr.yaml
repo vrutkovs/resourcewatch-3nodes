@@ -29,6 +29,8 @@ metadata:
     operator.openshift.io/dep-openshift-oauth-apiserver.etcd-client.secret: 3pHRWw==
     operator.openshift.io/dep-openshift-oauth-apiserver.etcd-serving-ca.configmap: ZwVSfQ==
   creationTimestamp: "2023-03-08T11:50:02Z"
+  deletionGracePeriodSeconds: 90
+  deletionTimestamp: "2023-03-08T11:53:17Z"
   generateName: apiserver-c9c8564b9-
   labels:
     apiserver: "true"
@@ -331,7 +333,7 @@ metadata:
     kind: ReplicaSet
     name: apiserver-c9c8564b9
     uid: c990828d-15ba-4bde-8403-ebf0a36b8376
-  resourceVersion: "17174"
+  resourceVersion: "18414"
   uid: 045473c8-eab2-474b-ac9a-8e7a5f31d69f
 spec:
   affinity:
