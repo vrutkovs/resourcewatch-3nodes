@@ -168,7 +168,7 @@ metadata:
     kind: ReplicaSet
     name: insights-operator-67cf785b46
     uid: 9bbcfacc-0df2-4de9-a7fb-40cb545ff1cf
-  resourceVersion: "2400"
+  resourceVersion: "3817"
   uid: e31043d3-a0a4-4a14-be6d-0d3cf03853b3
 spec:
   containers:
@@ -224,6 +224,7 @@ spec:
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
+  nodeName: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   nodeSelector:
     beta.kubernetes.io/os: linux
     node-role.kubernetes.io/master: ""
@@ -301,11 +302,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:41:28Z"
-    message: '0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready:
-      }. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.'
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:44:54Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
