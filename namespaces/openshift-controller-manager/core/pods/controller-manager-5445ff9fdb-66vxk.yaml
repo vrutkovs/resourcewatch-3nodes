@@ -170,6 +170,15 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:45:21Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           k:{"type":"ContainersReady"}:
@@ -200,16 +209,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:21Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.ovn.org/pod-networks: {}
-    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
-    operation: Update
-    time: "2023-03-08T11:45:21Z"
+    time: "2023-03-08T11:49:29Z"
   name: controller-manager-5445ff9fdb-66vxk
   namespace: openshift-controller-manager
   ownerReferences:
@@ -219,7 +219,7 @@ metadata:
     kind: ReplicaSet
     name: controller-manager-5445ff9fdb
     uid: 364476f7-2568-46b8-ac2a-860c8bf0867b
-  resourceVersion: "12843"
+  resourceVersion: "13251"
   uid: 9a03e80b-7d08-445d-a348-1eddb5abe0bc
 spec:
   affinity:
@@ -396,8 +396,12 @@ status:
     restartCount: 0
     started: false
     state:
-      waiting:
-        reason: ContainerCreating
+      terminated:
+        exitCode: 137
+        finishedAt: null
+        message: The container could not be located when the pod was terminated
+        reason: ContainerStatusUnknown
+        startedAt: null
   hostIP: 10.0.0.3
   phase: Pending
   qosClass: Burstable
