@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:58Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:58Z"
+deprecatedSource:
+  component: multus
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:58Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: multus
+    operation: Update
+    time: "2023-03-08T11:52:58Z"
+  name: ingress-canary-ltw5l.174a6f79663c5e2f
+  namespace: openshift-ingress-canary
+  resourceVersion: "20667"
+  uid: d8a981f1-5299-44d1-ba04-9fd08f43713a
+note: Add eth0 [10.131.0.11/23] from ovn-kubernetes
+reason: AddedInterface
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: ingress-canary-ltw5l
+  namespace: openshift-ingress-canary
+  resourceVersion: "20656"
+  uid: e3e1f81c-152f-4000-a276-7bd28fed5a93
+type: Normal
