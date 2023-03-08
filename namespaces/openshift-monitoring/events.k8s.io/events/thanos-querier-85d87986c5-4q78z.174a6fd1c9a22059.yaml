@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:59:17Z"
+deprecatedLastTimestamp: "2023-03-08T11:59:17Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:59:17Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:59:17Z"
+  name: thanos-querier-85d87986c5-4q78z.174a6fd1c9a22059
+  namespace: openshift-monitoring
+  resourceVersion: "26546"
+  uid: f258a4ac-ae91-49a8-9ceb-6a5a611fadda
+note: Created container prom-label-proxy
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{prom-label-proxy}
+  kind: Pod
+  name: thanos-querier-85d87986c5-4q78z
+  namespace: openshift-monitoring
+  resourceVersion: "26269"
+  uid: 5c257556-480f-492c-9a21-7527b3a69d49
+type: Normal
