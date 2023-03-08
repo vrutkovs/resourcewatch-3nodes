@@ -1,0 +1,152 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2023-03-08T11:51:43Z"
+  labels:
+    app: guard
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:app: {}
+      f:spec:
+        f:containers:
+          k:{"name":"guard"}:
+            .: {}
+            f:args: {}
+            f:command: {}
+            f:image: {}
+            f:imagePullPolicy: {}
+            f:name: {}
+            f:readinessProbe:
+              .: {}
+              f:failureThreshold: {}
+              f:httpGet:
+                .: {}
+                f:host: {}
+                f:path: {}
+                f:port: {}
+                f:scheme: {}
+              f:periodSeconds: {}
+              f:successThreshold: {}
+              f:timeoutSeconds: {}
+            f:resources:
+              .: {}
+              f:requests:
+                .: {}
+                f:cpu: {}
+                f:memory: {}
+            f:terminationMessagePath: {}
+            f:terminationMessagePolicy: {}
+        f:dnsPolicy: {}
+        f:enableServiceLinks: {}
+        f:hostname: {}
+        f:nodeName: {}
+        f:priorityClassName: {}
+        f:restartPolicy: {}
+        f:schedulerName: {}
+        f:securityContext: {}
+        f:terminationGracePeriodSeconds: {}
+        f:tolerations: {}
+    manager: cluster-etcd-operator
+    operation: Update
+    time: "2023-03-08T11:51:43Z"
+  name: etcd-guard-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+  namespace: openshift-etcd
+  resourceVersion: "17947"
+  uid: f648cd67-8539-48ce-9a92-a6cb686681d5
+spec:
+  containers:
+  - args:
+    - -c
+    - |
+      # properly handle TERM and exit as soon as it is signaled
+      set -euo pipefail
+      trap 'jobs -p | xargs -r kill; exit 0' TERM
+      sleep infinity & wait
+    command:
+    - /bin/bash
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a62fd1ab5fab0a9273eac253eed4e90c410771ae37fe1ab57fba8a8535922d1c
+    imagePullPolicy: IfNotPresent
+    name: guard
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        host: 10.0.0.4
+        path: healthz
+        port: 9980
+        scheme: HTTPS
+      periodSeconds: 5
+      successThreshold: 1
+      timeoutSeconds: 5
+    resources:
+      requests:
+        cpu: 10m
+        memory: 5Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: FallbackToLogsOnError
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-ldg4n
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  hostname: guard-a88253ac2899bd7c59b63f20b032d72406df0bb9-end
+  imagePullSecrets:
+  - name: default-dockercfg-892c2
+  nodeName: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+  preemptionPolicy: PreemptLowerPriority
+  priority: 2000000000
+  priorityClassName: system-cluster-critical
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 3
+  tolerations:
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/master
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/etcd
+    operator: Exists
+  - effect: NoSchedule
+    key: node.kubernetes.io/memory-pressure
+    operator: Exists
+  volumes:
+  - name: kube-api-access-ldg4n
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
+      - configMap:
+          items:
+          - key: service-ca.crt
+            path: service-ca.crt
+          name: openshift-service-ca.crt
+status:
+  phase: Pending
+  qosClass: Burstable
