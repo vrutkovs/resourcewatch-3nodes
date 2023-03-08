@@ -1,0 +1,40 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:06.685448Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:06Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:06Z"
+  name: node-ca-6dwl6.174a6f6d5f08b5a3
+  namespace: openshift-image-registry
+  resourceVersion: "19034"
+  uid: 60896d24-3805-4301-920c-69c4a56283aa
+note: Successfully assigned openshift-image-registry/node-ca-6dwl6 to vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: node-ca-6dwl6
+  namespace: openshift-image-registry
+  resourceVersion: "19028"
+  uid: f7e41ace-9a51-45a2-9286-bb8c056d524a
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
