@@ -44,24 +44,24 @@ metadata:
     manager: cluster-openshift-apiserver-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:32Z"
+    time: "2023-03-08T11:47:28Z"
   name: openshift-apiserver
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "6209"
+  resourceVersion: "10941"
   uid: 017094da-4624-48c3-a0e8-1ce824dc2841
 spec: {}
 status:
   conditions:
-  - lastTransitionTime: "2023-03-08T11:45:21Z"
-    message: "ConfigObservationDegraded: configmaps openshift-etcd/etcd-endpoints:
-      no etcd endpoint addresses found\nAPIServerDeploymentDegraded: waiting for observed
-      configuration to have mandatory StorageConfig.URLs\nAPIServerDeploymentDegraded: "
-    reason: AsExpected
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:47:28Z"
+    message: "APIServerDeploymentDegraded: waiting for observed configuration to have
+      mandatory StorageConfig.URLs\nAPIServerDeploymentDegraded: \nConfigObservationDegraded:
+      configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found"
+    reason: APIServerDeployment_PreconditionNotFulfilled::ConfigObservation_Error
+    status: "True"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:45:30Z"
     message: All is well
