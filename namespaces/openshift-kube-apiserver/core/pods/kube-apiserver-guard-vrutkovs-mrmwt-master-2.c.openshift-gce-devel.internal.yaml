@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: Pod
 metadata:
+  annotations:
+    k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.130.0.42/23"],"mac_address":"0a:58:0a:82:00:2a","gateway_ips":["10.130.0.1"],"ip_address":"10.130.0.42/23","gateway_ip":"10.130.0.1"}}'
   creationTimestamp: "2023-03-08T11:58:16Z"
   labels:
     app: guard
@@ -54,9 +56,19 @@ metadata:
     manager: cluster-kube-apiserver-operator
     operation: Update
     time: "2023-03-08T11:58:15Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:58:16Z"
   name: kube-apiserver-guard-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   namespace: openshift-kube-apiserver
-  resourceVersion: "24873"
+  resourceVersion: "24876"
   uid: 74fd4e75-8c57-415f-81b3-d86d77b23027
 spec:
   containers:
