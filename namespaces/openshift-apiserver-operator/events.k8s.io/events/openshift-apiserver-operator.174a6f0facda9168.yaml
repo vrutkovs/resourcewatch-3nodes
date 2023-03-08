@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:24Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:24Z"
+deprecatedSource:
+  component: openshift-apiserver-operator-apiserverstaticresources-apiserverstaticresources
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-openshift-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:45:24Z"
+  name: openshift-apiserver-operator.174a6f0facda9168
+  namespace: openshift-apiserver-operator
+  resourceVersion: "5330"
+  uid: da41982e-819d-43ee-abdf-25e5ed621d78
+note: Created Service/api -n openshift-apiserver because it was missing
+reason: ServiceCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-apiserver-operator
+  namespace: openshift-apiserver-operator
+  uid: a090ef40-3910-461a-9091-b7c2d013133c
+type: Normal
