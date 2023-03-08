@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:41:06Z"
+deprecatedLastTimestamp: "2023-03-08T11:41:06Z"
+deprecatedSource:
+  component: deployment-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:41:06Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:41:06Z"
+  name: marketplace-operator.174a6ed39b3258a1
+  namespace: openshift-marketplace
+  resourceVersion: "1467"
+  uid: 9ad7881f-8e46-4d06-ac4d-55b076235a04
+note: Scaled up replica set marketplace-operator-6df6f5d7fd to 1
+reason: ScalingReplicaSet
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: marketplace-operator
+  namespace: openshift-marketplace
+  resourceVersion: "1464"
+  uid: 37ce1e25-91a3-48d2-8ac4-d128e869226f
+type: Normal
