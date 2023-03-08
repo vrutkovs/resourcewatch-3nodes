@@ -385,6 +385,46 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:45:32Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.0.0.3"}:
+            .: {}
+            f:ip: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:45:32Z"
   name: gcp-pd-csi-driver-controller-698446758d-4tm6z
   namespace: openshift-cluster-csi-drivers
   ownerReferences:
@@ -394,7 +434,7 @@ metadata:
     kind: ReplicaSet
     name: gcp-pd-csi-driver-controller-698446758d
     uid: e75b4e83-6635-4ade-8599-427215f5eca9
-  resourceVersion: "6197"
+  resourceVersion: "6207"
   uid: 336a37d8-baec-4070-871a-5f61d2648f78
 spec:
   affinity:
@@ -774,6 +814,132 @@ status:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:32Z"
     status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:45:32Z"
+    message: 'containers with unready status: [csi-driver csi-provisioner provisioner-kube-rbac-proxy
+      csi-attacher attacher-kube-rbac-proxy csi-resizer resizer-kube-rbac-proxy csi-snapshotter
+      snapshotter-kube-rbac-proxy csi-liveness-probe]'
+    reason: ContainersNotReady
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:45:32Z"
+    message: 'containers with unready status: [csi-driver csi-provisioner provisioner-kube-rbac-proxy
+      csi-attacher attacher-kube-rbac-proxy csi-resizer resizer-kube-rbac-proxy csi-snapshotter
+      snapshotter-kube-rbac-proxy csi-liveness-probe]'
+    reason: ContainersNotReady
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:45:32Z"
+    status: "True"
     type: PodScheduled
+  containerStatuses:
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: ""
+    lastState: {}
+    name: attacher-kube-rbac-proxy
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c12ae333ed7dc5e9bdff760653ab9c93a0fd033c3baad25cec6e9347c6731a3c
+    imageID: ""
+    lastState: {}
+    name: csi-attacher
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b2b43aedb2296989c3b4015bdf7ea568f4a117a7e1369d21ab61855b3f6e4417
+    imageID: ""
+    lastState: {}
+    name: csi-driver
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ea25c2f3749dee6981359b4655a9acfcd4d95547066ccdf328354b548da74932
+    imageID: ""
+    lastState: {}
+    name: csi-liveness-probe
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9f72c0dcc965dd85343e7b31e37c926ccd77ab7d7ce3ab6097755cc05958df43
+    imageID: ""
+    lastState: {}
+    name: csi-provisioner
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:756f467707ce5a7b61755327167fea9dd9360b728b1b48508e012bf5102ca174
+    imageID: ""
+    lastState: {}
+    name: csi-resizer
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a44a2abb11a91246bb4c9dff91b97303523fa7b2a6a92c570dc13e6b41537b0e
+    imageID: ""
+    lastState: {}
+    name: csi-snapshotter
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: ""
+    lastState: {}
+    name: provisioner-kube-rbac-proxy
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: ""
+    lastState: {}
+    name: resizer-kube-rbac-proxy
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: ""
+    lastState: {}
+    name: snapshotter-kube-rbac-proxy
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  hostIP: 10.0.0.3
   phase: Pending
+  podIP: 10.0.0.3
+  podIPs:
+  - ip: 10.0.0.3
   qosClass: Burstable
+  startTime: "2023-03-08T11:45:32Z"
