@@ -47,7 +47,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "31034"
+  resourceVersion: "31035"
   uid: 340ee9bc-a97c-4183-8730-06c65f8dc3b2
 spec:
   disableAllDefaultSources: true
@@ -56,15 +56,15 @@ spec:
     name: community-operators
 status:
   sources:
-  - disabled: false
-    name: community-operators
-    status: Success
-  - disabled: true
-    name: redhat-marketplace
-    status: Success
   - disabled: true
     name: redhat-operators
     status: Success
   - disabled: true
     name: certified-operators
+    status: Success
+  - disabled: false
+    name: community-operators
+    status: Success
+  - disabled: true
+    name: redhat-marketplace
     status: Success
