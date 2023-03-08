@@ -6,6 +6,7 @@ metadata:
     configmaps/config: "4675"
     configmaps/openshift-global-ca: "4699"
     configmaps/openshift-service-ca: "4696"
+    k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.129.0.8/23"],"mac_address":"0a:58:0a:81:00:08","gateway_ips":["10.129.0.1"],"ip_address":"10.129.0.8/23","gateway_ip":"10.129.0.1"}}'
     openshift.io/scc: restricted-v2
     openshiftcontrollermanagers.operator.openshift.io/cluster: "2"
     seccomp.security.alpha.kubernetes.io/pod: runtime/default
@@ -198,6 +199,15 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:45:21Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:45:21Z"
   name: controller-manager-5445ff9fdb-zjs69
   namespace: openshift-controller-manager
   ownerReferences:
@@ -207,7 +217,7 @@ metadata:
     kind: ReplicaSet
     name: controller-manager-5445ff9fdb
     uid: 364476f7-2568-46b8-ac2a-860c8bf0867b
-  resourceVersion: "4823"
+  resourceVersion: "4868"
   uid: 21ef6527-5870-4999-80fd-8a4e2a296f05
 spec:
   affinity:
