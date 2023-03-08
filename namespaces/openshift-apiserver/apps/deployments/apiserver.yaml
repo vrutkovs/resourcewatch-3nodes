@@ -371,13 +371,14 @@ metadata:
         f:observedGeneration: {}
         f:readyReplicas: {}
         f:replicas: {}
+        f:unavailableReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
     time: "2023-03-08T11:49:37Z"
   name: apiserver
   namespace: openshift-apiserver
-  resourceVersion: "13482"
+  resourceVersion: "13490"
   uid: 38a621a7-6975-455f-84a5-eb95ea838e4d
 spec:
   progressDeadlineSeconds: 600
@@ -631,7 +632,7 @@ spec:
           type: ""
         name: audit-dir
 status:
-  availableReplicas: 3
+  availableReplicas: 2
   conditions:
   - lastTransitionTime: "2023-03-08T11:48:15Z"
     lastUpdateTime: "2023-03-08T11:48:15Z"
@@ -641,10 +642,11 @@ status:
     type: Available
   - lastTransitionTime: "2023-03-08T11:48:00Z"
     lastUpdateTime: "2023-03-08T11:49:37Z"
-    message: Created new replica set "apiserver-66776b9556"
-    reason: NewReplicaSetCreated
+    message: ReplicaSet "apiserver-66776b9556" is progressing.
+    reason: ReplicaSetUpdated
     status: "True"
     type: Progressing
   observedGeneration: 2
-  readyReplicas: 3
-  replicas: 3
+  readyReplicas: 2
+  replicas: 2
+  unavailableReplicas: 1
