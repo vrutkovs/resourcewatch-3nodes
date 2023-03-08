@@ -42,14 +42,14 @@ metadata:
     manager: olm
     operation: Update
     subresource: status
-    time: "2023-03-08T11:55:53Z"
+    time: "2023-03-08T11:55:54Z"
   name: operator-lifecycle-manager-packageserver
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "22980"
+  resourceVersion: "23032"
   uid: 9ab7e017-29cc-44be-936c-4db8751838cb
 spec: {}
 status:
@@ -64,9 +64,9 @@ status:
     reason: ClusterServiceVersionNotSucceeded
     status: "False"
     type: Available
-  - lastTransitionTime: "2023-03-08T11:51:39Z"
-    message: Failed to deploy 0.19.0
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:55:54Z"
+    message: Working toward 0.19.0
+    status: "True"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:46:03Z"
     message: Safe to upgrade
