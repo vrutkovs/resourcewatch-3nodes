@@ -1,0 +1,40 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:13.094759Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:13Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:13Z"
+  name: multus-zdqdj.174a6f6edd0f120a
+  namespace: openshift-multus
+  resourceVersion: "19327"
+  uid: deabe40e-6cd7-44eb-93cd-8c393998c332
+note: Successfully assigned openshift-multus/multus-zdqdj to vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: multus-zdqdj
+  namespace: openshift-multus
+  resourceVersion: "19308"
+  uid: 20ec9c9d-b9e5-4e99-b88e-b5d083be4ca8
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
