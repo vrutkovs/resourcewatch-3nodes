@@ -451,17 +451,19 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:availableReplicas: {}
         f:collisionCount: {}
         f:currentReplicas: {}
         f:currentRevision: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
         f:updateRevision: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:59:05Z"
+    time: "2023-03-08T11:59:45Z"
   name: alertmanager-main
   namespace: openshift-monitoring
   ownerReferences:
@@ -471,7 +473,7 @@ metadata:
     kind: Alertmanager
     name: main
     uid: 87525969-0340-4b5e-b367-029ae5850d32
-  resourceVersion: "26170"
+  resourceVersion: "27045"
   uid: 3d2e73f5-0ea8-41ff-b2d2-5c651c8a2d8d
 spec:
   podManagementPolicy: Parallel
@@ -826,11 +828,12 @@ spec:
   updateStrategy:
     type: RollingUpdate
 status:
-  availableReplicas: 0
+  availableReplicas: 1
   collisionCount: 0
   currentReplicas: 2
   currentRevision: alertmanager-main-85b495847b
   observedGeneration: 1
+  readyReplicas: 1
   replicas: 2
   updateRevision: alertmanager-main-85b495847b
   updatedReplicas: 2
