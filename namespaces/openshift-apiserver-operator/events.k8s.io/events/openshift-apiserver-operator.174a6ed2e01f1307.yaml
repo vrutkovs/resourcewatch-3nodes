@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:41:03Z"
+deprecatedLastTimestamp: "2023-03-08T11:41:03Z"
+deprecatedSource:
+  component: deployment-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:41:03Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:41:03Z"
+  name: openshift-apiserver-operator.174a6ed2e01f1307
+  namespace: openshift-apiserver-operator
+  resourceVersion: "1329"
+  uid: eacec64a-894e-43a9-aecc-2677d471c1fc
+note: Scaled up replica set openshift-apiserver-operator-668c94ff6f to 1
+reason: ScalingReplicaSet
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-apiserver-operator
+  namespace: openshift-apiserver-operator
+  resourceVersion: "1325"
+  uid: a090ef40-3910-461a-9091-b7c2d013133c
+type: Normal
