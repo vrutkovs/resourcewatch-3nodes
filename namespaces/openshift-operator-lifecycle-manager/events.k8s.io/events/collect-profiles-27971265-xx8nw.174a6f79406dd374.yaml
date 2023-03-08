@@ -1,0 +1,41 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:57.711588Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:57Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:57Z"
+  name: collect-profiles-27971265-xx8nw.174a6f79406dd374
+  namespace: openshift-operator-lifecycle-manager
+  resourceVersion: "20647"
+  uid: ee58c6c1-3743-4fa5-b42a-09a73bd898b8
+note: Successfully assigned openshift-operator-lifecycle-manager/collect-profiles-27971265-xx8nw
+  to vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: collect-profiles-27971265-xx8nw
+  namespace: openshift-operator-lifecycle-manager
+  resourceVersion: "4038"
+  uid: e68ee4c5-5d3c-45bf-8ee2-657e7bfba163
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
