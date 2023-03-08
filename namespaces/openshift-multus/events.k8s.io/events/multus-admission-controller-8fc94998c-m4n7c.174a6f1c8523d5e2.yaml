@@ -1,0 +1,44 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:19Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:19Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:46:19Z"
+  name: multus-admission-controller-8fc94998c-m4n7c.174a6f1c8523d5e2
+  namespace: openshift-multus
+  resourceVersion: "8297"
+  uid: 9b2e7b3a-9959-498f-95db-075624e43d6c
+note: Successfully pulled image "registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b739591edf55806952abc5726fb4d0747d03af78636990abe990bfeaa3be05e0"
+  in 19.550913856s
+reason: Pulled
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{multus-admission-controller}
+  kind: Pod
+  name: multus-admission-controller-8fc94998c-m4n7c
+  namespace: openshift-multus
+  resourceVersion: "3819"
+  uid: 80adc8db-ad69-4981-86fc-3a0b44b00656
+type: Normal
