@@ -9,19 +9,6 @@ metadata:
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:status:
-        f:currentNumberScheduled: {}
-        f:desiredNumberScheduled: {}
-        f:numberUnavailable: {}
-        f:observedGeneration: {}
-        f:updatedNumberScheduled: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:45:23Z"
-  - apiVersion: apps/v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:metadata:
         f:annotations:
           .: {}
@@ -148,9 +135,24 @@ metadata:
     manager: machine-config-operator
     operation: Update
     time: "2023-03-08T11:45:23Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:currentNumberScheduled: {}
+        f:desiredNumberScheduled: {}
+        f:numberAvailable: {}
+        f:numberReady: {}
+        f:numberUnavailable: {}
+        f:observedGeneration: {}
+        f:updatedNumberScheduled: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:46:01Z"
   name: machine-config-daemon
   namespace: openshift-machine-config-operator
-  resourceVersion: "5233"
+  resourceVersion: "7749"
   uid: 248aeaf2-d8ec-47ea-a1cf-4defdfe55674
 spec:
   revisionHistoryLimit: 10
@@ -255,8 +257,9 @@ spec:
 status:
   currentNumberScheduled: 3
   desiredNumberScheduled: 3
+  numberAvailable: 1
   numberMisscheduled: 0
-  numberReady: 0
-  numberUnavailable: 3
+  numberReady: 1
+  numberUnavailable: 2
   observedGeneration: 1
   updatedNumberScheduled: 3
