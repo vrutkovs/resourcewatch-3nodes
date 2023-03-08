@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:51:44Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:44Z"
+deprecatedSource:
+  component: deployment-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:44Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:51:44Z"
+  name: image-registry.174a6f68468ae02f
+  namespace: openshift-image-registry
+  resourceVersion: "18210"
+  uid: ff169ef7-e6bd-45ea-b7e0-23e7d8308a09
+note: Scaled up replica set image-registry-7dc9976b6f to 2 from 1
+reason: ScalingReplicaSet
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: image-registry
+  namespace: openshift-image-registry
+  resourceVersion: "18110"
+  uid: eb3c9ce4-e686-45ad-bb89-a15500e8fd78
+type: Normal
