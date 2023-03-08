@@ -291,6 +291,14 @@ metadata:
       f:status:
         f:conditions:
           .: {}
+          k:{"type":"Available"}:
+            .: {}
+            f:lastTransitionTime: {}
+            f:lastUpdateTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
           k:{"type":"Progressing"}:
             .: {}
             f:lastTransitionTime: {}
@@ -299,13 +307,15 @@ metadata:
             f:reason: {}
             f:status: {}
             f:type: {}
+        f:observedGeneration: {}
+        f:unavailableReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
     time: "2023-03-08T11:46:42Z"
   name: router-default
   namespace: openshift-ingress
-  resourceVersion: "9514"
+  resourceVersion: "9523"
   uid: af68616a-a6b5-4a2b-b8e1-6b2e06b46aa8
 spec:
   minReadySeconds: 30
@@ -518,3 +528,11 @@ status:
     reason: NewReplicaSetCreated
     status: "True"
     type: Progressing
+  - lastTransitionTime: "2023-03-08T11:46:42Z"
+    lastUpdateTime: "2023-03-08T11:46:42Z"
+    message: Deployment does not have minimum availability.
+    reason: MinimumReplicasUnavailable
+    status: "False"
+    type: Available
+  observedGeneration: 1
+  unavailableReplicas: 2
