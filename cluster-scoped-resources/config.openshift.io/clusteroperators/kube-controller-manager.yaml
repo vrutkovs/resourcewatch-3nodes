@@ -44,14 +44,14 @@ metadata:
     manager: cluster-kube-controller-manager-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:59:49Z"
+    time: "2023-03-08T12:03:06Z"
   name: kube-controller-manager
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "27116"
+  resourceVersion: "29239"
   uid: b847a3b2-5e9a-4598-8142-d35d20a8b280
 spec: {}
 status:
@@ -61,15 +61,13 @@ status:
     reason: AsExpected
     status: "False"
     type: Degraded
-  - lastTransitionTime: "2023-03-08T11:45:25Z"
-    message: 'NodeInstallerProgressing: 2 nodes are at revision 6; 1 nodes are at
-      revision 7'
-    reason: NodeInstaller
-    status: "True"
+  - lastTransitionTime: "2023-03-08T12:03:06Z"
+    message: 'NodeInstallerProgressing: 3 nodes are at revision 7'
+    reason: AsExpected
+    status: "False"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:48:28Z"
-    message: 'StaticPodsAvailable: 3 nodes are active; 2 nodes are at revision 6;
-      1 nodes are at revision 7'
+    message: 'StaticPodsAvailable: 3 nodes are active; 3 nodes are at revision 7'
     reason: AsExpected
     status: "True"
     type: Available
