@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:44:54Z"
 deprecatedLastTimestamp: "2023-03-08T11:44:54Z"
 deprecatedSource:
@@ -28,7 +28,7 @@ metadata:
     time: "2023-03-08T11:44:54Z"
   name: dns-operator-7f84df8fd7-84wrf.174a6f08b11b8771
   namespace: openshift-dns-operator
-  resourceVersion: "3889"
+  resourceVersion: "3902"
   uid: 3efa3bc8-d70a-4657-8448-1e1e26275b4d
 note: 'MountVolume.SetUp failed for volume "metrics-tls" : secret "metrics-tls" not
   found'
