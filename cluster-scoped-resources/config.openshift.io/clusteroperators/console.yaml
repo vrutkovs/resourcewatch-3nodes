@@ -46,14 +46,14 @@ metadata:
     manager: console
     operation: Update
     subresource: status
-    time: "2023-03-08T11:58:33Z"
+    time: "2023-03-08T11:58:38Z"
   name: console
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "25301"
+  resourceVersion: "25371"
   uid: 44bc2de6-f1b6-41da-b396-8cf32d9305e5
 spec: {}
 status:
@@ -64,15 +64,17 @@ status:
     reason: AsExpected
     status: "False"
     type: Degraded
-  - lastTransitionTime: "2023-03-08T11:58:11Z"
-    message: All is well
-    reason: AsExpected
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:58:38Z"
+    message: 'SyncLoopRefreshProgressing: Changes made during sync updates, additional
+      sync expected.'
+    reason: SyncLoopRefresh_InProgress
+    status: "True"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:58:31Z"
-    message: 'RouteHealthAvailable: route not yet available, https://console-openshift-console.apps.vrutkovs.origin-gce.dev.openshift.com
-      returns ''503 Service Unavailable'''
-    reason: RouteHealth_StatusError
+    message: |-
+      DeploymentAvailable: 0 replicas available for console deployment
+      RouteHealthAvailable: route not yet available, https://console-openshift-console.apps.vrutkovs.origin-gce.dev.openshift.com returns '503 Service Unavailable'
+    reason: Deployment_InsufficientReplicas::RouteHealth_StatusError
     status: "False"
     type: Available
   - lastTransitionTime: "2023-03-08T11:58:09Z"
