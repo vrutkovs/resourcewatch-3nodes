@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:51:39Z"
-deprecatedLastTimestamp: "2023-03-08T11:51:39Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:54Z"
 deprecatedSource:
   component: cluster-storage-operator-status-controller-statussyncer_storage
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-storage-operator
     operation: Update
-    time: "2023-03-08T11:51:39Z"
+    time: "2023-03-08T11:52:54Z"
   name: cluster-storage-operator.174a6f66f423b973
   namespace: openshift-cluster-storage-operator
-  resourceVersion: "17506"
+  resourceVersion: "20528"
   uid: 27ab83fd-1c7e-455d-a272-4c396a3bfc01
 note: 'Status for clusteroperator/storage changed: Progressing changed from True to
   False ("GCPPDCSIDriverOperatorCRProgressing: All is well")'
