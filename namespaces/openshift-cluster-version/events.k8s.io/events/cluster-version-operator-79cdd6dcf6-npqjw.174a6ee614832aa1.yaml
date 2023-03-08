@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 5
+deprecatedCount: 6
 deprecatedFirstTimestamp: "2023-03-08T11:42:25Z"
-deprecatedLastTimestamp: "2023-03-08T11:42:33Z"
+deprecatedLastTimestamp: "2023-03-08T11:42:41Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:42:33Z"
+    time: "2023-03-08T11:42:41Z"
   name: cluster-version-operator-79cdd6dcf6-npqjw.174a6ee614832aa1
   namespace: openshift-cluster-version
-  resourceVersion: "2492"
+  resourceVersion: "2516"
   uid: 6b611e67-704a-4fc9-a7b6-a31188827b41
 note: 'MountVolume.SetUp failed for volume "serving-cert" : secret "cluster-version-operator-serving-cert"
   not found'
