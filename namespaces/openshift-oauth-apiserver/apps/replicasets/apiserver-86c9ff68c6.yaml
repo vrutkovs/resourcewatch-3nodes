@@ -10,7 +10,7 @@ metadata:
     operator.openshift.io/dep-openshift-oauth-apiserver.etcd-serving-ca.configmap: ZwVSfQ==
     operator.openshift.io/spec-hash: d5e07085f28a2d36be2853092bae2b9c5fd6bb944bff68d7706ce1194d520a8f
   creationTimestamp: "2023-03-08T11:51:47Z"
-  generation: 2
+  generation: 3
   labels:
     apiserver: "true"
     app: openshift-oauth-apiserver
@@ -246,7 +246,7 @@ metadata:
                 f:name: {}
     manager: kube-controller-manager
     operation: Update
-    time: "2023-03-08T11:51:47Z"
+    time: "2023-03-08T11:51:56Z"
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -269,10 +269,10 @@ metadata:
     kind: Deployment
     name: apiserver
     uid: 62a01473-77e6-462a-ac02-eae02830d991
-  resourceVersion: "18719"
+  resourceVersion: "18730"
   uid: 80dbd918-5c00-4f43-af31-c20519489df0
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       apiserver: "true"
