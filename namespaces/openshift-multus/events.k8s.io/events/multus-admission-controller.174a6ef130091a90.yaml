@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:43:13Z"
+deprecatedLastTimestamp: "2023-03-08T11:43:13Z"
+deprecatedSource:
+  component: deployment-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:43:13Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:43:13Z"
+  name: multus-admission-controller.174a6ef130091a90
+  namespace: openshift-multus
+  resourceVersion: "2815"
+  uid: a80e0e8a-390f-4f6a-91b6-a7c01cc33de8
+note: Scaled up replica set multus-admission-controller-8fc94998c to 2
+reason: ScalingReplicaSet
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: multus-admission-controller
+  namespace: openshift-multus
+  resourceVersion: "2813"
+  uid: 3e8b5ec7-a6ed-4455-a1f8-decd089d7077
+type: Normal
