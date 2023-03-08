@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:35Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:35Z"
+deprecatedSource:
+  component: kube-apiserver-operator-revisioncontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:35Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:58:35Z"
+  name: kube-apiserver-operator.174a6fc7e07bdb14
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "25329"
+  uid: 6a2c3097-3442-413b-ac39-4a81e83657af
+note: Created ConfigMap/kube-apiserver-audit-policies-7 -n openshift-kube-apiserver
+  because it was missing
+reason: ConfigMapCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
