@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:46Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:46Z"
+deprecatedSource:
+  component: external-attacher-leader-pd.csi.storage.gke.io/vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:46Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: csi-attacher
+    operation: Update
+    time: "2023-03-08T11:45:46Z"
+  name: external-attacher-leader-pd-csi-storage-gke-io.174a6f14f0a1b142
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "7011"
+  uid: d9d3b325-3900-42c4-a57a-b753f13f8b7a
+note: vrutkovs-mrmwt-master-2-c-openshift-gce-devel-internal became leader
+reason: LeaderElection
+regarding:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: external-attacher-leader-pd-csi-storage-gke-io
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "7009"
+  uid: 1c7a292e-fa3b-4b70-a369-db583463b918
+type: Normal
