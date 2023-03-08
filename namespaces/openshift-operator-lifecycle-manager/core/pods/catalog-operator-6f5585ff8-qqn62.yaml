@@ -158,6 +158,40 @@ metadata:
     manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     operation: Update
     time: "2023-03-08T11:44:54Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:44:57Z"
   name: catalog-operator-6f5585ff8-qqn62
   namespace: openshift-operator-lifecycle-manager
   ownerReferences:
@@ -167,7 +201,7 @@ metadata:
     kind: ReplicaSet
     name: catalog-operator-6f5585ff8
     uid: a706dd4d-68b7-467a-b6a2-c08dc2a848c9
-  resourceVersion: "3861"
+  resourceVersion: "3975"
   uid: b52d00a0-5092-409e-a9cd-0ac8d517614d
 spec:
   containers:
@@ -312,6 +346,35 @@ status:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:44:54Z"
     status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:44:54Z"
+    message: 'containers with unready status: [catalog-operator]'
+    reason: ContainersNotReady
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:44:54Z"
+    message: 'containers with unready status: [catalog-operator]'
+    reason: ContainersNotReady
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:44:54Z"
+    status: "True"
     type: PodScheduled
+  containerStatuses:
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:aa84bb1f53223ad293c33c89edef6d20764cfbd2338351bc4a92a773ec2e864b
+    imageID: ""
+    lastState: {}
+    name: catalog-operator
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  hostIP: 10.0.0.3
   phase: Pending
   qosClass: Burstable
+  startTime: "2023-03-08T11:44:54Z"
