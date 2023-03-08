@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:42:25Z"
+deprecatedLastTimestamp: "2023-03-08T11:42:25Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:42:25Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:42:25Z"
+  name: service-ca-operator-76979b8657-2fshl.174a6ee61e9ee571
+  namespace: openshift-service-ca-operator
+  resourceVersion: "2357"
+  uid: 27782a77-cc2d-45b7-a424-188ca2a4ef2a
+note: '0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready:
+  }. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.'
+reason: FailedScheduling
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: service-ca-operator-76979b8657-2fshl
+  namespace: openshift-service-ca-operator
+  resourceVersion: "1399"
+  uid: 8331ddf2-202f-4d89-aa2d-e60e07f45081
+type: Warning
