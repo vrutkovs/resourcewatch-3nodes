@@ -521,7 +521,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T12:00:13Z"
+    time: "2023-03-08T12:00:41Z"
   name: alertmanager-main-1
   namespace: openshift-monitoring
   ownerReferences:
@@ -531,7 +531,7 @@ metadata:
     kind: StatefulSet
     name: alertmanager-main
     uid: 3d2e73f5-0ea8-41ff-b2d2-5c651c8a2d8d
-  resourceVersion: "27592"
+  resourceVersion: "27950"
   uid: 1cc64c1f-2766-4947-9f16-0b80c3453714
 spec:
   affinity:
@@ -1002,7 +1002,7 @@ status:
     name: alertmanager
     ready: false
     restartCount: 1
-    started: false
+    started: true
     state:
       running:
         startedAt: "2023-03-08T12:00:12Z"
