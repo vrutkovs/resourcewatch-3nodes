@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "13610"
+  resourceVersion: "13612"
   uid: 017094da-4624-48c3-a0e8-1ce824dc2841
 spec: {}
 status:
@@ -63,8 +63,8 @@ status:
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:49:37Z"
     message: 'APIServerDeploymentProgressing: deployment/apiserver.openshift-apiserver:
-      observed generation is 1, desired generation is 2.'
-    reason: APIServerDeployment_NewGeneration
+      1/3 pods have been updated to the latest generation'
+    reason: APIServerDeployment_PodsUpdating
     status: "True"
     type: Progressing
   - lastTransitionTime: "2023-03-08T11:45:32Z"
