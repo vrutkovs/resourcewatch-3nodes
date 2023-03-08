@@ -176,7 +176,9 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -190,7 +192,7 @@ metadata:
     kind: Deployment
     name: cloud-network-config-controller
     uid: ad17134a-8f27-42d1-9738-d4dc2e8bbb77
-  resourceVersion: "2675"
+  resourceVersion: "2677"
   uid: ccb05f32-c744-4993-ba73-061b550e88ef
 spec:
   replicas: 1
@@ -307,5 +309,6 @@ spec:
               expirationSeconds: 3600
               path: token
 status:
+  fullyLabeledReplicas: 1
   observedGeneration: 1
-  replicas: 0
+  replicas: 1
