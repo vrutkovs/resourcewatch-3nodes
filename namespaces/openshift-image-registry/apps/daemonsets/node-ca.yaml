@@ -110,7 +110,7 @@ metadata:
     time: "2023-03-08T11:52:06Z"
   name: node-ca
   namespace: openshift-image-registry
-  resourceVersion: "19030"
+  resourceVersion: "19058"
   uid: bf26b238-4c1e-4e98-99e7-060c5d6244ed
 spec:
   revisionHistoryLimit: 10
@@ -201,11 +201,11 @@ spec:
       maxUnavailable: 10%
     type: RollingUpdate
 status:
-  currentNumberScheduled: 3
+  currentNumberScheduled: 4
   desiredNumberScheduled: 4
   numberAvailable: 3
   numberMisscheduled: 0
   numberReady: 3
   numberUnavailable: 1
   observedGeneration: 1
-  updatedNumberScheduled: 3
+  updatedNumberScheduled: 4
