@@ -1,0 +1,42 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:05:23Z"
+deprecatedLastTimestamp: "2023-03-08T12:05:23Z"
+deprecatedSource:
+  component: openshift-cluster-etcd-operator-fsynccontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:05:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-etcd-operator
+    operation: Update
+    time: "2023-03-08T12:05:23Z"
+  name: etcd-operator.174a7026ebe92ab0
+  namespace: openshift-etcd-operator
+  resourceVersion: "30479"
+  uid: 07cbcd46-7474-4eaa-9822-dc1c6fa36297
+note: 'Detected leader change increase of 3.4152746260274283 over 5 minutes on "GCP";
+  disk metrics are: etcd-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal=0.012512,etcd-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal=0.003140,etcd-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal=0.025067.
+  Most often this is as a result of inadequate storage or sometimes due to networking
+  issues.'
+reason: EtcdLeaderChangeMetrics
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: etcd-operator
+  namespace: openshift-etcd-operator
+  uid: dd494886-7eb4-4625-9190-f606d6faab1b
+type: Warning
