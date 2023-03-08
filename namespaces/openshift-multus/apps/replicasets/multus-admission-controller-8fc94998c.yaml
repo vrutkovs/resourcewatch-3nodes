@@ -22,19 +22,6 @@ metadata:
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
-      f:status:
-        f:availableReplicas: {}
-        f:fullyLabeledReplicas: {}
-        f:observedGeneration: {}
-        f:readyReplicas: {}
-        f:replicas: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:46:23Z"
-  - apiVersion: apps/v1
-    fieldsType: FieldsV1
-    fieldsV1:
       f:metadata:
         f:annotations:
           .: {}
@@ -154,6 +141,19 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:46:46Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:availableReplicas: {}
+        f:fullyLabeledReplicas: {}
+        f:observedGeneration: {}
+        f:readyReplicas: {}
+        f:replicas: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:46:46Z"
   name: multus-admission-controller-8fc94998c
   namespace: openshift-multus
   ownerReferences:
@@ -163,7 +163,7 @@ metadata:
     kind: Deployment
     name: multus-admission-controller
     uid: 3e8b5ec7-a6ed-4455-a1f8-decd089d7077
-  resourceVersion: "9741"
+  resourceVersion: "9751"
   uid: 669b8793-35ef-4be6-80e2-c05d99ee6b69
 spec:
   replicas: 1
@@ -264,6 +264,6 @@ spec:
 status:
   availableReplicas: 2
   fullyLabeledReplicas: 2
-  observedGeneration: 1
+  observedGeneration: 2
   readyReplicas: 2
   replicas: 2
