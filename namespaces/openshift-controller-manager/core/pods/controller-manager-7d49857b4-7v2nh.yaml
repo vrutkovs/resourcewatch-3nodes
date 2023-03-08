@@ -33,8 +33,8 @@ metadata:
     openshiftcontrollermanagers.operator.openshift.io/cluster: "2"
     seccomp.security.alpha.kubernetes.io/pod: runtime/default
   creationTimestamp: "2023-03-08T11:50:06Z"
-  deletionGracePeriodSeconds: 30
-  deletionTimestamp: "2023-03-08T11:52:46Z"
+  deletionGracePeriodSeconds: 0
+  deletionTimestamp: "2023-03-08T11:52:16Z"
   generateName: controller-manager-7d49857b4-
   labels:
     app: openshift-controller-manager-a
@@ -277,7 +277,7 @@ metadata:
     kind: ReplicaSet
     name: controller-manager-7d49857b4
     uid: fb46097b-53aa-4e63-a89f-dc735ce35b2a
-  resourceVersion: "19762"
+  resourceVersion: "19764"
   uid: 56e7ca30-6fc9-419c-a0d9-0fcb6dd4f897
 spec:
   affinity:
