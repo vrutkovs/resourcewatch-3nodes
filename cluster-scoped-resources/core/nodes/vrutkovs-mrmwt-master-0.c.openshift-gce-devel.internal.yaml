@@ -108,33 +108,6 @@ metadata:
     fieldsV1:
       f:metadata:
         f:annotations:
-          f:csi.volume.kubernetes.io/nodeid: {}
-        f:labels:
-          f:topology.gke.io/zone: {}
-      f:status:
-        f:conditions:
-          k:{"type":"DiskPressure"}:
-            f:lastHeartbeatTime: {}
-          k:{"type":"MemoryPressure"}:
-            f:lastHeartbeatTime: {}
-          k:{"type":"PIDPressure"}:
-            f:lastHeartbeatTime: {}
-          k:{"type":"Ready"}:
-            f:lastHeartbeatTime: {}
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-        f:images: {}
-    manager: kubelet
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:46:29Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
           f:machine.openshift.io/machine: {}
     manager: nodelink-controller
     operation: Update
@@ -162,8 +135,35 @@ metadata:
     manager: machine-config-controller
     operation: Update
     time: "2023-03-08T11:46:51Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:csi.volume.kubernetes.io/nodeid: {}
+        f:labels:
+          f:topology.gke.io/zone: {}
+      f:status:
+        f:conditions:
+          k:{"type":"DiskPressure"}:
+            f:lastHeartbeatTime: {}
+          k:{"type":"MemoryPressure"}:
+            f:lastHeartbeatTime: {}
+          k:{"type":"PIDPressure"}:
+            f:lastHeartbeatTime: {}
+          k:{"type":"Ready"}:
+            f:lastHeartbeatTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+        f:images: {}
+    manager: kubelet
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:47:00Z"
   name: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
-  resourceVersion: "10054"
+  resourceVersion: "10229"
   uid: 3becf630-5199-4621-aa21-11f188b903aa
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-a/vrutkovs-mrmwt-master-0
@@ -201,25 +201,25 @@ status:
     reason: RouteCreated
     status: "False"
     type: NetworkUnavailable
-  - lastHeartbeatTime: "2023-03-08T11:46:29Z"
+  - lastHeartbeatTime: "2023-03-08T11:47:00Z"
     lastTransitionTime: "2023-03-08T11:42:25Z"
     message: kubelet has sufficient memory available
     reason: KubeletHasSufficientMemory
     status: "False"
     type: MemoryPressure
-  - lastHeartbeatTime: "2023-03-08T11:46:29Z"
+  - lastHeartbeatTime: "2023-03-08T11:47:00Z"
     lastTransitionTime: "2023-03-08T11:42:25Z"
     message: kubelet has no disk pressure
     reason: KubeletHasNoDiskPressure
     status: "False"
     type: DiskPressure
-  - lastHeartbeatTime: "2023-03-08T11:46:29Z"
+  - lastHeartbeatTime: "2023-03-08T11:47:00Z"
     lastTransitionTime: "2023-03-08T11:42:25Z"
     message: kubelet has sufficient PID available
     reason: KubeletHasSufficientPID
     status: "False"
     type: PIDPressure
-  - lastHeartbeatTime: "2023-03-08T11:46:29Z"
+  - lastHeartbeatTime: "2023-03-08T11:47:00Z"
     lastTransitionTime: "2023-03-08T11:44:57Z"
     message: kubelet is posting ready status
     reason: KubeletReady
@@ -233,8 +233,16 @@ status:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:7583d56d7dedfd59ff9b1cceb2484cc012439535e00eaf311080a3a92348fdcd
     sizeBytes: 1126236944
   - names:
+    - registry.access.redhat.com/redhat/community-operator-index@sha256:6ab26aa671cc5c217518359e3e405ecc3c420cebb6ca81c57696780195c61d0d
+    - registry.access.redhat.com/redhat/community-operator-index@sha256:c5d20996ad9803cb26257d5e7559c6c1cf45817fd660a90b81dbd31ba35e0cbe
+    - registry.access.redhat.com/redhat/community-operator-index:v4.12
+    sizeBytes: 978802436
+  - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:aa84bb1f53223ad293c33c89edef6d20764cfbd2338351bc4a92a773ec2e864b
     sizeBytes: 700850936
+  - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
+    sizeBytes: 639385745
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:d5fc161170fcf68900b2694039803a2e7f1b31eb913566139a41f91851f166d7
     sizeBytes: 574516705
@@ -248,14 +256,29 @@ status:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:d1f4ae7cf18094c255989d9d34f14b845cad900760eaaae875c3ca6fa2df2e1b
     sizeBytes: 516059526
   - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c79d8916f1a532feecbc3a3939744802bed07adc181564fbc842812e10a930eb
+    sizeBytes: 480792035
+  - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ec7b40bc7728833abc1d506d4fd98ae362d9ace4cad6ae6cf011eb0c5c474771
+    sizeBytes: 462636162
+  - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a62fd1ab5fab0a9273eac253eed4e90c410771ae37fe1ab57fba8a8535922d1c
+    sizeBytes: 446103574
+  - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     sizeBytes: 433414846
+  - names:
+    - registry.ci.openshift.org/origin/release@sha256:f4bc695a8ea05f8d20cb5306b2923f328ec15b8774c3b583deff031007930ba4
+    sizeBytes: 419537862
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:509c27c2c2e49edf72c79ee1bbd98f7c0ebae164f7ac4592be322aa43f4d6974
     sizeBytes: 414591155
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:cc6f52aff25ba6cad2df5f4dc4ca65abcb0e46880438397646d194b9e595001f
     sizeBytes: 414527192
+  - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:f674b597694b13b7060c9ee611a403f1f87a98e05682c33f9a86140061ee9d9e
+    sizeBytes: 404212434
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b2b43aedb2296989c3b4015bdf7ea568f4a117a7e1369d21ab61855b3f6e4417
     sizeBytes: 396164794
@@ -286,6 +309,9 @@ status:
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a44a2abb11a91246bb4c9dff91b97303523fa7b2a6a92c570dc13e6b41537b0e
     sizeBytes: 329971817
+  - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b739591edf55806952abc5726fb4d0747d03af78636990abe990bfeaa3be05e0
+    sizeBytes: 328153761
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:d2bb40d32bb6769d4c6de013df767e19dac00501cfc88832f7894f616f07561a
     sizeBytes: 327164018
