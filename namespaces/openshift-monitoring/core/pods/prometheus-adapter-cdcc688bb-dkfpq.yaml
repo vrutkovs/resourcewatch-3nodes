@@ -184,6 +184,40 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:59:58Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:59:58Z"
   name: prometheus-adapter-cdcc688bb-dkfpq
   namespace: openshift-monitoring
   ownerReferences:
@@ -193,7 +227,7 @@ metadata:
     kind: ReplicaSet
     name: prometheus-adapter-cdcc688bb
     uid: 52da58d6-d10a-4b86-8d89-1fd9d375228d
-  resourceVersion: "27224"
+  resourceVersion: "27228"
   uid: 86eab170-0bc4-4a48-a69d-5a36a815ab4e
 spec:
   affinity:
@@ -381,6 +415,35 @@ status:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:59:58Z"
     status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:59:58Z"
+    message: 'containers with unready status: [prometheus-adapter]'
+    reason: ContainersNotReady
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:59:58Z"
+    message: 'containers with unready status: [prometheus-adapter]'
+    reason: ContainersNotReady
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:59:58Z"
+    status: "True"
     type: PodScheduled
+  containerStatuses:
+  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9696f8f231d49aadf63ab980ec5c17c4fd87011930daecd30cc9e4ee102f1aeb
+    imageID: ""
+    lastState: {}
+    name: prometheus-adapter
+    ready: false
+    restartCount: 0
+    started: false
+    state:
+      waiting:
+        reason: ContainerCreating
+  hostIP: 10.0.128.2
   phase: Pending
   qosClass: Burstable
+  startTime: "2023-03-08T11:59:58Z"
