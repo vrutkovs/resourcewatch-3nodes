@@ -163,7 +163,7 @@ metadata:
     kind: Deployment
     name: multus-admission-controller
     uid: 3e8b5ec7-a6ed-4455-a1f8-decd089d7077
-  resourceVersion: "9757"
+  resourceVersion: "9760"
   uid: 8fe3098f-afd0-4c85-95c8-67b2acb80c55
 spec:
   replicas: 2
@@ -263,7 +263,7 @@ spec:
           secretName: multus-admission-controller-secret
 status:
   availableReplicas: 1
-  fullyLabeledReplicas: 1
+  fullyLabeledReplicas: 2
   observedGeneration: 2
   readyReplicas: 1
-  replicas: 1
+  replicas: 2
