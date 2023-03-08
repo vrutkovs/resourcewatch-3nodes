@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:51:38Z"
-deprecatedLastTimestamp: "2023-03-08T11:51:38Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:39Z"
 deprecatedSource:
   component: cluster-authentication-operator-config-observer-configobserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: authentication-operator
     operation: Update
-    time: "2023-03-08T11:51:38Z"
+    time: "2023-03-08T11:51:39Z"
   name: authentication-operator.174a6f66dbd204f9
   namespace: openshift-authentication-operator
-  resourceVersion: "17472"
+  resourceVersion: "17603"
   uid: bbdb6d2c-66e5-45e1-ac6d-71396488eb3f
 note: 'Writing updated section ("oauthAPIServer") of observed config: "\u00a0\u00a0map[string]interface{}{\n\u00a0\u00a0\t\"apiServerArguments\":
   map[string]interface{}{\n\u00a0\u00a0\t\t\"api-audiences\":        []interface{}{string(\"https://kubernetes.default.svc\")},\n\u00a0\u00a0\t\t\"cors-allowed-origins\":
