@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "8697"
+  resourceVersion: "8713"
   uid: a3caedc9-3281-4798-96b2-aca0237d461d
 spec: {}
 status:
@@ -83,6 +83,9 @@ status:
   - group: operator.openshift.io
     name: default
     resource: dnses
+  - group: ""
+    name: openshift-dns
+    resource: namespaces
   versions:
   - name: operator
     version: 4.12.0-0.okd-2023-03-04-063026
