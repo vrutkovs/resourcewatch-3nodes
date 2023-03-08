@@ -148,6 +148,24 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:50:07Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          .: {}
+          k:{"type":"PodScheduled"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:50:08Z"
   name: route-controller-manager-587bbb7847-kf29p
   namespace: openshift-route-controller-manager
   ownerReferences:
@@ -157,7 +175,7 @@ metadata:
     kind: ReplicaSet
     name: route-controller-manager-587bbb7847
     uid: f76cc7a6-c3c3-4b1c-a3ad-69bc8b325b8d
-  resourceVersion: "16249"
+  resourceVersion: "16252"
   uid: 48615650-fca8-44dd-8e47-06656c0e166a
 spec:
   affinity:
@@ -296,5 +314,14 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:50:08Z"
+    message: '0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity rules.
+      preemption: 0/3 nodes are available: 3 node(s) didn''t match pod anti-affinity
+      rules.'
+    reason: Unschedulable
+    status: "False"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
