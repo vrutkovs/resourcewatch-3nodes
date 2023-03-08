@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:38Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:38Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:38Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:46:38Z"
+  name: cluster-version-operator-79cdd6dcf6-npqjw.174a6f21082fedae
+  namespace: openshift-cluster-version
+  resourceVersion: "9302"
+  uid: 94139592-a7a8-4f90-9615-dd0e22b63312
+note: Pulling image "registry.ci.openshift.org/origin/release@sha256:f4bc695a8ea05f8d20cb5306b2923f328ec15b8774c3b583deff031007930ba4"
+reason: Pulling
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{cluster-version-operator}
+  kind: Pod
+  name: cluster-version-operator-79cdd6dcf6-npqjw
+  namespace: openshift-cluster-version
+  resourceVersion: "2330"
+  uid: 2c9b4b1e-44e2-49ed-bacc-a84b1c5117b3
+type: Normal
