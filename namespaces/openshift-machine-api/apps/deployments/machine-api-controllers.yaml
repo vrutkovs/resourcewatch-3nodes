@@ -38,7 +38,9 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
+        f:replicas: {}
         f:unavailableReplicas: {}
+        f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -406,7 +408,7 @@ metadata:
     time: "2023-03-08T11:46:22Z"
   name: machine-api-controllers
   namespace: openshift-machine-api
-  resourceVersion: "8495"
+  resourceVersion: "8503"
   uid: 1cbd80a1-c5e2-453e-8050-c7c8ca139c58
 spec:
   progressDeadlineSeconds: 600
@@ -728,15 +730,17 @@ status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:46:22Z"
     lastUpdateTime: "2023-03-08T11:46:22Z"
-    message: Created new replica set "machine-api-controllers-67b4c49c5"
-    reason: NewReplicaSetCreated
-    status: "True"
-    type: Progressing
-  - lastTransitionTime: "2023-03-08T11:46:22Z"
-    lastUpdateTime: "2023-03-08T11:46:22Z"
     message: Deployment does not have minimum availability.
     reason: MinimumReplicasUnavailable
     status: "False"
     type: Available
+  - lastTransitionTime: "2023-03-08T11:46:22Z"
+    lastUpdateTime: "2023-03-08T11:46:22Z"
+    message: ReplicaSet "machine-api-controllers-67b4c49c5" is progressing.
+    reason: ReplicaSetUpdated
+    status: "True"
+    type: Progressing
   observedGeneration: 1
+  replicas: 1
   unavailableReplicas: 1
+  updatedReplicas: 1
