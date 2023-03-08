@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 13
+deprecatedCount: 14
 deprecatedFirstTimestamp: "2023-03-08T11:46:36Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:56Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:17Z"
 deprecatedSource:
   component: openshift-apiserver-operator-config-observer-configobserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-openshift-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:46:56Z"
+    time: "2023-03-08T11:47:17Z"
   name: openshift-apiserver-operator.174a6f207759015d
   namespace: openshift-apiserver-operator
-  resourceVersion: "10152"
+  resourceVersion: "10673"
   uid: 08634301-2876-44f1-9c7c-6232916b78a3
 note: 'configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found'
 reason: ObserveStorageFailed
