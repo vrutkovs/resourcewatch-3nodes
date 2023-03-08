@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "9705"
+  resourceVersion: "9716"
   uid: b847a3b2-5e9a-4598-8142-d35d20a8b280
 spec: {}
 status:
@@ -61,7 +61,7 @@ status:
       NodeControllerDegraded: All master nodes are ready
       GarbageCollectorDegraded: error fetching rules: Get "https://thanos-querier.openshift-monitoring.svc:9091/api/v1/rules": dial tcp: lookup thanos-querier.openshift-monitoring.svc on 172.30.0.10:53: read udp 10.130.0.11:38907->172.30.0.10:53: read: connection refused
       InstallerControllerDegraded: missing required resources: configmaps: client-ca
-      GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal]
+      GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal]
     reason: AsExpected
     status: "False"
     type: Degraded
