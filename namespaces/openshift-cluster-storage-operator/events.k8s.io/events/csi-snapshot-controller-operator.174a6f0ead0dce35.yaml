@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:19Z"
+deprecatedSource:
+  component: csi-snapshot-controller-operator-csisnapshotstaticresourcecontroller-staticresourcecontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: csi-snapshot-controller-operator
+    operation: Update
+    time: "2023-03-08T11:45:20Z"
+  name: csi-snapshot-controller-operator.174a6f0ead0dce35
+  namespace: openshift-cluster-storage-operator
+  resourceVersion: "4561"
+  uid: a7288d1d-0a7a-4e6b-b4ee-3a1b2cd7b2a0
+note: Created PodDisruptionBudget.policy/csi-snapshot-controller-pdb -n openshift-cluster-storage-operator
+  because it was missing
+reason: PodDisruptionBudgetCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: csi-snapshot-controller-operator
+  namespace: openshift-cluster-storage-operator
+  uid: 7ecf14bc-365f-4dfd-93bf-56fe36844200
+type: Normal
