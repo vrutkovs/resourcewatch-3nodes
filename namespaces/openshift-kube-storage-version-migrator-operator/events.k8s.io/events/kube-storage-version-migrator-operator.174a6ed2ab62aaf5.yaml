@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:41:02Z"
+deprecatedLastTimestamp: "2023-03-08T11:41:02Z"
+deprecatedSource:
+  component: deployment-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:41:02Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:41:02Z"
+  name: kube-storage-version-migrator-operator.174a6ed2ab62aaf5
+  namespace: openshift-kube-storage-version-migrator-operator
+  resourceVersion: "1302"
+  uid: 8ecc3405-aac2-4a26-ae22-678473a3d348
+note: Scaled up replica set kube-storage-version-migrator-operator-75f889864f to 1
+reason: ScalingReplicaSet
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-storage-version-migrator-operator
+  namespace: openshift-kube-storage-version-migrator-operator
+  resourceVersion: "1298"
+  uid: f016a113-bb7d-43d0-b069-9f3053e9bbef
+type: Normal
