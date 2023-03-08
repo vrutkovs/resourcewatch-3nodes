@@ -194,12 +194,11 @@ metadata:
         f:observedGeneration: {}
         f:readyReplicas: {}
         f:replicas: {}
-        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:16Z"
+    time: "2023-03-08T11:51:34Z"
   name: packageserver
   namespace: openshift-operator-lifecycle-manager
   ownerReferences:
@@ -209,7 +208,7 @@ metadata:
     kind: ClusterServiceVersion
     name: packageserver
     uid: 9b7400be-cf16-4a25-947a-44c11c45fe73
-  resourceVersion: "17019"
+  resourceVersion: "17334"
   uid: 9d4bdb9a-4d7d-45aa-aac8-7526a31bfac8
 spec:
   progressDeadlineSeconds: 600
@@ -345,7 +344,7 @@ spec:
             path: tls.key
           secretName: packageserver-service-cert
 status:
-  availableReplicas: 1
+  availableReplicas: 2
   conditions:
   - lastTransitionTime: "2023-03-08T11:46:12Z"
     lastUpdateTime: "2023-03-08T11:46:12Z"
@@ -360,7 +359,6 @@ status:
     status: "True"
     type: Progressing
   observedGeneration: 1
-  readyReplicas: 1
+  readyReplicas: 2
   replicas: 2
-  unavailableReplicas: 1
   updatedReplicas: 2
