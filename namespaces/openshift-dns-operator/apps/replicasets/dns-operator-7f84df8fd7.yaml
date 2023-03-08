@@ -149,13 +149,15 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:23Z"
+    time: "2023-03-08T11:56:01Z"
   name: dns-operator-7f84df8fd7
   namespace: openshift-dns-operator
   ownerReferences:
@@ -165,7 +167,7 @@ metadata:
     kind: Deployment
     name: dns-operator
     uid: 07216340-ff9d-4889-8102-42f699941439
-  resourceVersion: "21644"
+  resourceVersion: "23346"
   uid: 3aa4226a-67af-4416-b3ae-029610266703
 spec:
   replicas: 1
@@ -270,6 +272,8 @@ spec:
           defaultMode: 420
           secretName: metrics-tls
 status:
+  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
+  readyReplicas: 1
   replicas: 1
