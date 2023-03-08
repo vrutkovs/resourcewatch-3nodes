@@ -90,10 +90,8 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -108,7 +106,7 @@ metadata:
     kind: Deployment
     name: csi-snapshot-controller
     uid: a6920e1f-a3c3-4858-9f1c-c4596389cc7b
-  resourceVersion: "21164"
+  resourceVersion: "21382"
   uid: 62b7bce1-4b04-4797-8d10-7a3412341425
 spec:
   replicas: 2
@@ -182,8 +180,6 @@ spec:
         key: node-role.kubernetes.io/master
         operator: Exists
 status:
-  availableReplicas: 1
   fullyLabeledReplicas: 2
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 2
