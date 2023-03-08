@@ -381,8 +381,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -395,12 +393,11 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
+        f:phase: {}
         f:podIP: {}
         f:podIPs:
           .: {}
@@ -411,7 +408,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:29Z"
+    time: "2023-03-08T11:45:57Z"
   name: gcp-pd-csi-driver-controller-6f5ffd6776-qpwsw
   namespace: openshift-cluster-csi-drivers
   ownerReferences:
@@ -421,7 +418,7 @@ metadata:
     kind: ReplicaSet
     name: gcp-pd-csi-driver-controller-6f5ffd6776
     uid: aa62a819-3836-4605-b527-b86540f7a1e2
-  resourceVersion: "6174"
+  resourceVersion: "7423"
   uid: 36b6b3b7-1260-44e3-a7cc-024337bd0f7b
 spec:
   affinity:
@@ -793,128 +790,130 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:29Z"
-    message: 'containers with unready status: [csi-driver csi-provisioner provisioner-kube-rbac-proxy
-      csi-attacher attacher-kube-rbac-proxy csi-resizer resizer-kube-rbac-proxy csi-snapshotter
-      snapshotter-kube-rbac-proxy csi-liveness-probe]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:45:57Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:29Z"
-    message: 'containers with unready status: [csi-driver csi-provisioner provisioner-kube-rbac-proxy
-      csi-attacher attacher-kube-rbac-proxy csi-resizer resizer-kube-rbac-proxy csi-snapshotter
-      snapshotter-kube-rbac-proxy csi-liveness-probe]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:45:57Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:29Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+  - containerID: cri-o://1f4349936c582a3cfc603e7bcb4753638746afd0c671b18f6ed1a23476f8615e
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: attacher-kube-rbac-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c12ae333ed7dc5e9bdff760653ab9c93a0fd033c3baad25cec6e9347c6731a3c
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:45:47Z"
+  - containerID: cri-o://cd5b0181d23eac2f017ee462ac12e7e26c21b3652f111648e5f18ea204d872aa
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c12ae333ed7dc5e9bdff760653ab9c93a0fd033c3baad25cec6e9347c6731a3c
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c12ae333ed7dc5e9bdff760653ab9c93a0fd033c3baad25cec6e9347c6731a3c
     lastState: {}
     name: csi-attacher
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b2b43aedb2296989c3b4015bdf7ea568f4a117a7e1369d21ab61855b3f6e4417
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:45:47Z"
+  - containerID: cri-o://65fe966fa2e3fcf7d88a36ea4a626ccc12d1926a1368f9bcaf2b5e155b898852
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b2b43aedb2296989c3b4015bdf7ea568f4a117a7e1369d21ab61855b3f6e4417
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:b2b43aedb2296989c3b4015bdf7ea568f4a117a7e1369d21ab61855b3f6e4417
     lastState: {}
     name: csi-driver
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ea25c2f3749dee6981359b4655a9acfcd4d95547066ccdf328354b548da74932
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:45:37Z"
+  - containerID: cri-o://a8f4f7677006d50ea9a5cf8a0b8d0383c273626ede5459daaf29e9721a8152ce
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ea25c2f3749dee6981359b4655a9acfcd4d95547066ccdf328354b548da74932
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ea25c2f3749dee6981359b4655a9acfcd4d95547066ccdf328354b548da74932
     lastState: {}
     name: csi-liveness-probe
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9f72c0dcc965dd85343e7b31e37c926ccd77ab7d7ce3ab6097755cc05958df43
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:45:57Z"
+  - containerID: cri-o://b394f53467d0463bae5d0feb57158ceab77ed3b2ade441fec8ebaaf0ef969a3c
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9f72c0dcc965dd85343e7b31e37c926ccd77ab7d7ce3ab6097755cc05958df43
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9f72c0dcc965dd85343e7b31e37c926ccd77ab7d7ce3ab6097755cc05958df43
     lastState: {}
     name: csi-provisioner
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:756f467707ce5a7b61755327167fea9dd9360b728b1b48508e012bf5102ca174
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:45:41Z"
+  - containerID: cri-o://05aad09d398521711504eaf67656d65ad2424aa97917d0a295726e53aa642b8a
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:756f467707ce5a7b61755327167fea9dd9360b728b1b48508e012bf5102ca174
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:756f467707ce5a7b61755327167fea9dd9360b728b1b48508e012bf5102ca174
     lastState: {}
     name: csi-resizer
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a44a2abb11a91246bb4c9dff91b97303523fa7b2a6a92c570dc13e6b41537b0e
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:45:51Z"
+  - containerID: cri-o://87de4ad65ac71a451fdf1d396e094f9038ef46b444910d5546493dec07682b76
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a44a2abb11a91246bb4c9dff91b97303523fa7b2a6a92c570dc13e6b41537b0e
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a44a2abb11a91246bb4c9dff91b97303523fa7b2a6a92c570dc13e6b41537b0e
     lastState: {}
     name: csi-snapshotter
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:45:56Z"
+  - containerID: cri-o://5c76323ac888ecdc69e27e26b9b450c4226b949c0d246220094837215c592019
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: provisioner-kube-rbac-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:45:41Z"
+  - containerID: cri-o://30d5fb0f023068d34ceed6c541f7e7c35498eac31583f926c138261a8d919965
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: resizer-kube-rbac-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:45:51Z"
+  - containerID: cri-o://ec5b6ba2f7f1e2110f616db58d6862234c582ef3f410f83df9d167ab5c784be8
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ff07afaff7fff38e3124162c5791ba969bcd750be02d5878f0387aed62517fa9
     lastState: {}
     name: snapshotter-kube-rbac-proxy
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
+      running:
+        startedAt: "2023-03-08T11:45:56Z"
   hostIP: 10.0.0.4
-  phase: Pending
+  phase: Running
   podIP: 10.0.0.4
   podIPs:
   - ip: 10.0.0.4
