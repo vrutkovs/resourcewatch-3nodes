@@ -221,6 +221,14 @@ metadata:
       f:status:
         f:conditions:
           .: {}
+          k:{"type":"Available"}:
+            .: {}
+            f:lastTransitionTime: {}
+            f:lastUpdateTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
           k:{"type":"Progressing"}:
             .: {}
             f:lastTransitionTime: {}
@@ -229,13 +237,15 @@ metadata:
             f:reason: {}
             f:status: {}
             f:type: {}
+        f:observedGeneration: {}
+        f:unavailableReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
     time: "2023-03-08T11:58:17Z"
   name: console
   namespace: openshift-console
-  resourceVersion: "24905"
+  resourceVersion: "24911"
   uid: 8f84f431-418b-4093-8b7b-7db6c01ba2b1
 spec:
   progressDeadlineSeconds: 600
@@ -398,3 +408,11 @@ status:
     reason: NewReplicaSetCreated
     status: "True"
     type: Progressing
+  - lastTransitionTime: "2023-03-08T11:58:17Z"
+    lastUpdateTime: "2023-03-08T11:58:17Z"
+    message: Deployment does not have minimum availability.
+    reason: MinimumReplicasUnavailable
+    status: "False"
+    type: Available
+  observedGeneration: 1
+  unavailableReplicas: 2
