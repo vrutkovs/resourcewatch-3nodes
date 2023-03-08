@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:19Z"
+deprecatedSource:
+  component: kube-apiserver-operator-serviceaccountissuercontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:45:20Z"
+  name: kube-apiserver-operator.174a6f0ea54bbceb
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "4669"
+  uid: 50e43a83-e5c2-467f-9ff9-b56ad49bc9cc
+note: Issuer set to default value "https://kubernetes.default.svc"
+reason: ServiceAccountIssuer
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
