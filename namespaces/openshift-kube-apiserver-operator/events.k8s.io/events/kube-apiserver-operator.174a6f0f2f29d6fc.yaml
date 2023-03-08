@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:22Z"
+deprecatedSource:
+  component: kube-apiserver-operator-guardcontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:22Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:45:22Z"
+  name: kube-apiserver-operator.174a6f0f2f29d6fc
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "5119"
+  uid: fd4c6d66-2bb4-4cef-99d2-022c3463b7ce
+note: Created PodDisruptionBudget.policy/kube-apiserver-guard-pdb -n openshift-kube-apiserver
+  because it was missing
+reason: PodDisruptionBudgetCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
