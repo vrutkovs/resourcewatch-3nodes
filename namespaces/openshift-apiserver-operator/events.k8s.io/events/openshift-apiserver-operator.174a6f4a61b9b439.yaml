@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:49:36Z"
-deprecatedLastTimestamp: "2023-03-08T11:49:36Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:39Z"
 deprecatedSource:
   component: openshift-apiserver-operator-openshiftapiserverworkloadcontroller
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-openshift-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:49:36Z"
+    time: "2023-03-08T11:51:39Z"
   name: openshift-apiserver-operator.174a6f4a61b9b439
   namespace: openshift-apiserver-operator
-  resourceVersion: "13446"
+  resourceVersion: "17505"
   uid: 79bf4b63-c147-4775-b7fa-1c3b2450ecf4
 note: |-
   Updated ConfigMap/config -n openshift-apiserver:
