@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:58:26Z"
-deprecatedLastTimestamp: "2023-03-08T11:58:26Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:27Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:58:26Z"
+    time: "2023-03-08T11:58:27Z"
   name: downloads-7dcb49757d-gkxwl.174a6fc5b8164044
   namespace: openshift-console
-  resourceVersion: "25094"
+  resourceVersion: "25126"
   uid: ba211771-f275-4e71-b2d4-78bc5680f618
 note: "Readiness probe error: Get \"http://10.129.2.9:8080/\": dial tcp 10.129.2.9:8080:
   connect: connection refused\nbody: \n"
