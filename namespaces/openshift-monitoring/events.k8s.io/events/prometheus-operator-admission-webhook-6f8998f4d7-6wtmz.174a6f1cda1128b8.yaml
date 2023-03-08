@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:20Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:46:20Z"
+  name: prometheus-operator-admission-webhook-6f8998f4d7-6wtmz.174a6f1cda1128b8
+  namespace: openshift-monitoring
+  resourceVersion: "8371"
+  uid: dbd363b6-8fdd-4bd2-977e-4dc03b7f3a60
+note: '0/3 nodes are available: 3 node(s) had untolerated taint {node-role.kubernetes.io/master:
+  }. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.'
+reason: FailedScheduling
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: prometheus-operator-admission-webhook-6f8998f4d7-6wtmz
+  namespace: openshift-monitoring
+  resourceVersion: "8368"
+  uid: 4ebedea4-66ac-462c-bc6a-8dd47119ea57
+type: Warning
