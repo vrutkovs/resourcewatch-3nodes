@@ -44,14 +44,14 @@ metadata:
     manager: authentication-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:47Z"
+    time: "2023-03-08T11:46:48Z"
   name: authentication
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "9820"
+  resourceVersion: "9864"
   uid: 9fc24524-59af-49df-872f-a2431ffee4b2
 spec: {}
 status:
@@ -63,11 +63,7 @@ status:
       configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found\nOAuthServerConfigObservationDegraded:
       secret \"v4-0-config-system-router-certs\" not found\nIngressStateEndpointsDegraded:
       No subsets found for the endpoints of oauth-server\nAPIServerDeploymentDegraded:
-      waiting for observed configuration to have mandatory apiServerArguments.etcd-servers\nAPIServerDeploymentDegraded:
-      \nRouterCertsDegraded: neither the custom secret/v4-0-config-system-router-certs
-      -n openshift-authentication or default secret/v4-0-config-system-custom-router-certs
-      -n openshift-authentication could be retrieved: secret \"v4-0-config-system-router-certs\"
-      not found"
+      waiting for observed configuration to have mandatory apiServerArguments.etcd-servers\nAPIServerDeploymentDegraded: "
     reason: AsExpected
     status: "False"
     type: Degraded
