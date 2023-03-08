@@ -3,6 +3,28 @@ kind: Pod
 metadata:
   annotations:
     k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.129.2.12/23"],"mac_address":"0a:58:0a:81:02:0c","gateway_ips":["10.129.2.1"],"ip_address":"10.129.2.12/23","gateway_ip":"10.129.2.1"}}'
+    k8s.v1.cni.cncf.io/network-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.129.2.12"
+          ],
+          "mac": "0a:58:0a:81:02:0c",
+          "default": true,
+          "dns": {}
+      }]
+    k8s.v1.cni.cncf.io/networks-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.129.2.12"
+          ],
+          "mac": "0a:58:0a:81:02:0c",
+          "default": true,
+          "dns": {}
+      }]
     openshift.io/scc: restricted-v2
     seccomp.security.alpha.kubernetes.io/pod: runtime/default
     telemeter-token-hash: "b3BlbnNoaWZ0LXJlbGVhc2UtZGV2K3ZydXRrb3ZzcmVkaGF0Y29tMWRsdWI2bmFtd3Fsemg2b2s2ZnhjNnpvZGdoOlI3M0hWWjVVNDhXT0NUWkNWSk5JSUNYTzMwMURKTVhUME4wVFpaNkU2T1ZVUUJYWUkwMzFIUVJVMVdXVkYyT1g=���B��\x1C\x14���șo�$'�A�d��L���\exR�U"
@@ -257,6 +279,17 @@ metadata:
     manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     operation: Update
     time: "2023-03-08T11:59:04Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:59:05Z"
   name: telemeter-client-5985d5f4cb-fgdg6
   namespace: openshift-monitoring
   ownerReferences:
@@ -266,7 +299,7 @@ metadata:
     kind: ReplicaSet
     name: telemeter-client-5985d5f4cb
     uid: 4781e20c-252d-41f3-b0d1-784d33107728
-  resourceVersion: "26112"
+  resourceVersion: "26187"
   uid: 23b98a38-04ff-4543-96db-a1eded0d1882
 spec:
   containers:
