@@ -26,12 +26,24 @@ metadata:
     manager: cluster-version-operator
     operation: Update
     time: "2023-03-08T11:41:12Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        .: {}
+        f:internalRegistryHostname: {}
+    manager: cluster-image-registry-operator
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:43Z"
   name: cluster
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "1581"
+  resourceVersion: "17780"
   uid: 5b0bf2c3-69d2-4db1-9142-2ee96c76405d
 spec: {}
+status:
+  internalRegistryHostname: image-registry.openshift-image-registry.svc:5000
