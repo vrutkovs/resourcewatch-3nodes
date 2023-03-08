@@ -149,10 +149,8 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -167,7 +165,7 @@ metadata:
     kind: Deployment
     name: dns-operator
     uid: 07216340-ff9d-4889-8102-42f699941439
-  resourceVersion: "8549"
+  resourceVersion: "21644"
   uid: 3aa4226a-67af-4416-b3ae-029610266703
 spec:
   replicas: 1
@@ -272,8 +270,6 @@ spec:
           defaultMode: 420
           secretName: metrics-tls
 status:
-  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
