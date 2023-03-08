@@ -187,7 +187,7 @@ metadata:
     kind: Deployment
     name: route-controller-manager
     uid: c15bf2b6-9bc1-4767-b6fa-09e49be47380
-  resourceVersion: "19795"
+  resourceVersion: "19802"
   uid: 13a315ce-c5c6-4853-a515-8577587649a7
 spec:
   replicas: 3
@@ -311,6 +311,6 @@ spec:
 status:
   availableReplicas: 2
   fullyLabeledReplicas: 2
-  observedGeneration: 3
+  observedGeneration: 4
   readyReplicas: 2
   replicas: 2
