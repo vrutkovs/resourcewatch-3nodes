@@ -1,0 +1,45 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:50:18Z"
+deprecatedLastTimestamp: "2023-03-08T11:50:18Z"
+deprecatedSource:
+  component: kube-controller-manager-operator-status-controller-statussyncer_kube-controller-manager
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:50:18Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-controller-manager-operator
+    operation: Update
+    time: "2023-03-08T11:50:18Z"
+  name: kube-controller-manager-operator.174a6f541b51e504
+  namespace: openshift-kube-controller-manager-operator
+  resourceVersion: "16498"
+  uid: 055e659d-b648-491a-87ad-110f7c301181
+note: 'Status for clusteroperator/kube-controller-manager changed: Progressing message
+  changed from "NodeInstallerProgressing: 1 nodes are at revision 0; 2 nodes are at
+  revision 5" to "NodeInstallerProgressing: 1 nodes are at revision 0; 2 nodes are
+  at revision 5; 0 nodes have achieved new revision 6",Available message changed from
+  "StaticPodsAvailable: 2 nodes are active; 1 nodes are at revision 0; 2 nodes are
+  at revision 5" to "StaticPodsAvailable: 2 nodes are active; 1 nodes are at revision
+  0; 2 nodes are at revision 5; 0 nodes have achieved new revision 6"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-controller-manager-operator
+  namespace: openshift-kube-controller-manager-operator
+  uid: 71b7e195-265a-4ece-8449-dc704acd0130
+type: Normal
