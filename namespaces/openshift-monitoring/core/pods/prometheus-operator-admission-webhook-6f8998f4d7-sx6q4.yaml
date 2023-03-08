@@ -141,7 +141,7 @@ metadata:
     kind: ReplicaSet
     name: prometheus-operator-admission-webhook-6f8998f4d7
     uid: b756bd42-ba35-4333-bd4a-e1bcc5e65050
-  resourceVersion: "8367"
+  resourceVersion: "20585"
   uid: 516512e0-fc71-4af7-8ce2-1f2047de5916
 spec:
   affinity:
@@ -206,6 +206,7 @@ spec:
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
+  nodeName: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
   preemptionPolicy: PreemptLowerPriority
   priority: 2000000000
   priorityClassName: system-cluster-critical
@@ -245,11 +246,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:20Z"
-    message: '0/3 nodes are available: 3 node(s) had untolerated taint {node-role.kubernetes.io/master:
-      }. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.'
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:52:57Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
