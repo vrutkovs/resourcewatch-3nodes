@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:47:44Z"
 deprecatedLastTimestamp: "2023-03-08T11:47:44Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:47:44Z"
   name: etcd-operator.174a6f306a2d003b
   namespace: openshift-etcd-operator
-  resourceVersion: "11150"
+  resourceVersion: "11155"
   uid: 299bb017-9dd3-4b2b-9ec4-c1b090a85143
 note: 'unstarted members: NAME-PENDING-10.0.0.5'
 reason: UnstartedEtcdMember
