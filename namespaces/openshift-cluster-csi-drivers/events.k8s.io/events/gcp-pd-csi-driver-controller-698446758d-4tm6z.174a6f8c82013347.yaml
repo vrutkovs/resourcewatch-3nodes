@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:54:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:20Z"
+deprecatedSource:
+  component: node-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:54:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:54:20Z"
+  name: gcp-pd-csi-driver-controller-698446758d-4tm6z.174a6f8c82013347
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "21615"
+  uid: b97213a1-2a89-466b-8ed8-861bd4e44d49
+note: Node is not ready
+reason: NodeNotReady
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: gcp-pd-csi-driver-controller-698446758d-4tm6z
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "7426"
+  uid: 336a37d8-baec-4070-871a-5f61d2648f78
+type: Warning
