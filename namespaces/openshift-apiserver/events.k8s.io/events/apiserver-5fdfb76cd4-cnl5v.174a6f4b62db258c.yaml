@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:49:40Z"
-deprecatedLastTimestamp: "2023-03-08T11:49:40Z"
+deprecatedLastTimestamp: "2023-03-08T11:49:45Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:49:40Z"
+    time: "2023-03-08T11:49:45Z"
   name: apiserver-5fdfb76cd4-cnl5v.174a6f4b62db258c
   namespace: openshift-apiserver
-  resourceVersion: "13602"
+  resourceVersion: "14353"
   uid: 046f9b80-9824-461b-86ed-636e5a731bf7
 note: 'Readiness probe failed: HTTP probe failed with statuscode: 500'
 reason: Unhealthy
