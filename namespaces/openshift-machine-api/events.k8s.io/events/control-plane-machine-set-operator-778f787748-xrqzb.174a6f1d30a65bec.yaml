@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:22Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:26Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:46:26Z"
+  name: control-plane-machine-set-operator-778f787748-xrqzb.174a6f1d30a65bec
+  namespace: openshift-machine-api
+  resourceVersion: "8766"
+  uid: 532cb4c6-d374-426b-a51e-1c08bc3b64d6
+note: Started container control-plane-machine-set-operator
+reason: Started
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{control-plane-machine-set-operator}
+  kind: Pod
+  name: control-plane-machine-set-operator-778f787748-xrqzb
+  namespace: openshift-machine-api
+  resourceVersion: "3820"
+  uid: e7632d31-75ab-4a45-9e70-6a8c0fbf097b
+type: Normal
