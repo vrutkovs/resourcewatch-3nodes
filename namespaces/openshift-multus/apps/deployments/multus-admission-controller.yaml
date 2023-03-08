@@ -129,6 +129,7 @@ metadata:
         f:observedGeneration: {}
         f:readyReplicas: {}
         f:replicas: {}
+        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -143,7 +144,7 @@ metadata:
     kind: Network
     name: cluster
     uid: 0ac8c00f-db30-4ed0-a498-7a1162bac022
-  resourceVersion: "9743"
+  resourceVersion: "9762"
   uid: 3e8b5ec7-a6ed-4455-a1f8-decd089d7077
 spec:
   progressDeadlineSeconds: 600
@@ -247,7 +248,7 @@ spec:
           defaultMode: 420
           secretName: multus-admission-controller-secret
 status:
-  availableReplicas: 3
+  availableReplicas: 2
   conditions:
   - lastTransitionTime: "2023-03-08T11:46:23Z"
     lastUpdateTime: "2023-03-08T11:46:23Z"
@@ -262,6 +263,7 @@ status:
     status: "True"
     type: Progressing
   observedGeneration: 2
-  readyReplicas: 3
-  replicas: 3
+  readyReplicas: 2
+  replicas: 2
+  unavailableReplicas: 1
   updatedReplicas: 1
