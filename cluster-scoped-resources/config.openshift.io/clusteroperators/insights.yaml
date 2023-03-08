@@ -50,14 +50,14 @@ metadata:
     manager: insights-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:55:51Z"
+    time: "2023-03-08T12:05:22Z"
   name: insights
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "22921"
+  resourceVersion: "30465"
   uid: c51122ba-49b4-4287-8003-bf2d905c95ae
 spec: {}
 status:
@@ -95,7 +95,7 @@ status:
     status: "True"
     type: Upgradeable
   extension:
-    lastReportTime: null
+    lastReportTime: "2023-03-08T12:05:21Z"
   relatedObjects:
   - group: ""
     name: openshift-insights
