@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:20Z"
+deprecatedSource:
+  component: replicaset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:46:20Z"
+  name: prometheus-operator-admission-webhook-6f8998f4d7.174a6f1cd9eddd75
+  namespace: openshift-monitoring
+  resourceVersion: "8369"
+  uid: 88089b8d-9b17-4209-aa45-c4b9339ef0a3
+note: 'Created pod: prometheus-operator-admission-webhook-6f8998f4d7-6wtmz'
+reason: SuccessfulCreate
+regarding:
+  apiVersion: apps/v1
+  kind: ReplicaSet
+  name: prometheus-operator-admission-webhook-6f8998f4d7
+  namespace: openshift-monitoring
+  resourceVersion: "8358"
+  uid: b756bd42-ba35-4333-bd4a-e1bcc5e65050
+type: Normal
