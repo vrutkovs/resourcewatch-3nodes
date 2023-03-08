@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 17
+deprecatedFirstTimestamp: "2023-03-08T11:42:21Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:03Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:55:08Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:55:08Z"
+  name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal.174a6ee51814cb1d
+  namespace: default
+  resourceVersion: "22217"
+  uid: 7a95976f-b545-424e-bff3-63e260d0abf5
+note: 'Node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal status is now:
+  NodeHasNoDiskPressure'
+reason: NodeHasNoDiskPressure
+regarding:
+  kind: Node
+  name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+  uid: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+type: Normal
