@@ -131,7 +131,7 @@ metadata:
     manager: kube-scheduler
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:20Z"
+    time: "2023-03-08T11:52:57Z"
   name: prometheus-operator-admission-webhook-6f8998f4d7-6wtmz
   namespace: openshift-monitoring
   ownerReferences:
@@ -141,7 +141,7 @@ metadata:
     kind: ReplicaSet
     name: prometheus-operator-admission-webhook-6f8998f4d7
     uid: b756bd42-ba35-4333-bd4a-e1bcc5e65050
-  resourceVersion: "8373"
+  resourceVersion: "20598"
   uid: 4ebedea4-66ac-462c-bc6a-8dd47119ea57
 spec:
   affinity:
@@ -246,8 +246,11 @@ status:
   conditions:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:20Z"
-    message: '0/3 nodes are available: 3 node(s) had untolerated taint {node-role.kubernetes.io/master:
-      }. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.'
+    message: '0/6 nodes are available: 1 node(s) didn''t match pod anti-affinity rules,
+      2 node(s) had untolerated taint {node.kubernetes.io/not-ready: }, 3 node(s)
+      had untolerated taint {node-role.kubernetes.io/master: }. preemption: 0/6 nodes
+      are available: 1 node(s) didn''t match pod anti-affinity rules, 5 Preemption
+      is not helpful for scheduling.'
     reason: Unschedulable
     status: "False"
     type: PodScheduled
