@@ -385,6 +385,24 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:45:57Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          .: {}
+          k:{"type":"PodScheduled"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:45:57Z"
   name: gcp-pd-csi-driver-controller-698446758d-grtxq
   namespace: openshift-cluster-csi-drivers
   ownerReferences:
@@ -394,7 +412,7 @@ metadata:
     kind: ReplicaSet
     name: gcp-pd-csi-driver-controller-698446758d
     uid: e75b4e83-6635-4ade-8599-427215f5eca9
-  resourceVersion: "7445"
+  resourceVersion: "7452"
   uid: f745d93d-5348-4337-bf35-b50eefbacda9
 spec:
   affinity:
@@ -769,5 +787,14 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:45:57Z"
+    message: '0/3 nodes are available: 3 node(s) didn''t have free ports for the requested
+      pod ports. preemption: 0/3 nodes are available: 3 node(s) didn''t have free
+      ports for the requested pod ports.'
+    reason: Unschedulable
+    status: "False"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
