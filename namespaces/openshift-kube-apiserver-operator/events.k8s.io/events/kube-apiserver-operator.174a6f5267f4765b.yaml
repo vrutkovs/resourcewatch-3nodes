@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:50:10Z"
-deprecatedLastTimestamp: "2023-03-08T11:50:10Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:49Z"
 deprecatedSource:
   component: kube-apiserver-operator-status-controller-statussyncer_kube-apiserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-kube-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:50:10Z"
+    time: "2023-03-08T11:51:49Z"
   name: kube-apiserver-operator.174a6f5267f4765b
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "16327"
+  resourceVersion: "18545"
   uid: 49f37568-6df6-481b-af8b-7ac80405bf8b
 note: 'Status for clusteroperator/kube-apiserver changed: Degraded message changed
   from "GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal,
