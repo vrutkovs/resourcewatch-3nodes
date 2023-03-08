@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:41:03Z"
+deprecatedLastTimestamp: "2023-03-08T11:41:03Z"
+deprecatedSource:
+  component: deployment-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:41:03Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:41:03Z"
+  name: dns-operator.174a6ed2e6bae6cd
+  namespace: openshift-dns-operator
+  resourceVersion: "1340"
+  uid: 8bce861f-b5c0-4ee0-8ec2-32f227caa9f3
+note: Scaled up replica set dns-operator-7f84df8fd7 to 1
+reason: ScalingReplicaSet
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: dns-operator
+  namespace: openshift-dns-operator
+  resourceVersion: "1337"
+  uid: 07216340-ff9d-4889-8102-42f699941439
+type: Normal
