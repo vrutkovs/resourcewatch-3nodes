@@ -215,24 +215,11 @@ metadata:
     fieldsV1:
       f:status:
         f:conditions:
-          k:{"type":"Ready"}:
-            f:status: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:54:19Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:status:
-        f:conditions:
           .: {}
           k:{"type":"ContainersReady"}:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -251,8 +238,7 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
+            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -268,7 +254,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:55:05Z"
+    time: "2023-03-08T11:55:56Z"
   name: openshift-kube-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
   namespace: openshift-kube-scheduler
   ownerReferences:
@@ -277,7 +263,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
     uid: d1bb260b-ed05-4c1f-9090-1cf4ac4bb308
-  resourceVersion: "22092"
+  resourceVersion: "23186"
   uid: 24a959c4-ec13-4541-b9a2-907e898bd4ce
 spec:
   containers:
@@ -446,16 +432,12 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:55:04Z"
-    message: 'containers with unready status: [kube-scheduler]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:55:56Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:55:04Z"
-    message: 'containers with unready status: [kube-scheduler]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:55:56Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:24Z"
@@ -483,7 +465,7 @@ status:
         reason: Error
         startedAt: "2023-03-08T11:48:26Z"
     name: kube-scheduler
-    ready: false
+    ready: true
     restartCount: 1
     started: true
     state:
