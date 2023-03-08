@@ -149,7 +149,6 @@ metadata:
         f:annotations:
           f:deployment.kubernetes.io/revision: {}
       f:status:
-        f:availableReplicas: {}
         f:conditions:
           .: {}
           k:{"type":"Available"}:
@@ -169,13 +168,13 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
+        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:16Z"
+    time: "2023-03-08T11:46:47Z"
   name: openshift-controller-manager-operator
   namespace: openshift-controller-manager-operator
   ownerReferences:
@@ -183,7 +182,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "4214"
+  resourceVersion: "9826"
   uid: ab5ffe37-a50a-427e-9cfd-7a04e929aa56
 spec:
   progressDeadlineSeconds: 600
@@ -285,14 +284,7 @@ spec:
           name: openshift-controller-manager-operator-config
         name: config
 status:
-  availableReplicas: 1
   conditions:
-  - lastTransitionTime: "2023-03-08T11:45:16Z"
-    lastUpdateTime: "2023-03-08T11:45:16Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
   - lastTransitionTime: "2023-03-08T11:41:05Z"
     lastUpdateTime: "2023-03-08T11:45:16Z"
     message: ReplicaSet "openshift-controller-manager-operator-74b4f6b6b6" has successfully
@@ -300,7 +292,13 @@ status:
     reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
+  - lastTransitionTime: "2023-03-08T11:46:47Z"
+    lastUpdateTime: "2023-03-08T11:46:47Z"
+    message: Deployment does not have minimum availability.
+    reason: MinimumReplicasUnavailable
+    status: "False"
+    type: Available
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
+  unavailableReplicas: 1
   updatedReplicas: 1
