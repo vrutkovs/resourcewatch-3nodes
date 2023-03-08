@@ -245,7 +245,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:40Z"
+    time: "2023-03-08T11:55:19Z"
   name: authentication-operator-695c7bc445-btjmj
   namespace: openshift-authentication-operator
   ownerReferences:
@@ -255,7 +255,7 @@ metadata:
     kind: ReplicaSet
     name: authentication-operator-695c7bc445
     uid: f77ea623-8585-47ab-b5e6-98e6f5bce3ff
-  resourceVersion: "9421"
+  resourceVersion: "22584"
   uid: a234d5e3-0c84-4154-b846-0884462f94cb
 spec:
   containers:
@@ -403,11 +403,11 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:40Z"
+    lastTransitionTime: "2023-03-08T11:55:19Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:40Z"
+    lastTransitionTime: "2023-03-08T11:55:19Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
@@ -415,23 +415,23 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://36e80a22127b0de3c490be4460ea961acdcf019bb460695054395d108d346083
+  - containerID: cri-o://e98aa89d099b7e170ca89445fab7fea768dd45f1583c842c63ec842c5ae8fa91
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9b71dbea75b31079269db5c8a63cfc44b9fe92cbaeec99c9b1c19c0c11663be8
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:9b71dbea75b31079269db5c8a63cfc44b9fe92cbaeec99c9b1c19c0c11663be8
     lastState:
       terminated:
-        containerID: cri-o://dd42a01d55ce6a681dcc5ebff7b33b0b2c7e9c50f8cfa21180516db388fd8927
+        containerID: cri-o://36e80a22127b0de3c490be4460ea961acdcf019bb460695054395d108d346083
         exitCode: 0
-        finishedAt: "2023-03-08T11:46:38Z"
+        finishedAt: "2023-03-08T11:54:57Z"
         reason: Completed
-        startedAt: "2023-03-08T11:45:16Z"
+        startedAt: "2023-03-08T11:46:39Z"
     name: authentication-operator
     ready: true
-    restartCount: 1
+    restartCount: 2
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:39Z"
+        startedAt: "2023-03-08T11:55:18Z"
   hostIP: 10.0.0.3
   phase: Running
   podIP: 10.130.0.22
