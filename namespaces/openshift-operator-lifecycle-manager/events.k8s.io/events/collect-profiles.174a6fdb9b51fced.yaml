@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:00:00Z"
+deprecatedLastTimestamp: "2023-03-08T12:00:00Z"
+deprecatedSource:
+  component: cronjob-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:00:00Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T12:00:00Z"
+  name: collect-profiles.174a6fdb9b51fced
+  namespace: openshift-operator-lifecycle-manager
+  resourceVersion: "27279"
+  uid: 25a534e8-10b8-4628-8a9d-a83b3fd3ec59
+note: Created job collect-profiles-27971280
+reason: SuccessfulCreate
+regarding:
+  apiVersion: batch/v1
+  kind: CronJob
+  name: collect-profiles
+  namespace: openshift-operator-lifecycle-manager
+  resourceVersion: "23268"
+  uid: 7e7c0d16-ca12-4517-b92b-b848389d28f1
+type: Normal
