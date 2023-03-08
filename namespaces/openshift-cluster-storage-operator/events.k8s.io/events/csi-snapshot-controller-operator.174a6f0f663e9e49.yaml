@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:23Z"
+deprecatedSource:
+  component: csi-snapshot-controller-operator-status-controller-statussyncer_csi-snapshot-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: csi-snapshot-controller-operator
+    operation: Update
+    time: "2023-03-08T11:45:23Z"
+  name: csi-snapshot-controller-operator.174a6f0f663e9e49
+  namespace: openshift-cluster-storage-operator
+  resourceVersion: "5163"
+  uid: 7dc1df14-f52b-40e1-b411-902dc6a840f4
+note: 'Status for clusteroperator/csi-snapshot-controller changed: Progressing message
+  changed from "CSISnapshotControllerProgressing: Waiting for Deployment to act on
+  changes\nCSISnapshotWebhookControllerProgressing: Waiting for Deployment to deploy
+  pods" to "CSISnapshotControllerProgressing: Waiting for Deployment to deploy pods\nCSISnapshotWebhookControllerProgressing:
+  Waiting for Deployment to deploy pods"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: csi-snapshot-controller-operator
+  namespace: openshift-cluster-storage-operator
+  uid: 7ecf14bc-365f-4dfd-93bf-56fe36844200
+type: Normal
