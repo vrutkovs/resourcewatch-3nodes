@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 3
+deprecatedCount: 4
 deprecatedFirstTimestamp: "2023-03-08T11:45:19Z"
 deprecatedLastTimestamp: "2023-03-08T11:45:20Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:45:20Z"
   name: gcp-pd-csi-driver-operator-7958c5f8bd.174a6f0eae1f3015
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "4557"
+  resourceVersion: "4558"
   uid: 93c0b177-fc0e-4a78-8327-0f1674a9384d
 note: 'Error creating: pods "gcp-pd-csi-driver-operator-7958c5f8bd-" is forbidden:
   error looking up service account openshift-cluster-csi-drivers/gcp-pd-csi-driver-operator:
