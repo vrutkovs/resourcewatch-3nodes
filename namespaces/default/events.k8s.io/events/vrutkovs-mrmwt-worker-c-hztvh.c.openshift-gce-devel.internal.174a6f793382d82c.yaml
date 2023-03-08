@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:57Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:57Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:57Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:52:57Z"
+  name: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal.174a6f793382d82c
+  namespace: default
+  resourceVersion: "20580"
+  uid: 5c45d573-e762-4abb-9837-b511178ad9a2
+note: 'Node vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal status is
+  now: NodeReady'
+reason: NodeReady
+regarding:
+  kind: Node
+  name: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+  uid: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+type: Normal
