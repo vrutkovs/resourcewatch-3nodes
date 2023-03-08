@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:47:17Z"
-deprecatedLastTimestamp: "2023-03-08T11:47:17Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:35Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:47:17Z"
+    time: "2023-03-08T11:47:35Z"
   name: installer-4-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal.174a6f2a15225175
   namespace: openshift-kube-scheduler
-  resourceVersion: "10679"
+  resourceVersion: "11046"
   uid: 3387eae3-dc6f-4a85-b759-82b7c417f6c9
 note: Stopping container installer
 reason: Killing
