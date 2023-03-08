@@ -205,8 +205,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -219,8 +217,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -246,7 +242,7 @@ metadata:
     kind: ReplicaSet
     name: packageserver-675d8dbdf7
     uid: a9a7b6a0-2460-4c98-aa41-0ee4464a6a72
-  resourceVersion: "8175"
+  resourceVersion: "8178"
   uid: 822a816b-c2bb-4b3b-84e5-8e020d54fc70
 spec:
   affinity:
@@ -400,16 +396,12 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:04Z"
-    message: 'containers with unready status: [packageserver]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:46:12Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:04Z"
-    message: 'containers with unready status: [packageserver]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:46:12Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:46:04Z"
@@ -421,7 +413,7 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:aa84bb1f53223ad293c33c89edef6d20764cfbd2338351bc4a92a773ec2e864b
     lastState: {}
     name: packageserver
-    ready: false
+    ready: true
     restartCount: 0
     started: true
     state:
