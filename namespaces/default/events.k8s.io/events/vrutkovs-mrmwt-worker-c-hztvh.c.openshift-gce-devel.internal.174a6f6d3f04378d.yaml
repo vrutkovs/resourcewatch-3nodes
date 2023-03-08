@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:06Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:06Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:06Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:52:06Z"
+  name: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal.174a6f6d3f04378d
+  namespace: default
+  resourceVersion: "18953"
+  uid: 8142dcd1-0eb4-4d8c-8356-d87371ae8952
+note: 'Node vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal status is
+  now: NodeHasSufficientMemory'
+reason: NodeHasSufficientMemory
+regarding:
+  kind: Node
+  name: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+  uid: vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+type: Normal
