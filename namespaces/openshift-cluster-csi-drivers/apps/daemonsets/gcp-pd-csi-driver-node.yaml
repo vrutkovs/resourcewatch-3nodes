@@ -275,6 +275,7 @@ metadata:
       f:status:
         f:currentNumberScheduled: {}
         f:desiredNumberScheduled: {}
+        f:numberAvailable: {}
         f:numberReady: {}
         f:numberUnavailable: {}
         f:observedGeneration: {}
@@ -282,10 +283,10 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:46Z"
+    time: "2023-03-08T11:45:47Z"
   name: gcp-pd-csi-driver-node
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "6971"
+  resourceVersion: "7038"
   uid: 7c9edea7-f2a7-4b77-8956-d8b37e9680e0
 spec:
   revisionHistoryLimit: 10
@@ -468,8 +469,9 @@ spec:
 status:
   currentNumberScheduled: 3
   desiredNumberScheduled: 3
+  numberAvailable: 1
   numberMisscheduled: 0
-  numberReady: 0
-  numberUnavailable: 3
+  numberReady: 1
+  numberUnavailable: 2
   observedGeneration: 2
   updatedNumberScheduled: 3
