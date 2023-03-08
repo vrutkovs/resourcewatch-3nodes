@@ -101,15 +101,16 @@ metadata:
         f:desiredNumberScheduled: {}
         f:numberAvailable: {}
         f:numberReady: {}
+        f:numberUnavailable: {}
         f:observedGeneration: {}
         f:updatedNumberScheduled: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:50Z"
+    time: "2023-03-08T11:52:06Z"
   name: node-ca
   namespace: openshift-image-registry
-  resourceVersion: "18578"
+  resourceVersion: "19030"
   uid: bf26b238-4c1e-4e98-99e7-060c5d6244ed
 spec:
   revisionHistoryLimit: 10
@@ -201,9 +202,10 @@ spec:
     type: RollingUpdate
 status:
   currentNumberScheduled: 3
-  desiredNumberScheduled: 3
+  desiredNumberScheduled: 4
   numberAvailable: 3
   numberMisscheduled: 0
   numberReady: 3
+  numberUnavailable: 1
   observedGeneration: 1
   updatedNumberScheduled: 3
