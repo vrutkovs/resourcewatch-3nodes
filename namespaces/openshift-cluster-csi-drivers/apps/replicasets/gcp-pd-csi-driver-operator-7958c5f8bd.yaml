@@ -116,13 +116,15 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:27Z"
+    time: "2023-03-08T11:51:34Z"
   name: gcp-pd-csi-driver-operator-7958c5f8bd
   namespace: openshift-cluster-csi-drivers
   ownerReferences:
@@ -132,7 +134,7 @@ metadata:
     kind: Deployment
     name: gcp-pd-csi-driver-operator
     uid: 9fa381f3-4b90-4ed2-849b-21a984daad9c
-  resourceVersion: "17118"
+  resourceVersion: "17326"
   uid: ba4c3055-1555-4e22-808d-ffd53127ec92
 spec:
   replicas: 1
@@ -201,6 +203,8 @@ spec:
         key: node-role.kubernetes.io/master
         operator: Exists
 status:
+  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
+  readyReplicas: 1
   replicas: 1
