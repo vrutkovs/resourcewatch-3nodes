@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:46:27Z"
 deprecatedLastTimestamp: "2023-03-08T11:46:27Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:46:27Z"
   name: etcd-operator.174a6f1e59d4f690
   namespace: openshift-etcd-operator
-  resourceVersion: "8835"
+  resourceVersion: "8855"
   uid: 69b4a847-f83b-4ea3-b17c-d1b1f86fb894
 note: 'configmaps: etcd-metrics-proxy-client-ca,etcd-metrics-proxy-serving-ca,etcd-peer-client-ca,etcd-scripts,etcd-serving-ca,restore-etcd-pod,
   configmaps: etcd-endpoints-2,etcd-metrics-proxy-client-ca-2,etcd-metrics-proxy-serving-ca-2,etcd-peer-client-ca-2,etcd-pod-2,etcd-serving-ca-2'
