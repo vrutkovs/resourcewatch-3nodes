@@ -44,24 +44,23 @@ metadata:
     manager: cluster-kube-controller-manager-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:58:40Z"
+    time: "2023-03-08T11:58:47Z"
   name: kube-controller-manager
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "25405"
+  resourceVersion: "25471"
   uid: b847a3b2-5e9a-4598-8142-d35d20a8b280
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:47:21Z"
-    message: |-
-      GarbageCollectorDegraded: error fetching rules: Get "https://thanos-querier.openshift-monitoring.svc:9091/api/v1/rules": dial tcp: lookup thanos-querier.openshift-monitoring.svc on 172.30.0.10:53: no such host
-      TargetConfigControllerDegraded: "configmap/kube-controller-manager-pod": the server was unable to return a response in the time allotted, but may still be processing the request (get configmaps config)
-      TargetConfigControllerDegraded: "configmap/trusted-ca-bundle": the server was unable to return a response in the time allotted, but may still be processing the request (get configmaps trusted-ca-bundle)
-    reason: GarbageCollector_Error::TargetConfigController_SynchronizationError
+    message: 'GarbageCollectorDegraded: error fetching rules: Get "https://thanos-querier.openshift-monitoring.svc:9091/api/v1/rules":
+      dial tcp: lookup thanos-querier.openshift-monitoring.svc on 172.30.0.10:53:
+      no such host'
+    reason: GarbageCollector_Error
     status: "True"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:45:25Z"
