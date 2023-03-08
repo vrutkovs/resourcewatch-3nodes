@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 3
+deprecatedCount: 4
 deprecatedFirstTimestamp: "2023-03-08T11:46:03Z"
 deprecatedLastTimestamp: "2023-03-08T11:55:54Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:55:54Z"
   name: packageserver.174a6f18e3e43006
   namespace: openshift-operator-lifecycle-manager
-  resourceVersion: "23047"
+  resourceVersion: "23074"
   uid: d43863c4-a1db-4e0a-b4e3-6f1f164aceaa
 note: all requirements found, attempting install
 reason: AllRequirementsMet
