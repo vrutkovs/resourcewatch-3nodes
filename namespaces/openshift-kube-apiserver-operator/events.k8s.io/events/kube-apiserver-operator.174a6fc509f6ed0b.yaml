@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:23Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:23Z"
+deprecatedSource:
+  component: kube-apiserver-operator-installer-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:23Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:58:23Z"
+  name: kube-apiserver-operator.174a6fc509f6ed0b
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "24998"
+  uid: b5706175-34c5-43e7-99ad-9a7454051edb
+note: Updated node "vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal" from revision
+  0 to 6 because static pod is ready
+reason: NodeCurrentRevisionChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
