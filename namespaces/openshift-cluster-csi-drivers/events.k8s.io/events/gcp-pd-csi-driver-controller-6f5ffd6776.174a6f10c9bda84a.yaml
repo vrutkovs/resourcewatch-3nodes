@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 3
+deprecatedCount: 4
 deprecatedFirstTimestamp: "2023-03-08T11:45:29Z"
 deprecatedLastTimestamp: "2023-03-08T11:45:29Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:45:29Z"
   name: gcp-pd-csi-driver-controller-6f5ffd6776.174a6f10c9bda84a
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "5765"
+  resourceVersion: "5768"
   uid: cf93b4bf-14f5-4e7e-929c-0ce61043cccf
 note: 'Error creating: pods "gcp-pd-csi-driver-controller-6f5ffd6776-" is forbidden:
   unable to validate against any security context constraint: [provider "anyuid":
