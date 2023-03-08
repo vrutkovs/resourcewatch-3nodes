@@ -131,7 +131,6 @@ metadata:
         f:annotations:
           f:deployment.kubernetes.io/revision: {}
       f:status:
-        f:availableReplicas: {}
         f:conditions:
           .: {}
           k:{"type":"Available"}:
@@ -151,13 +150,13 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
+        f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:17Z"
+    time: "2023-03-08T11:46:48Z"
   name: service-ca-operator
   namespace: openshift-service-ca-operator
   ownerReferences:
@@ -165,7 +164,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "4260"
+  resourceVersion: "9920"
   uid: 23cf30b6-275c-440e-93d6-5210e9f0af5e
 spec:
   progressDeadlineSeconds: 600
@@ -257,21 +256,20 @@ spec:
           name: service-ca-operator-config
         name: config
 status:
-  availableReplicas: 1
   conditions:
-  - lastTransitionTime: "2023-03-08T11:45:17Z"
-    lastUpdateTime: "2023-03-08T11:45:17Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
   - lastTransitionTime: "2023-03-08T11:41:04Z"
     lastUpdateTime: "2023-03-08T11:45:17Z"
     message: ReplicaSet "service-ca-operator-76979b8657" has successfully progressed.
     reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
+  - lastTransitionTime: "2023-03-08T11:46:48Z"
+    lastUpdateTime: "2023-03-08T11:46:48Z"
+    message: Deployment does not have minimum availability.
+    reason: MinimumReplicasUnavailable
+    status: "False"
+    type: Available
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
+  unavailableReplicas: 1
   updatedReplicas: 1
