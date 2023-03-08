@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:42:32Z"
-deprecatedLastTimestamp: "2023-03-08T11:42:32Z"
+deprecatedLastTimestamp: "2023-03-08T11:42:45Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:42:32Z"
+    time: "2023-03-08T11:42:45Z"
   name: network-operator-686bc4b95f-7tfdn.174a6ee79f2ac514
   namespace: openshift-network-operator
-  resourceVersion: "2491"
+  resourceVersion: "2527"
   uid: ccc3d46e-b5bd-44ba-b50a-196776bfb119
 note: 'Error: services have not yet been read at least once, cannot construct envvars'
 reason: Failed
