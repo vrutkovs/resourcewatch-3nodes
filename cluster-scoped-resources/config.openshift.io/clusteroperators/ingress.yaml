@@ -30,31 +30,59 @@ metadata:
       f:status:
         .: {}
         f:extension: {}
-        f:relatedObjects: {}
     manager: cluster-version-operator
     operation: Update
     subresource: status
     time: "2023-03-08T11:40:41Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions: {}
+        f:relatedObjects: {}
+    manager: ingress-operator
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:46:42Z"
   name: ingress
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "659"
+  resourceVersion: "9490"
   uid: 8fb9029b-29a2-4cc2-80f7-92ffd048ae08
 spec: {}
 status:
+  conditions:
+  - lastTransitionTime: "2023-03-08T11:46:42Z"
+    message: The "default" ingress controller is not reporting an Available status
+      condition.
+    reason: IngressDoesNotHaveAvailableCondition
+    status: Unknown
+    type: Available
+  - lastTransitionTime: "2023-03-08T11:46:42Z"
+    message: Not all ingress controllers are available.
+    reason: Reconciling
+    status: "True"
+    type: Progressing
+  - lastTransitionTime: "2023-03-08T11:46:42Z"
+    message: The "default" ingress controller is not reporting a Degraded status condition.
+    reason: IngressDoesNotHaveDegradedCondition
+    status: Unknown
+    type: Degraded
+  - lastTransitionTime: "2023-03-08T11:46:42Z"
+    reason: IngressControllersUpgradeable
+    status: "True"
+    type: Upgradeable
+  - lastTransitionTime: "2023-03-08T11:46:42Z"
+    reason: AsExpected
+    status: "False"
+    type: EvaluationConditionsDetected
   extension: null
   relatedObjects:
   - group: ""
     name: openshift-ingress-operator
-    resource: namespaces
-  - group: ""
-    name: openshift-ingress
-    resource: namespaces
-  - group: ""
-    name: openshift-ingress-canary
     resource: namespaces
   - group: operator.openshift.io
     name: ""
