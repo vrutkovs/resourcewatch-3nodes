@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:54:10Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:10Z"
+deprecatedSource:
+  component: multus
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:54:10Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: multus
+    operation: Update
+    time: "2023-03-08T11:54:10Z"
+  name: router-default-5bff75df6-79s9s.174a6f8a38a1c3c0
+  namespace: openshift-ingress
+  resourceVersion: "21043"
+  uid: 098b3c18-e8a1-4505-ba39-d1cc7e834f10
+note: Add eth0 [10.128.2.7/23] from ovn-kubernetes
+reason: AddedInterface
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: router-default-5bff75df6-79s9s
+  namespace: openshift-ingress
+  resourceVersion: "20921"
+  uid: ff062867-80fe-4b41-a5a5-c1387b8e3989
+type: Normal
