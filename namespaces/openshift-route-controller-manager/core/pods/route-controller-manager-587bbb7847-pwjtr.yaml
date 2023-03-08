@@ -220,6 +220,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -232,6 +234,8 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -247,7 +251,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:34Z"
+    time: "2023-03-08T11:52:10Z"
   name: route-controller-manager-587bbb7847-pwjtr
   namespace: openshift-route-controller-manager
   ownerReferences:
@@ -257,7 +261,7 @@ metadata:
     kind: ReplicaSet
     name: route-controller-manager-587bbb7847
     uid: f76cc7a6-c3c3-4b1c-a3ad-69bc8b325b8d
-  resourceVersion: "19167"
+  resourceVersion: "19230"
   uid: 15ebd987-7b89-4d68-b0fb-4d0b3b302d04
 spec:
   affinity:
@@ -403,12 +407,16 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:50:07Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:52:10Z"
+    message: 'containers with unready status: [route-controller-manager]'
+    reason: ContainersNotReady
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:50:07Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:52:10Z"
+    message: 'containers with unready status: [route-controller-manager]'
+    reason: ContainersNotReady
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:50:05Z"
@@ -420,11 +428,15 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:371d14f7b7887955a9da783aa0f745f6dfc3b44128aed63c7508533ff7e1606e
     lastState: {}
     name: route-controller-manager
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://009eacea960cd5b51c4225697373455fa5540625f07e5bf8b3d3c1c2c29a0cda
+        exitCode: 0
+        finishedAt: "2023-03-08T11:52:09Z"
+        reason: Completed
         startedAt: "2023-03-08T11:50:07Z"
   hostIP: 10.0.0.5
   phase: Running
