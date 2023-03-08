@@ -53,7 +53,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "4512"
+  resourceVersion: "4528"
   uid: b0a3f029-1b40-4919-9a2a-f2c3558d8152
 spec: {}
 status:
@@ -77,6 +77,27 @@ status:
     type: Upgradeable
   extension: null
   relatedObjects:
+  - group: ""
+    name: gcp-pd-csi-driver-operator
+    namespace: openshift-cluster-csi-drivers
+    resource: serviceaccounts
+  - group: rbac.authorization.k8s.io
+    name: gcp-pd-csi-driver-operator-role
+    namespace: openshift-cluster-csi-drivers
+    resource: roles
+  - group: rbac.authorization.k8s.io
+    name: gcp-pd-csi-driver-operator-rolebinding
+    namespace: openshift-cluster-csi-drivers
+    resource: rolebindings
+  - group: rbac.authorization.k8s.io
+    name: gcp-pd-csi-driver-operator-clusterrole
+    resource: clusterroles
+  - group: rbac.authorization.k8s.io
+    name: gcp-pd-csi-driver-operator-clusterrolebinding
+    resource: clusterrolebindings
+  - group: operator.openshift.io
+    name: pd.csi.storage.gke.io
+    resource: clustercsidrivers
   - group: ""
     name: openshift-cluster-storage-operator
     resource: namespaces
