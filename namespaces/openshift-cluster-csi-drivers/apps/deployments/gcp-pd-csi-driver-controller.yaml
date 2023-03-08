@@ -408,6 +408,14 @@ metadata:
             f:reason: {}
             f:status: {}
             f:type: {}
+          k:{"type":"ReplicaFailure"}:
+            .: {}
+            f:lastTransitionTime: {}
+            f:lastUpdateTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
         f:observedGeneration: {}
         f:unavailableReplicas: {}
     manager: kube-controller-manager
@@ -416,7 +424,7 @@ metadata:
     time: "2023-03-08T11:45:29Z"
   name: gcp-pd-csi-driver-controller
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "5753"
+  resourceVersion: "5764"
   uid: c7179cc3-3b74-4f83-b872-a437a7b51e6e
 spec:
   progressDeadlineSeconds: 600
@@ -746,5 +754,83 @@ status:
     reason: MinimumReplicasUnavailable
     status: "False"
     type: Available
+  - lastTransitionTime: "2023-03-08T11:45:29Z"
+    lastUpdateTime: "2023-03-08T11:45:29Z"
+    message: 'pods "gcp-pd-csi-driver-controller-6f5ffd6776-" is forbidden: unable
+      to validate against any security context constraint: [provider "anyuid": Forbidden:
+      not usable by user or serviceaccount, provider restricted-v2: .spec.securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[0].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[0].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[0].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[0].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[0].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[0].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, spec.containers[1].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[1].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[1].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[1].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[1].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[1].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, spec.containers[2].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[2].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[2].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[2].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[2].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[2].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, spec.containers[3].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[3].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[3].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[3].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[3].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[3].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, spec.containers[4].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[4].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[4].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[4].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[4].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[4].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, spec.containers[5].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[5].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[5].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[5].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[5].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[5].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, spec.containers[6].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[6].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[6].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[6].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[6].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[6].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, spec.containers[7].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[7].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[7].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[7].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[7].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[7].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, spec.containers[8].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[8].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[8].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[8].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[8].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[8].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, spec.containers[9].securityContext.hostNetwork:
+      Invalid value: true: Host network is not allowed to be used, spec.containers[9].securityContext.containers[0].hostPort:
+      Invalid value: 10301: Host ports are not allowed to be used, spec.containers[9].securityContext.containers[2].hostPort:
+      Invalid value: 9202: Host ports are not allowed to be used, spec.containers[9].securityContext.containers[4].hostPort:
+      Invalid value: 9203: Host ports are not allowed to be used, spec.containers[9].securityContext.containers[6].hostPort:
+      Invalid value: 9204: Host ports are not allowed to be used, spec.containers[9].securityContext.containers[8].hostPort:
+      Invalid value: 9205: Host ports are not allowed to be used, provider "restricted":
+      Forbidden: not usable by user or serviceaccount, provider "nonroot-v2": Forbidden:
+      not usable by user or serviceaccount, provider "nonroot": Forbidden: not usable
+      by user or serviceaccount, provider "hostmount-anyuid": Forbidden: not usable
+      by user or serviceaccount, provider "machine-api-termination-handler": Forbidden:
+      not usable by user or serviceaccount, provider "hostnetwork-v2": Forbidden:
+      not usable by user or serviceaccount, provider "hostnetwork": Forbidden: not
+      usable by user or serviceaccount, provider "hostaccess": Forbidden: not usable
+      by user or serviceaccount, provider "privileged": Forbidden: not usable by user
+      or serviceaccount]'
+    reason: FailedCreate
+    status: "True"
+    type: ReplicaFailure
   observedGeneration: 1
   unavailableReplicas: 2
