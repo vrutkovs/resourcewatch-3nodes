@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:27Z"
 deprecatedLastTimestamp: "2023-03-08T11:45:27Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:45:27Z"
   name: csi-snapshot-controller-operator.174a6f107746015a
   namespace: openshift-cluster-storage-operator
-  resourceVersion: "5613"
+  resourceVersion: "5618"
   uid: f36e63e0-0599-46e5-8a7b-f13bf70c4bd7
 note: clusteroperator/csi-snapshot-controller version "csi-snapshot-controller" changed
   from "" to "4.12.0-0.okd-2023-03-04-063026"
