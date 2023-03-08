@@ -4,6 +4,28 @@ metadata:
   annotations:
     cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
     k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.128.0.18/23"],"mac_address":"0a:58:0a:80:00:12","gateway_ips":["10.128.0.1"],"ip_address":"10.128.0.18/23","gateway_ip":"10.128.0.1"}}'
+    k8s.v1.cni.cncf.io/network-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.128.0.18"
+          ],
+          "mac": "0a:58:0a:80:00:12",
+          "default": true,
+          "dns": {}
+      }]
+    k8s.v1.cni.cncf.io/networks-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.128.0.18"
+          ],
+          "mac": "0a:58:0a:80:00:12",
+          "default": true,
+          "dns": {}
+      }]
     openshift.io/scc: restricted-v2
     operatorframework.io/managed-by: marketplace-operator
     seccomp.security.alpha.kubernetes.io/pod: runtime/default
@@ -151,6 +173,17 @@ metadata:
     manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     operation: Update
     time: "2023-03-08T11:57:01Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:57:02Z"
   name: community-operators-mhz4n
   namespace: openshift-marketplace
   ownerReferences:
@@ -160,7 +193,7 @@ metadata:
     kind: CatalogSource
     name: community-operators
     uid: 16f880c6-de7d-43bd-bfaa-6d6b15f5f136
-  resourceVersion: "24007"
+  resourceVersion: "24012"
   uid: 6a115a8e-dcd3-4b8e-af99-05bcaaf634f5
 spec:
   containers:
