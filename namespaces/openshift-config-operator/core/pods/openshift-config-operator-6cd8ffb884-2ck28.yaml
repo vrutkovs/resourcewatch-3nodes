@@ -229,7 +229,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:43Z"
+    time: "2023-03-08T11:46:44Z"
   name: openshift-config-operator-6cd8ffb884-2ck28
   namespace: openshift-config-operator
   ownerReferences:
@@ -239,7 +239,7 @@ metadata:
     kind: ReplicaSet
     name: openshift-config-operator-6cd8ffb884
     uid: a4c6143c-a5de-4c6a-ac60-b22d7eef5b31
-  resourceVersion: "9585"
+  resourceVersion: "9649"
   uid: 09ee5400-bdd3-4460-be99-859f41444c9c
 spec:
   containers:
@@ -384,21 +384,23 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://1e92177d6912053053df2434061c7b1e7d107e7192db005a9b36f60b68f73c69
+  - containerID: cri-o://777666267de6cc99e882a3b1a91f5f11e2eaf098e20f4b9a9221674f001f4259
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fbc0cf0b8d2d8c1986c51b7dce88f36b33d6ff4a742d42e91edbae0b48b6991f
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fbc0cf0b8d2d8c1986c51b7dce88f36b33d6ff4a742d42e91edbae0b48b6991f
-    lastState: {}
-    name: openshift-config-operator
-    ready: false
-    restartCount: 0
-    started: false
-    state:
+    lastState:
       terminated:
         containerID: cri-o://1e92177d6912053053df2434061c7b1e7d107e7192db005a9b36f60b68f73c69
         exitCode: 0
         finishedAt: "2023-03-08T11:46:43Z"
         reason: Completed
         startedAt: "2023-03-08T11:45:15Z"
+    name: openshift-config-operator
+    ready: false
+    restartCount: 1
+    started: true
+    state:
+      running:
+        startedAt: "2023-03-08T11:46:43Z"
   hostIP: 10.0.0.3
   phase: Running
   podIP: 10.130.0.26
