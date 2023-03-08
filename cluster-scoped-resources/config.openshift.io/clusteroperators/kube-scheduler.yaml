@@ -44,14 +44,14 @@ metadata:
     manager: cluster-kube-scheduler-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:54Z"
+    time: "2023-03-08T11:46:57Z"
   name: kube-scheduler
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "10115"
+  resourceVersion: "10162"
   uid: 0a41b8f0-4a3d-4f14-9d01-84b34a9a54a7
 spec: {}
 status:
@@ -59,7 +59,7 @@ status:
   - lastTransitionTime: "2023-03-08T11:45:20Z"
     message: |-
       NodeControllerDegraded: All master nodes are ready
-      GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal]
+      GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal]
     reason: AsExpected
     status: "False"
     type: Degraded
