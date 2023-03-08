@@ -44,14 +44,14 @@ metadata:
     manager: cluster-kube-apiserver-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:20Z"
+    time: "2023-03-08T11:45:21Z"
   name: kube-apiserver
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "4743"
+  resourceVersion: "4856"
   uid: ef706269-fd7e-4416-af64-7cfc9719f1d3
 spec: {}
 status:
@@ -70,7 +70,8 @@ status:
     status: Unknown
     type: Available
   - lastTransitionTime: "2023-03-08T11:45:20Z"
-    message: All is well
+    message: 'KubeletMinorVersionUpgradeable: Kubelet and API server minor versions
+      are synced.'
     reason: AsExpected
     status: "True"
     type: Upgradeable
