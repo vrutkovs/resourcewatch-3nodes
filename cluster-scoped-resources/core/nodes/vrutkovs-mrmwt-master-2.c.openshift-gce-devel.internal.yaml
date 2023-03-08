@@ -148,6 +148,15 @@ metadata:
     fieldsV1:
       f:metadata:
         f:annotations:
+          f:cloud.network.openshift.io/egress-ipconfig: {}
+    manager: cloud-network-config-controller
+    operation: Update
+    time: "2023-03-08T11:47:27Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
           f:csi.volume.kubernetes.io/nodeid: {}
         f:labels:
           f:topology.gke.io/zone: {}
@@ -169,18 +178,9 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:56Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:cloud.network.openshift.io/egress-ipconfig: {}
-    manager: cloud-network-config-controller
-    operation: Update
     time: "2023-03-08T11:47:27Z"
   name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
-  resourceVersion: "10904"
+  resourceVersion: "10909"
   uid: 68230a61-3998-42ae-824b-1cc75bc72bd7
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-c/vrutkovs-mrmwt-master-2
@@ -218,25 +218,25 @@ status:
     reason: RouteCreated
     status: "False"
     type: NetworkUnavailable
-  - lastHeartbeatTime: "2023-03-08T11:46:56Z"
+  - lastHeartbeatTime: "2023-03-08T11:47:27Z"
     lastTransitionTime: "2023-03-08T11:43:02Z"
     message: kubelet has sufficient memory available
     reason: KubeletHasSufficientMemory
     status: "False"
     type: MemoryPressure
-  - lastHeartbeatTime: "2023-03-08T11:46:56Z"
+  - lastHeartbeatTime: "2023-03-08T11:47:27Z"
     lastTransitionTime: "2023-03-08T11:43:02Z"
     message: kubelet has no disk pressure
     reason: KubeletHasNoDiskPressure
     status: "False"
     type: DiskPressure
-  - lastHeartbeatTime: "2023-03-08T11:46:56Z"
+  - lastHeartbeatTime: "2023-03-08T11:47:27Z"
     lastTransitionTime: "2023-03-08T11:43:02Z"
     message: kubelet has sufficient PID available
     reason: KubeletHasSufficientPID
     status: "False"
     type: PIDPressure
-  - lastHeartbeatTime: "2023-03-08T11:46:56Z"
+  - lastHeartbeatTime: "2023-03-08T11:47:27Z"
     lastTransitionTime: "2023-03-08T11:44:53Z"
     message: kubelet is posting ready status
     reason: KubeletReady
@@ -255,6 +255,9 @@ status:
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:64136c7ac4e11eb33ebf07001707b68f53050b33272a052f83d5bf991bfd2ee4
     sizeBytes: 639385745
+  - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:4ad29b1b7065799a38a31e70c5343f9d73ac2310c8ee91b62a7aa11f5886e621
+    sizeBytes: 596501643
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:d5fc161170fcf68900b2694039803a2e7f1b31eb913566139a41f91851f166d7
     sizeBytes: 574516705
@@ -393,9 +396,6 @@ status:
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:ea25c2f3749dee6981359b4655a9acfcd4d95547066ccdf328354b548da74932
     sizeBytes: 291396124
-  - names:
-    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a8bcc8cf428e222c7e6677fe5f7f05e79da2aed1ded851cad696d83c94860b4c
-    sizeBytes: 275275974
   nodeInfo:
     architecture: amd64
     bootID: 77fb0165-c274-4f7b-9c7d-cda2d81596ce
