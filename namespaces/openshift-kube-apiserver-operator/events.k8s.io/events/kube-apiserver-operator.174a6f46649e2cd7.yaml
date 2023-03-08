@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:49:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:49:19Z"
+deprecatedSource:
+  component: kube-apiserver-operator-status-controller-statussyncer_kube-apiserver
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:49:19Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:49:19Z"
+  name: kube-apiserver-operator.174a6f46649e2cd7
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "13058"
+  uid: 9bf3cd85-f6a5-4450-8023-838f5e380a78
+note: 'Status for clusteroperator/kube-apiserver changed: Progressing message changed
+  from "NodeInstallerProgressing: 3 nodes are at revision 0; 0 nodes have achieved
+  new revision 3" to "NodeInstallerProgressing: 2 nodes are at revision 0; 1 nodes
+  are at revision 3",Available changed from False to True ("StaticPodsAvailable: 1
+  nodes are active; 2 nodes are at revision 0; 1 nodes are at revision 3")'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
