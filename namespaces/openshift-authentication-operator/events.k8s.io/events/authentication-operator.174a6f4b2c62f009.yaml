@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:49:39Z"
+deprecatedLastTimestamp: "2023-03-08T11:49:39Z"
+deprecatedSource:
+  component: oauth-apiserver-status-controller-statussyncer_authentication
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:49:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: authentication-operator
+    operation: Update
+    time: "2023-03-08T11:49:39Z"
+  name: authentication-operator.174a6f4b2c62f009
+  namespace: openshift-authentication-operator
+  resourceVersion: "13592"
+  uid: 59d425ab-486a-4819-8884-e316f5d2d3f5
+note: 'Status for clusteroperator/authentication changed: Progressing message changed
+  from "APIServerDeploymentProgressing: deployment/apiserver.openshift-oauth-apiserver:
+  1/3 pods have been updated to the latest generation" to "APIServerDeploymentProgressing:
+  deployment/apiserver.openshift-oauth-apiserver: 2/3 pods have been updated to the
+  latest generation"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: authentication-operator
+  namespace: openshift-authentication-operator
+  uid: 0efac7b0-177c-4814-9d2b-04ba66ce84f1
+type: Normal
