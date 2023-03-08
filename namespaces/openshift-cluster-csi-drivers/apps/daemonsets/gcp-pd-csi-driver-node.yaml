@@ -4,10 +4,11 @@ metadata:
   annotations:
     config.openshift.io/inject-proxy: csi-driver
     config.openshift.io/inject-proxy-cabundle: csi-driver
-    deprecated.daemonset.template.generation: "1"
-    operator.openshift.io/spec-hash: c29a759612fae8066f3e7e1be3d74332ba8d6c446785b54d563d215b100c79dc
+    deprecated.daemonset.template.generation: "2"
+    operator.openshift.io/dep-9b2ad69e0e161cab32acb7d6e6b381665a89a: O1lK1A==
+    operator.openshift.io/spec-hash: 6e7fa3792167c1eb72ded212c35f134f3652642b6457bc240970fee602f1323f
   creationTimestamp: "2023-03-08T11:45:28Z"
-  generation: 1
+  generation: 2
   managedFields:
   - apiVersion: apps/v1
     fieldsType: FieldsV1
@@ -18,12 +19,16 @@ metadata:
           f:config.openshift.io/inject-proxy: {}
           f:config.openshift.io/inject-proxy-cabundle: {}
           f:deprecated.daemonset.template.generation: {}
+          f:operator.openshift.io/dep-9b2ad69e0e161cab32acb7d6e6b381665a89a: {}
           f:operator.openshift.io/spec-hash: {}
       f:spec:
         f:revisionHistoryLimit: {}
         f:selector: {}
         f:template:
           f:metadata:
+            f:annotations:
+              .: {}
+              f:operator.openshift.io/dep-9b2ad69e0e161cab32acb7d6e6b381665a89a: {}
             f:labels:
               .: {}
               f:app: {}
@@ -82,6 +87,11 @@ metadata:
                     .: {}
                     f:mountPath: {}
                     f:name: {}
+                  k:{"mountPath":"/etc/pki/ca-trust/extracted/pem"}:
+                    .: {}
+                    f:mountPath: {}
+                    f:name: {}
+                    f:readOnly: {}
                   k:{"mountPath":"/etc/udev"}:
                     .: {}
                     f:mountPath: {}
@@ -200,6 +210,14 @@ metadata:
                   f:path: {}
                   f:type: {}
                 f:name: {}
+              k:{"name":"non-standard-root-system-trust-ca-bundle"}:
+                .: {}
+                f:configMap:
+                  .: {}
+                  f:defaultMode: {}
+                  f:items: {}
+                  f:name: {}
+                f:name: {}
               k:{"name":"plugin-dir"}:
                 .: {}
                 f:hostPath:
@@ -250,7 +268,7 @@ metadata:
           f:type: {}
     manager: gcp-pd-csi-driver-operator
     operation: Update
-    time: "2023-03-08T11:45:28Z"
+    time: "2023-03-08T11:45:29Z"
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -266,7 +284,7 @@ metadata:
     time: "2023-03-08T11:45:29Z"
   name: gcp-pd-csi-driver-node
   namespace: openshift-cluster-csi-drivers
-  resourceVersion: "5874"
+  resourceVersion: "5887"
   uid: 7c9edea7-f2a7-4b77-8956-d8b37e9680e0
 spec:
   revisionHistoryLimit: 10
@@ -275,6 +293,8 @@ spec:
       app: gcp-pd-csi-driver-node
   template:
     metadata:
+      annotations:
+        operator.openshift.io/dep-9b2ad69e0e161cab32acb7d6e6b381665a89a: O1lK1A==
       creationTimestamp: null
       labels:
         app: gcp-pd-csi-driver-node
@@ -329,6 +349,9 @@ spec:
           name: udev-socket
         - mountPath: /sys
           name: sys
+        - mountPath: /etc/pki/ca-trust/extracted/pem
+          name: non-standard-root-system-trust-ca-bundle
+          readOnly: true
       - args:
         - --csi-address=$(ADDRESS)
         - --kubelet-registration-path=$(DRIVER_REG_SOCK_PATH)
@@ -429,6 +452,13 @@ spec:
           path: /sys
           type: Directory
         name: sys
+      - configMap:
+          defaultMode: 420
+          items:
+          - key: ca-bundle.crt
+            path: tls-ca-bundle.pem
+          name: gcp-pd-csi-driver-trusted-ca-bundle
+        name: non-standard-root-system-trust-ca-bundle
   updateStrategy:
     rollingUpdate:
       maxSurge: 0
