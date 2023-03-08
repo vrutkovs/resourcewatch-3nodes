@@ -1,0 +1,37 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:51:37Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:37Z"
+deprecatedSource:
+  component: taint-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:37Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:51:37Z"
+  name: machine-api-controllers-67b4c49c5-snjk7.174a6f668ad4ed54
+  namespace: openshift-machine-api
+  resourceVersion: "17410"
+  uid: 5d125f2d-a63e-4985-b666-4a5b3333e2aa
+note: Cancelling deletion of Pod openshift-machine-api/machine-api-controllers-67b4c49c5-snjk7
+reason: TaintManagerEviction
+regarding:
+  kind: Pod
+  name: machine-api-controllers-67b4c49c5-snjk7
+  namespace: openshift-machine-api
+type: Normal
