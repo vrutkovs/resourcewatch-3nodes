@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:47:12Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:12Z"
+deprecatedSource:
+  component: controllermanager
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:47:12Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:47:12Z"
+  name: etcd-guard-pdb.174a6f28d0a776d0
+  namespace: openshift-etcd
+  resourceVersion: "10547"
+  uid: 12c9c3f8-efea-4d74-b69f-5961b3f05de1
+note: No matching pods found
+reason: NoPods
+regarding:
+  apiVersion: policy/v1
+  kind: PodDisruptionBudget
+  name: etcd-guard-pdb
+  namespace: openshift-etcd
+  resourceVersion: "10544"
+  uid: 0f359321-fc79-4b4f-a0cf-7ba8d5f9bd3d
+type: Normal
