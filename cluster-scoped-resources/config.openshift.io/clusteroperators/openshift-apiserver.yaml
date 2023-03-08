@@ -44,23 +44,23 @@ metadata:
     manager: cluster-openshift-apiserver-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:48:10Z"
+    time: "2023-03-08T11:48:13Z"
   name: openshift-apiserver
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "11820"
+  resourceVersion: "11980"
   uid: 017094da-4624-48c3-a0e8-1ce824dc2841
 spec: {}
 status:
   conditions:
   - lastTransitionTime: "2023-03-08T11:47:58Z"
     message: 'APIServerDeploymentDegraded: 3 of 3 requested instances are unavailable
-      for apiserver.openshift-apiserver (container is not ready in apiserver-5fdfb76cd4-z6pn5
-      pod, container is not ready in apiserver-5fdfb76cd4-vh9tn pod, 2 containers
-      are waiting in pending apiserver-5fdfb76cd4-cnl5v pod)'
+      for apiserver.openshift-apiserver (container is not ready in apiserver-5fdfb76cd4-cnl5v
+      pod, container is not ready in apiserver-5fdfb76cd4-z6pn5 pod, container is
+      not ready in apiserver-5fdfb76cd4-vh9tn pod)'
     reason: AsExpected
     status: "False"
     type: Degraded
