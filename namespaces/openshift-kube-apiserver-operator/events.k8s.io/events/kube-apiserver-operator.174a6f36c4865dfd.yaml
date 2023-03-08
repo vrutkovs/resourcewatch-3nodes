@@ -1,0 +1,45 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:48:12Z"
+deprecatedLastTimestamp: "2023-03-08T11:48:12Z"
+deprecatedSource:
+  component: kube-apiserver-operator-status-controller-statussyncer_kube-apiserver
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:48:12Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:48:12Z"
+  name: kube-apiserver-operator.174a6f36c4865dfd
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "11959"
+  uid: e247199e-9508-4b48-86c2-97a2e4b34595
+note: 'Status for clusteroperator/kube-apiserver changed: Degraded message changed
+  from "GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal,
+  Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal,
+  Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal]"
+  to "GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal,
+  Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal,
+  Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal]"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
