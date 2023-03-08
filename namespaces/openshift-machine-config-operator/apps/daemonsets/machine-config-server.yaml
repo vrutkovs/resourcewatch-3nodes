@@ -102,10 +102,10 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:54:58Z"
+    time: "2023-03-08T11:55:01Z"
   name: machine-config-server
   namespace: openshift-machine-config-operator
-  resourceVersion: "21857"
+  resourceVersion: "21976"
   uid: c51e2f82-34b2-4b67-aa75-f6bc0e63aad7
 spec:
   revisionHistoryLimit: 10
@@ -174,10 +174,10 @@ spec:
       maxUnavailable: 1
     type: RollingUpdate
 status:
-  currentNumberScheduled: 1
-  desiredNumberScheduled: 1
-  numberMisscheduled: 2
+  currentNumberScheduled: 2
+  desiredNumberScheduled: 2
+  numberMisscheduled: 1
   numberReady: 0
-  numberUnavailable: 1
+  numberUnavailable: 2
   observedGeneration: 1
-  updatedNumberScheduled: 1
+  updatedNumberScheduled: 2
