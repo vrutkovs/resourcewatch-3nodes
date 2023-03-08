@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:45Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:45Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-worker-b-5rcfz.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:48Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:52:48Z"
+  name: multus-pq7vm.174a6f7675f09cf7
+  namespace: openshift-multus
+  resourceVersion: "20425"
+  uid: a671c0fe-5d8b-496e-b2d5-c06e6c1c724a
+note: Created container kube-multus
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{kube-multus}
+  kind: Pod
+  name: multus-pq7vm
+  namespace: openshift-multus
+  resourceVersion: "19456"
+  uid: be18467d-2998-41fb-9259-b20cc91177e1
+type: Normal
