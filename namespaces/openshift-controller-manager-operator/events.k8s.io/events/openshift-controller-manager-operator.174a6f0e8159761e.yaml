@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:19Z"
+deprecatedSource:
+  component: openshift-controller-manager-operator-openshiftcontrollermanagerstaticresources-staticresourcecontroller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:19Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-openshift-controller-manager-operator
+    operation: Update
+    time: "2023-03-08T11:45:19Z"
+  name: openshift-controller-manager-operator.174a6f0e8159761e
+  namespace: openshift-controller-manager-operator
+  resourceVersion: "4402"
+  uid: 97e8f590-a5d0-4373-823d-39fb3d81ea05
+note: Created ClusterRole.rbac.authorization.k8s.io/system:openshift:openshift-controller-manager:ingress-to-route-controller
+  because it was missing
+reason: ClusterRoleCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: openshift-controller-manager-operator
+  namespace: openshift-controller-manager-operator
+  uid: ab5ffe37-a50a-427e-9cfd-7a04e929aa56
+type: Normal
