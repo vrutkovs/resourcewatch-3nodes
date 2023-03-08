@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:41:28Z"
+deprecatedLastTimestamp: "2023-03-08T11:41:28Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:41:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:41:28Z"
+  name: kube-apiserver-operator-5d4bb497dd-hfz4q.174a6ed8b597b139
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "1957"
+  uid: 6a284c20-d877-4b09-bd5a-c35d0941c3d4
+note: no nodes available to schedule pods
+reason: FailedScheduling
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: kube-apiserver-operator-5d4bb497dd-hfz4q
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "1948"
+  uid: eb213134-8b0e-4e17-a045-f90d39491784
+type: Warning
