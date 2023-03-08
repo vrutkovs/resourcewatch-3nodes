@@ -194,14 +194,23 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:44:57Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           k:{"type":"ContainersReady"}:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -214,28 +223,22 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.130.0.28"}:
+            .: {}
+            f:ip: {}
         f:startTime: {}
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:44:57Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.v1.cni.cncf.io/network-status: {}
-          f:k8s.v1.cni.cncf.io/networks-status: {}
-    manager: multus
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:44:57Z"
+    time: "2023-03-08T11:45:17Z"
   name: insights-operator-67cf785b46-szjwj
   namespace: openshift-insights
   ownerReferences:
@@ -245,7 +248,7 @@ metadata:
     kind: ReplicaSet
     name: insights-operator-67cf785b46
     uid: 9bbcfacc-0df2-4de9-a7fb-40cb545ff1cf
-  resourceVersion: "3976"
+  resourceVersion: "4275"
   uid: e31043d3-a0a4-4a14-be6d-0d3cf03853b3
 spec:
   containers:
@@ -383,33 +386,33 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:44:54Z"
-    message: 'containers with unready status: [insights-operator]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:45:17Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:44:54Z"
-    message: 'containers with unready status: [insights-operator]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:45:17Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:44:54Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fec1ff95c8fbf5cb55d221820182af3d5b89f4b1c2016f0ee7c1d930dc1ad413
-    imageID: ""
+  - containerID: cri-o://ee647b060b8fc2d8834d3dc46acf65a0b8d0c6c05076a8ceda0c599092611e01
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fec1ff95c8fbf5cb55d221820182af3d5b89f4b1c2016f0ee7c1d930dc1ad413
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:fec1ff95c8fbf5cb55d221820182af3d5b89f4b1c2016f0ee7c1d930dc1ad413
     lastState: {}
     name: insights-operator
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: ContainerCreating
+      running:
+        startedAt: "2023-03-08T11:45:16Z"
   hostIP: 10.0.0.3
-  phase: Pending
+  phase: Running
+  podIP: 10.130.0.28
+  podIPs:
+  - ip: 10.130.0.28
   qosClass: Burstable
   startTime: "2023-03-08T11:44:54Z"
