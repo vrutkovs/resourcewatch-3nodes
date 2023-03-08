@@ -227,10 +227,8 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
-        f:availableReplicas: {}
         f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
     manager: kube-controller-manager
     operation: Update
@@ -245,7 +243,7 @@ metadata:
     kind: Deployment
     name: network-operator
     uid: 42ea1a62-f160-4bf3-987d-da41a588d9ff
-  resourceVersion: "9034"
+  resourceVersion: "17091"
   uid: 647cb6df-4460-4037-9666-ef5007699933
 spec:
   replicas: 1
@@ -392,8 +390,6 @@ spec:
           optional: true
           secretName: metrics-tls
 status:
-  availableReplicas: 1
   fullyLabeledReplicas: 1
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 1
