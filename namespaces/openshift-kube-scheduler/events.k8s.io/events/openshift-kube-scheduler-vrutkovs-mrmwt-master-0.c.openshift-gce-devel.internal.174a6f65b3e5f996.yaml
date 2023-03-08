@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:51:33Z"
-deprecatedLastTimestamp: "2023-03-08T11:51:33Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:06Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:51:47Z"
+    time: "2023-03-08T11:55:13Z"
   name: openshift-kube-scheduler-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal.174a6f65b3e5f996
   namespace: openshift-kube-scheduler
-  resourceVersion: "18400"
+  resourceVersion: "22414"
   uid: a9ed8ef7-c9cf-4d1b-a811-09ca054fb305
 note: Started container kube-scheduler-recovery-controller
 reason: Started
