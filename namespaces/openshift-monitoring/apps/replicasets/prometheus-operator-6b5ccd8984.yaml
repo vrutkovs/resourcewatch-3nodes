@@ -151,6 +151,15 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:55:12Z"
+  - apiVersion: apps/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:observedGeneration: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:55:12Z"
   name: prometheus-operator-6b5ccd8984
   namespace: openshift-monitoring
   ownerReferences:
@@ -160,7 +169,7 @@ metadata:
     kind: Deployment
     name: prometheus-operator
     uid: 3c1b4249-4d33-4dcb-b413-7fb8df58ee6f
-  resourceVersion: "22402"
+  resourceVersion: "22407"
   uid: a4338cf0-3b80-4356-80ed-2f4b628d5238
 spec:
   replicas: 1
@@ -275,4 +284,5 @@ spec:
           name: metrics-client-ca
         name: metrics-client-ca
 status:
+  observedGeneration: 1
   replicas: 0
