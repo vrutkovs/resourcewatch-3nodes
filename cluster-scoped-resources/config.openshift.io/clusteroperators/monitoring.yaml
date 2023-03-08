@@ -35,16 +35,40 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:40:41Z"
+  - apiVersion: config.openshift.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions: {}
+    manager: operator
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:46:20Z"
   name: monitoring
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "665"
+  resourceVersion: "8337"
   uid: f769f442-7975-405e-80ea-5a7df40856dd
 spec: {}
 status:
+  conditions:
+  - lastTransitionTime: "2023-03-08T11:46:20Z"
+    status: Unknown
+    type: Available
+  - lastTransitionTime: "2023-03-08T11:46:20Z"
+    status: Unknown
+    type: Degraded
+  - lastTransitionTime: "2023-03-08T11:46:20Z"
+    message: Rolling out the stack.
+    reason: RollOutInProgress
+    status: "True"
+    type: Progressing
+  - lastTransitionTime: "2023-03-08T11:46:20Z"
+    status: Unknown
+    type: Upgradeable
   extension: null
   relatedObjects:
   - group: ""
