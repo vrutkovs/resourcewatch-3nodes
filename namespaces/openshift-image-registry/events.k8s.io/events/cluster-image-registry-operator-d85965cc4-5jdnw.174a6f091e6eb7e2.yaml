@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 5
+deprecatedCount: 6
 deprecatedFirstTimestamp: "2023-03-08T11:44:56Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:11Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:27Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:45:23Z"
+    time: "2023-03-08T11:45:41Z"
   name: cluster-image-registry-operator-d85965cc4-5jdnw.174a6f091e6eb7e2
   namespace: openshift-image-registry
-  resourceVersion: "5245"
+  resourceVersion: "6693"
   uid: 0f67dc2b-2058-42b4-b111-d0128b9c4675
 note: 'MountVolume.SetUp failed for volume "image-registry-operator-tls" : secret
   "image-registry-operator-tls" not found'
