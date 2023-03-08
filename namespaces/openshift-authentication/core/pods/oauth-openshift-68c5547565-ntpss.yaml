@@ -285,7 +285,7 @@ metadata:
     kind: ReplicaSet
     name: oauth-openshift-68c5547565
     uid: 6dde1525-5e59-4f9e-88aa-665cef8e3794
-  resourceVersion: "25672"
+  resourceVersion: "26709"
   uid: c3558560-a545-4a30-8f69-0d43212b4373
 spec:
   affinity:
@@ -398,6 +398,7 @@ spec:
   enableServiceLinks: true
   imagePullSecrets:
   - name: oauth-openshift-dockercfg-n8m8x
+  nodeName: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   nodeSelector:
     node-role.kubernetes.io/master: ""
   preemptionPolicy: PreemptLowerPriority
@@ -503,13 +504,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:58:57Z"
-    message: '0/6 nodes are available: 3 node(s) didn''t match Pod''s node affinity/selector,
-      3 node(s) didn''t match pod anti-affinity rules. preemption: 0/6 nodes are available:
-      3 Preemption is not helpful for scheduling, 3 node(s) didn''t match pod anti-affinity
-      rules.'
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:59:27Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
