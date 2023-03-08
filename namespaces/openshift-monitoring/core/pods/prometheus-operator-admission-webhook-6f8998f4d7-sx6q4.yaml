@@ -3,6 +3,28 @@ kind: Pod
 metadata:
   annotations:
     k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.131.0.5/23"],"mac_address":"0a:58:0a:83:00:05","gateway_ips":["10.131.0.1"],"ip_address":"10.131.0.5/23","gateway_ip":"10.131.0.1"}}'
+    k8s.v1.cni.cncf.io/network-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.131.0.5"
+          ],
+          "mac": "0a:58:0a:83:00:05",
+          "default": true,
+          "dns": {}
+      }]
+    k8s.v1.cni.cncf.io/networks-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.131.0.5"
+          ],
+          "mac": "0a:58:0a:83:00:05",
+          "default": true,
+          "dns": {}
+      }]
     kubectl.kubernetes.io/default-container: prometheus-operator-admission-webhook
     openshift.io/scc: restricted-v2
     seccomp.security.alpha.kubernetes.io/pod: runtime/default
@@ -176,6 +198,17 @@ metadata:
     manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     operation: Update
     time: "2023-03-08T11:52:57Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:52:59Z"
   name: prometheus-operator-admission-webhook-6f8998f4d7-sx6q4
   namespace: openshift-monitoring
   ownerReferences:
@@ -185,7 +218,7 @@ metadata:
     kind: ReplicaSet
     name: prometheus-operator-admission-webhook-6f8998f4d7
     uid: b756bd42-ba35-4333-bd4a-e1bcc5e65050
-  resourceVersion: "20645"
+  resourceVersion: "20689"
   uid: 516512e0-fc71-4af7-8ce2-1f2047de5916
 spec:
   affinity:
