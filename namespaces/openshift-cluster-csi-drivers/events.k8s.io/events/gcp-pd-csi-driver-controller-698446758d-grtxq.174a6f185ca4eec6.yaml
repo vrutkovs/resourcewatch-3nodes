@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:01Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:01Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:01Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:46:01Z"
+  name: gcp-pd-csi-driver-controller-698446758d-grtxq.174a6f185ca4eec6
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "7714"
+  uid: 4baf3b06-cc36-4cd6-9392-630abe13eee2
+note: Created container csi-resizer
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{csi-resizer}
+  kind: Pod
+  name: gcp-pd-csi-driver-controller-698446758d-grtxq
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "7618"
+  uid: f745d93d-5348-4337-bf35-b50eefbacda9
+type: Normal
