@@ -4,6 +4,7 @@ metadata:
   annotations:
     include.release.openshift.io/ibm-cloud-managed: "true"
     include.release.openshift.io/self-managed-high-availability: "true"
+    k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.130.0.38/23"],"mac_address":"0a:58:0a:82:00:26","gateway_ips":["10.130.0.1"],"ip_address":"10.130.0.38/23","gateway_ip":"10.130.0.1"}}'
     olm.operatorGroup: olm-operators
     olm.operatorNamespace: openshift-operator-lifecycle-manager
     olm.targetNamespaces: openshift-operator-lifecycle-manager
@@ -187,6 +188,15 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:46:04Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:46:04Z"
   name: packageserver-675d8dbdf7-nn4kq
   namespace: openshift-operator-lifecycle-manager
   ownerReferences:
@@ -196,7 +206,7 @@ metadata:
     kind: ReplicaSet
     name: packageserver-675d8dbdf7
     uid: a9a7b6a0-2460-4c98-aa41-0ee4464a6a72
-  resourceVersion: "7890"
+  resourceVersion: "7899"
   uid: 50f7834d-df7a-4750-94f1-79f72ddef34b
 spec:
   affinity:
