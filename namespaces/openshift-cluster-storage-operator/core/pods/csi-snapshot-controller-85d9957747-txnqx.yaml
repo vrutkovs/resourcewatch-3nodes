@@ -80,7 +80,7 @@ metadata:
     kind: ReplicaSet
     name: csi-snapshot-controller-85d9957747
     uid: 62b7bce1-4b04-4797-8d10-7a3412341425
-  resourceVersion: "4616"
+  resourceVersion: "4625"
   uid: e90400b3-697b-43b2-a832-0d4fbfc68bad
 spec:
   affinity:
@@ -121,6 +121,7 @@ spec:
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
+  nodeName: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
   nodeSelector:
     node-role.kubernetes.io/master: ""
   preemptionPolicy: PreemptLowerPriority
@@ -178,5 +179,10 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:45:20Z"
+    status: "True"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
