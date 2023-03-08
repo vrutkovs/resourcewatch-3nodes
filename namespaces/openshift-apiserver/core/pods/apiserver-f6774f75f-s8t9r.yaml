@@ -419,7 +419,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:52:09Z"
+    time: "2023-03-08T11:52:16Z"
   name: apiserver-f6774f75f-s8t9r
   namespace: openshift-apiserver
   ownerReferences:
@@ -429,7 +429,7 @@ metadata:
     kind: ReplicaSet
     name: apiserver-f6774f75f
     uid: 49c4edcc-df63-47cb-aa6f-7e0f1ee7160f
-  resourceVersion: "19191"
+  resourceVersion: "19701"
   uid: 0fa11c82-7a55-4587-b72e-fbe922299e01
 spec:
   affinity:
@@ -724,7 +724,7 @@ status:
     name: openshift-apiserver
     ready: false
     restartCount: 0
-    started: false
+    started: true
     state:
       running:
         startedAt: "2023-03-08T11:52:08Z"
