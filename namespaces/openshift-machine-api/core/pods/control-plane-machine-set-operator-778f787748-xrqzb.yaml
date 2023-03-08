@@ -187,7 +187,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:22Z"
+    time: "2023-03-08T11:55:19Z"
   name: control-plane-machine-set-operator-778f787748-xrqzb
   namespace: openshift-machine-api
   ownerReferences:
@@ -197,7 +197,7 @@ metadata:
     kind: ReplicaSet
     name: control-plane-machine-set-operator-778f787748
     uid: 034217ac-353e-4987-91f0-55f349205256
-  resourceVersion: "8458"
+  resourceVersion: "22541"
   uid: e7632d31-75ab-4a45-9e70-6a8c0fbf097b
 spec:
   containers:
@@ -313,11 +313,11 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:22Z"
+    lastTransitionTime: "2023-03-08T11:55:12Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:22Z"
+    lastTransitionTime: "2023-03-08T11:55:12Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
@@ -325,17 +325,23 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: cri-o://8e6d4262304095dc0f78390776a861e3d692290fe123a22f97edc2444e70e5cd
+  - containerID: cri-o://34fdda87c04e8c5cf016402998ce9f9ef830bacca9e1599db3113a309f59613c
     image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:e4f66b6a1ed283d7c15724005d8839aa43fabad4c652d45026e9507523dd573c
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:e4f66b6a1ed283d7c15724005d8839aa43fabad4c652d45026e9507523dd573c
-    lastState: {}
+    lastState:
+      terminated:
+        containerID: cri-o://8e6d4262304095dc0f78390776a861e3d692290fe123a22f97edc2444e70e5cd
+        exitCode: 1
+        finishedAt: "2023-03-08T11:55:10Z"
+        reason: Error
+        startedAt: "2023-03-08T11:46:22Z"
     name: control-plane-machine-set-operator
     ready: true
-    restartCount: 0
+    restartCount: 1
     started: true
     state:
       running:
-        startedAt: "2023-03-08T11:46:22Z"
+        startedAt: "2023-03-08T11:55:11Z"
   hostIP: 10.0.0.3
   phase: Running
   podIP: 10.130.0.25
