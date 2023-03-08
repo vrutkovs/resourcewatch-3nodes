@@ -235,7 +235,7 @@ metadata:
     kind: Deployment
     name: console
     uid: 8f84f431-418b-4093-8b7b-7db6c01ba2b1
-  resourceVersion: "25237"
+  resourceVersion: "25249"
   uid: 24798fbd-c982-4e83-95eb-5836d19a6acb
 spec:
   replicas: 1
@@ -386,6 +386,6 @@ spec:
           name: oauth-serving-cert
         name: oauth-serving-cert
 status:
-  fullyLabeledReplicas: 2
+  fullyLabeledReplicas: 1
   observedGeneration: 2
-  replicas: 2
+  replicas: 1
