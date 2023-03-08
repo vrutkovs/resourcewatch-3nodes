@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:47:46Z"
-deprecatedLastTimestamp: "2023-03-08T11:47:46Z"
+deprecatedLastTimestamp: "2023-03-08T11:48:06Z"
 deprecatedSource:
   component: kube-apiserver-operator-revisioncontroller
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-kube-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:47:46Z"
+    time: "2023-03-08T11:48:06Z"
   name: kube-apiserver-operator.174a6f30c1b569b7
   namespace: openshift-kube-apiserver-operator
-  resourceVersion: "11195"
+  resourceVersion: "11632"
   uid: e7d921d6-5f8e-48e2-9930-5305b14b8754
 note: new revision 3 triggered by "configmap/config has changed"
 reason: RevisionTriggered
