@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T12:06:39Z"
+deprecatedLastTimestamp: "2023-03-08T12:06:39Z"
+deprecatedSource:
+  component: check-endpoint-checkendpointstimetostart
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:06:39Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T12:06:39Z"
+  name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal.174a70388efe34fd
+  namespace: openshift-kube-apiserver
+  resourceVersion: "31044"
+  uid: 82dc107f-67b4-4ec6-ac6a-b5f0f3c7985e
+note: Controller "CheckEndpointsTimeToStart" resync interval is set to 0s which might
+  lead to client request throttling
+reason: FastControllerResync
+regarding:
+  kind: Node
+  name: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+  namespace: openshift-kube-apiserver
+  uid: 68230a61-3998-42ae-824b-1cc75bc72bd7
+type: Warning
