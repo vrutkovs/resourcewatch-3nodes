@@ -1,0 +1,42 @@
+action: Scheduling
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:55:36.960891Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:55:36Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:55:36Z"
+  name: image-registry-7dc9976b6f-8fcjs.174a6f9e546d3f1b
+  namespace: openshift-image-registry
+  resourceVersion: "22823"
+  uid: 02a71b58-b9d3-4294-9bb6-ea7c3007c700
+note: 'binding rejected: running Bind plugin "DefaultBinder": Operation cannot be
+  fulfilled on pods/binding "image-registry-7dc9976b6f-8fcjs": pod image-registry-7dc9976b6f-8fcjs
+  is already assigned to node "vrutkovs-mrmwt-worker-a-92xck.c.openshift-gce-devel.internal"'
+reason: FailedScheduling
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: image-registry-7dc9976b6f-8fcjs
+  namespace: openshift-image-registry
+  resourceVersion: "20618"
+  uid: 4466c8a8-4015-4e22-91e0-6df5d4d000fb
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+type: Warning
