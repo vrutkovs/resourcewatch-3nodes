@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:44:54Z"
+deprecatedLastTimestamp: "2023-03-08T11:44:54Z"
+deprecatedSource:
+  component: default-scheduler
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:44:54Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:44:54Z"
+  name: cluster-image-registry-operator-d85965cc4-5jdnw.174a6f08a2fcdf5d
+  namespace: openshift-image-registry
+  resourceVersion: "3853"
+  uid: 54951815-7fbd-413d-adde-9cce92346874
+note: Successfully assigned openshift-image-registry/cluster-image-registry-operator-d85965cc4-5jdnw
+  to vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: cluster-image-registry-operator-d85965cc4-5jdnw
+  namespace: openshift-image-registry
+  resourceVersion: "2386"
+  uid: e2a7a2c7-26f2-409f-906c-ab8968231307
+type: Normal
