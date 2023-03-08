@@ -198,8 +198,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
@@ -212,8 +210,6 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -229,7 +225,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:44Z"
+    time: "2023-03-08T11:46:48Z"
   name: openshift-config-operator-6cd8ffb884-2ck28
   namespace: openshift-config-operator
   ownerReferences:
@@ -239,7 +235,7 @@ metadata:
     kind: ReplicaSet
     name: openshift-config-operator-6cd8ffb884
     uid: a4c6143c-a5de-4c6a-ac60-b22d7eef5b31
-  resourceVersion: "9649"
+  resourceVersion: "9922"
   uid: 09ee5400-bdd3-4460-be99-859f41444c9c
 spec:
   containers:
@@ -368,16 +364,12 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:43Z"
-    message: 'containers with unready status: [openshift-config-operator]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:46:48Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:46:43Z"
-    message: 'containers with unready status: [openshift-config-operator]'
-    reason: ContainersNotReady
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:46:48Z"
+    status: "True"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:44:53Z"
@@ -395,7 +387,7 @@ status:
         reason: Completed
         startedAt: "2023-03-08T11:45:15Z"
     name: openshift-config-operator
-    ready: false
+    ready: true
     restartCount: 1
     started: true
     state:
