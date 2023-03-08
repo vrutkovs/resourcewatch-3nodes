@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:20Z"
+deprecatedSource:
+  component: kube-controller-manager-operator-config-observer-configobserver
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:28Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-controller-manager-operator
+    operation: Update
+    time: "2023-03-08T11:45:28Z"
+  name: kube-controller-manager-operator.174a6f0ee7d72dfa
+  namespace: openshift-kube-controller-manager-operator
+  resourceVersion: "5638"
+  uid: 94063b65-5938-4e51-8202-7b48f6491f0f
+note: CloudProvider config file changed to /etc/kubernetes/static-pod-resources/configmaps/cloud-config/cloud.conf
+reason: ObserveCloudProviderNamesChanges
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-controller-manager-operator
+  namespace: openshift-kube-controller-manager-operator
+  uid: 71b7e195-265a-4ece-8449-dc704acd0130
+type: Normal
