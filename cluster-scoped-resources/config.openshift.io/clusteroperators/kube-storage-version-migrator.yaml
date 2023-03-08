@@ -42,22 +42,24 @@ metadata:
     manager: Go-http-client
     operation: Update
     subresource: status
-    time: "2023-03-08T11:45:27Z"
+    time: "2023-03-08T11:58:03Z"
   name: kube-storage-version-migrator
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "5542"
+  resourceVersion: "24562"
   uid: 75227165-81b6-4a97-9ce0-8f071d237ed8
 spec: {}
 status:
   conditions:
-  - lastTransitionTime: "2023-03-08T11:45:19Z"
-    message: All is well
-    reason: AsExpected
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:58:03Z"
+    message: "KubeStorageVersionMigratorStaticResourcesDegraded: \"kube-storage-version-migrator/namespace.yaml\"
+      (string): the server was unable to return a response in the time allotted, but
+      may still be processing the request (get namespaces openshift-kube-storage-version-migrator)\nKubeStorageVersionMigratorStaticResourcesDegraded: "
+    reason: KubeStorageVersionMigratorStaticResources_SyncError
+    status: "True"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:45:27Z"
     message: All is well
