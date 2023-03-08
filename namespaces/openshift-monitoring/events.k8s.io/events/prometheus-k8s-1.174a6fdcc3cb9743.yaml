@@ -1,0 +1,40 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T12:00:05.117312Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T12:00:05Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T12:00:05Z"
+  name: prometheus-k8s-1.174a6fdcc3cb9743
+  namespace: openshift-monitoring
+  resourceVersion: "27393"
+  uid: b3aa6c5f-826e-4bf8-96d0-8fc21a40b8d4
+note: Successfully assigned openshift-monitoring/prometheus-k8s-1 to vrutkovs-mrmwt-worker-c-hztvh.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: prometheus-k8s-1
+  namespace: openshift-monitoring
+  resourceVersion: "27388"
+  uid: 14a671dd-ec6d-4215-a70d-a29e7be3ca2f
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+type: Normal
