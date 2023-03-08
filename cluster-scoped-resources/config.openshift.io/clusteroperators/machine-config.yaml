@@ -42,6 +42,7 @@ metadata:
           f:master: {}
           f:worker: {}
         f:relatedObjects: {}
+        f:versions: {}
     manager: machine-config-operator
     operation: Update
     subresource: status
@@ -52,7 +53,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "10354"
+  resourceVersion: "10357"
   uid: 157e8dfa-4a1d-4b32-aa9b-71f9e9e70ea2
 spec: {}
 status:
@@ -115,3 +116,6 @@ status:
   - group: ""
     name: openshift-nutanix-infra
     resource: namespaces
+  versions:
+  - name: operator
+    version: 4.12.0-0.okd-2023-03-04-063026
