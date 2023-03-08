@@ -256,12 +256,20 @@ metadata:
             f:reason: {}
             f:status: {}
             f:type: {}
+          k:{"type":"ReplicaFailure"}:
+            .: {}
+            f:lastTransitionTime: {}
+            f:lastUpdateTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
         f:observedGeneration: {}
         f:unavailableReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:56:15Z"
+    time: "2023-03-08T11:56:25Z"
   name: console-operator
   namespace: openshift-console-operator
   ownerReferences:
@@ -269,7 +277,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "23807"
+  resourceVersion: "23850"
   uid: 355957fc-677d-406a-8253-cc76751a885e
 spec:
   progressDeadlineSeconds: 600
@@ -455,5 +463,12 @@ status:
     reason: MinimumReplicasUnavailable
     status: "False"
     type: Available
+  - lastTransitionTime: "2023-03-08T11:56:25Z"
+    lastUpdateTime: "2023-03-08T11:56:25Z"
+    message: 'pods "console-operator-5849d6575-" is forbidden: error fetching namespace
+      "openshift-console-operator": unable to find annotation openshift.io/sa.scc.uid-range'
+    reason: FailedCreate
+    status: "True"
+    type: ReplicaFailure
   observedGeneration: 1
   unavailableReplicas: 1
