@@ -930,6 +930,8 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -945,19 +947,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:50:54Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:status:
-        f:conditions:
-          k:{"type":"Ready"}:
-            f:lastTransitionTime: {}
-            f:status: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:54:19Z"
+    time: "2023-03-08T11:56:03Z"
   name: etcd-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
   namespace: openshift-etcd
   ownerReferences:
@@ -966,7 +956,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
     uid: d1bb260b-ed05-4c1f-9090-1cf4ac4bb308
-  resourceVersion: "21431"
+  resourceVersion: "23433"
   uid: 496ea767-ab58-4e22-844f-587fd8f4255a
 spec:
   containers:
@@ -1582,8 +1572,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:54:19Z"
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:50:47Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:50:47Z"
