@@ -15,6 +15,7 @@ metadata:
     machineconfiguration.openshift.io/currentConfig: rendered-master-71fec459b968d060c60cad7d0f3a5602
     machineconfiguration.openshift.io/desiredConfig: rendered-master-71fec459b968d060c60cad7d0f3a5602
     machineconfiguration.openshift.io/desiredDrain: uncordon-rendered-master-71fec459b968d060c60cad7d0f3a5602
+    machineconfiguration.openshift.io/lastAppliedDrain: uncordon-rendered-master-71fec459b968d060c60cad7d0f3a5602
     machineconfiguration.openshift.io/reason: machineconfig.machineconfiguration.openshift.io
       "rendered-master-71fec459b968d060c60cad7d0f3a5602" not found
     machineconfiguration.openshift.io/state: Degraded
@@ -115,15 +116,6 @@ metadata:
     fieldsV1:
       f:metadata:
         f:annotations:
-          f:machineconfiguration.openshift.io/controlPlaneTopology: {}
-    manager: machine-config-controller
-    operation: Update
-    time: "2023-03-08T11:46:16Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
           f:csi.volume.kubernetes.io/nodeid: {}
         f:labels:
           f:topology.gke.io/zone: {}
@@ -168,8 +160,18 @@ metadata:
     manager: machine-config-daemon
     operation: Update
     time: "2023-03-08T11:46:49Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:machineconfiguration.openshift.io/controlPlaneTopology: {}
+          f:machineconfiguration.openshift.io/lastAppliedDrain: {}
+    manager: machine-config-controller
+    operation: Update
+    time: "2023-03-08T11:46:52Z"
   name: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
-  resourceVersion: "9977"
+  resourceVersion: "10074"
   uid: d1bb260b-ed05-4c1f-9090-1cf4ac4bb308
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-b/vrutkovs-mrmwt-master-1
