@@ -935,6 +935,7 @@ metadata:
         f:containerStatuses: {}
         f:hostIP: {}
         f:initContainerStatuses: {}
+        f:phase: {}
         f:podIP: {}
         f:podIPs:
           .: {}
@@ -945,7 +946,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:47:22Z"
+    time: "2023-03-08T11:47:23Z"
   name: etcd-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
   namespace: openshift-etcd
   ownerReferences:
@@ -954,7 +955,7 @@ metadata:
     kind: Node
     name: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     uid: 3becf630-5199-4621-aa21-11f188b903aa
-  resourceVersion: "10795"
+  resourceVersion: "10822"
   uid: 7f8bd9e2-1247-4841-8264-42ea32121441
 spec:
   containers:
@@ -1566,13 +1567,13 @@ status:
     type: Initialized
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:47:11Z"
-    message: 'containers with unready status: [etcdctl etcd etcd-metrics etcd-readyz]'
+    message: 'containers with unready status: [etcd]'
     reason: ContainersNotReady
     status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:47:11Z"
-    message: 'containers with unready status: [etcdctl etcd etcd-metrics etcd-readyz]'
+    message: 'containers with unready status: [etcd]'
     reason: ContainersNotReady
     status: "False"
     type: ContainersReady
@@ -1581,46 +1582,50 @@ status:
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:570a63c54f95623094240d763cef0f18fdd27cba0a6a2bedb67023348e7ab126
-    imageID: ""
+  - containerID: cri-o://f0ba376f455bcdc4f2a00eeb476b3e5a643f24e3ff8de1e8e3d55234e49c8a74
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:570a63c54f95623094240d763cef0f18fdd27cba0a6a2bedb67023348e7ab126
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:570a63c54f95623094240d763cef0f18fdd27cba0a6a2bedb67023348e7ab126
     lastState: {}
     name: etcd
     ready: false
     restartCount: 0
     started: false
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:570a63c54f95623094240d763cef0f18fdd27cba0a6a2bedb67023348e7ab126
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:47:22Z"
+  - containerID: cri-o://c7e425f55e22aedcbe17c9011541b347060fc21e381f4d71342d3688ca2b9274
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:570a63c54f95623094240d763cef0f18fdd27cba0a6a2bedb67023348e7ab126
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:570a63c54f95623094240d763cef0f18fdd27cba0a6a2bedb67023348e7ab126
     lastState: {}
     name: etcd-metrics
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a62fd1ab5fab0a9273eac253eed4e90c410771ae37fe1ab57fba8a8535922d1c
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:47:22Z"
+  - containerID: cri-o://9fb4b93adbc5ff28bce3e12d8586146ff1754faf1ebe7a674c770a6a1b4f15ec
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a62fd1ab5fab0a9273eac253eed4e90c410771ae37fe1ab57fba8a8535922d1c
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a62fd1ab5fab0a9273eac253eed4e90c410771ae37fe1ab57fba8a8535922d1c
     lastState: {}
     name: etcd-readyz
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
-  - image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:570a63c54f95623094240d763cef0f18fdd27cba0a6a2bedb67023348e7ab126
-    imageID: ""
+      running:
+        startedAt: "2023-03-08T11:47:22Z"
+  - containerID: cri-o://c87f932bebb85f33e1799f57b1dfec2d67702eccad93149c149e9015d1c2533d
+    image: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:570a63c54f95623094240d763cef0f18fdd27cba0a6a2bedb67023348e7ab126
+    imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:570a63c54f95623094240d763cef0f18fdd27cba0a6a2bedb67023348e7ab126
     lastState: {}
     name: etcdctl
-    ready: false
+    ready: true
     restartCount: 0
-    started: false
+    started: true
     state:
-      waiting:
-        reason: PodInitializing
+      running:
+        startedAt: "2023-03-08T11:47:22Z"
   hostIP: 10.0.0.5
   initContainerStatuses:
   - containerID: cri-o://7735ed6cbe892403b6ad62e16ceb47cbbfca41374487caf67f4fc8e4b6a8afd5
@@ -1665,7 +1670,7 @@ status:
         finishedAt: "2023-03-08T11:47:20Z"
         reason: Completed
         startedAt: "2023-03-08T11:47:20Z"
-  phase: Pending
+  phase: Running
   podIP: 10.0.0.5
   podIPs:
   - ip: 10.0.0.5
