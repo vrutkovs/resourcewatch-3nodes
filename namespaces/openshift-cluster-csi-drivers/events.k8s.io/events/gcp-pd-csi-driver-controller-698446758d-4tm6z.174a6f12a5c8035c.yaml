@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:37Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:37Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:44Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:45:44Z"
+  name: gcp-pd-csi-driver-controller-698446758d-4tm6z.174a6f12a5c8035c
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "6855"
+  uid: f284246c-8607-4c94-adf6-0f52bd55d755
+note: Created container csi-driver
+reason: Created
+regarding:
+  apiVersion: v1
+  fieldPath: spec.containers{csi-driver}
+  kind: Pod
+  name: gcp-pd-csi-driver-controller-698446758d-4tm6z
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "6197"
+  uid: 336a37d8-baec-4070-871a-5f61d2648f78
+type: Normal
