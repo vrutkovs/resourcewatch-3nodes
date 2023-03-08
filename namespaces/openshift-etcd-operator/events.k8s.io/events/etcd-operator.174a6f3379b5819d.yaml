@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:47:58Z"
-deprecatedLastTimestamp: "2023-03-08T11:47:58Z"
+deprecatedLastTimestamp: "2023-03-08T11:48:11Z"
 deprecatedSource:
   component: openshift-cluster-etcd-operator-status-controller-statussyncer_etcd
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-etcd-operator
     operation: Update
-    time: "2023-03-08T11:47:58Z"
+    time: "2023-03-08T11:48:11Z"
   name: etcd-operator.174a6f3379b5819d
   namespace: openshift-etcd-operator
-  resourceVersion: "11433"
+  resourceVersion: "11947"
   uid: b6685b2b-79a0-4363-a416-93a5b849aaf4
 note: 'Status for clusteroperator/etcd changed: Degraded message changed from "NodeControllerDegraded:
   All master nodes are ready\nGuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal,
