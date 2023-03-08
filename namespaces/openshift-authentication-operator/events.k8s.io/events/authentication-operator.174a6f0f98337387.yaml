@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 44
+deprecatedCount: 45
 deprecatedFirstTimestamp: "2023-03-08T11:45:23Z"
-deprecatedLastTimestamp: "2023-03-08T11:46:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:20Z"
 deprecatedSource:
   component: cluster-authentication-operator-config-observer-configobserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: authentication-operator
     operation: Update
-    time: "2023-03-08T11:46:19Z"
+    time: "2023-03-08T11:46:20Z"
   name: authentication-operator.174a6f0f98337387
   namespace: openshift-authentication-operator
-  resourceVersion: "8309"
+  resourceVersion: "8378"
   uid: 91ae9d99-54fc-4d21-896a-8ad4a97b5a6f
 note: 'configmaps openshift-etcd/etcd-endpoints: no etcd endpoint addresses found'
 reason: ObserveStorageFailed
