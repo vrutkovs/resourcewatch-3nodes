@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:58:17Z"
 deprecatedLastTimestamp: "2023-03-08T11:58:17Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:58:17Z"
   name: authentication-operator.174a6fc3bd54a630
   namespace: openshift-authentication-operator
-  resourceVersion: "24903"
+  resourceVersion: "24914"
   uid: f844e774-e0ef-448a-b221-47c387bcdaaa
 note: assetPublicURL changed from  to https://console-openshift-console.apps.vrutkovs.origin-gce.dev.openshift.com
 reason: ObserveConsoleURL
