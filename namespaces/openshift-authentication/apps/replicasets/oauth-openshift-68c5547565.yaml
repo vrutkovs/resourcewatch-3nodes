@@ -299,7 +299,7 @@ metadata:
     kind: Deployment
     name: oauth-openshift
     uid: 797a38d4-d6e9-4804-87be-ecc7f64e6aec
-  resourceVersion: "26830"
+  resourceVersion: "26854"
   uid: 6dde1525-5e59-4f9e-88aa-665cef8e3794
 spec:
   replicas: 3
@@ -502,6 +502,6 @@ spec:
 status:
   availableReplicas: 2
   fullyLabeledReplicas: 2
-  observedGeneration: 3
+  observedGeneration: 4
   readyReplicas: 2
   replicas: 2
