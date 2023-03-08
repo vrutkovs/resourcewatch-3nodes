@@ -1,0 +1,43 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:22Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:22Z"
+deprecatedSource:
+  component: kube-apiserver-operator-status-controller-statussyncer_kube-apiserver
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:22Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-apiserver-operator
+    operation: Update
+    time: "2023-03-08T11:45:22Z"
+  name: kube-apiserver-operator.174a6f0f32d5fbf5
+  namespace: openshift-kube-apiserver-operator
+  resourceVersion: "5140"
+  uid: d63fd2d8-7564-456b-bb9e-574ac26f597c
+note: 'Status for clusteroperator/kube-apiserver changed: Degraded message changed
+  from "NodeControllerDegraded: All master nodes are ready" to "NodeControllerDegraded:
+  All master nodes are ready\nGuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal,
+  Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal,
+  Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal]"'
+reason: OperatorStatusChanged
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-apiserver-operator
+  namespace: openshift-kube-apiserver-operator
+  uid: 9cadd64b-f9f2-4737-9647-1a603facdcf7
+type: Normal
