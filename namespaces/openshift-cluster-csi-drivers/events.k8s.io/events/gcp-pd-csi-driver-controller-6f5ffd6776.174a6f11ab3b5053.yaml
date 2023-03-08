@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:32Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:32Z"
+deprecatedSource:
+  component: replicaset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:32Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:45:32Z"
+  name: gcp-pd-csi-driver-controller-6f5ffd6776.174a6f11ab3b5053
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "6182"
+  uid: 27ef14b5-a464-4c1e-adeb-b8640de0661a
+note: 'Deleted pod: gcp-pd-csi-driver-controller-6f5ffd6776-qpwsw'
+reason: SuccessfulDelete
+regarding:
+  apiVersion: apps/v1
+  kind: ReplicaSet
+  name: gcp-pd-csi-driver-controller-6f5ffd6776
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "6169"
+  uid: aa62a819-3836-4605-b527-b86540f7a1e2
+type: Normal
