@@ -50,7 +50,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "12944"
+  resourceVersion: "12953"
   uid: 73d9177d-dba0-4888-98f7-a187fd05c2ac
 spec: {}
 status:
@@ -65,7 +65,7 @@ status:
       Progressing: deployment/controller-manager: available replicas is 0, desired available replicas > 1
       Progressing: deployment/controller-manager: updated replicas is 1, desired replicas is 3
       Progressing: deployment/route-controller-manager: available replicas is 0, desired available replicas > 1
-      Progressing: deployment/route-controller-manager: updated replicas is 0, desired replicas is 3
+      Progressing: deployment/route-controller-manager: updated replicas is 1, desired replicas is 3
     reason: _DesiredStateNotYetAchieved
     status: "True"
     type: Progressing
