@@ -182,9 +182,9 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:58:56Z"
+    time: "2023-03-08T11:59:27Z"
   name: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
-  resourceVersion: "25622"
+  resourceVersion: "26707"
   uid: 3becf630-5199-4621-aa21-11f188b903aa
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-a/vrutkovs-mrmwt-master-0
@@ -222,25 +222,25 @@ status:
     reason: RouteCreated
     status: "False"
     type: NetworkUnavailable
-  - lastHeartbeatTime: "2023-03-08T11:58:56Z"
+  - lastHeartbeatTime: "2023-03-08T11:59:27Z"
     lastTransitionTime: "2023-03-08T11:55:01Z"
     message: kubelet has sufficient memory available
     reason: KubeletHasSufficientMemory
     status: "False"
     type: MemoryPressure
-  - lastHeartbeatTime: "2023-03-08T11:58:56Z"
+  - lastHeartbeatTime: "2023-03-08T11:59:27Z"
     lastTransitionTime: "2023-03-08T11:55:01Z"
     message: kubelet has no disk pressure
     reason: KubeletHasNoDiskPressure
     status: "False"
     type: DiskPressure
-  - lastHeartbeatTime: "2023-03-08T11:58:56Z"
+  - lastHeartbeatTime: "2023-03-08T11:59:27Z"
     lastTransitionTime: "2023-03-08T11:55:01Z"
     message: kubelet has sufficient PID available
     reason: KubeletHasSufficientPID
     status: "False"
     type: PIDPressure
-  - lastHeartbeatTime: "2023-03-08T11:58:56Z"
+  - lastHeartbeatTime: "2023-03-08T11:59:27Z"
     lastTransitionTime: "2023-03-08T11:55:01Z"
     message: kubelet is posting ready status
     reason: KubeletReady
@@ -384,6 +384,9 @@ status:
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:4da6403605683159d8b7bfb468793a93a856392891ee6ba95fdb40baf2525611
     sizeBytes: 318251178
+  - names:
+    - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:c4218978f242fbc800301ede5f4a53c0520dbcccc0b65d88c653731aa2781180
+    sizeBytes: 297268865
   - names:
     - registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:72c764b55efc147864960930ae05b7928c5f976eb76820b38997f0df7afab820
     sizeBytes: 293414029
