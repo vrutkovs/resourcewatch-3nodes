@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:21Z"
-deprecatedLastTimestamp: "2023-03-08T11:45:21Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:22Z"
 deprecatedSource:
   component: openshift-controller-manager-operator
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-openshift-controller-manager-operator
     operation: Update
-    time: "2023-03-08T11:45:24Z"
+    time: "2023-03-08T11:45:25Z"
   name: openshift-controller-manager-operator.174a6f0f12720ef1
   namespace: openshift-controller-manager-operator
-  resourceVersion: "5339"
+  resourceVersion: "5416"
   uid: 14f08af6-e7b2-4300-9282-44e7fa69bf60
 note: Updated Deployment.apps/controller-manager -n openshift-controller-manager because
   it changed
