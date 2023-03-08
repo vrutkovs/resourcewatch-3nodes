@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:56:11Z"
-deprecatedLastTimestamp: "2023-03-08T11:56:11Z"
+deprecatedLastTimestamp: "2023-03-08T11:56:16Z"
 deprecatedSource:
   component: kubelet
   host: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
@@ -25,10 +25,10 @@ metadata:
       f:type: {}
     manager: kubelet
     operation: Update
-    time: "2023-03-08T11:56:11Z"
+    time: "2023-03-08T11:56:16Z"
   name: apiserver-66776b9556-wsvmg.174a6fa650ec8e0c
   namespace: openshift-apiserver
-  resourceVersion: "23701"
+  resourceVersion: "23811"
   uid: 6dde938b-15a9-4edd-a809-12ef5beb1874
 note: |+
   Readiness probe error: HTTP probe failed with statuscode: 500
