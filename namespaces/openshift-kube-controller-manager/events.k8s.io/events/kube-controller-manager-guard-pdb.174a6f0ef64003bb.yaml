@@ -1,5 +1,5 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:45:21Z"
 deprecatedLastTimestamp: "2023-03-08T11:45:21Z"
 deprecatedSource:
@@ -26,7 +26,7 @@ metadata:
     time: "2023-03-08T11:45:21Z"
   name: kube-controller-manager-guard-pdb.174a6f0ef64003bb
   namespace: openshift-kube-controller-manager
-  resourceVersion: "4873"
+  resourceVersion: "4887"
   uid: c292a158-1209-4d9c-8d73-3ef0e2448e74
 note: No matching pods found
 reason: NoPods
