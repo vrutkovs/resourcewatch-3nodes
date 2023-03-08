@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   annotations:
     cluster-autoscaler.kubernetes.io/enable-ds-eviction: "true"
+    k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.130.0.39/23"],"mac_address":"0a:58:0a:82:00:27","gateway_ips":["10.130.0.1"],"ip_address":"10.130.0.39/23","gateway_ip":"10.130.0.1"}}'
   creationTimestamp: "2023-03-08T11:46:26Z"
   generateName: dns-default-
   labels:
@@ -151,6 +152,15 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:46:26Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:46:26Z"
   name: dns-default-mnggx
   namespace: openshift-dns
   ownerReferences:
@@ -160,7 +170,7 @@ metadata:
     kind: DaemonSet
     name: dns-default
     uid: d78a4539-441f-4b96-9bce-996168ecc497
-  resourceVersion: "8698"
+  resourceVersion: "8703"
   uid: e9bb34c6-34f6-4337-bce9-5b506e8f0c2b
 spec:
   affinity:
