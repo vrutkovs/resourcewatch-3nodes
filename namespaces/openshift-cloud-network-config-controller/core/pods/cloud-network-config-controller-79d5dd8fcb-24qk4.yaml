@@ -148,6 +148,24 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     time: "2023-03-08T11:43:07Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          .: {}
+          k:{"type":"PodScheduled"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:43:07Z"
   name: cloud-network-config-controller-79d5dd8fcb-24qk4
   namespace: openshift-cloud-network-config-controller
   ownerReferences:
@@ -157,7 +175,7 @@ metadata:
     kind: ReplicaSet
     name: cloud-network-config-controller-79d5dd8fcb
     uid: ccb05f32-c744-4993-ba73-061b550e88ef
-  resourceVersion: "2671"
+  resourceVersion: "2674"
   uid: 9c3e04b0-5750-4faa-a6c2-85bec74f951c
 spec:
   containers:
@@ -300,5 +318,13 @@ spec:
             path: service-ca.crt
           name: openshift-service-ca.crt
 status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-08T11:43:07Z"
+    message: '0/3 nodes are available: 3 node(s) had untolerated taint {node.kubernetes.io/not-ready:
+      }. preemption: 0/3 nodes are available: 3 Preemption is not helpful for scheduling.'
+    reason: Unschedulable
+    status: "False"
+    type: PodScheduled
   phase: Pending
   qosClass: Burstable
