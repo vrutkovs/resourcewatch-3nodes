@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:51:17Z"
+deprecatedLastTimestamp: "2023-03-08T11:51:17Z"
+deprecatedSource:
+  component: node-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:51:17Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:51:17Z"
+  name: multus-admission-controller-6597df4f49-qptrx.174a6f61d89fd69a
+  namespace: openshift-multus
+  resourceVersion: "17106"
+  uid: 1a4370c8-2799-48e9-b1f5-7066b4edfa21
+note: Node is not ready
+reason: NodeNotReady
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: multus-admission-controller-6597df4f49-qptrx
+  namespace: openshift-multus
+  resourceVersion: "9734"
+  uid: 6c041298-ff48-4e4f-ba51-3186cf80f2da
+type: Warning
