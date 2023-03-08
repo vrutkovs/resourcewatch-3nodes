@@ -1,0 +1,44 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:47:24Z"
+deprecatedLastTimestamp: "2023-03-08T11:47:24Z"
+deprecatedSource:
+  component: kubelet
+  host: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:47:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+        f:host: {}
+      f:type: {}
+    manager: kubelet
+    operation: Update
+    time: "2023-03-08T11:47:24Z"
+  name: controller-manager-5445ff9fdb-66vxk.174a6f2b92901a6e
+  namespace: openshift-controller-manager
+  resourceVersion: "10834"
+  uid: a547fe53-7d31-493d-a3ad-3afda6d037d2
+note: 'Unable to attach or mount volumes: unmounted volumes=[client-ca], unattached
+  volumes=[kube-api-access-7lc9k config client-ca serving-cert proxy-ca-bundles]:
+  timed out waiting for the condition'
+reason: FailedMount
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: controller-manager-5445ff9fdb-66vxk
+  namespace: openshift-controller-manager
+  resourceVersion: "4836"
+  uid: 9a03e80b-7d08-445d-a348-1eddb5abe0bc
+type: Warning
