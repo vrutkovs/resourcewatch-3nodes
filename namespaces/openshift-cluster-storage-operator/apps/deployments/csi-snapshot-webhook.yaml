@@ -105,7 +105,6 @@ metadata:
         f:annotations:
           f:deployment.kubernetes.io/revision: {}
       f:status:
-        f:availableReplicas: {}
         f:conditions:
           .: {}
           k:{"type":"Available"}:
@@ -125,17 +124,16 @@ metadata:
             f:status: {}
             f:type: {}
         f:observedGeneration: {}
-        f:readyReplicas: {}
         f:replicas: {}
         f:unavailableReplicas: {}
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:54:18Z"
+    time: "2023-03-08T11:54:19Z"
   name: csi-snapshot-webhook
   namespace: openshift-cluster-storage-operator
-  resourceVersion: "21216"
+  resourceVersion: "21427"
   uid: ef58df7f-2ae2-4c7c-94be-2885f57b927f
 spec:
   progressDeadlineSeconds: 600
@@ -222,22 +220,20 @@ spec:
           defaultMode: 420
           secretName: csi-snapshot-webhook-secret
 status:
-  availableReplicas: 1
   conditions:
-  - lastTransitionTime: "2023-03-08T11:45:58Z"
-    lastUpdateTime: "2023-03-08T11:45:58Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
   - lastTransitionTime: "2023-03-08T11:45:20Z"
     lastUpdateTime: "2023-03-08T11:45:58Z"
     message: ReplicaSet "csi-snapshot-webhook-5cf99b84bc" has successfully progressed.
     reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
+  - lastTransitionTime: "2023-03-08T11:54:19Z"
+    lastUpdateTime: "2023-03-08T11:54:19Z"
+    message: Deployment does not have minimum availability.
+    reason: MinimumReplicasUnavailable
+    status: "False"
+    type: Available
   observedGeneration: 1
-  readyReplicas: 1
   replicas: 2
-  unavailableReplicas: 1
+  unavailableReplicas: 2
   updatedReplicas: 2
