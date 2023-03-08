@@ -51,7 +51,7 @@ metadata:
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "6570"
+  resourceVersion: "6583"
   uid: 0a41b8f0-4a3d-4f14-9d01-84b34a9a54a7
 spec: {}
 status:
@@ -61,7 +61,6 @@ status:
       NodeControllerDegraded: All master nodes are ready
       InstallerControllerDegraded: missing required resources: secrets: kube-scheduler-client-cert-key
       GuardControllerDegraded: [Missing operand on node vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal, Missing operand on node vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal]
-      TargetConfigControllerDegraded: "serviceaccount/localhost-recovery-client": serviceaccounts "localhost-recovery-client" not found
     reason: AsExpected
     status: "False"
     type: Degraded
