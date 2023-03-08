@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:58:24Z"
+deprecatedLastTimestamp: "2023-03-08T11:58:24Z"
+deprecatedSource:
+  component: cluster-storage-operator
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:58:24Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-storage-operator
+    operation: Update
+    time: "2023-03-08T11:58:24Z"
+  name: cluster-storage-operator-lock.174a6fc5412d5b1a
+  namespace: openshift-cluster-storage-operator
+  resourceVersion: "25022"
+  uid: ef36f72a-7b07-427b-b5db-c08667765652
+note: cluster-storage-operator-9c68598c5-k9tdc_4160b47f-cca5-49d8-87c4-3a08a35d08c8
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  name: cluster-storage-operator-lock
+  namespace: openshift-cluster-storage-operator
+  resourceVersion: "25018"
+  uid: 6ac55383-a034-4123-beba-7f22e69b0cce
+type: Normal
