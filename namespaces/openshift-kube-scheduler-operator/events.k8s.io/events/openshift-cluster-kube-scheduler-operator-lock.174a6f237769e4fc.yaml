@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:49Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:49Z"
+deprecatedSource:
+  component: openshift-cluster-kube-scheduler-operator
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:49Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-scheduler-operator
+    operation: Update
+    time: "2023-03-08T11:46:49Z"
+  name: openshift-cluster-kube-scheduler-operator-lock.174a6f237769e4fc
+  namespace: openshift-kube-scheduler-operator
+  resourceVersion: "9952"
+  uid: c7b348ec-f607-4a1a-8dcb-34c9bed6dfaf
+note: openshift-kube-scheduler-operator-9b7bfbd84-kvltf_62b9b3b6-d7ad-441e-9187-0215268e0172
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: v1
+  kind: ConfigMap
+  name: openshift-cluster-kube-scheduler-operator-lock
+  namespace: openshift-kube-scheduler-operator
+  resourceVersion: "9950"
+  uid: 1f32581d-227e-4d7e-a56f-2cc2a6e1875e
+type: Normal
