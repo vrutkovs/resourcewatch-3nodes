@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 3
+deprecatedCount: 4
 deprecatedFirstTimestamp: "2023-03-08T11:48:17Z"
-deprecatedLastTimestamp: "2023-03-08T11:48:21Z"
+deprecatedLastTimestamp: "2023-03-08T11:48:22Z"
 deprecatedSource:
   component: openshift-apiserver-operator-apiservice-openshift-apiserver-controller-apiservicecontroller_openshift-apiserver
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-openshift-apiserver-operator
     operation: Update
-    time: "2023-03-08T11:48:21Z"
+    time: "2023-03-08T11:48:23Z"
   name: openshift-apiserver-operator.174a6f37fe658fb1
   namespace: openshift-apiserver-operator
-  resourceVersion: "12190"
+  resourceVersion: "12211"
   uid: f900503e-1674-4a36-bbfb-52414d3840bb
 note: '"quota.openshift.io.v1" failed with an attempt failed with statusCode = 503,
   err = the server is currently unable to handle the request'
