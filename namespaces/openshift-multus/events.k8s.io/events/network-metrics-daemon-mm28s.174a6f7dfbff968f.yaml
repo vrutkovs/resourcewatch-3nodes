@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:53:18Z"
+deprecatedLastTimestamp: "2023-03-08T11:53:18Z"
+deprecatedSource:
+  component: multus
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:53:18Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: multus
+    operation: Update
+    time: "2023-03-08T11:53:18Z"
+  name: network-metrics-daemon-mm28s.174a6f7dfbff968f
+  namespace: openshift-multus
+  resourceVersion: "20933"
+  uid: 764e6700-9a6b-44fe-8ec6-4457221cc625
+note: Add eth0 [10.128.2.3/23] from ovn-kubernetes
+reason: AddedInterface
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: network-metrics-daemon-mm28s
+  namespace: openshift-multus
+  resourceVersion: "19502"
+  uid: 8f1efc54-cc6e-4311-bece-73904beba181
+type: Normal
