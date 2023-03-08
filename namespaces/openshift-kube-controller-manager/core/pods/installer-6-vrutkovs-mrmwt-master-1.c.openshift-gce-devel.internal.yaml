@@ -3,6 +3,28 @@ kind: Pod
 metadata:
   annotations:
     k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.128.0.27/23"],"mac_address":"0a:58:0a:80:00:1b","gateway_ips":["10.128.0.1"],"ip_address":"10.128.0.27/23","gateway_ip":"10.128.0.1"}}'
+    k8s.v1.cni.cncf.io/network-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.128.0.27"
+          ],
+          "mac": "0a:58:0a:80:00:1b",
+          "default": true,
+          "dns": {}
+      }]
+    k8s.v1.cni.cncf.io/networks-status: |-
+      [{
+          "name": "ovn-kubernetes",
+          "interface": "eth0",
+          "ips": [
+              "10.128.0.27"
+          ],
+          "mac": "0a:58:0a:80:00:1b",
+          "default": true,
+          "dns": {}
+      }]
   creationTimestamp: "2023-03-08T11:50:20Z"
   labels:
     app: installer
@@ -162,6 +184,17 @@ metadata:
     manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
     operation: Update
     time: "2023-03-08T11:50:20Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:50:21Z"
   name: installer-6-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
   namespace: openshift-kube-controller-manager
   ownerReferences:
@@ -169,7 +202,7 @@ metadata:
     kind: ConfigMap
     name: revision-status-6
     uid: f646429d-f2aa-4ca7-86fe-7800a6cc944a
-  resourceVersion: "16520"
+  resourceVersion: "16530"
   uid: d230901c-2995-4392-a4e7-a75a2a8e3a98
 spec:
   automountServiceAccountToken: false
