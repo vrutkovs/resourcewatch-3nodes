@@ -1,6 +1,8 @@
 apiVersion: v1
 kind: Pod
 metadata:
+  annotations:
+    k8s.ovn.org/pod-networks: '{"default":{"ip_addresses":["10.130.0.11/23"],"mac_address":"0a:58:0a:82:00:0b","gateway_ips":["10.130.0.1"],"ip_address":"10.130.0.11/23","gateway_ip":"10.130.0.1"}}'
   creationTimestamp: "2023-03-08T11:41:03Z"
   generateName: kube-controller-manager-operator-564f59b996-
   labels:
@@ -12,7 +14,6 @@ metadata:
     fieldsV1:
       f:metadata:
         f:annotations:
-          .: {}
           f:target.workload.openshift.io/management: {}
         f:generateName: {}
         f:labels:
@@ -162,6 +163,16 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:42:25Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:k8s.ovn.org/pod-networks: {}
+    manager: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
+    operation: Update
+    time: "2023-03-08T11:44:54Z"
   name: kube-controller-manager-operator-564f59b996-gmmqd
   namespace: openshift-kube-controller-manager-operator
   ownerReferences:
@@ -171,7 +182,7 @@ metadata:
     kind: ReplicaSet
     name: kube-controller-manager-operator-564f59b996
     uid: ce2f34fb-ccc0-4152-b452-e2203c8f7da9
-  resourceVersion: "3797"
+  resourceVersion: "3826"
   uid: e8106043-befe-46c0-8242-cbb22b264b95
 spec:
   automountServiceAccountToken: false
