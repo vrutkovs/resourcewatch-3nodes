@@ -1,0 +1,41 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:55:17Z"
+deprecatedLastTimestamp: "2023-03-08T11:55:17Z"
+deprecatedSource:
+  component: openshift-cluster-version
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:55:17Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-version-operator
+    operation: Update
+    time: "2023-03-08T11:55:17Z"
+  name: version.174a6f99dacfef58
+  namespace: openshift-cluster-version
+  resourceVersion: "22458"
+  uid: c55dd6bc-710e-4d97-b1ef-8c3cf09dd33d
+note: vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal_9b6f6178-69ee-4b74-bd0a-9bd84a06df64
+  became leader
+reason: LeaderElection
+regarding:
+  apiVersion: v1
+  kind: ConfigMap
+  name: version
+  namespace: openshift-cluster-version
+  resourceVersion: "22456"
+  uid: 5bf1ca27-95f3-4acf-a6f5-1772fe171299
+type: Normal
