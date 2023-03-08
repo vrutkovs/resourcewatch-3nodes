@@ -4,8 +4,8 @@ metadata:
   annotations:
     openshift.io/scc: privileged
   creationTimestamp: "2023-03-08T11:45:29Z"
-  deletionGracePeriodSeconds: 30
-  deletionTimestamp: "2023-03-08T11:45:59Z"
+  deletionGracePeriodSeconds: 0
+  deletionTimestamp: "2023-03-08T11:45:29Z"
   generateName: gcp-pd-csi-driver-node-
   labels:
     app: gcp-pd-csi-driver-node
@@ -299,7 +299,7 @@ metadata:
     kind: DaemonSet
     name: gcp-pd-csi-driver-node
     uid: 7c9edea7-f2a7-4b77-8956-d8b37e9680e0
-  resourceVersion: "6961"
+  resourceVersion: "6962"
   uid: bf546227-d4f3-4089-af36-20bba7b6b704
 spec:
   affinity:
