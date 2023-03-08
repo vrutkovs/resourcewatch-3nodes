@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:13Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:13Z"
+deprecatedSource:
+  component: daemonset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:13Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:52:13Z"
+  name: gcp-pd-csi-driver-node.174a6f6ee0ef8005
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "19344"
+  uid: f06e5d71-8033-4e8e-9e45-80c5b7982003
+note: 'Created pod: gcp-pd-csi-driver-node-9lkd9'
+reason: SuccessfulCreate
+regarding:
+  apiVersion: apps/v1
+  kind: DaemonSet
+  name: gcp-pd-csi-driver-node
+  namespace: openshift-cluster-csi-drivers
+  resourceVersion: "19056"
+  uid: 7c9edea7-f2a7-4b77-8956-d8b37e9680e0
+type: Normal
