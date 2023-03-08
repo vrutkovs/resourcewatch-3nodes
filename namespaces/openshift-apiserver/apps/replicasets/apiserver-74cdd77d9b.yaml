@@ -365,7 +365,7 @@ metadata:
     kind: Deployment
     name: apiserver
     uid: 38a621a7-6975-455f-84a5-eb95ea838e4d
-  resourceVersion: "17624"
+  resourceVersion: "17637"
   uid: 6377fba3-5dda-4a64-9b49-4f0415a22c93
 spec:
   replicas: 1
@@ -614,5 +614,5 @@ spec:
           type: ""
         name: audit-dir
 status:
-  observedGeneration: 1
+  observedGeneration: 2
   replicas: 0
