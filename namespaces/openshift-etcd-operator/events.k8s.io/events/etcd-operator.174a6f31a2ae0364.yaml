@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 1
+deprecatedCount: 2
 deprecatedFirstTimestamp: "2023-03-08T11:47:50Z"
-deprecatedLastTimestamp: "2023-03-08T11:47:50Z"
+deprecatedLastTimestamp: "2023-03-08T11:49:36Z"
 deprecatedSource:
   component: openshift-cluster-etcd-operator-script-controller-scriptcontroller
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-etcd-operator
     operation: Update
-    time: "2023-03-08T11:47:50Z"
+    time: "2023-03-08T11:49:36Z"
   name: etcd-operator.174a6f31a2ae0364
   namespace: openshift-etcd-operator
-  resourceVersion: "11279"
+  resourceVersion: "13448"
   uid: 9d45b291-be4e-4074-9c7a-7cfcde9dda1c
 note: |-
   Updated ConfigMap/etcd-scripts -n openshift-etcd:
