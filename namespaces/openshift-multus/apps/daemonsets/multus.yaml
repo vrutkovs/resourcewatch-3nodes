@@ -141,12 +141,13 @@ metadata:
         f:desiredNumberScheduled: {}
         f:numberAvailable: {}
         f:numberReady: {}
+        f:numberUnavailable: {}
         f:observedGeneration: {}
         f:updatedNumberScheduled: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:34Z"
+    time: "2023-03-08T11:52:06Z"
   name: multus
   namespace: openshift-multus
   ownerReferences:
@@ -156,7 +157,7 @@ metadata:
     kind: Network
     name: cluster
     uid: 0ac8c00f-db30-4ed0-a498-7a1162bac022
-  resourceVersion: "17323"
+  resourceVersion: "18989"
   uid: e45c8b1f-32f4-4ba0-87c5-7b1e0564bf30
 spec:
   revisionHistoryLimit: 10
@@ -256,9 +257,10 @@ spec:
     type: RollingUpdate
 status:
   currentNumberScheduled: 3
-  desiredNumberScheduled: 3
+  desiredNumberScheduled: 4
   numberAvailable: 3
   numberMisscheduled: 0
   numberReady: 3
+  numberUnavailable: 1
   observedGeneration: 1
   updatedNumberScheduled: 3
