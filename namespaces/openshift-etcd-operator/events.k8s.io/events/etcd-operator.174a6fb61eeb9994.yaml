@@ -1,7 +1,7 @@
 apiVersion: events.k8s.io/v1
-deprecatedCount: 2
+deprecatedCount: 3
 deprecatedFirstTimestamp: "2023-03-08T11:57:19Z"
-deprecatedLastTimestamp: "2023-03-08T12:03:34Z"
+deprecatedLastTimestamp: "2023-03-08T12:05:30Z"
 deprecatedSource:
   component: openshift-cluster-etcd-operator-status-controller-statussyncer_etcd
 eventTime: null
@@ -23,10 +23,10 @@ metadata:
       f:type: {}
     manager: cluster-etcd-operator
     operation: Update
-    time: "2023-03-08T12:03:34Z"
+    time: "2023-03-08T12:05:30Z"
   name: etcd-operator.174a6fb61eeb9994
   namespace: openshift-etcd-operator
-  resourceVersion: "29512"
+  resourceVersion: "30532"
   uid: 6eb8cb7c-2e11-44c4-8415-498caa2f1752
 note: 'Status for clusteroperator/etcd changed: Degraded message changed from "NodeControllerDegraded:
   All master nodes are ready\nClusterMemberControllerDegraded: unhealthy members found
