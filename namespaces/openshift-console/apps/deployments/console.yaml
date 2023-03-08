@@ -259,7 +259,7 @@ metadata:
     time: "2023-03-08T11:58:30Z"
   name: console
   namespace: openshift-console
-  resourceVersion: "25238"
+  resourceVersion: "25251"
   uid: 8f84f431-418b-4093-8b7b-7db6c01ba2b1
 spec:
   progressDeadlineSeconds: 600
@@ -433,11 +433,11 @@ status:
     status: "False"
     type: Available
   - lastTransitionTime: "2023-03-08T11:58:17Z"
-    lastUpdateTime: "2023-03-08T11:58:29Z"
-    message: Created new replica set "console-fd4986f5b"
-    reason: NewReplicaSetCreated
+    lastUpdateTime: "2023-03-08T11:58:30Z"
+    message: ReplicaSet "console-fd4986f5b" is progressing.
+    reason: ReplicaSetUpdated
     status: "True"
     type: Progressing
   observedGeneration: 2
-  replicas: 2
+  replicas: 1
   unavailableReplicas: 3
