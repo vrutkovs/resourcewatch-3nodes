@@ -140,6 +140,14 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:spec:
+        f:taints: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:54:19Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:metadata:
         f:annotations:
           f:csi.volume.kubernetes.io/nodeid: {}
@@ -149,56 +157,35 @@ metadata:
         f:conditions:
           k:{"type":"DiskPressure"}:
             f:lastHeartbeatTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
           k:{"type":"MemoryPressure"}:
             f:lastHeartbeatTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
           k:{"type":"PIDPressure"}:
             f:lastHeartbeatTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
           k:{"type":"Ready"}:
             f:lastHeartbeatTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
         f:images: {}
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:51:54Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:spec:
-        f:taints: {}
-    manager: kube-controller-manager
-    operation: Update
-    time: "2023-03-08T11:54:19Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:status:
-        f:conditions:
-          k:{"type":"DiskPressure"}:
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-          k:{"type":"MemoryPressure"}:
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-          k:{"type":"PIDPressure"}:
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-          k:{"type":"Ready"}:
-            f:lastTransitionTime: {}
-            f:message: {}
-            f:reason: {}
-            f:status: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:54:19Z"
+    time: "2023-03-08T11:54:58Z"
   name: vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
-  resourceVersion: "21323"
+  resourceVersion: "21855"
   uid: d1bb260b-ed05-4c1f-9090-1cf4ac4bb308
 spec:
   providerID: gce://openshift-gce-devel/europe-west2-b/vrutkovs-mrmwt-master-1
@@ -239,29 +226,29 @@ status:
     reason: RouteCreated
     status: "False"
     type: NetworkUnavailable
-  - lastHeartbeatTime: "2023-03-08T11:51:54Z"
-    lastTransitionTime: "2023-03-08T11:54:19Z"
-    message: Kubelet stopped posting node status.
-    reason: NodeStatusUnknown
-    status: Unknown
+  - lastHeartbeatTime: "2023-03-08T11:54:58Z"
+    lastTransitionTime: "2023-03-08T11:54:58Z"
+    message: kubelet has sufficient memory available
+    reason: KubeletHasSufficientMemory
+    status: "False"
     type: MemoryPressure
-  - lastHeartbeatTime: "2023-03-08T11:51:54Z"
-    lastTransitionTime: "2023-03-08T11:54:19Z"
-    message: Kubelet stopped posting node status.
-    reason: NodeStatusUnknown
-    status: Unknown
+  - lastHeartbeatTime: "2023-03-08T11:54:58Z"
+    lastTransitionTime: "2023-03-08T11:54:58Z"
+    message: kubelet has no disk pressure
+    reason: KubeletHasNoDiskPressure
+    status: "False"
     type: DiskPressure
-  - lastHeartbeatTime: "2023-03-08T11:51:54Z"
-    lastTransitionTime: "2023-03-08T11:54:19Z"
-    message: Kubelet stopped posting node status.
-    reason: NodeStatusUnknown
-    status: Unknown
+  - lastHeartbeatTime: "2023-03-08T11:54:58Z"
+    lastTransitionTime: "2023-03-08T11:54:58Z"
+    message: kubelet has sufficient PID available
+    reason: KubeletHasSufficientPID
+    status: "False"
     type: PIDPressure
-  - lastHeartbeatTime: "2023-03-08T11:51:54Z"
-    lastTransitionTime: "2023-03-08T11:54:19Z"
-    message: Kubelet stopped posting node status.
-    reason: NodeStatusUnknown
-    status: Unknown
+  - lastHeartbeatTime: "2023-03-08T11:54:58Z"
+    lastTransitionTime: "2023-03-08T11:54:58Z"
+    message: kubelet is posting ready status
+    reason: KubeletReady
+    status: "True"
     type: Ready
   daemonEndpoints:
     kubeletEndpoint:
