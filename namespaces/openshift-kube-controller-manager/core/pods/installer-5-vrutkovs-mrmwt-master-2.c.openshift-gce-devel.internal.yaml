@@ -146,6 +146,17 @@ metadata:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
+      f:metadata:
+        f:annotations:
+          f:k8s.v1.cni.cncf.io/network-status: {}
+          f:k8s.v1.cni.cncf.io/networks-status: {}
+    manager: multus
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:48:38Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
       f:status:
         f:conditions:
           .: {}
@@ -153,12 +164,14 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"Initialized"}:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
           k:{"type":"PodScheduled"}:
@@ -171,6 +184,7 @@ metadata:
             .: {}
             f:lastProbeTime: {}
             f:lastTransitionTime: {}
+            f:reason: {}
             f:status: {}
             f:type: {}
         f:containerStatuses: {}
@@ -186,18 +200,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:48:38Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:k8s.v1.cni.cncf.io/network-status: {}
-          f:k8s.v1.cni.cncf.io/networks-status: {}
-    manager: multus
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:48:38Z"
+    time: "2023-03-08T11:49:12Z"
   name: installer-5-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   namespace: openshift-kube-controller-manager
   ownerReferences:
@@ -205,7 +208,7 @@ metadata:
     kind: ConfigMap
     name: revision-status-5
     uid: 09ce9dff-e330-4b10-8e9e-6bfd7ab1d4cf
-  resourceVersion: "12476"
+  resourceVersion: "12972"
   uid: 4440409a-93a0-4f44-adda-4b5e7755c3c9
 spec:
   automountServiceAccountToken: false
@@ -318,15 +321,18 @@ status:
   conditions:
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:48:37Z"
+    reason: PodCompleted
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:48:38Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:49:12Z"
+    reason: PodCompleted
+    status: "False"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:48:38Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:49:12Z"
+    reason: PodCompleted
+    status: "False"
     type: ContainersReady
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:48:37Z"
@@ -338,11 +344,15 @@ status:
     imageID: registry.ci.openshift.org/origin/4.12-2023-03-04-063026@sha256:a00d8131cba2e633c71b49c84ea81a1a842dd5ca52b2e5772e6b3c58a69e6d86
     lastState: {}
     name: installer
-    ready: true
+    ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://ab3aa205930419adec0006a922d44c7a2e31a41312c85cd8da07137f82971ffb
+        exitCode: 0
+        finishedAt: "2023-03-08T11:49:11Z"
+        reason: Completed
         startedAt: "2023-03-08T11:48:38Z"
   hostIP: 10.0.0.3
   phase: Running
