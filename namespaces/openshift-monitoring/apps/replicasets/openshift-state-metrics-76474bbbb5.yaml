@@ -160,7 +160,9 @@ metadata:
     fieldsType: FieldsV1
     fieldsV1:
       f:status:
+        f:fullyLabeledReplicas: {}
         f:observedGeneration: {}
+        f:replicas: {}
     manager: kube-controller-manager
     operation: Update
     subresource: status
@@ -174,7 +176,7 @@ metadata:
     kind: Deployment
     name: openshift-state-metrics
     uid: e317c77b-b10b-4863-ba39-3d666205ea8e
-  resourceVersion: "25806"
+  resourceVersion: "25818"
   uid: 6001de7a-3722-4752-891c-c2632f29d639
 spec:
   replicas: 1
@@ -286,5 +288,6 @@ spec:
           defaultMode: 420
           secretName: openshift-state-metrics-kube-rbac-proxy-config
 status:
+  fullyLabeledReplicas: 1
   observedGeneration: 1
-  replicas: 0
+  replicas: 1
