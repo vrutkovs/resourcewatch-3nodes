@@ -156,8 +156,6 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
-            f:lastTransitionTime: {}
-            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -173,6 +171,18 @@ metadata:
     operation: Update
     subresource: status
     time: "2023-03-08T11:45:30Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"Ready"}:
+            f:lastTransitionTime: {}
+            f:status: {}
+    manager: kube-controller-manager
+    operation: Update
+    subresource: status
+    time: "2023-03-08T11:51:17Z"
   name: service-ca-6c96c7648f-wd9ht
   namespace: openshift-service-ca
   ownerReferences:
@@ -182,7 +192,7 @@ metadata:
     kind: ReplicaSet
     name: service-ca-6c96c7648f
     uid: 75e76e63-a5fc-4c5d-9c11-9deefc56af7d
-  resourceVersion: "5971"
+  resourceVersion: "17048"
   uid: 84f83ac9-7460-4321-b1b8-3a268d8770b9
 spec:
   containers:
@@ -291,8 +301,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:45:30Z"
-    status: "True"
+    lastTransitionTime: "2023-03-08T11:51:17Z"
+    status: "False"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:45:30Z"
