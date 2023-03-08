@@ -15,7 +15,7 @@ metadata:
     operator.openshift.io/dep-openshift-apiserver.trusted-ca-bundle.configmap: O1lK1A==
     operator.openshift.io/spec-hash: 334f0ceb88424890fc529406c84113c3a61da5524a0830deec350c448c9a8ab6
   creationTimestamp: "2023-03-08T11:49:37Z"
-  generation: 2
+  generation: 3
   labels:
     apiserver: "true"
     app: openshift-apiserver-a
@@ -346,7 +346,7 @@ metadata:
                 f:name: {}
     manager: kube-controller-manager
     operation: Update
-    time: "2023-03-08T11:49:37Z"
+    time: "2023-03-08T11:50:22Z"
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -369,10 +369,10 @@ metadata:
     kind: Deployment
     name: apiserver
     uid: 38a621a7-6975-455f-84a5-eb95ea838e4d
-  resourceVersion: "16556"
+  resourceVersion: "16570"
   uid: 686ff86f-4538-4b72-8509-1883a769e1e5
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       apiserver: "true"
