@@ -419,7 +419,7 @@ metadata:
     manager: kube-controller-manager
     operation: Update
     subresource: status
-    time: "2023-03-08T11:55:12Z"
+    time: "2023-03-08T11:55:19Z"
   name: gcp-pd-csi-driver-controller-698446758d
   namespace: openshift-cluster-csi-drivers
   ownerReferences:
@@ -429,7 +429,7 @@ metadata:
     kind: Deployment
     name: gcp-pd-csi-driver-controller
     uid: c7179cc3-3b74-4f83-b872-a437a7b51e6e
-  resourceVersion: "22323"
+  resourceVersion: "22529"
   uid: e75b4e83-6635-4ade-8599-427215f5eca9
 spec:
   replicas: 2
@@ -752,8 +752,8 @@ spec:
           name: gcp-pd-csi-driver-trusted-ca-bundle
         name: non-standard-root-system-trust-ca-bundle
 status:
-  availableReplicas: 1
+  availableReplicas: 2
   fullyLabeledReplicas: 2
   observedGeneration: 3
-  readyReplicas: 1
+  readyReplicas: 2
   replicas: 2
