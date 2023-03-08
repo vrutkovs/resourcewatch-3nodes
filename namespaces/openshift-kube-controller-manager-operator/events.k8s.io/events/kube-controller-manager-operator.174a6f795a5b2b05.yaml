@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:52:58Z"
+deprecatedLastTimestamp: "2023-03-08T11:52:58Z"
+deprecatedSource:
+  component: kube-controller-manager-operator-installer-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:58Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: cluster-kube-controller-manager-operator
+    operation: Update
+    time: "2023-03-08T11:52:58Z"
+  name: kube-controller-manager-operator.174a6f795a5b2b05
+  namespace: openshift-kube-controller-manager-operator
+  resourceVersion: "20658"
+  uid: 79b49daa-949b-43a7-a30c-2260b00aeb10
+note: Created Pod/installer-6-vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+  -n openshift-kube-controller-manager because it was missing
+reason: PodCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: kube-controller-manager-operator
+  namespace: openshift-kube-controller-manager-operator
+  uid: 71b7e195-265a-4ece-8449-dc704acd0130
+type: Normal
