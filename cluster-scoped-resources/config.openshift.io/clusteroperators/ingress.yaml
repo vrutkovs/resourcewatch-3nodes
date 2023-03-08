@@ -43,14 +43,14 @@ metadata:
     manager: ingress-operator
     operation: Update
     subresource: status
-    time: "2023-03-08T11:46:42Z"
+    time: "2023-03-08T11:47:16Z"
   name: ingress
   ownerReferences:
   - apiVersion: config.openshift.io/v1
     kind: ClusterVersion
     name: version
     uid: e60de632-2954-4109-a630-deda141a29af
-  resourceVersion: "9553"
+  resourceVersion: "10660"
   uid: 8fb9029b-29a2-4cc2-80f7-92ffd048ae08
 spec: {}
 status:
@@ -73,10 +73,14 @@ status:
     reason: Reconciling
     status: "True"
     type: Progressing
-  - lastTransitionTime: "2023-03-08T11:46:42Z"
-    message: The "default" ingress controller reports Degraded=False.
-    reason: IngressNotDegraded
-    status: "False"
+  - lastTransitionTime: "2023-03-08T11:47:16Z"
+    message: 'The "default" ingress controller reports Degraded=True: DegradedConditions:
+      One or more other status conditions indicate a degraded state: DeploymentAvailable=False
+      (DeploymentUnavailable: The deployment has Available status condition set to
+      False (reason: MinimumReplicasUnavailable) with message: Deployment does not
+      have minimum availability.)'
+    reason: IngressDegraded
+    status: "True"
     type: Degraded
   - lastTransitionTime: "2023-03-08T11:46:42Z"
     reason: IngressControllersUpgradeable
