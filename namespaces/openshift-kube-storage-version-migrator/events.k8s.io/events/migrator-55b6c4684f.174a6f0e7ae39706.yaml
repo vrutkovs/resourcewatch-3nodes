@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:45:19Z"
+deprecatedLastTimestamp: "2023-03-08T11:45:19Z"
+deprecatedSource:
+  component: replicaset-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:45:19Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:45:19Z"
+  name: migrator-55b6c4684f.174a6f0e7ae39706
+  namespace: openshift-kube-storage-version-migrator
+  resourceVersion: "4374"
+  uid: 24bfe4ba-9975-4263-9959-0b137f41e22a
+note: 'Created pod: migrator-55b6c4684f-h9rcq'
+reason: SuccessfulCreate
+regarding:
+  apiVersion: apps/v1
+  kind: ReplicaSet
+  name: migrator-55b6c4684f
+  namespace: openshift-kube-storage-version-migrator
+  resourceVersion: "4350"
+  uid: 97c63186-d661-443c-a503-e2c5f26a66d6
+type: Normal
