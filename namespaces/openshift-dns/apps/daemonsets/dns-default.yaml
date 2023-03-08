@@ -181,7 +181,7 @@ metadata:
     kind: DNS
     name: default
     uid: 96ec4305-1ac6-482c-8f61-7437461d76be
-  resourceVersion: "20602"
+  resourceVersion: "20612"
   uid: d78a4539-441f-4b96-9bce-996168ecc497
 spec:
   revisionHistoryLimit: 10
@@ -298,11 +298,11 @@ spec:
       maxUnavailable: 10%
     type: RollingUpdate
 status:
-  currentNumberScheduled: 3
+  currentNumberScheduled: 4
   desiredNumberScheduled: 4
   numberAvailable: 3
   numberMisscheduled: 0
   numberReady: 3
   numberUnavailable: 1
   observedGeneration: 1
-  updatedNumberScheduled: 3
+  updatedNumberScheduled: 4
