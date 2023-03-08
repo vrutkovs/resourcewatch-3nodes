@@ -1,0 +1,39 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:46:20Z"
+deprecatedLastTimestamp: "2023-03-08T11:46:20Z"
+deprecatedSource:
+  component: cluster-monitoring-operator-openshiftmonitoringclientcertrequester
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:46:20Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: operator
+    operation: Update
+    time: "2023-03-08T11:46:20Z"
+  name: cluster-monitoring-operator.174a6f1ccf3b32b0
+  namespace: openshift-monitoring
+  resourceVersion: "8335"
+  uid: f958b9c3-0f73-439c-b6dc-47a8503b8bfe
+note: A csr "system:openshift:openshift-monitoring-s8768" is created for OpenShiftMonitoringClientCertRequester
+reason: CSRCreated
+regarding:
+  apiVersion: apps/v1
+  kind: Deployment
+  name: cluster-monitoring-operator
+  namespace: openshift-monitoring
+  uid: 2d025294-a61e-4ee1-87b9-879d68e083ef
+type: Normal
