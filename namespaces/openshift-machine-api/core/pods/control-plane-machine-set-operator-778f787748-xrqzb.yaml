@@ -117,7 +117,7 @@ metadata:
     kind: ReplicaSet
     name: control-plane-machine-set-operator-778f787748
     uid: 034217ac-353e-4987-91f0-55f349205256
-  resourceVersion: "2402"
+  resourceVersion: "3820"
   uid: e7632d31-75ab-4a45-9e70-6a8c0fbf097b
 spec:
   containers:
@@ -166,6 +166,7 @@ spec:
       readOnly: true
   dnsPolicy: ClusterFirst
   enableServiceLinks: true
+  nodeName: vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
   nodeSelector:
     node-role.kubernetes.io/master: ""
   preemptionPolicy: PreemptLowerPriority
@@ -228,11 +229,8 @@ spec:
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:42:23Z"
-    message: '0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready:
-      }. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.'
-    reason: Unschedulable
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:44:54Z"
+    status: "True"
     type: PodScheduled
   phase: Pending
   qosClass: Burstable
