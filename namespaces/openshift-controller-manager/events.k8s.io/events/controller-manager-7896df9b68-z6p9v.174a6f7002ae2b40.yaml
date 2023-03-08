@@ -1,0 +1,41 @@
+action: Binding
+apiVersion: events.k8s.io/v1
+deprecatedFirstTimestamp: null
+deprecatedLastTimestamp: null
+deprecatedSource: {}
+eventTime: "2023-03-08T11:52:18.020913Z"
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:52:18Z"
+  managedFields:
+  - apiVersion: events.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:action: {}
+      f:eventTime: {}
+      f:note: {}
+      f:reason: {}
+      f:regarding: {}
+      f:reportingController: {}
+      f:reportingInstance: {}
+      f:type: {}
+    manager: kube-scheduler
+    operation: Update
+    time: "2023-03-08T11:52:18Z"
+  name: controller-manager-7896df9b68-z6p9v.174a6f7002ae2b40
+  namespace: openshift-controller-manager
+  resourceVersion: "19772"
+  uid: f5ce5eb7-8a45-4f40-afea-850735ccf41f
+note: Successfully assigned openshift-controller-manager/controller-manager-7896df9b68-z6p9v
+  to vrutkovs-mrmwt-master-2.c.openshift-gce-devel.internal
+reason: Scheduled
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: controller-manager-7896df9b68-z6p9v
+  namespace: openshift-controller-manager
+  resourceVersion: "19684"
+  uid: 652a3718-09aa-469c-be54-104f147cf2bb
+reportingController: default-scheduler
+reportingInstance: default-scheduler-vrutkovs-mrmwt-master-1.c.openshift-gce-devel.internal
+type: Normal
