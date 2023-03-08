@@ -11,7 +11,7 @@ metadata:
     operator.openshift.io/dep-3003c66d1e7cfab0b092cf87127145aa0f888: vwOgYw==
     operator.openshift.io/spec-hash: d78cedb34c3cf18567e91f25c47ad7e15872fe70cfda493c0174df46797f85f3
   creationTimestamp: "2023-03-08T11:45:32Z"
-  generation: 1
+  generation: 2
   labels:
     app: gcp-pd-csi-driver-controller
     pod-template-hash: 698446758d
@@ -425,10 +425,10 @@ metadata:
     kind: Deployment
     name: gcp-pd-csi-driver-controller
     uid: c7179cc3-3b74-4f83-b872-a437a7b51e6e
-  resourceVersion: "6166"
+  resourceVersion: "6188"
   uid: e75b4e83-6635-4ade-8599-427215f5eca9
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: gcp-pd-csi-driver-controller
