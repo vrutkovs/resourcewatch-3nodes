@@ -126,6 +126,8 @@ metadata:
           k:{"type":"Ready"}:
             .: {}
             f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
             f:type: {}
         f:containerStatuses: {}
         f:hostIP: {}
@@ -140,22 +142,10 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:49:04Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:status:
-        f:conditions:
-          k:{"type":"Ready"}:
-            f:lastTransitionTime: {}
-            f:status: {}
-    manager: kube-controller-manager
-    operation: Update
-    subresource: status
-    time: "2023-03-08T11:51:16Z"
+    time: "2023-03-08T11:51:34Z"
   name: kube-apiserver-guard-vrutkovs-mrmwt-master-0.c.openshift-gce-devel.internal
   namespace: openshift-kube-apiserver
-  resourceVersion: "17041"
+  resourceVersion: "17282"
   uid: b21ef32e-648d-4f21-9eab-dac17d56f0bf
 spec:
   containers:
@@ -251,8 +241,8 @@ status:
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2023-03-08T11:51:16Z"
-    status: "False"
+    lastTransitionTime: "2023-03-08T11:49:04Z"
+    status: "True"
     type: Ready
   - lastProbeTime: null
     lastTransitionTime: "2023-03-08T11:49:04Z"
