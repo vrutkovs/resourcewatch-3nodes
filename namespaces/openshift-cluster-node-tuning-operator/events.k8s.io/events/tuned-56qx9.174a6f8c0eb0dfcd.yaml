@@ -1,0 +1,40 @@
+apiVersion: events.k8s.io/v1
+deprecatedCount: 1
+deprecatedFirstTimestamp: "2023-03-08T11:54:18Z"
+deprecatedLastTimestamp: "2023-03-08T11:54:18Z"
+deprecatedSource:
+  component: node-controller
+eventTime: null
+kind: Event
+metadata:
+  creationTimestamp: "2023-03-08T11:54:18Z"
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:count: {}
+      f:firstTimestamp: {}
+      f:involvedObject: {}
+      f:lastTimestamp: {}
+      f:message: {}
+      f:reason: {}
+      f:source:
+        f:component: {}
+      f:type: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2023-03-08T11:54:18Z"
+  name: tuned-56qx9.174a6f8c0eb0dfcd
+  namespace: openshift-cluster-node-tuning-operator
+  resourceVersion: "21073"
+  uid: 4d04ac30-f5ae-4cb0-a879-d039cc9122c9
+note: Node is not ready
+reason: NodeNotReady
+regarding:
+  apiVersion: v1
+  kind: Pod
+  name: tuned-56qx9
+  namespace: openshift-cluster-node-tuning-operator
+  resourceVersion: "20349"
+  uid: 077a27d9-25fe-4a82-9135-38e35a341e53
+type: Warning
