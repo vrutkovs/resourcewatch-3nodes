@@ -275,7 +275,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T12:01:18Z"
+    time: "2023-03-08T12:01:44Z"
   name: console-55865cb597-mmdrv
   namespace: openshift-console
   ownerReferences:
@@ -285,7 +285,7 @@ metadata:
     kind: ReplicaSet
     name: console-55865cb597
     uid: 24798fbd-c982-4e83-95eb-5836d19a6acb
-  resourceVersion: "28234"
+  resourceVersion: "28493"
   uid: 35779137-fa88-41b4-a5b8-d2f9d6724e13
 spec:
   affinity:
@@ -483,9 +483,26 @@ status:
     name: console
     ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://8126fc24d3eeda90b276d0be86d552798db0a91afe3b1ddf305dffcbaad7b50b
+        exitCode: 2
+        finishedAt: "2023-03-08T12:00:49Z"
+        message: |
+          iled: 404 Not Found
+          E0308 11:59:08.738876       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 11:59:18.754523       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 11:59:28.765474       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 11:59:38.775874       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 11:59:48.787615       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 11:59:58.798421       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 12:00:08.805937       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 12:00:18.812760       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 12:00:28.819986       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          I0308 12:00:38.851936       1 main.go:802] Binding to [::]:8443...
+          I0308 12:00:38.851978       1 main.go:804] using TLS
+        reason: Error
         startedAt: "2023-03-08T11:58:28Z"
   hostIP: 10.0.0.5
   phase: Running
