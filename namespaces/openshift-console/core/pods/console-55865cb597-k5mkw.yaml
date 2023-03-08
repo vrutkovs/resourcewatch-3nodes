@@ -275,7 +275,7 @@ metadata:
     manager: kubelet
     operation: Update
     subresource: status
-    time: "2023-03-08T11:58:27Z"
+    time: "2023-03-08T11:58:55Z"
   name: console-55865cb597-k5mkw
   namespace: openshift-console
   ownerReferences:
@@ -285,7 +285,7 @@ metadata:
     kind: ReplicaSet
     name: console-55865cb597
     uid: 24798fbd-c982-4e83-95eb-5836d19a6acb
-  resourceVersion: "25228"
+  resourceVersion: "25609"
   uid: 2b22d1d8-027a-4031-a658-e5c2643a3bf6
 spec:
   affinity:
@@ -483,9 +483,19 @@ status:
     name: console
     ready: false
     restartCount: 0
-    started: true
+    started: false
     state:
-      running:
+      terminated:
+        containerID: cri-o://0d99468524fbcb0996febcc87b53450de3fb409b44d5cc0d64560251dc6b7754
+        exitCode: 2
+        finishedAt: "2023-03-08T11:58:55Z"
+        message: |
+          W0308 11:58:27.051930       1 main.go:227] Flag inactivity-timeout is set to less then 300 seconds and will be ignored!
+          I0308 11:58:27.051952       1 main.go:346] cookies are secure!
+          E0308 11:58:27.076685       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 11:58:37.087565       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+          E0308 11:58:47.097713       1 auth.go:232] error contacting auth provider (retrying in 10s): discovery through endpoint https://kubernetes.default.svc/.well-known/oauth-authorization-server failed: 404 Not Found
+        reason: Error
         startedAt: "2023-03-08T11:58:27Z"
   hostIP: 10.0.0.4
   phase: Running
